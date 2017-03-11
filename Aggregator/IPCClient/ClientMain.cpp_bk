@@ -1,0 +1,22 @@
+#include<IPCClient.hpp>
+#include<EventLog.h>
+
+CEventLog CG_EventLog;
+CMsgQue<IPCMsg> CG_recMsg;
+int main()
+{
+	CIPCClient CL_client(10,100, &CG_recMsg);
+	CL_client.mcfn_addTcpDetails("127.0.0.1",9899,"127.0.0.1",9899);
+	std::string NewData("Sending data to same module again");
+	IPCMsg CL_msg;
+	while(1)
+	{
+		CL_msg.clear();
+		if(!CG_recMsg.mcfb_getNextMessage(CL_msg))
+		{
+		//sleep(1);
+		}	
+		CL_client.mcfn_sendMessage(10,NewData);
+		printf("Received :%s\n",CL_msg.data.c_str());
+	}
+}

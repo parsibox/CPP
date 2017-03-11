@@ -1,0 +1,8 @@
+DB Changes :
+alter table menu_details add column input_type int default 0 COMMENT 'dtmf value should be -1 if the value is not 0 , 1: Any chars,2: Alpha digits, 3: only Alpha 4:only digits';
+alter table menu_details add column node_msg_at_end char default 'N';
+
+need to alter cdr tables by adding column 'USER_INPUT';
+
+CDR.xml
+add USER_INPUT in coulmnlist

@@ -1,0 +1,236 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.5.4	//
+ALIVE_CIMD	Defines.h	14;"	d
+BASEDIR	Makefile	/^BASEDIR = \/home\/cmsuser\/CMSVodafone30Jun\/$/;"	m
+BUFSIZE	Defines.h	74;"	d
+Buffer	EsmeConnection.hpp	/^typedef std::vector<u8> Buffer;$/;"	t
+CATEGORY_ID	Defines.h	48;"	d
+CC	Makefile	/^CC = \/usr\/bin\/g++ -g  $/;"	m
+CCdrClient	CdrClient.hpp	/^		CCdrClient():CTcpClient("CdrServer"){}$/;"	f	class:CCdrClient
+CCdrClient	CdrClient.hpp	/^class CCdrClient:public CTcpClient,public CThread$/;"	c
+CConfiguration	Configuration.cpp	/^CConfiguration::CConfiguration(){$/;"	f	class:CConfiguration
+CConfiguration	Configuration.h	/^class CConfiguration{$/;"	c
+CDBOperations	DBOperations.cpp	/^CDBOperations::CDBOperations() {$/;"	f	class:CDBOperations
+CDBOperations	DBOperations.h	/^class CDBOperations {$/;"	c
+CEsmeConnection	EsmeConnection.cpp	/^CEsmeConnection::CEsmeConnection():CTcpClient("SMPP",10){$/;"	f	class:CEsmeConnection
+CEsmeConnection	EsmeConnection.hpp	/^class CEsmeConnection:public CTcpClient,public CEsmeClient$/;"	c
+CFLAGS	Makefile	/^CFLAGS = -D __LINUX__  -Wno-deprecated -D LINT_ARGS -g -fPIC -O2 #-fnon-call-exceptions $/;"	m
+CG_CdrClient	EsmeMain.cpp	/^CCdrClient CG_CdrClient;$/;"	v
+CG_Cfg	EsmeMain.cpp	/^CConfiguration CG_Cfg;$/;"	v
+CG_EventLog	EsmeMain.cpp	/^CEventLog CG_EventLog;$/;"	v
+CG_ReceiverQ	EsmeMain.cpp	/^CMsgQue<DeliverToEsme*> CG_ReceiverQ;$/;"	v
+CG_SmppQue	SMPP.cpp	/^CMsgQue<MsgTypes*> CG_SmppQue;$/;"	v
+CG_seqMap	EsmeMain.cpp	/^CMsgMap<int,MsgTypes*> CG_seqMap;$/;"	v
+CMenu	Menu.hpp	/^class CMenu{$/;"	c
+CMenuTree	MenuTree.cpp	/^CMenuTree::CMenuTree()$/;"	f	class:CMenuTree
+CMenuTree	MenuTree.h	/^class CMenuTree$/;"	c
+CO_STATUS	Defines.h	26;"	d
+CReceiver	Receiver.cpp	/^CReceiver::CReceiver(int iL_port,int iL_throwttalSize,std::string CL_ip):CTcpServer(iL_port,CL_ip){$/;"	f	class:CReceiver
+CReceiver	Receiver.hpp	/^class CReceiver:public CTcpServer$/;"	c
+CSmpp	SMPP.cpp	/^CSmpp::CSmpp(int iL_modId){	$/;"	f	class:CSmpp
+CSmpp	SMPP.hpp	/^class CSmpp:public CThread{$/;"	c
+DA	Defines.h	22;"	d
+DBOPERATIONS_H_	DBOperations.h	9;"	d
+DCS	Defines.h	25;"	d
+DELIVERY_REPORT_SMPP	Defines.h	9;"	d
+DELIVER_CIMD	Defines.h	11;"	d
+DELIVER_REPORT_CIMD	Defines.h	13;"	d
+DELIVER_SMRESP_CIMD	Defines.h	17;"	d
+DF_MSGID	Defines.h	29;"	d
+DND_REQUEST	Defines.h	46;"	d
+DND_RESPONSE	Defines.h	47;"	d
+DND_STATUS	Defines.h	40;"	d
+DWORD	Defines.h	/^typedef unsigned long 	DWORD;	\/* Exactly one byte (8 bits) *\/$/;"	t
+Description	MenuTree.cpp	/^        char            Description[50];$/;"	m	struct:NodeData_tag	file:
+DestinationAddr	MenuTree.cpp	/^        char            DestinationAddr[100];$/;"	m	struct:NodeData_tag	file:
+ESM	Defines.h	30;"	d
+ESME_CONNECTION_H	EsmeConnection.hpp	2;"	d
+ESME_ENQUIRE	Defines.h	43;"	d
+ESME_ENQUIRE_ACK	Defines.h	44;"	d
+ESME_MSG_CONFIG	Defines.h	41;"	d
+ESME_MSG_TERMINATE	Defines.h	42;"	d
+EXENAME	Makefile	/^EXENAME=UssdClient.exe$/;"	m
+EXTERNS_H	Externs.h	2;"	d
+GDEFINES	Makefile	/^GDEFINES =$/;"	m
+HEARTBEAT	Defines.h	45;"	d
+INCLUDES	Makefile	/^INCLUDES = -I . -I ..\/USSDInterface\/ -I ..\/Libs\/ -I ..\/ProtoBuf\/ProjectLibs\/ -I \/usr\/local\/include\/mysql++\/ -I\/usr\/include\/mysql\/$/;"	m
+Keyword	MenuTree.cpp	/^        char            Keyword[MAX_UD_LEN];$/;"	m	struct:NodeData_tag	file:
+LIBS	Makefile	/^LIBS =  -L\/usr\/local\/lib -pthread -lcurl -lmysqlpp -lprotoc $/;"	m
+LIB_ARCS	Makefile	/^LIB_ARCS= ..\/USSDInterface\/libUssdInterface.a ..\/Libs\/CommonUtil_1_lnx.a ..\/ProtoBuf\/ProjectLibs\/CmsPFlib_1.0.a $/;"	m
+LOGINRESP	Defines.h	16;"	d
+MAX_DESC_LEN	Defines.h	69;"	d
+MAX_DEST_LEN	Defines.h	71;"	d
+MAX_KEYWORD_LEN	Defines.h	70;"	d
+MAX_SUB_MENU	Defines.h	68;"	d
+MAX_UD_LEN	Defines.h	75;"	d
+MSG_ID	Defines.h	27;"	d
+MSG_USSD_APP_IND	Defines.h	20;"	d
+MSG_USSD_APP_REQ	Defines.h	19;"	d
+MSISDN_LEN	Defines.h	76;"	d
+MenuData	MenuTree.h	/^} MenuData;$/;"	t
+MenuData_Tag	MenuTree.h	/^typedef struct MenuData_Tag$/;"	s
+MenuTreeNode	MenuTree.h	/^	MenuTreeNode()$/;"	f	struct:MenuTreeNode
+MenuTreeNode	MenuTree.h	/^struct MenuTreeNode$/;"	s
+MsgTypes	Externs.h	/^	MsgTypes(){$/;"	f	class:MsgTypes
+MsgTypes	Externs.h	/^class MsgTypes:ITimer{$/;"	c
+NodeData	MenuTree.cpp	/^} NodeData;$/;"	t	file:
+NodeData_tag	MenuTree.cpp	/^typedef struct NodeData_tag$/;"	s	file:
+NodeNature	MenuTree.cpp	/^        char            NodeNature;$/;"	m	struct:NodeData_tag	file:
+OA	Defines.h	23;"	d
+OBJS	Makefile	/^OBJS =$(SRCS:%.cpp=%.o)$/;"	m
+PR_FLAG	Defines.h	32;"	d
+PR_ID	Defines.h	31;"	d
+PSSRMSISDN	Defines.h	49;"	d
+RECEIVER_H_	Receiver.hpp	9;"	d
+REG_DELV	Defines.h	33;"	d
+RELEASE	Defines.h	51;"	d
+RELEASE_DATE	EsmeMain.cpp	6;"	d	file:
+REL_VER	EsmeMain.cpp	5;"	d	file:
+REPL_IF_PR	Defines.h	34;"	d
+SRCS	Makefile	/^SRCS=$(wildcard *.cpp)$/;"	m
+SUBMIT_RESP_CIMD	Defines.h	12;"	d
+SUBMIT_RESP_SMPP	Defines.h	8;"	d
+SUBMIT_SM_CIMD	Defines.h	15;"	d
+SUCCESS	DBOperations.h	12;"	d
+Session	Externs.h	/^}Session;$/;"	t
+SessionTag	Externs.h	/^        SessionTag()$/;"	f	struct:SessionTag
+SessionTag	Externs.h	/^typedef struct SessionTag$/;"	s
+TABLE_NOT_EXIST	DBOperations.h	13;"	d
+UD	Defines.h	24;"	d
+UD_HEADER	Defines.h	35;"	d
+UD_LEN	Defines.h	28;"	d
+USSDAPPREQ	Defines.h	52;"	d
+USSD_DA	Defines.h	36;"	d
+USSD_DCS	Defines.h	39;"	d
+USSD_OA	Defines.h	37;"	d
+USSD_UD	Defines.h	38;"	d
+USSNCNF	Defines.h	63;"	d
+_CSMPP_H_	SMPP.hpp	9;"	d
+_MENU_TREE_H	MenuTree.h	2;"	d
+__CCDRCLIENT_HPP_	CdrClient.hpp	2;"	d
+__CONFIGURATIONS__	Configuration.h	2;"	d
+__DEBUG__	Defines.h	4;"	d
+__DEFINES_H__	Defines.h	2;"	d
+__MENU_H__	Menu.hpp	2;"	d
+description	MenuTree.h	/^	char			description[50];$/;"	m	struct:MenuTreeNode
+destinationAddress	MenuTree.h	/^	char			destinationAddress[100];$/;"	m	struct:MenuTreeNode
+fnG_PrintCompanyBanner	EsmeMain.cpp	/^static void fnG_PrintCompanyBanner(char* pscL_ModuleName,char* pscL_Version)$/;"	f	file:
+itoa	MenuTree.cpp	/^char* itoa(int iL_value, char* pcL_str, int iL_len){$/;"	f
+keyword	MenuTree.h	/^	char			keyword[255];$/;"	m	struct:MenuTreeNode
+link	MenuTree.h	/^	MenuTreeNode	*link[MAX_SUB_MENU];$/;"	m	struct:MenuTreeNode
+main	EsmeMain.cpp	/^int main(int argc, char* argv[]) {$/;"	f
+mcC_SmppClient	SMPP.hpp	/^		CEsmeConnection mcC_SmppClient;$/;"	m	class:CSmpp
+mcfnS_charToLong	Menu.cpp	/^int CMenu::mcfnS_charToLong(const char* pscL_UD, int slL_UDLength)$/;"	f	class:CMenu
+mcfnS_getLeafData	Menu.cpp	/^std::string CMenu::mcfnS_getLeafData(Session *&pCL_session,std::string CL_input,std::string CL_userName,std::string CL_serviceCode,bool &bL_IsLeaf){$/;"	f	class:CMenu
+mcfnS_getMenuNode	Menu.cpp	/^bool CMenu::mcfnS_getMenuNode(std::string CL_userName,std::string CL_serviceCode,CMenuTree*& pCL_menuTree){$/;"	f	class:CMenu
+mcfnS_getRootMenuData	Menu.cpp	/^std::string CMenu::mcfnS_getRootMenuData(std::string CL_userName,std::string CL_serviceCode,std::string CL_msg,Session *&pCL_session){$/;"	f	class:CMenu
+mcfnS_loadMenuMap	Menu.cpp	/^bool CMenu::mcfnS_loadMenuMap(std::string CL_username,std::string CL_seriveCode,CMsgMap<std::string,CMenuTree*> *&pCL_sericeMenuMap,CMenuTree *&pCL_menuTree){$/;"	f	class:CMenu
+mcfnS_loadMenuServiceMap	Menu.cpp	/^bool CMenu::mcfnS_loadMenuServiceMap(std::string CL_username,CMsgMap<std::string,CMenuTree*> *&pCL_sericeMenuMap){$/;"	f	class:CMenu
+mcfn_ChangeIgnoreLetters	DBOperations.cpp	/^std::string CDBOperations::mcfn_ChangeIgnoreLetters(char * pscL_InputTemp)$/;"	f	class:CDBOperations
+mcfn_ExecuteQuery	DBOperations.cpp	/^int CDBOperations::mcfn_ExecuteQuery(std::string psL_Query)$/;"	f	class:CDBOperations
+mcfn_ExecuteQuery	DBOperations.cpp	/^int CDBOperations::mcfn_ExecuteQuery(std::string psL_Query,mysqlpp::StoreQueryResult &CL_Result)$/;"	f	class:CDBOperations
+mcfn_checkForLastNode	MenuTree.cpp	/^bool CMenuTree::mcfn_checkForLastNode(void* nodePtr)$/;"	f	class:CMenuTree
+mcfn_createMenuTree	MenuTree.cpp	/^bool CMenuTree::mcfn_createMenuTree(MenuData* pSL_Root, int slL_ListLen)$/;"	f	class:CMenuTree
+mcfn_createSmppMessage	SMPP.cpp	/^bool CSmpp::mcfn_createSmppMessage(DeliverToEsme *pCL_Msg){$/;"	f	class:CSmpp
+mcfn_getCdrIp	Configuration.h	/^		const char* mcfn_getCdrIp(){return pmesc_CdrIp;}$/;"	f	class:CConfiguration
+mcfn_getCdrPort	Configuration.h	/^		int mcfn_getCdrPort(){return mesi_cdrPort;}$/;"	f	class:CConfiguration
+mcfn_getCdrSecIp	Configuration.h	/^		const char* mcfn_getCdrSecIp(){return pmesc_CdrSecIp;}$/;"	f	class:CConfiguration
+mcfn_getCdrSecPort	Configuration.h	/^		int mcfn_getCdrSecPort(){return mesi_cdrSecPort;}$/;"	f	class:CConfiguration
+mcfn_getDbIp	Configuration.h	/^inline const char* CConfiguration::mcfn_getDbIp(){$/;"	f	class:CConfiguration
+mcfn_getDbName	Configuration.h	/^inline const char* CConfiguration::mcfn_getDbName(){$/;"	f	class:CConfiguration
+mcfn_getDbPassword	Configuration.h	/^inline const char* CConfiguration::mcfn_getDbPassword(){$/;"	f	class:CConfiguration
+mcfn_getDbUserName	Configuration.h	/^inline const char* CConfiguration::mcfn_getDbUserName(){$/;"	f	class:CConfiguration
+mcfn_getLogChangeInterval	Configuration.h	/^inline int CConfiguration::mcfn_getLogChangeInterval(){$/;"	f	class:CConfiguration
+mcfn_getLogLevel	Configuration.h	/^inline int CConfiguration::mcfn_getLogLevel(){$/;"	f	class:CConfiguration
+mcfn_getLogPath	Configuration.h	/^inline const char* CConfiguration::mcfn_getLogPath(){$/;"	f	class:CConfiguration
+mcfn_getMenuList	MenuTree.cpp	/^void CMenuTree::mcfn_getMenuList(void* pSL_ActiveNode, char* pscL_Buffer, bool* pbL_IsLeaf)$/;"	f	class:CMenuTree
+mcfn_getMenuTreeRoot	MenuTree.h	/^void* CMenuTree::mcfn_getMenuTreeRoot()$/;"	f	class:CMenuTree
+mcfn_getModuleId	Configuration.h	/^inline int CConfiguration::mcfn_getModuleId(){$/;"	f	class:CConfiguration
+mcfn_getNumOfWorkerThreads	Configuration.h	/^inline int CConfiguration::mcfn_getNumOfWorkerThreads(){$/;"	f	class:CConfiguration
+mcfn_getThreadName	CdrClient.hpp	/^		std::string mcfn_getThreadName(void*){$/;"	f	class:CCdrClient
+mcfn_getThreadName	SMPP.cpp	/^std::string CSmpp::mcfn_getThreadName(void* vL_arg)$/;"	f	class:CSmpp
+mcfn_getUssdTimeout	Configuration.h	/^inline int CConfiguration::mcfn_getUssdTimeout(){$/;"	f	class:CConfiguration
+mcfn_loadConfigurations	Configuration.cpp	/^bool CConfiguration::mcfn_loadConfigurations(){$/;"	f	class:CConfiguration
+mcfn_loadConfigurations	SMPP.cpp	/^bool CSmpp::mcfn_loadConfigurations(int iL_modId){$/;"	f	class:CSmpp
+mcfn_loadEsmeDetails	SMPP.cpp	/^int CSmpp::mcfn_loadEsmeDetails(int iL_modId){$/;"	f	class:CSmpp
+mcfn_loadSmscDetails	SMPP.cpp	/^bool  CSmpp::mcfn_loadSmscDetails(int iL_smscId){$/;"	f	class:CSmpp
+mcfn_onAccept	Receiver.cpp	/^bool CReceiver::mcfn_onAccept(CSTSSocket *pCL_conn){$/;"	f	class:CReceiver
+mcfn_onConnect	CdrClient.hpp	/^		bool mcfn_onConnect(){$/;"	f	class:CCdrClient
+mcfn_onConnect	EsmeConnection.cpp	/^bool CEsmeConnection::mcfn_onConnect(){$/;"	f	class:CEsmeConnection
+mcfn_onDisconnect	Receiver.cpp	/^bool CReceiver::mcfn_onDisconnect(CSTSSocket*){$/;"	f	class:CReceiver
+mcfn_onReceiveData	Receiver.cpp	/^bool CReceiver::mcfn_onReceiveData(std::string CL_data,int,CSTSSocket* pCL_conn){$/;"	f	class:CReceiver
+mcfn_onTimerExpiry	Externs.h	/^	void mcfn_onTimerExpiry(void *p){$/;"	f	class:MsgTypes
+mcfn_onUsddContinue	EsmeConnection.cpp	/^bool CEsmeConnection::mcfn_onUsddContinue(CHeader& CL_header,u8* pu8L_param,int iL_len){$/;"	f	class:CEsmeConnection
+mcfn_onUssdAbort	EsmeConnection.cpp	/^bool CEsmeConnection::mcfn_onUssdAbort(CHeader& CL_header){$/;"	f	class:CEsmeConnection
+mcfn_onUssdBegin	EsmeConnection.cpp	/^bool CEsmeConnection::mcfn_onUssdBegin(CHeader& CL_header,u8* pu8L_param,int){$/;"	f	class:CEsmeConnection
+mcfn_onUssdBindResp	EsmeConnection.cpp	/^bool CEsmeConnection::mcfn_onUssdBindResp(CHeader& CL_header,u8* pu8L_param,int iL_len){$/;"	f	class:CEsmeConnection
+mcfn_onUssdChargingIndRes	EsmeConnection.cpp	/^bool CEsmeConnection::mcfn_onUssdChargingIndRes(CHeader&){$/;"	f	class:CEsmeConnection
+mcfn_onUssdEnd	EsmeConnection.cpp	/^bool CEsmeConnection::mcfn_onUssdEnd(CHeader& CL_header,u8* pu8L_param,int iL_len){$/;"	f	class:CEsmeConnection
+mcfn_onUssdShake	EsmeConnection.cpp	/^bool CEsmeConnection::mcfn_onUssdShake(CHeader&){$/;"	f	class:CEsmeConnection
+mcfn_onUssdShakeResp	EsmeConnection.cpp	/^bool CEsmeConnection::mcfn_onUssdShakeResp(CHeader&){$/;"	f	class:CEsmeConnection
+mcfn_onUssdSwitch	EsmeConnection.cpp	/^bool  CEsmeConnection:: mcfn_onUssdSwitch(CHeader&,u8*,int){$/;"	f	class:CEsmeConnection
+mcfn_onUssdUnbindResp	EsmeConnection.cpp	/^bool CEsmeConnection::mcfn_onUssdUnbindResp(CHeader& CL_pdu) {$/;"	f	class:CEsmeConnection
+mcfn_processReceivedMsgs	SMPP.cpp	/^bool CSmpp::mcfn_processReceivedMsgs(void *p){$/;"	f	class:CSmpp
+mcfn_receiveData	EsmeConnection.cpp	/^bool CEsmeConnection::mcfn_receiveData(){$/;"	f	class:CEsmeConnection
+mcfn_run	CdrClient.cpp	/^bool CCdrClient::mcfn_run(int iL_threadId,void *vL_arg){$/;"	f	class:CCdrClient
+mcfn_run	SMPP.cpp	/^bool CSmpp::mcfn_run(int iL_threadId,void *vL_arg){$/;"	f	class:CSmpp
+mcfn_sendMsgToCdr	CdrClient.cpp	/^bool CCdrClient::mcfn_sendMsgToCdr(DeliverToEsme *pCL_msg){$/;"	f	class:CCdrClient
+mcfn_sendMsgToServer	EsmeConnection.cpp	/^bool CEsmeConnection::mcfn_sendMsgToServer( u8* buf, int len){$/;"	f	class:CEsmeConnection
+mcfn_sendSmppMsgsToSmsc	SMPP.cpp	/^bool  CSmpp::mcfn_sendSmppMsgsToSmsc(void *p){$/;"	f	class:CSmpp
+mcfn_sendThrottleMessage	Receiver.cpp	/^bool CReceiver::mcfn_sendThrottleMessage(int iL_throttleStatus){$/;"	f	class:CReceiver
+mcsc_Description	MenuTree.h	/^	char	mcsc_Description[MAX_DESC_LEN];$/;"	m	struct:MenuData_Tag
+mcsc_DestinationAddress	MenuTree.h	/^	char	mcsc_DestinationAddress[100];$/;"	m	struct:MenuData_Tag
+mcsc_Keyword	MenuTree.h	/^	char	mcsc_Keyword[MAX_KEYWORD_LEN];$/;"	m	struct:MenuData_Tag
+mcsc_NodeNature	MenuTree.h	/^	char	mcsc_NodeNature;$/;"	m	struct:MenuData_Tag
+mcsi_MsgPerSec	SMPP.hpp	/^		int mcsi_MsgPerSec;$/;"	m	class:CSmpp
+mcsi_seqNum	Externs.h	/^	int mcsi_seqNum;$/;"	m	class:MsgTypes
+mcsl_MenuId	MenuTree.h	/^	int		mcsl_MenuId;$/;"	m	struct:MenuData_Tag
+mcsl_Order	MenuTree.h	/^	int		mcsl_Order;$/;"	m	struct:MenuData_Tag
+mcsl_ParentId	MenuTree.h	/^	int		mcsl_ParentId;$/;"	m	struct:MenuData_Tag
+mcui_SerianNo	Externs.h	/^        unsigned int mcui_SerianNo;$/;"	m	struct:SessionTag
+meC_cdrQue	CdrClient.hpp	/^		CMsgQue <CdrMsg*> meC_cdrQue;$/;"	m	class:CCdrClient
+meC_connVec	Receiver.hpp	/^		std::vector<CSTSSocket*> meC_connVec;$/;"	m	class:CReceiver
+meb_isThrowtteled	Receiver.hpp	/^		bool meb_isThrowtteled;$/;"	m	class:CReceiver
+mefn_deleteMenuTree	MenuTree.cpp	/^void CMenuTree::mefn_deleteMenuTree(MenuTreeNode** pSL_Start)$/;"	f	class:CMenuTree
+mefn_getMenuDescription	MenuTree.cpp	/^void CMenuTree::mefn_getMenuDescription(MenuTreeNode* pSL_Node, char* pscL_Buffer)$/;"	f	class:CMenuTree
+mefn_loadTree	MenuTree.cpp	/^void CMenuTree::mefn_loadTree(MenuData *pSL_Root,int slL_ListLen, MenuTreeNode** pRoot,int slL_ParentId)$/;"	f	class:CMenuTree
+mesi_ThrowttleSize	Receiver.hpp	/^		int mesi_ThrowttleSize;$/;"	m	class:CReceiver
+mesi_cdrPort	Configuration.h	/^		int mesi_cdrPort;$/;"	m	class:CConfiguration
+mesi_cdrSecPort	Configuration.h	/^		int mesi_cdrSecPort;$/;"	m	class:CConfiguration
+mesi_logFileChangeInterval	Configuration.h	/^		int mesi_logFileChangeInterval;$/;"	m	class:CConfiguration
+mesi_logLevel	Configuration.h	/^		int mesi_logLevel;$/;"	m	class:CConfiguration
+mesi_moduleId	Configuration.h	/^		int mesi_moduleId;$/;"	m	class:CConfiguration
+mesi_numOfWorkerThreads	Configuration.h	/^		int mesi_numOfWorkerThreads;$/;"	m	class:CConfiguration
+mesi_ussdTimeout	Configuration.h	/^		int mesi_ussdTimeout;$/;"	m	class:CConfiguration
+nodeNature	MenuTree.h	/^	char			nodeNature;$/;"	m	struct:MenuTreeNode
+pCG_Smpp	EsmeMain.cpp	/^CSmpp *pCG_Smpp=NULL;$/;"	v
+pCG_menuMap	EsmeMain.cpp	/^CMsgMap<std::string,CMsgMap<std::string,CMenuTree*>*> *pCG_menuMap=NULL;$/;"	v
+pmcC_EsmeMsg	Externs.h	/^	DeliverToEsme *pmcC_EsmeMsg;	$/;"	m	class:MsgTypes
+pmcC_Receiver	SMPP.hpp	/^		CReceiver *pmcC_Receiver;	$/;"	m	class:CSmpp
+pmcC_Session	Externs.h	/^	Session *pmcC_Session;$/;"	m	class:MsgTypes
+pmcv_ActiveNode	Externs.h	/^        void *pmcv_ActiveNode;$/;"	m	struct:SessionTag
+pmeS_currentNode	MenuTree.h	/^	MenuTreeNode		*pmeS_currentNode;$/;"	m	class:CMenuTree
+pmeS_startNode	MenuTree.h	/^	MenuTreeNode		*pmeS_startNode;$/;"	m	class:CMenuTree
+pmesc_CdrIp	Configuration.h	/^		char pmesc_CdrIp[40];$/;"	m	class:CConfiguration
+pmesc_CdrSecIp	Configuration.h	/^		char pmesc_CdrSecIp[40];$/;"	m	class:CConfiguration
+pmesc_dbIp	Configuration.h	/^		char pmesc_dbIp[40];$/;"	m	class:CConfiguration
+pmesc_dbName	Configuration.h	/^		char pmesc_dbName[40];$/;"	m	class:CConfiguration
+pmesc_dbPassword	Configuration.h	/^		char pmesc_dbPassword[40];$/;"	m	class:CConfiguration
+pmesc_dbUserName	Configuration.h	/^		char pmesc_dbUserName[40];$/;"	m	class:CConfiguration
+pmesc_logPath	Configuration.h	/^		char pmesc_logPath[1024];$/;"	m	class:CConfiguration
+previousNode	MenuTree.h	/^	MenuTreeNode	*previousNode;$/;"	m	struct:MenuTreeNode
+s16	Defines.h	/^typedef short  s16;		\/* Exactly 2 bytes (16 bits) *\/$/;"	t
+s32	Defines.h	/^typedef long   s32;		\/* Exactly 4 bytes (32 bits) *\/$/;"	t
+s8	Defines.h	/^typedef char   s8;		\/* Exactly one byte (8 bits) *\/$/;"	t
+u16	Defines.h	/^typedef unsigned short	u16;	\/* Exactly 2 bytes (16 bits) *\/$/;"	t
+u32	Defines.h	/^typedef unsigned long	u32;	\/* Exactly 4 bytes (32 bits) *\/$/;"	t
+u8	Defines.h	/^typedef unsigned char	u8;	\/* Exactly one byte (8 bits) *\/$/;"	t
+~CDBOperations	DBOperations.cpp	/^CDBOperations::~CDBOperations() {$/;"	f	class:CDBOperations
+~CEsmeConnection	EsmeConnection.cpp	/^CEsmeConnection::~CEsmeConnection(){$/;"	f	class:CEsmeConnection
+~CMenuTree	MenuTree.cpp	/^CMenuTree::~CMenuTree()$/;"	f	class:CMenuTree
+~CReceiver	Receiver.cpp	/^CReceiver::~CReceiver(){$/;"	f	class:CReceiver
+~MsgTypes	Externs.h	/^	~MsgTypes(){$/;"	f	class:MsgTypes

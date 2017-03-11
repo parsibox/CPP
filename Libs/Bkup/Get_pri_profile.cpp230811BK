@@ -1,0 +1,195 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+#include "Get_pri_profile.h"
+
+unsigned long GetPrivateProfileSection(char *pscL_Sec,char *pscL_Data,unsigned long ulL_Size,char *pscL_Filename)
+{
+	
+	if((pscL_Sec == NULL) || (pscL_Filename ==NULL) || (pscL_Data == NULL) || (ulL_Size <= 0))
+		return 0;
+
+	FILE *fp;
+	char scL_Section[100];
+
+	if(strlen(pscL_Sec) > 96)
+		return 0;
+
+
+	fp=fopen(pscL_Filename,"r");
+	
+	if(fp==NULL)
+	{
+		return 0;
+	}
+	
+	scL_Section[0]='[';
+	scL_Section[1]='\0';
+	strcat(scL_Section,pscL_Sec);
+	strcat(scL_Section,"]");
+	
+	char scL_Databuffer[100];
+	char *pscL_Delimiter = pscL_Data;
+	char *pscL_DataBuffer;
+	unsigned long ulL_Len;
+	
+	int ulL_SecLen = 0;
+	unsigned long ulL_Length = 0x00;
+	fgets(scL_Databuffer,100,fp);
+	while(!feof(fp))
+	{
+		if(scL_Databuffer[0]=='[')
+		{
+			ulL_SecLen = strlen(scL_Databuffer);
+			
+			if(scL_Databuffer[ulL_SecLen - 1] == '\n')
+				ulL_SecLen--;
+
+			if(scL_Databuffer[ulL_SecLen - 1] == '\r')
+				ulL_SecLen--;
+
+			scL_Databuffer[ulL_SecLen] = '\0';
+
+			if(strcmp(scL_Databuffer,scL_Section)==0)
+			{
+				fgets(scL_Databuffer,100,fp);
+				while(scL_Databuffer[0]!='[')
+				{
+					pscL_DataBuffer = scL_Databuffer;
+
+					while(*pscL_DataBuffer == ' ' || *pscL_DataBuffer == '\t' || *pscL_DataBuffer == '\n')
+						pscL_DataBuffer++;
+
+					if(pscL_DataBuffer[0] != '\0')
+					{
+						if(ulL_Length >= (ulL_Size - 1))
+						{
+							*pscL_Delimiter++='\0';
+							fclose(fp);
+							return ++ulL_Length;
+						}
+						ulL_Len=strlen(pscL_DataBuffer);
+
+						if(pscL_DataBuffer[ulL_Len - 1] == '\n')
+							ulL_Len--;
+
+						if(pscL_DataBuffer[ulL_Len - 1] == '\r')
+							ulL_Len--;
+
+						ulL_Length = ulL_Length + ulL_Len + 1;
+						strcpy(pscL_Delimiter,pscL_DataBuffer);
+						pscL_Delimiter[ulL_Len] = '\0';
+						pscL_Delimiter= pscL_Delimiter + ulL_Len + 1;
+					}
+					fgets(scL_Databuffer,100,fp);
+					if(feof(fp))
+						break;
+				}
+				break; 
+			}
+		}
+	fgets(scL_Databuffer,100,fp);
+	}
+    fclose(fp);
+	return ulL_Length; 
+}
+
+
+
+unsigned long GetPrivateProfileString(char *pscL_Sec,char *pscL_Key,char *pscL_Defaultstr, char *pscL_Data,unsigned long ulL_Size,char *pscL_Filename)
+{
+	
+	if((pscL_Sec == NULL) || (pscL_Key == NULL) || (pscL_Defaultstr == NULL) || (pscL_Filename ==NULL) || (pscL_Data == NULL) || (ulL_Size <= 0))
+		return 0;
+	FILE *fp;
+	char scL_Section[100];
+
+	if(strlen(pscL_Sec) > 96)
+	   return 0;
+    
+	fp=fopen(pscL_Filename,"r");
+
+	if(fp==NULL)
+	{
+	  return 0;
+	}
+
+	
+	scL_Section[0]='[';
+	scL_Section[1]='\0';
+	strcat(scL_Section,pscL_Sec);
+	strcat(scL_Section,"]");
+	
+	char scL_Databuffer[100];
+	char *pscL_Delimiter;
+	char *pscL_DataBuffer;
+	unsigned long ulL_Len=0;
+	strcpy(pscL_Data,pscL_Defaultstr);
+	int ulL_SecLen = 0;
+	fgets(scL_Databuffer,100,fp);
+	while(!feof(fp))
+	{
+		if(scL_Databuffer[0]=='[')
+		{
+			ulL_SecLen = strlen(scL_Databuffer);
+			
+			if(scL_Databuffer[ulL_SecLen - 1] == '\n')
+				ulL_SecLen--;
+
+			if(scL_Databuffer[ulL_SecLen - 1] == '\r')
+				ulL_SecLen--;
+
+			scL_Databuffer[ulL_SecLen] = '\0';
+
+			if(strcmp(scL_Databuffer,scL_Section)==0)
+			{
+				fgets(scL_Databuffer,100,fp);
+
+				while(scL_Databuffer[0] != '[')
+				{
+					pscL_DataBuffer = scL_Databuffer;
+
+					while(*pscL_DataBuffer == ' ' || *pscL_DataBuffer == '\t' || *pscL_DataBuffer == '\n')
+						pscL_DataBuffer++;
+
+					if(pscL_DataBuffer[0] != '\0')
+					{
+						pscL_Delimiter = strchr(pscL_DataBuffer,'=');
+						if(pscL_Delimiter != NULL)
+						{
+							*pscL_Delimiter = '\0';
+							pscL_Delimiter++;
+							if(strcmp(pscL_DataBuffer,pscL_Key) == 0)
+							{
+								ulL_Len = strlen(pscL_Delimiter);
+								if(pscL_Delimiter[ulL_Len - 1] == '\n')
+									ulL_Len--;
+
+								if(pscL_Delimiter[ulL_Len - 1] == '\r')
+									ulL_Len--;
+
+								if(ulL_Len > (ulL_Size - 1))
+									ulL_Len = ulL_Size -1;
+								if(ulL_Len != 0)
+									strncpy(pscL_Data,pscL_Delimiter,ulL_Len);
+								pscL_Data[ulL_Len] = '\0';
+								fclose(fp);
+								return (ulL_Len);
+							}
+						}
+					}
+					fgets(scL_Databuffer,100,fp);
+					if(feof(fp))
+						break;
+				}
+			}
+		}
+	fgets(scL_Databuffer,100,fp);
+	}
+	fclose(fp);
+    return (ulL_Len);
+}
+
+
+
+

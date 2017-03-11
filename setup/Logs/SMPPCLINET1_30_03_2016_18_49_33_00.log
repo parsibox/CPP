@@ -1,0 +1,216 @@
+[SMPPCLINET1|EsmeMain.cpp|00150|30-03-2016 18:49:33:772|~IN~]Version:V1.0
+[SMPPCLINET1|EsmeMain.cpp|00151|30-03-2016 18:49:33:772|~IN~]Release Date:05-Apr-2014
+[SMPPCLINET1|DBPoolManager.cpp|00013|30-03-2016 18:49:33:772|~IN~]Creating PoolManager object...
+[SMPPCLINET1|DBPoolManager.cpp|00024|30-03-2016 18:49:33:772|~VB~]CDBPoolManager::mcfn_AddDB >>
+[SMPPCLINET1|DBPoolManager.cpp|00029|30-03-2016 18:49:33:772|~VB~]CDBPoolManager::mcfn_AddDB <<
+[SMPPCLINET1|EsmeMain.cpp|00155|30-03-2016 18:49:33:772|~VB~]PoolMgr Size:1
+[SMPPCLINET1|Thread.cpp|00071|30-03-2016 18:49:33:787|~CR~]Started PrecessReceivedSmppPacketThread Thread:0
+[SMPPCLINET1|DBConnPool.h|00049|30-03-2016 18:49:34:775|~VB~]Creating connection object
+[SMPPCLINET1|DBPoolManager.cpp|00063|30-03-2016 18:49:34:778|~VB~]mesi_CurrentActiveIdx:0
+[SMPPCLINET1|DBOperations.cpp|00085|30-03-2016 18:49:34:778|~VB~]DBConn:148044800,Idx:0
+[SMPPCLINET1|DBOperations.cpp|00089|30-03-2016 18:49:34:778|~VB~]Executing Query:SELECT * from esme_details WHERE ESME_ID=1 limit 1
+[SMPPCLINET1|DBOperations.cpp|00092|30-03-2016 18:49:34:779|~VB~]Executed SuccessFully
+[SMPPCLINET1|DBPoolManager.cpp|00063|30-03-2016 18:49:34:779|~VB~]mesi_CurrentActiveIdx:0
+[SMPPCLINET1|DBOperations.cpp|00085|30-03-2016 18:49:34:779|~VB~]DBConn:148044800,Idx:0
+[SMPPCLINET1|DBOperations.cpp|00089|30-03-2016 18:49:34:779|~VB~]Executing Query:SELECT * from smsc_details WHERE SMSC_ID=1 limit 1
+[SMPPCLINET1|TcpServer.cpp|00165|30-03-2016 18:49:34:779|~IN~]PublisherStartServerThread started...
+[SMPPCLINET1|DBOperations.cpp|00092|30-03-2016 18:49:34:852|~VB~]Executed SuccessFully
+[SMPPCLINET1|SMPP.cpp|00027|30-03-2016 18:49:34:852|~IN~]Loaded initial configuration sucessfully:1
+[SMPPCLINET1|TcpClient.cpp|00083|30-03-2016 18:49:34:852|~IN~]Started mcfn_connectToSMPPThread
+[SMPPCLINET1|TcpClient.cpp|00171|30-03-2016 18:49:34:852|~ER~][0]Error in Connecting to SMPP [127.0.0.1:3014]
+[SMPPCLINET1|Thread.cpp|00071|30-03-2016 18:49:34:852|~CR~]Started ProcessReceivedMsgsThread Thread:0
+[SMPPCLINET1|SMPP.cpp|00101|30-03-2016 18:49:34:852|~IN~]Started processReceivedMsgs Thread
+[SMPPCLINET1|TcpServer.cpp|00202|30-03-2016 18:49:35:837|~IN~] Client connected from Publisher
+[SMPPCLINET1|TcpServer.cpp|00223|30-03-2016 18:49:35:837|~IN~]Started PublisherClientThread[0x8d41a68]
+[SMPPCLINET1|TcpServer.cpp|00093|30-03-2016 18:49:35:837|~VB~]Receiveing From Publisher
+[SMPPCLINET1|Thread.cpp|00071|30-03-2016 18:49:35:853|~CR~]Started SendMsgToSmscThread Thread:1
+[SMPPCLINET1|SMPP.cpp|00126|30-03-2016 18:49:35:853|~IN~]Started sendSmppMsgsToSmsc Thread
+[SMPPCLINET1|TcpClient.cpp|00171|30-03-2016 18:49:35:854|~ER~][1]Error in Connecting to SMPP [127.0.0.1:3014]
+[SMPPCLINET1|TcpClient.cpp|00171|30-03-2016 18:49:36:858|~ER~][2]Error in Connecting to SMPP [127.0.0.1:3014]
+[SMPPCLINET1|Thread.cpp|00071|30-03-2016 18:49:36:858|~CR~]Started RetryThread Thread:0
+[SMPPCLINET1|TcpServer.cpp|00098|30-03-2016 18:49:37:844|~ER~]Publisher Socket Disconnected : 0
+[SMPPCLINET1|TcpServer.cpp|00228|30-03-2016 18:49:37:844|~ER~]Clint Has Discoonected From Publisher
+[SMPPCLINET1|Receiver.cpp|00039|30-03-2016 18:49:37:844|~IN~]Client disconnected with Deliver module:148118120
+[SMPPCLINET1|Receiver.cpp|00040|30-03-2016 18:49:37:844|~IN~]Removing connection : 148118120 Size Of Vector:1
+[SMPPCLINET1|Receiver.cpp|00049|30-03-2016 18:49:37:844|~IN~]After Removing Size Of Vector:0
+[SMPPCLINET1|TcpServer.cpp|00245|30-03-2016 18:49:37:844|~CR~]Clinet Publisher Disconnected
+[SMPPCLINET1|RetryPlaner.cpp|00018|30-03-2016 18:49:37:859|~IN~]Loading retry plan from configuation
+[SMPPCLINET1|DBConnPool.h|00084|30-03-2016 18:49:37:859|~IN~]Destroying the db connection
+[SMPPCLINET1|DBConnPool.h|00049|30-03-2016 18:49:37:859|~VB~]Creating connection object
+[SMPPCLINET1|TcpClient.cpp|00171|30-03-2016 18:49:37:859|~ER~][3]Error in Connecting to SMPP [127.0.0.1:3014]
+[SMPPCLINET1|DBPoolManager.cpp|00063|30-03-2016 18:49:37:859|~VB~]mesi_CurrentActiveIdx:0
+[SMPPCLINET1|DBOperations.cpp|00085|30-03-2016 18:49:37:859|~VB~]DBConn:148046216,Idx:0
+[SMPPCLINET1|DBOperations.cpp|00089|30-03-2016 18:49:37:860|~VB~]Executing Query:SELECT * from menu_retry_plan WHERE status='A'
+[SMPPCLINET1|DBOperations.cpp|00092|30-03-2016 18:49:37:912|~VB~]Executed SuccessFully
+[SMPPCLINET1|RetryPlaner.cpp|00027|30-03-2016 18:49:37:912|~IN~]retry plans are configured :1
+[SMPPCLINET1|RetryPlaner.cpp|00053|30-03-2016 18:49:37:912|~IN~]plan interval ration:1:1,interval  :10
+[SMPPCLINET1|RetryPlaner.cpp|00101|30-03-2016 18:49:37:912|~IN~]Loading planner configurations
+[SMPPCLINET1|DBPoolManager.cpp|00063|30-03-2016 18:49:37:912|~VB~]mesi_CurrentActiveIdx:0
+[SMPPCLINET1|DBOperations.cpp|00085|30-03-2016 18:49:37:912|~VB~]DBConn:148046216,Idx:0
+[SMPPCLINET1|DBOperations.cpp|00089|30-03-2016 18:49:37:912|~VB~]Executing Query:SELECT * from plan_profile WHERE  STATUS='A'
+[SMPPCLINET1|DBOperations.cpp|00092|30-03-2016 18:49:37:928|~VB~]Executed SuccessFully
+[SMPPCLINET1|RetryPlaner.cpp|00110|30-03-2016 18:49:37:928|~IN~]plan profiles are configured :1
+[SMPPCLINET1|Thread.cpp|00071|30-03-2016 18:49:37:928|~CR~]Started CdrSendThread Thread:0
+[SMPPCLINET1|TcpClient.cpp|00171|30-03-2016 18:49:38:862|~ER~][4]Error in Connecting to SMPP [127.0.0.1:3014]
+[SMPPCLINET1|EsmeMain.cpp|00062|30-03-2016 18:49:38:930|~IN~]loading MO Menus starts
+[SMPPCLINET1|DBPoolManager.cpp|00063|30-03-2016 18:49:38:930|~VB~]mesi_CurrentActiveIdx:0
+[SMPPCLINET1|DBOperations.cpp|00085|30-03-2016 18:49:38:930|~VB~]DBConn:148046216,Idx:0
+[SMPPCLINET1|DBOperations.cpp|00089|30-03-2016 18:49:38:930|~VB~]Executing Query:SELECT * from mo_menu_map WHERE  STATUS = 'A'
+[SMPPCLINET1|TcpClient.cpp|00083|30-03-2016 18:49:38:931|~IN~]Started mcfn_connectToCdrServerThread
+[SMPPCLINET1|TcpClient.cpp|00175|30-03-2016 18:49:38:931|~VB~][0]Connected to CdrServer[127.0.0.1:4141]
+[SMPPCLINET1|TcpClient.cpp|00134|30-03-2016 18:49:38:931|~VB~]Receiveing From CdrServer
+[SMPPCLINET1|DBOperations.cpp|00097|30-03-2016 18:49:38:931|~ER~]Error in executing query for tasklist[1054]:Unknown column 'STATUS' in 'where clause'
+[SMPPCLINET1|EsmeMain.cpp|00095|30-03-2016 18:49:38:932|~IN~]loading MO Menus Ends
+[SMPPCLINET1|TcpServer.cpp|00165|30-03-2016 18:49:38:932|~IN~]RELOADStartServerThread started...
+[SMPPCLINET1|TcpClient.cpp|00171|30-03-2016 18:49:39:864|~ER~][5]Error in Connecting to SMPP [127.0.0.1:3014]
+[SMPPCLINET1|TcpClient.cpp|00171|30-03-2016 18:49:40:867|~ER~][6]Error in Connecting to SMPP [127.0.0.1:3014]
+[SMPPCLINET1|TcpClient.cpp|00171|30-03-2016 18:49:41:869|~ER~][7]Error in Connecting to SMPP [127.0.0.1:3014]
+[SMPPCLINET1|TcpClient.cpp|00171|30-03-2016 18:49:42:870|~ER~][8]Error in Connecting to SMPP [127.0.0.1:3014]
+[SMPPCLINET1|TcpClient.cpp|00171|30-03-2016 18:49:43:872|~ER~][9]Error in Connecting to SMPP [127.0.0.1:3014]
+[SMPPCLINET1|TcpClient.cpp|00171|30-03-2016 18:49:44:874|~ER~][0]Error in Connecting to SMPP [127.0.0.1:3014]
+[SMPPCLINET1|TcpClient.cpp|00171|30-03-2016 18:49:45:876|~ER~][1]Error in Connecting to SMPP [127.0.0.1:3014]
+[SMPPCLINET1|TcpClient.cpp|00171|30-03-2016 18:49:46:878|~ER~][2]Error in Connecting to SMPP [127.0.0.1:3014]
+[SMPPCLINET1|TcpClient.cpp|00171|30-03-2016 18:49:47:880|~ER~][3]Error in Connecting to SMPP [127.0.0.1:3014]
+[SMPPCLINET1|TcpClient.cpp|00171|30-03-2016 18:49:48:883|~ER~][4]Error in Connecting to SMPP [127.0.0.1:3014]
+[SMPPCLINET1|TcpClient.cpp|00171|30-03-2016 18:49:49:884|~ER~][5]Error in Connecting to SMPP [127.0.0.1:3014]
+[SMPPCLINET1|TcpClient.cpp|00171|30-03-2016 18:49:50:886|~ER~][6]Error in Connecting to SMPP [127.0.0.1:3014]
+[SMPPCLINET1|TcpClient.cpp|00171|30-03-2016 18:49:51:888|~ER~][7]Error in Connecting to SMPP [127.0.0.1:3014]
+[SMPPCLINET1|TcpClient.cpp|00171|30-03-2016 18:49:52:890|~ER~][8]Error in Connecting to SMPP [127.0.0.1:3014]
+[SMPPCLINET1|TcpClient.cpp|00171|30-03-2016 18:49:53:892|~ER~][9]Error in Connecting to SMPP [127.0.0.1:3014]
+[SMPPCLINET1|TcpClient.cpp|00171|30-03-2016 18:49:54:894|~ER~][0]Error in Connecting to SMPP [127.0.0.1:3014]
+[SMPPCLINET1|TcpClient.cpp|00171|30-03-2016 18:49:55:897|~ER~][1]Error in Connecting to SMPP [127.0.0.1:3014]
+[SMPPCLINET1|TcpClient.cpp|00171|30-03-2016 18:49:56:900|~ER~][2]Error in Connecting to SMPP [127.0.0.1:3014]
+[SMPPCLINET1|TcpClient.cpp|00171|30-03-2016 18:49:57:902|~ER~][3]Error in Connecting to SMPP [127.0.0.1:3014]
+[SMPPCLINET1|TcpClient.cpp|00171|30-03-2016 18:49:58:904|~ER~][4]Error in Connecting to SMPP [127.0.0.1:3014]
+[SMPPCLINET1|TcpClient.cpp|00171|30-03-2016 18:49:59:906|~ER~][5]Error in Connecting to SMPP [127.0.0.1:3014]
+[SMPPCLINET1|TcpClient.cpp|00171|30-03-2016 18:50:00:908|~ER~][6]Error in Connecting to SMPP [127.0.0.1:3014]
+[SMPPCLINET1|TcpClient.cpp|00171|30-03-2016 18:50:01:909|~ER~][7]Error in Connecting to SMPP [127.0.0.1:3014]
+[SMPPCLINET1|TcpClient.cpp|00171|30-03-2016 18:50:02:911|~ER~][8]Error in Connecting to SMPP [127.0.0.1:3014]
+[SMPPCLINET1|TcpClient.cpp|00171|30-03-2016 18:50:03:914|~ER~][9]Error in Connecting to SMPP [127.0.0.1:3014]
+[SMPPCLINET1|TcpClient.cpp|00171|30-03-2016 18:50:04:915|~ER~][0]Error in Connecting to SMPP [127.0.0.1:3014]
+[SMPPCLINET1|TcpClient.cpp|00171|30-03-2016 18:50:05:917|~ER~][1]Error in Connecting to SMPP [127.0.0.1:3014]
+140000008300000000000000ffffffffffffffff
+[SMPPCLINET1|TcpClient.cpp|00171|30-03-2016 18:50:06:919|~ER~][2]Error in Connecting to SMPP [127.0.0.1:3014]
+[SMPPCLINET1|TcpClient.cpp|00171|30-03-2016 18:50:07:921|~ER~][3]Error in Connecting to SMPP [127.0.0.1:3014]
+[SMPPCLINET1|TcpClient.cpp|00171|30-03-2016 18:50:08:923|~ER~][4]Error in Connecting to SMPP [127.0.0.1:3014]
+[SMPPCLINET1|TcpClient.cpp|00171|30-03-2016 18:50:09:924|~ER~][5]Error in Connecting to SMPP [127.0.0.1:3014]
+[SMPPCLINET1|TcpClient.cpp|00171|30-03-2016 18:50:10:926|~ER~][6]Error in Connecting to SMPP [127.0.0.1:3014]
+[SMPPCLINET1|TcpClient.cpp|00171|30-03-2016 18:50:11:928|~ER~][7]Error in Connecting to SMPP [127.0.0.1:3014]
+[SMPPCLINET1|TcpClient.cpp|00171|30-03-2016 18:50:12:929|~ER~][8]Error in Connecting to SMPP [127.0.0.1:3014]
+[SMPPCLINET1|TcpClient.cpp|00171|30-03-2016 18:50:13:931|~ER~][9]Error in Connecting to SMPP [127.0.0.1:3014]
+[SMPPCLINET1|TcpClient.cpp|00171|30-03-2016 18:50:14:933|~ER~][0]Error in Connecting to SMPP [127.0.0.1:3014]
+[SMPPCLINET1|TcpClient.cpp|00171|30-03-2016 18:50:15:936|~ER~][1]Error in Connecting to SMPP [127.0.0.1:3014]
+[SMPPCLINET1|TcpClient.cpp|00171|30-03-2016 18:50:16:937|~ER~][2]Error in Connecting to SMPP [127.0.0.1:3014]
+[SMPPCLINET1|TcpClient.cpp|00171|30-03-2016 18:50:17:939|~ER~][3]Error in Connecting to SMPP [127.0.0.1:3014]
+[SMPPCLINET1|TcpClient.cpp|00171|30-03-2016 18:50:18:941|~ER~][4]Error in Connecting to SMPP [127.0.0.1:3014]
+[SMPPCLINET1|TcpClient.cpp|00171|30-03-2016 18:50:19:943|~ER~][5]Error in Connecting to SMPP [127.0.0.1:3014]
+[SMPPCLINET1|TcpClient.cpp|00171|30-03-2016 18:50:20:945|~ER~][6]Error in Connecting to SMPP [127.0.0.1:3014]
+[SMPPCLINET1|TcpClient.cpp|00171|30-03-2016 18:50:21:946|~ER~][7]Error in Connecting to SMPP [127.0.0.1:3014]
+[SMPPCLINET1|TcpClient.cpp|00171|30-03-2016 18:50:22:949|~ER~][8]Error in Connecting to SMPP [127.0.0.1:3014]
+[SMPPCLINET1|TcpClient.cpp|00171|30-03-2016 18:50:23:951|~ER~][9]Error in Connecting to SMPP [127.0.0.1:3014]
+[SMPPCLINET1|TcpClient.cpp|00171|30-03-2016 18:50:24:953|~ER~][0]Error in Connecting to SMPP [127.0.0.1:3014]
+[SMPPCLINET1|TcpClient.cpp|00171|30-03-2016 18:50:25:956|~ER~][1]Error in Connecting to SMPP [127.0.0.1:3014]
+[SMPPCLINET1|TcpClient.cpp|00171|30-03-2016 18:50:26:958|~ER~][2]Error in Connecting to SMPP [127.0.0.1:3014]
+[SMPPCLINET1|TcpClient.cpp|00171|30-03-2016 18:50:27:961|~ER~][3]Error in Connecting to SMPP [127.0.0.1:3014]
+[SMPPCLINET1|TcpClient.cpp|00171|30-03-2016 18:50:28:962|~ER~][4]Error in Connecting to SMPP [127.0.0.1:3014]
+[SMPPCLINET1|TcpClient.cpp|00171|30-03-2016 18:50:29:964|~ER~][5]Error in Connecting to SMPP [127.0.0.1:3014]
+[SMPPCLINET1|TcpClient.cpp|00171|30-03-2016 18:50:30:966|~ER~][6]Error in Connecting to SMPP [127.0.0.1:3014]
+[SMPPCLINET1|TcpClient.cpp|00171|30-03-2016 18:50:31:968|~ER~][7]Error in Connecting to SMPP [127.0.0.1:3014]
+[SMPPCLINET1|TcpClient.cpp|00171|30-03-2016 18:50:32:970|~ER~][8]Error in Connecting to SMPP [127.0.0.1:3014]
+[SMPPCLINET1|TcpClient.cpp|00171|30-03-2016 18:50:33:972|~ER~][9]Error in Connecting to SMPP [127.0.0.1:3014]
+[SMPPCLINET1|TcpClient.cpp|00171|30-03-2016 18:50:34:975|~ER~][0]Error in Connecting to SMPP [127.0.0.1:3014]
+[SMPPCLINET1|TcpClient.cpp|00171|30-03-2016 18:50:35:976|~ER~][1]Error in Connecting to SMPP [127.0.0.1:3014]
+[SMPPCLINET1|TcpClient.cpp|00171|30-03-2016 18:50:36:979|~ER~][2]Error in Connecting to SMPP [127.0.0.1:3014]
+140000008300000000000000ffffffffffffffff
+[SMPPCLINET1|TcpClient.cpp|00171|30-03-2016 18:50:37:980|~ER~][3]Error in Connecting to SMPP [127.0.0.1:3014]
+[SMPPCLINET1|TcpClient.cpp|00171|30-03-2016 18:50:38:982|~ER~][4]Error in Connecting to SMPP [127.0.0.1:3014]
+[SMPPCLINET1|TcpClient.cpp|00171|30-03-2016 18:50:39:984|~ER~][5]Error in Connecting to SMPP [127.0.0.1:3014]
+[SMPPCLINET1|TcpClient.cpp|00171|30-03-2016 18:50:40:985|~ER~][6]Error in Connecting to SMPP [127.0.0.1:3014]
+[SMPPCLINET1|TcpClient.cpp|00171|30-03-2016 18:50:41:988|~ER~][7]Error in Connecting to SMPP [127.0.0.1:3014]
+[SMPPCLINET1|TcpClient.cpp|00171|30-03-2016 18:50:42:991|~ER~][8]Error in Connecting to SMPP [127.0.0.1:3014]
+[SMPPCLINET1|TcpClient.cpp|00171|30-03-2016 18:50:43:993|~ER~][9]Error in Connecting to SMPP [127.0.0.1:3014]
+[SMPPCLINET1|TcpClient.cpp|00171|30-03-2016 18:50:44:995|~ER~][0]Error in Connecting to SMPP [127.0.0.1:3014]
+[SMPPCLINET1|TcpClient.cpp|00171|30-03-2016 18:50:45:997|~ER~][1]Error in Connecting to SMPP [127.0.0.1:3014]
+[SMPPCLINET1|TcpClient.cpp|00171|30-03-2016 18:50:46:999|~ER~][2]Error in Connecting to SMPP [127.0.0.1:3014]
+[SMPPCLINET1|TcpClient.cpp|00171|30-03-2016 18:50:48:000|~ER~][3]Error in Connecting to SMPP [127.0.0.1:3014]
+[SMPPCLINET1|TcpClient.cpp|00171|30-03-2016 18:50:49:002|~ER~][4]Error in Connecting to SMPP [127.0.0.1:3014]
+[SMPPCLINET1|TcpClient.cpp|00171|30-03-2016 18:50:50:004|~ER~][5]Error in Connecting to SMPP [127.0.0.1:3014]
+[SMPPCLINET1|TcpClient.cpp|00171|30-03-2016 18:50:51:006|~ER~][6]Error in Connecting to SMPP [127.0.0.1:3014]
+[SMPPCLINET1|TcpClient.cpp|00171|30-03-2016 18:50:52:008|~ER~][7]Error in Connecting to SMPP [127.0.0.1:3014]
+[SMPPCLINET1|TcpClient.cpp|00171|30-03-2016 18:50:53:011|~ER~][8]Error in Connecting to SMPP [127.0.0.1:3014]
+[SMPPCLINET1|TcpClient.cpp|00171|30-03-2016 18:50:54:013|~ER~][9]Error in Connecting to SMPP [127.0.0.1:3014]
+[SMPPCLINET1|TcpClient.cpp|00171|30-03-2016 18:50:55:015|~ER~][0]Error in Connecting to SMPP [127.0.0.1:3014]
+[SMPPCLINET1|TcpClient.cpp|00171|30-03-2016 18:50:56:016|~ER~][1]Error in Connecting to SMPP [127.0.0.1:3014]
+[SMPPCLINET1|TcpClient.cpp|00171|30-03-2016 18:50:57:018|~ER~][2]Error in Connecting to SMPP [127.0.0.1:3014]
+[SMPPCLINET1|TcpClient.cpp|00171|30-03-2016 18:50:58:020|~ER~][3]Error in Connecting to SMPP [127.0.0.1:3014]
+[SMPPCLINET1|TcpClient.cpp|00171|30-03-2016 18:50:59:021|~ER~][4]Error in Connecting to SMPP [127.0.0.1:3014]
+[SMPPCLINET1|TcpClient.cpp|00171|30-03-2016 18:51:00:023|~ER~][5]Error in Connecting to SMPP [127.0.0.1:3014]
+[SMPPCLINET1|TcpClient.cpp|00171|30-03-2016 18:51:01:025|~ER~][6]Error in Connecting to SMPP [127.0.0.1:3014]
+[SMPPCLINET1|TcpClient.cpp|00171|30-03-2016 18:51:02:033|~ER~][7]Error in Connecting to SMPP [127.0.0.1:3014]
+[SMPPCLINET1|TcpClient.cpp|00171|30-03-2016 18:51:03:035|~ER~][8]Error in Connecting to SMPP [127.0.0.1:3014]
+[SMPPCLINET1|TcpClient.cpp|00171|30-03-2016 18:51:04:037|~ER~][9]Error in Connecting to SMPP [127.0.0.1:3014]
+[SMPPCLINET1|TcpClient.cpp|00171|30-03-2016 18:51:05:039|~ER~][0]Error in Connecting to SMPP [127.0.0.1:3014]
+[SMPPCLINET1|TcpClient.cpp|00171|30-03-2016 18:51:06:041|~ER~][1]Error in Connecting to SMPP [127.0.0.1:3014]
+[SMPPCLINET1|TcpClient.cpp|00171|30-03-2016 18:51:07:043|~ER~][2]Error in Connecting to SMPP [127.0.0.1:3014]
+[SMPPCLINET1|TcpClient.cpp|00171|30-03-2016 18:51:08:044|~ER~][3]Error in Connecting to SMPP [127.0.0.1:3014]
+140000008300000000000000ffffffffffffffff
+[SMPPCLINET1|TcpClient.cpp|00171|30-03-2016 18:51:09:047|~ER~][4]Error in Connecting to SMPP [127.0.0.1:3014]
+[SMPPCLINET1|TcpClient.cpp|00171|30-03-2016 18:51:10:048|~ER~][5]Error in Connecting to SMPP [127.0.0.1:3014]
+[SMPPCLINET1|TcpClient.cpp|00171|30-03-2016 18:51:11:050|~ER~][6]Error in Connecting to SMPP [127.0.0.1:3014]
+[SMPPCLINET1|TcpClient.cpp|00171|30-03-2016 18:51:12:053|~ER~][7]Error in Connecting to SMPP [127.0.0.1:3014]
+[SMPPCLINET1|TcpClient.cpp|00171|30-03-2016 18:51:13:055|~ER~][8]Error in Connecting to SMPP [127.0.0.1:3014]
+[SMPPCLINET1|TcpClient.cpp|00171|30-03-2016 18:51:14:057|~ER~][9]Error in Connecting to SMPP [127.0.0.1:3014]
+[SMPPCLINET1|TcpClient.cpp|00171|30-03-2016 18:51:15:058|~ER~][0]Error in Connecting to SMPP [127.0.0.1:3014]
+[SMPPCLINET1|TcpClient.cpp|00171|30-03-2016 18:51:16:060|~ER~][1]Error in Connecting to SMPP [127.0.0.1:3014]
+[SMPPCLINET1|TcpClient.cpp|00171|30-03-2016 18:51:17:062|~ER~][2]Error in Connecting to SMPP [127.0.0.1:3014]
+[SMPPCLINET1|TcpClient.cpp|00171|30-03-2016 18:51:18:064|~ER~][3]Error in Connecting to SMPP [127.0.0.1:3014]
+[SMPPCLINET1|TcpClient.cpp|00171|30-03-2016 18:51:19:066|~ER~][4]Error in Connecting to SMPP [127.0.0.1:3014]
+[SMPPCLINET1|TcpClient.cpp|00171|30-03-2016 18:51:20:067|~ER~][5]Error in Connecting to SMPP [127.0.0.1:3014]
+[SMPPCLINET1|TcpClient.cpp|00171|30-03-2016 18:51:21:070|~ER~][6]Error in Connecting to SMPP [127.0.0.1:3014]
+[SMPPCLINET1|TcpClient.cpp|00171|30-03-2016 18:51:22:071|~ER~][7]Error in Connecting to SMPP [127.0.0.1:3014]
+[SMPPCLINET1|TcpClient.cpp|00171|30-03-2016 18:51:23:073|~ER~][8]Error in Connecting to SMPP [127.0.0.1:3014]
+[SMPPCLINET1|TcpClient.cpp|00171|30-03-2016 18:51:24:075|~ER~][9]Error in Connecting to SMPP [127.0.0.1:3014]
+[SMPPCLINET1|TcpClient.cpp|00171|30-03-2016 18:51:25:077|~ER~][0]Error in Connecting to SMPP [127.0.0.1:3014]
+[SMPPCLINET1|TcpClient.cpp|00171|30-03-2016 18:51:26:078|~ER~][1]Error in Connecting to SMPP [127.0.0.1:3014]
+[SMPPCLINET1|TcpClient.cpp|00171|30-03-2016 18:51:27:080|~ER~][2]Error in Connecting to SMPP [127.0.0.1:3014]
+[SMPPCLINET1|TcpClient.cpp|00171|30-03-2016 18:51:28:083|~ER~][3]Error in Connecting to SMPP [127.0.0.1:3014]
+[SMPPCLINET1|TcpClient.cpp|00171|30-03-2016 18:51:29:086|~ER~][4]Error in Connecting to SMPP [127.0.0.1:3014]
+[SMPPCLINET1|TcpClient.cpp|00171|30-03-2016 18:51:30:088|~ER~][5]Error in Connecting to SMPP [127.0.0.1:3014]
+[SMPPCLINET1|TcpClient.cpp|00171|30-03-2016 18:51:31:090|~ER~][6]Error in Connecting to SMPP [127.0.0.1:3014]
+[SMPPCLINET1|TcpClient.cpp|00171|30-03-2016 18:51:32:092|~ER~][7]Error in Connecting to SMPP [127.0.0.1:3014]
+[SMPPCLINET1|TcpClient.cpp|00171|30-03-2016 18:51:33:094|~ER~][8]Error in Connecting to SMPP [127.0.0.1:3014]
+[SMPPCLINET1|TcpClient.cpp|00171|30-03-2016 18:51:34:095|~ER~][9]Error in Connecting to SMPP [127.0.0.1:3014]
+[SMPPCLINET1|TcpClient.cpp|00171|30-03-2016 18:51:35:097|~ER~][0]Error in Connecting to SMPP [127.0.0.1:3014]
+[SMPPCLINET1|TcpClient.cpp|00171|30-03-2016 18:51:36:099|~ER~][1]Error in Connecting to SMPP [127.0.0.1:3014]
+[SMPPCLINET1|TcpClient.cpp|00171|30-03-2016 18:51:37:101|~ER~][2]Error in Connecting to SMPP [127.0.0.1:3014]
+[SMPPCLINET1|TcpClient.cpp|00171|30-03-2016 18:51:38:103|~ER~][3]Error in Connecting to SMPP [127.0.0.1:3014]
+[SMPPCLINET1|TcpClient.cpp|00171|30-03-2016 18:51:39:106|~ER~][4]Error in Connecting to SMPP [127.0.0.1:3014]
+140000008300000000000000ffffffffffffffff
+[SMPPCLINET1|TcpClient.cpp|00171|30-03-2016 18:51:40:108|~ER~][5]Error in Connecting to SMPP [127.0.0.1:3014]
+[SMPPCLINET1|TcpClient.cpp|00171|30-03-2016 18:51:41:110|~ER~][6]Error in Connecting to SMPP [127.0.0.1:3014]
+[SMPPCLINET1|TcpClient.cpp|00171|30-03-2016 18:51:42:111|~ER~][7]Error in Connecting to SMPP [127.0.0.1:3014]
+[SMPPCLINET1|TcpClient.cpp|00171|30-03-2016 18:51:43:113|~ER~][8]Error in Connecting to SMPP [127.0.0.1:3014]
+[SMPPCLINET1|TcpClient.cpp|00171|30-03-2016 18:51:44:115|~ER~][9]Error in Connecting to SMPP [127.0.0.1:3014]
+[SMPPCLINET1|TcpClient.cpp|00171|30-03-2016 18:51:45:116|~ER~][0]Error in Connecting to SMPP [127.0.0.1:3014]
+[SMPPCLINET1|TcpClient.cpp|00171|30-03-2016 18:51:46:119|~ER~][1]Error in Connecting to SMPP [127.0.0.1:3014]
+[SMPPCLINET1|TcpClient.cpp|00171|30-03-2016 18:51:47:120|~ER~][2]Error in Connecting to SMPP [127.0.0.1:3014]
+[SMPPCLINET1|TcpClient.cpp|00171|30-03-2016 18:51:48:123|~ER~][3]Error in Connecting to SMPP [127.0.0.1:3014]
+[SMPPCLINET1|TcpClient.cpp|00171|30-03-2016 18:51:49:125|~ER~][4]Error in Connecting to SMPP [127.0.0.1:3014]
+[SMPPCLINET1|TcpClient.cpp|00171|30-03-2016 18:51:50:127|~ER~][5]Error in Connecting to SMPP [127.0.0.1:3014]
+[SMPPCLINET1|TcpClient.cpp|00171|30-03-2016 18:51:51:129|~ER~][6]Error in Connecting to SMPP [127.0.0.1:3014]
+[SMPPCLINET1|TcpClient.cpp|00171|30-03-2016 18:51:52:131|~ER~][7]Error in Connecting to SMPP [127.0.0.1:3014]
+[SMPPCLINET1|TcpClient.cpp|00171|30-03-2016 18:51:53:133|~ER~][8]Error in Connecting to SMPP [127.0.0.1:3014]
+[SMPPCLINET1|TcpClient.cpp|00171|30-03-2016 18:51:54:180|~ER~][9]Error in Connecting to SMPP [127.0.0.1:3014]
+[SMPPCLINET1|TcpClient.cpp|00171|30-03-2016 18:51:55:181|~ER~][0]Error in Connecting to SMPP [127.0.0.1:3014]
+[SMPPCLINET1|TcpClient.cpp|00171|30-03-2016 18:51:56:183|~ER~][1]Error in Connecting to SMPP [127.0.0.1:3014]
+[SMPPCLINET1|TcpClient.cpp|00171|30-03-2016 18:51:57:185|~ER~][2]Error in Connecting to SMPP [127.0.0.1:3014]
+[SMPPCLINET1|TcpClient.cpp|00171|30-03-2016 18:51:58:187|~ER~][3]Error in Connecting to SMPP [127.0.0.1:3014]
+[SMPPCLINET1|TcpClient.cpp|00171|30-03-2016 18:51:59:190|~ER~][4]Error in Connecting to SMPP [127.0.0.1:3014]
+[SMPPCLINET1|TcpClient.cpp|00171|30-03-2016 18:52:00:191|~ER~][5]Error in Connecting to SMPP [127.0.0.1:3014]
+[SMPPCLINET1|TcpClient.cpp|00171|30-03-2016 18:52:01:194|~ER~][6]Error in Connecting to SMPP [127.0.0.1:3014]
+[SMPPCLINET1|TcpClient.cpp|00171|30-03-2016 18:52:02:196|~ER~][7]Error in Connecting to SMPP [127.0.0.1:3014]
+[SMPPCLINET1|TcpClient.cpp|00171|30-03-2016 18:52:03:198|~ER~][8]Error in Connecting to SMPP [127.0.0.1:3014]
+[SMPPCLINET1|TcpClient.cpp|00171|30-03-2016 18:52:04:201|~ER~][9]Error in Connecting to SMPP [127.0.0.1:3014]
+[SMPPCLINET1|TcpClient.cpp|00171|30-03-2016 18:52:05:204|~ER~][0]Error in Connecting to SMPP [127.0.0.1:3014]
+[SMPPCLINET1|TcpClient.cpp|00171|30-03-2016 18:52:06:206|~ER~][1]Error in Connecting to SMPP [127.0.0.1:3014]
+[SMPPCLINET1|TcpClient.cpp|00171|30-03-2016 18:52:07:207|~ER~][2]Error in Connecting to SMPP [127.0.0.1:3014]

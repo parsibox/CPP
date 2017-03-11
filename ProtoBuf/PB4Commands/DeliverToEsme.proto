@@ -1,0 +1,35 @@
+message DeliverToEsme{
+	required uint32 task_id = 1;
+	required uint32 msg_id = 2;
+	required string oa = 3;
+	required string da = 4;
+	required bytes	msg = 5;
+	required int32  interface_id = 6;
+	optional int32  reg_del=7;
+	optional string udh=8;
+	optional int32	circle_id=9;
+	optional int32  channel_id=10;
+	optional int32  expiry_time=11;
+	optional int32  pid=12;
+	optional int32  dcs=13;
+	optional string wapdata=14;
+	optional string url=15;
+	optional int32  lang_id=16[default=0];
+	optional string task_name=17;
+	optional int32  msg_type=18;
+	optional string srv_code=19;
+	optional string username=20;
+	//for cdr
+	optional int32 status=21;
+        optional int32 submit_time=22;
+        optional int32 submit_msgid=23;
+        optional int32 session_endtime=24;
+        optional int32 sender_sessionid=25;
+        optional int32 receiver_sessionid=26;
+        optional int32 charging_status=27;
+	optional string service_url=28;
+	optional string service_url_status=29;
+	optional int32 retry_count=30 [default = 0];
+	optional string user_input = 31;
+	
+}

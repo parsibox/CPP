@@ -1,0 +1,25 @@
+[SMPPSERVER10|TcpServer.cpp|00165|15-11-2016 20:51:58:712|~IN~]StartServerThread started...
+[SMPPSERVER10|Receiver.cpp|00028|15-11-2016 20:51:58:932|~IN~]Receiveing the data
+[SMPPSERVER10|Receiver.cpp|00034|15-11-2016 20:51:59:935|~IN~]Receiveing the data :cmdLength:43,cmdId:0x9,cmdStatus:0,mcsi_sessionId1
+[SMPPSERVER10|Receiver.cpp|00035|15-11-2016 20:51:59:935|~IN~]Receiveing the data from SMPP Clinet:43
+[SMPPSERVER10|Receiver.cpp|00049|15-11-2016 20:51:59:935|~IN~]Receiveing the data from SMPP Clinet:43
+[SMPPSERVER10|Receiver.cpp|00056|15-11-2016 20:51:59:935|~IN~]Sending Bind Responc:testAcount
+0000001b8000000900000000000000017465737441636f756e7400
+[SMPPSERVER10|TcpServer.cpp|00202|15-11-2016 20:52:00:938|~IN~] Client connected from 
+[SMPPSERVER10|TcpServer.cpp|00223|15-11-2016 20:52:00:939|~IN~]Started ClientThread[0x8568c60]
+[SMPPSERVER10|Receiver.cpp|00023|15-11-2016 20:52:00:939|~IN~]sending begin
+0000003b000000050000000000000002555353440001013931393439333032343730350000002a3636372300000000000000000f00000501000101
+[SMPPSERVER10|Receiver.cpp|00026|15-11-2016 20:52:10:942|~IN~]after sending begin
+[SMPPSERVER10|Receiver.cpp|00028|15-11-2016 20:52:10:942|~IN~]Receiveing the data
+[SMPPSERVER10|Receiver.cpp|00034|15-11-2016 20:52:10:942|~IN~]Receiveing the data :cmdLength:16,cmdId:0x15,cmdStatus:0,mcsi_sessionIdf
+[SMPPSERVER10|Receiver.cpp|00035|15-11-2016 20:52:10:942|~IN~]Receiveing the data from SMPP Clinet:16
+[SMPPSERVER10|Receiver.cpp|00049|15-11-2016 20:52:10:942|~IN~]Receiveing the data from SMPP Clinet:16
+[SMPPSERVER10|Receiver.cpp|00028|15-11-2016 20:52:10:942|~IN~]Receiveing the data
+[SMPPSERVER10|Receiver.cpp|00034|15-11-2016 20:52:11:012|~IN~]Receiveing the data :cmdLength:17,cmdId:0x80000005,cmdStatus:0,mcsi_sessionId2
+[SMPPSERVER10|Receiver.cpp|00035|15-11-2016 20:52:11:012|~IN~]Receiveing the data from SMPP Clinet:17
+[SMPPSERVER10|Receiver.cpp|00049|15-11-2016 20:52:11:012|~IN~]Receiveing the data from SMPP Clinet:17
+[SMPPSERVER10|Receiver.cpp|00028|15-11-2016 20:52:11:012|~IN~]Receiveing the data
+[SMPPSERVER10|Receiver.cpp|00034|15-11-2016 20:52:11:015|~IN~]Receiveing the data :cmdLength:94,cmdId:0x4,cmdStatus:0,mcsi_sessionId11
+[SMPPSERVER10|Receiver.cpp|00035|15-11-2016 20:52:11:015|~IN~]Receiveing the data from SMPP Clinet:94
+[SMPPSERVER10|Receiver.cpp|00049|15-11-2016 20:52:11:015|~IN~]Receiveing the data from SMPP Clinet:94
+000000128000000400000000000000113000

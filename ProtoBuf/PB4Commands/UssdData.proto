@@ -1,0 +1,41 @@
+message UssdData{
+        enum operation_type
+        {
+              LOGIN=1;
+              LOGIN_RESP=2;
+              LOGOUT =3;
+              LOGOUT_RESP =4;
+              START = 5;
+              CONTINUE = 6;
+              END = 7;
+              ABORT =8;
+              ENQ_LINK = 9;
+              ENQ_LINK_RESP =10;
+        }
+	enum Msg_Type
+	{
+		REQUEST=1;
+		NOTIFY=2;
+                RESPONCE=3;
+                RELEASE=4;
+	};
+       // params for data packets
+	optional uint32 version = 1;
+	optional uint32 dcs = 2;
+	optional string oa = 3;
+	optional string da = 4;
+	optional bytes	msg = 5;
+        optional operation_type op_type = 6;
+	optional Msg_Type  msg_type=7;
+	optional string srv_code=8;
+	optional int32 status=9;
+	optional int32 session_status=10 [default = 0];
+	optional int32 delivery_report=11 [default = 0];
+	optional string imsi=12;
+	optional int32 sender_session_id=13 [default = 0];
+	optional int32 receiver_session_id=14 [default = 0];
+      //login packet
+        optional string username = 15;
+        optional string password = 16;
+        optional string app_id = 17;
+}

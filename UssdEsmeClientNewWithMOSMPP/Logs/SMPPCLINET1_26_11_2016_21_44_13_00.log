@@ -1,0 +1,264 @@
+[SMPPCLINET1|EsmeMain.cpp|00150|26-11-2016 21:44:13:616|~IN~]Version:V1.0
+[SMPPCLINET1|EsmeMain.cpp|00151|26-11-2016 21:44:13:616|~IN~]Release Date:05-Apr-2014
+[SMPPCLINET1|DBPoolManager.cpp|00013|26-11-2016 21:44:13:617|~IN~]Creating PoolManager object...
+[SMPPCLINET1|DBPoolManager.cpp|00024|26-11-2016 21:44:13:618|~VB~]CDBPoolManager::mcfn_AddDB >>
+[SMPPCLINET1|DBPoolManager.cpp|00029|26-11-2016 21:44:13:618|~VB~]CDBPoolManager::mcfn_AddDB <<
+[SMPPCLINET1|EsmeMain.cpp|00155|26-11-2016 21:44:13:618|~VB~]PoolMgr Size:1
+[SMPPCLINET1|Thread.cpp|00071|26-11-2016 21:44:13:619|~CR~]Started PrecessReceivedSmppPacketThread Thread:0
+[SMPPCLINET1|DBConnPool.h|00049|26-11-2016 21:44:14:621|~VB~]Creating connection object
+[SMPPCLINET1|DBPoolManager.cpp|00063|26-11-2016 21:44:14:635|~VB~]mesi_CurrentActiveIdx:0
+[SMPPCLINET1|DBOperations.cpp|00085|26-11-2016 21:44:14:635|~VB~]DBConn:137100280,Idx:0
+[SMPPCLINET1|DBOperations.cpp|00089|26-11-2016 21:44:14:636|~VB~]Executing Query:SELECT * from esme_details WHERE ESME_ID=1 limit 1
+[SMPPCLINET1|DBOperations.cpp|00092|26-11-2016 21:44:14:639|~VB~]Executed SuccessFully
+[SMPPCLINET1|DBPoolManager.cpp|00063|26-11-2016 21:44:14:640|~VB~]mesi_CurrentActiveIdx:0
+[SMPPCLINET1|DBOperations.cpp|00085|26-11-2016 21:44:14:641|~VB~]DBConn:137100280,Idx:0
+[SMPPCLINET1|DBOperations.cpp|00089|26-11-2016 21:44:14:641|~VB~]Executing Query:SELECT * from smsc_details WHERE SMSC_ID=1 limit 1
+[SMPPCLINET1|DBOperations.cpp|00092|26-11-2016 21:44:14:642|~VB~]Executed SuccessFully
+[SMPPCLINET1|SMPP.cpp|00038|26-11-2016 21:44:14:643|~IN~]Loaded initial configuration sucessfully:1
+[SMPPCLINET1|TcpServer.cpp|00165|26-11-2016 21:44:14:644|~IN~]PublisherStartServerThread started...
+[SMPPCLINET1|TcpClient.cpp|00083|26-11-2016 21:44:14:645|~IN~]Started mcfn_connectToSMPPThread
+[SMPPCLINET1|TcpClient.cpp|00171|26-11-2016 21:44:14:648|~ER~][0]Error in Connecting to SMPP [127.0.0.1:3014]
+[SMPPCLINET1|Thread.cpp|00071|26-11-2016 21:44:14:649|~CR~]Started ProcessReceivedMsgsThread Thread:0
+[SMPPCLINET1|SMPP.cpp|00112|26-11-2016 21:44:14:649|~IN~]Started processReceivedMsgs Thread
+[SMPPCLINET1|Thread.cpp|00071|26-11-2016 21:44:15:646|~CR~]Started SendMsgToSmscThread Thread:1
+[SMPPCLINET1|SMPP.cpp|00137|26-11-2016 21:44:15:647|~IN~]Started sendSmppMsgsToSmsc Thread
+[SMPPCLINET1|TcpClient.cpp|00171|26-11-2016 21:44:15:650|~ER~][1]Error in Connecting to SMPP [127.0.0.1:3014]
+[SMPPCLINET1|Thread.cpp|00071|26-11-2016 21:44:16:651|~CR~]Started RetryThread Thread:0
+[SMPPCLINET1|TcpClient.cpp|00171|26-11-2016 21:44:16:653|~ER~][2]Error in Connecting to SMPP [127.0.0.1:3014]
+[SMPPCLINET1|RetryPlaner.cpp|00018|26-11-2016 21:44:17:652|~IN~]Loading retry plan from configuation
+[SMPPCLINET1|DBConnPool.h|00084|26-11-2016 21:44:17:652|~IN~]Destroying the db connection
+[SMPPCLINET1|DBConnPool.h|00049|26-11-2016 21:44:17:652|~VB~]Creating connection object
+[SMPPCLINET1|TcpClient.cpp|00171|26-11-2016 21:44:17:654|~ER~][3]Error in Connecting to SMPP [127.0.0.1:3014]
+[SMPPCLINET1|DBPoolManager.cpp|00063|26-11-2016 21:44:17:655|~VB~]mesi_CurrentActiveIdx:0
+[SMPPCLINET1|DBOperations.cpp|00085|26-11-2016 21:44:17:655|~VB~]DBConn:137172640,Idx:0
+[SMPPCLINET1|DBOperations.cpp|00089|26-11-2016 21:44:17:655|~VB~]Executing Query:SELECT * from menu_retry_plan WHERE status='A'
+[SMPPCLINET1|DBOperations.cpp|00092|26-11-2016 21:44:17:656|~VB~]Executed SuccessFully
+[SMPPCLINET1|RetryPlaner.cpp|00027|26-11-2016 21:44:17:656|~IN~]retry plans are configured :1
+[SMPPCLINET1|RetryPlaner.cpp|00053|26-11-2016 21:44:17:656|~IN~]plan interval ration:1:1,interval  :10
+[SMPPCLINET1|RetryPlaner.cpp|00101|26-11-2016 21:44:17:656|~IN~]Loading planner configurations
+[SMPPCLINET1|DBPoolManager.cpp|00063|26-11-2016 21:44:17:657|~VB~]mesi_CurrentActiveIdx:0
+[SMPPCLINET1|DBOperations.cpp|00085|26-11-2016 21:44:17:657|~VB~]DBConn:137172640,Idx:0
+[SMPPCLINET1|DBOperations.cpp|00089|26-11-2016 21:44:17:657|~VB~]Executing Query:SELECT * from plan_profile WHERE  STATUS='A'
+[SMPPCLINET1|DBOperations.cpp|00092|26-11-2016 21:44:17:658|~VB~]Executed SuccessFully
+[SMPPCLINET1|RetryPlaner.cpp|00110|26-11-2016 21:44:17:658|~IN~]plan profiles are configured :1
+[SMPPCLINET1|Thread.cpp|00071|26-11-2016 21:44:17:658|~CR~]Started CdrSendThread Thread:0
+[SMPPCLINET1|TcpClient.cpp|00171|26-11-2016 21:44:18:657|~ER~][4]Error in Connecting to SMPP [127.0.0.1:3014]
+[SMPPCLINET1|EsmeMain.cpp|00062|26-11-2016 21:44:18:660|~IN~]loading MO Menus starts
+[SMPPCLINET1|TcpClient.cpp|00083|26-11-2016 21:44:18:662|~IN~]Started mcfn_connectToCdrServerThread
+[SMPPCLINET1|TcpClient.cpp|00175|26-11-2016 21:44:18:665|~VB~][0]Connected to CdrServer[127.0.0.1:4141]
+[SMPPCLINET1|TcpClient.cpp|00134|26-11-2016 21:44:18:665|~VB~]Receiveing From CdrServer
+[SMPPCLINET1|DBPoolManager.cpp|00063|26-11-2016 21:44:18:666|~VB~]mesi_CurrentActiveIdx:0
+[SMPPCLINET1|DBOperations.cpp|00085|26-11-2016 21:44:18:666|~VB~]DBConn:137172640,Idx:0
+[SMPPCLINET1|DBOperations.cpp|00089|26-11-2016 21:44:18:667|~VB~]Executing Query:SELECT * from mo_menu_map WHERE  STATUS = 'A'
+[SMPPCLINET1|DBOperations.cpp|00092|26-11-2016 21:44:18:669|~VB~]Executed SuccessFully
+[SMPPCLINET1|EsmeMain.cpp|00087|26-11-2016 21:44:18:669|~IN~]*667-->[icmuser:1257]
+[SMPPCLINET1|EsmeMain.cpp|00095|26-11-2016 21:44:18:669|~IN~]loading MO Menus Ends
+[SMPPCLINET1|TcpServer.cpp|00165|26-11-2016 21:44:18:670|~IN~]RELOADStartServerThread started...
+[SMPPCLINET1|TcpClient.cpp|00171|26-11-2016 21:44:19:659|~ER~][5]Error in Connecting to SMPP [127.0.0.1:3014]
+[SMPPCLINET1|TcpClient.cpp|00171|26-11-2016 21:44:20:661|~ER~][6]Error in Connecting to SMPP [127.0.0.1:3014]
+[SMPPCLINET1|TcpClient.cpp|00171|26-11-2016 21:44:21:662|~ER~][7]Error in Connecting to SMPP [127.0.0.1:3014]
+[SMPPCLINET1|TcpClient.cpp|00171|26-11-2016 21:44:22:666|~ER~][8]Error in Connecting to SMPP [127.0.0.1:3014]
+[SMPPCLINET1|TcpClient.cpp|00175|26-11-2016 21:44:23:669|~VB~][9]Connected to SMPP[127.0.0.1:3014]
+0000002b00000009000000000000000175737364636c69656e740070617373776f7264005452000a000000
+[SMPPCLINET1|DBConnPool.h|00084|26-11-2016 21:44:24:672|~IN~]Destroying the db connection
+[SMPPCLINET1|DBConnPool.h|00049|26-11-2016 21:44:24:672|~VB~]Creating connection object
+[SMPPCLINET1|DBPoolManager.cpp|00063|26-11-2016 21:44:24:675|~VB~]mesi_CurrentActiveIdx:0
+[SMPPCLINET1|DBOperations.cpp|00085|26-11-2016 21:44:24:675|~VB~]DBConn:137267960,Idx:0
+[SMPPCLINET1|DBOperations.cpp|00089|26-11-2016 21:44:24:675|~VB~]Executing Query:SELECT * from errorcode_details
+[SMPPCLINET1|DBOperations.cpp|00092|26-11-2016 21:44:24:676|~VB~]Executed SuccessFully
+[SMPPCLINET1|EsmeConnection.cpp|00057|26-11-2016 21:44:24:677|~IN~]Receiveing the data from SMPP[27]:cmdLength:27,cmdId:0x80000009,cmdStatus:0,mcsi_sessionId1:Error Not Configured
+0000001b8000000900000000000000017465737441636f756e7400
+[SMPPCLINET1|EsmeConnection.cpp|00118|26-11-2016 21:44:24:677|~IN~]Login Sucess With :testAcount
+[SMPPCLINET1|EsmeConnection.cpp|00057|26-11-2016 21:44:30:678|~IN~]Receiveing the data from SMPP[63]:cmdLength:63,cmdId:0x5,cmdStatus:0,mcsi_sessionId2:Error Not Configured
+0000003f000000050000000000000002555353440001013931393439333032343730350000002a36363700000000000000000f00052a363637230501000101
+0000001180000005000000000000000200
+[SMPPCLINET1|EsmeConnection.cpp|00166|26-11-2016 21:44:31:662|~VB~]MO message checking for config:*667[*667#][MO][*667]
+[SMPPCLINET1|Menu.cpp|00024|26-11-2016 21:44:31:662|~IN~]MO serice configured is icmuser:1257
+[SMPPCLINET1|Menu.cpp|00187|26-11-2016 21:44:31:663|~IN~]Loading Menus for username:icmuser
+[SMPPCLINET1|DBConnPool.h|00084|26-11-2016 21:44:31:663|~IN~]Destroying the db connection
+[SMPPCLINET1|DBConnPool.h|00049|26-11-2016 21:44:31:663|~VB~]Creating connection object
+[SMPPCLINET1|DBPoolManager.cpp|00063|26-11-2016 21:44:31:666|~VB~]mesi_CurrentActiveIdx:0
+[SMPPCLINET1|DBOperations.cpp|00085|26-11-2016 21:44:31:666|~VB~]DBConn:137267960,Idx:0
+[SMPPCLINET1|DBOperations.cpp|00089|26-11-2016 21:44:31:666|~VB~]Executing Query:SELECT DISTINCT(menu_service_code) from menu_details WHERE USER_NAME='icmuser' AND STATUS='A'
+[SMPPCLINET1|DBOperations.cpp|00092|26-11-2016 21:44:31:667|~VB~]Executed SuccessFully
+[SMPPCLINET1|Menu.cpp|00209|26-11-2016 21:44:31:668|~IN~]Loading Menu for username:icmuser,Service Code:1257
+[SMPPCLINET1|DBPoolManager.cpp|00063|26-11-2016 21:44:31:668|~VB~]mesi_CurrentActiveIdx:0
+[SMPPCLINET1|DBOperations.cpp|00085|26-11-2016 21:44:31:668|~VB~]DBConn:137267960,Idx:0
+[SMPPCLINET1|DBOperations.cpp|00089|26-11-2016 21:44:31:668|~VB~]Executing Query:SELECT * from menu_details WHERE USER_NAME='icmuser' and MENU_SERVICE_CODE='1257' AND STATUS='A' order by menu_id
+[SMPPCLINET1|DBOperations.cpp|00092|26-11-2016 21:44:31:671|~VB~]Executed SuccessFully
+[SMPPCLINET1|Menu.cpp|00236|26-11-2016 21:44:31:671|~IN~]Menu Id:0,Dtmf:1,Node{Node Data:Songs,Node Msg:select your choice:,URL:,End Message:,nextMenuId:3}
+[SMPPCLINET1|Menu.cpp|00236|26-11-2016 21:44:31:671|~IN~]Menu Id:0,Dtmf:2,Node{Node Data:Dailogs,Node Msg:,URL:,End Message:,nextMenuId:2}
+[SMPPCLINET1|Menu.cpp|00236|26-11-2016 21:44:31:671|~IN~]Menu Id:1,Dtmf:1,Node{Node Data:Folk Songs,Node Msg:Select Song type,URL:,End Message:thanks for chosing Folk songs,nextMenuId:}
+[SMPPCLINET1|Menu.cpp|00236|26-11-2016 21:44:31:671|~IN~]Menu Id:1,Dtmf:2,Node{Node Data:Melody Songs,Node Msg:,URL:,End Message:thanks for chosing melody songs,nextMenuId:}
+[SMPPCLINET1|Menu.cpp|00236|26-11-2016 21:44:31:671|~IN~]Menu Id:2,Dtmf:1,Node{Node Data:Comedy,Node Msg: chose dailog type,URL:,End Message:thanks for chosing comedy dailogs,nextMenuId:}
+[SMPPCLINET1|Menu.cpp|00236|26-11-2016 21:44:31:672|~IN~]Menu Id:2,Dtmf:2,Node{Node Data:warning,Node Msg:,URL:,End Message: thank for chosing warning dailogs,nextMenuId:}
+[SMPPCLINET1|Menu.cpp|00236|26-11-2016 21:44:31:672|~IN~]Menu Id:3,Dtmf:-1,Node{Node Data:Enter your phone Number:,Node Msg:,URL:,End Message:,nextMenuId:2}
+[SMPPCLINET1|EsmeConnection.cpp|00176|26-11-2016 21:44:31:672|~VB~]Message sending to server:1.Songsselect your choice:2.Dailogs
+0000005d000000040000000000000002555353440000002a3636370001013931393439333032343730350000000000000000000023312e536f6e677373656c65637420796f75722063686f6963653a322e4461696c6f67730501000102
+[SMPPCLINET1|TimerManeger.cpp|00024|26-11-2016 21:44:31:672|~IN~]Creating PoolManager object...
+[SMPPCLINET1|TimerManeger.cpp|00072|26-11-2016 21:44:31:673|~VB~]Started Timer Check Thread
+[SMPPCLINET1|TimerManeger.cpp|00051|26-11-2016 21:44:31:675|~DG~]Created and  adding to that:1480176931
+[SMPPCLINET1|TimerManeger.cpp|00088|26-11-2016 21:44:31:676|~DG~]Time to get Evetn:60,1
+[SMPPCLINET1|EsmeConnection.cpp|00057|26-11-2016 21:44:31:710|~IN~]Receiveing the data from SMPP[18]:cmdLength:18,cmdId:0x80000004,cmdStatus:0,mcsi_sessionId2:Error Not Configured
+000000128000000400000000000000023000
+[SMPPCLINET1|TimerManeger.cpp|00088|26-11-2016 21:44:32:680|~DG~]Time to get Evetn:59,1
+[SMPPCLINET1|EsmeConnection.cpp|00057|26-11-2016 21:44:33:451|~IN~]Receiveing the data from SMPP[59]:cmdLength:59,cmdId:0x5,cmdStatus:0,mcsi_sessionId1:Error Not Configured
+0000003b000000050000000000000001555353440001013931393439333032343730350000002a3636370000000000000000000001310501000112
+0000001180000005000000000000000100
+[SMPPCLINET1|EsmeConnection.cpp|00199|26-11-2016 21:44:33:681|~VB~]Received Continue Message:919493024705,UserInput:1
+[SMPPCLINET1|EsmeConnection.cpp|00202|26-11-2016 21:44:33:681|~IN~]USSR Session found :919493024705,Analysing User Input:1
+[SMPPCLINET1|TimerManeger.cpp|00061|26-11-2016 21:44:33:682|~DG~]Unregister Call came with :1480176931,0x82e8d40
+[SMPPCLINET1|TimerManeger.cpp|00066|26-11-2016 21:44:33:682|~DG~]Created and  adding to that:1480176931,0x82e8d40
+[SMPPCLINET1|EsmeConnection.cpp|00251|26-11-2016 21:44:33:682|~IN~]Session found :919493024705,Sending Continue Message :Enter your phone Number:
+0000005200000004000000000000000355535344000000313235370001013931393439333032343730350000000000000000000018456e74657220796f75722070686f6e65204e756d6265723a0501000102
+[SMPPCLINET1|TimerManeger.cpp|00051|26-11-2016 21:44:33:682|~DG~]Created and  adding to that:1480176933
+[SMPPCLINET1|TimerManeger.cpp|00088|26-11-2016 21:44:33:682|~DG~]Time to get Evetn:60,1
+[SMPPCLINET1|EsmeConnection.cpp|00057|26-11-2016 21:44:33:721|~IN~]Receiveing the data from SMPP[18]:cmdLength:18,cmdId:0x80000004,cmdStatus:0,mcsi_sessionId3:Error Not Configured
+000000128000000400000000000000033000
+[SMPPCLINET1|TimerManeger.cpp|00088|26-11-2016 21:44:34:684|~DG~]Time to get Evetn:59,1
+[SMPPCLINET1|TimerManeger.cpp|00088|26-11-2016 21:44:35:686|~DG~]Time to get Evetn:58,1
+[SMPPCLINET1|TimerManeger.cpp|00088|26-11-2016 21:44:36:690|~DG~]Time to get Evetn:57,1
+[SMPPCLINET1|TimerManeger.cpp|00088|26-11-2016 21:44:37:693|~DG~]Time to get Evetn:56,1
+[SMPPCLINET1|TimerManeger.cpp|00088|26-11-2016 21:44:38:695|~DG~]Time to get Evetn:55,1
+[SMPPCLINET1|EsmeConnection.cpp|00057|26-11-2016 21:44:39:593|~IN~]Receiveing the data from SMPP[63]:cmdLength:63,cmdId:0x5,cmdStatus:0,mcsi_sessionId2:Error Not Configured
+0000003f0000000500000000000000025553534400010139313934393330323437303500000031323537000000000000000000000561756579610501000112
+[SMPPCLINET1|TimerManeger.cpp|00088|26-11-2016 21:44:39:697|~DG~]Time to get Evetn:54,1
+0000001180000005000000000000000200
+[SMPPCLINET1|EsmeConnection.cpp|00199|26-11-2016 21:44:39:698|~VB~]Received Continue Message:919493024705,UserInput:aueya
+[SMPPCLINET1|EsmeConnection.cpp|00202|26-11-2016 21:44:39:699|~IN~]USSR Session found :919493024705,Analysing User Input:aueya
+[SMPPCLINET1|Menu.cpp|00140|26-11-2016 21:44:39:700|~CR~]UserInput is invalid {input:aueya,menu Id:3,username:icmuser,serviceCode:1257}
+[SMPPCLINET1|TimerManeger.cpp|00061|26-11-2016 21:44:39:701|~DG~]Unregister Call came with :1480176933,0x82e8d40
+[SMPPCLINET1|TimerManeger.cpp|00066|26-11-2016 21:44:39:701|~DG~]Created and  adding to that:1480176933,0x82e8d40
+[SMPPCLINET1|EsmeConnection.cpp|00251|26-11-2016 21:44:39:701|~IN~]Session found :919493024705,Sending Continue Message :Invalid Input,Enter your phone Number:
+0000006000000004000000000000000455535344000000313235370001013931393439333032343730350000000000000000000026496e76616c696420496e7075742c456e74657220796f75722070686f6e65204e756d6265723a0501000102
+[SMPPCLINET1|TimerManeger.cpp|00051|26-11-2016 21:44:39:702|~DG~]Created and  adding to that:1480176939
+[SMPPCLINET1|EsmeConnection.cpp|00057|26-11-2016 21:44:39:739|~IN~]Receiveing the data from SMPP[18]:cmdLength:18,cmdId:0x80000004,cmdStatus:0,mcsi_sessionId4:Error Not Configured
+000000128000000400000000000000043000
+[SMPPCLINET1|TimerManeger.cpp|00088|26-11-2016 21:44:40:699|~DG~]Time to get Evetn:59,1
+[SMPPCLINET1|TimerManeger.cpp|00088|26-11-2016 21:44:41:701|~DG~]Time to get Evetn:58,1
+[SMPPCLINET1|TimerManeger.cpp|00088|26-11-2016 21:44:42:704|~DG~]Time to get Evetn:57,1
+[SMPPCLINET1|TimerManeger.cpp|00088|26-11-2016 21:44:43:706|~DG~]Time to get Evetn:56,1
+[SMPPCLINET1|EsmeConnection.cpp|00057|26-11-2016 21:44:44:420|~IN~]Receiveing the data from SMPP[70]:cmdLength:70,cmdId:0x5,cmdStatus:0,mcsi_sessionId3:Error Not Configured
+000000460000000500000000000000035553534400010139313934393330323437303500000031323537000000000000000000000c3837363836313731373233370501000112
+[SMPPCLINET1|TimerManeger.cpp|00088|26-11-2016 21:44:44:708|~DG~]Time to get Evetn:55,1
+0000001180000005000000000000000300
+[SMPPCLINET1|EsmeConnection.cpp|00199|26-11-2016 21:44:44:713|~VB~]Received Continue Message:919493024705,UserInput:876861717237
+[SMPPCLINET1|EsmeConnection.cpp|00202|26-11-2016 21:44:44:714|~IN~]USSR Session found :919493024705,Analysing User Input:876861717237
+[SMPPCLINET1|Menu.cpp|00140|26-11-2016 21:44:44:714|~CR~]UserInput is invalid {input:876861717237,menu Id:3,username:icmuser,serviceCode:1257}
+[SMPPCLINET1|TimerManeger.cpp|00061|26-11-2016 21:44:44:715|~DG~]Unregister Call came with :1480176939,0x82e8d40
+[SMPPCLINET1|TimerManeger.cpp|00066|26-11-2016 21:44:44:716|~DG~]Created and  adding to that:1480176939,0x82e8d40
+[SMPPCLINET1|EsmeConnection.cpp|00251|26-11-2016 21:44:44:716|~IN~]Session found :919493024705,Sending Continue Message :Invalid Input,Enter your phone Number:
+0000006000000004000000000000000555535344000000313235370001013931393439333032343730350000000000000000000026496e76616c696420496e7075742c456e74657220796f75722070686f6e65204e756d6265723a0501000102
+[SMPPCLINET1|TimerManeger.cpp|00051|26-11-2016 21:44:44:716|~DG~]Created and  adding to that:1480176944
+[SMPPCLINET1|EsmeConnection.cpp|00057|26-11-2016 21:44:44:754|~IN~]Receiveing the data from SMPP[18]:cmdLength:18,cmdId:0x80000004,cmdStatus:0,mcsi_sessionId5:Error Not Configured
+000000128000000400000000000000053000
+[SMPPCLINET1|TimerManeger.cpp|00088|26-11-2016 21:44:45:711|~DG~]Time to get Evetn:59,1
+[SMPPCLINET1|TimerManeger.cpp|00088|26-11-2016 21:44:46:713|~DG~]Time to get Evetn:58,1
+[SMPPCLINET1|TimerManeger.cpp|00088|26-11-2016 21:44:47:715|~DG~]Time to get Evetn:57,1
+[SMPPCLINET1|TimerManeger.cpp|00088|26-11-2016 21:44:48:718|~DG~]Time to get Evetn:56,1
+[SMPPCLINET1|TimerManeger.cpp|00088|26-11-2016 21:44:49:719|~DG~]Time to get Evetn:55,1
+[SMPPCLINET1|TimerManeger.cpp|00088|26-11-2016 21:44:50:721|~DG~]Time to get Evetn:54,1
+[SMPPCLINET1|TimerManeger.cpp|00088|26-11-2016 21:44:51:722|~DG~]Time to get Evetn:53,1
+[SMPPCLINET1|TimerManeger.cpp|00088|26-11-2016 21:44:52:725|~DG~]Time to get Evetn:52,1
+[SMPPCLINET1|EsmeConnection.cpp|00057|26-11-2016 21:44:53:681|~IN~]Receiveing the data from SMPP[68]:cmdLength:68,cmdId:0x5,cmdStatus:0,mcsi_sessionId4:Error Not Configured
+000000440000000500000000000000045553534400010139313934393330323437303500000031323537000000000000000000000a373637363732343631340501000112
+[SMPPCLINET1|TimerManeger.cpp|00088|26-11-2016 21:44:53:726|~DG~]Time to get Evetn:51,1
+0000001180000005000000000000000400
+[SMPPCLINET1|EsmeConnection.cpp|00199|26-11-2016 21:44:53:734|~VB~]Received Continue Message:919493024705,UserInput:7676724614
+[SMPPCLINET1|EsmeConnection.cpp|00202|26-11-2016 21:44:53:735|~IN~]USSR Session found :919493024705,Analysing User Input:7676724614
+[SMPPCLINET1|Menu.cpp|00140|26-11-2016 21:44:53:735|~CR~]UserInput is invalid {input:7676724614,menu Id:3,username:icmuser,serviceCode:1257}
+[SMPPCLINET1|TimerManeger.cpp|00061|26-11-2016 21:44:53:735|~DG~]Unregister Call came with :1480176944,0x82e8d40
+[SMPPCLINET1|TimerManeger.cpp|00066|26-11-2016 21:44:53:735|~DG~]Created and  adding to that:1480176944,0x82e8d40
+[SMPPCLINET1|EsmeConnection.cpp|00251|26-11-2016 21:44:53:735|~IN~]Session found :919493024705,Sending Continue Message :Invalid Input,Enter your phone Number:
+0000006000000004000000000000000655535344000000313235370001013931393439333032343730350000000000000000000026496e76616c696420496e7075742c456e74657220796f75722070686f6e65204e756d6265723a0501000102
+[SMPPCLINET1|TimerManeger.cpp|00051|26-11-2016 21:44:53:735|~DG~]Created and  adding to that:1480176953
+[SMPPCLINET1|EsmeConnection.cpp|00057|26-11-2016 21:44:53:777|~IN~]Receiveing the data from SMPP[18]:cmdLength:18,cmdId:0x80000004,cmdStatus:0,mcsi_sessionId6:Error Not Configured
+000000128000000400000000000000063000
+[SMPPCLINET1|TimerManeger.cpp|00088|26-11-2016 21:44:54:729|~DG~]Time to get Evetn:59,1
+[SMPPCLINET1|TimerManeger.cpp|00088|26-11-2016 21:44:55:731|~DG~]Time to get Evetn:58,1
+00000010000000150000000000000007
+[SMPPCLINET1|TimerManeger.cpp|00088|26-11-2016 21:44:56:733|~DG~]Time to get Evetn:57,1
+[SMPPCLINET1|TimerManeger.cpp|00088|26-11-2016 21:44:57:736|~DG~]Time to get Evetn:56,1
+[SMPPCLINET1|TimerManeger.cpp|00088|26-11-2016 21:44:58:738|~DG~]Time to get Evetn:55,1
+[SMPPCLINET1|TimerManeger.cpp|00088|26-11-2016 21:44:59:739|~DG~]Time to get Evetn:54,1
+[SMPPCLINET1|TimerManeger.cpp|00088|26-11-2016 21:45:00:741|~DG~]Time to get Evetn:53,1
+[SMPPCLINET1|TimerManeger.cpp|00088|26-11-2016 21:45:01:743|~DG~]Time to get Evetn:52,1
+[SMPPCLINET1|TimerManeger.cpp|00088|26-11-2016 21:45:02:746|~DG~]Time to get Evetn:51,1
+[SMPPCLINET1|TimerManeger.cpp|00088|26-11-2016 21:45:03:747|~DG~]Time to get Evetn:50,1
+[SMPPCLINET1|TimerManeger.cpp|00088|26-11-2016 21:45:04:749|~DG~]Time to get Evetn:49,1
+[SMPPCLINET1|TimerManeger.cpp|00088|26-11-2016 21:45:05:751|~DG~]Time to get Evetn:48,1
+[SMPPCLINET1|TimerManeger.cpp|00088|26-11-2016 21:45:06:752|~DG~]Time to get Evetn:47,1
+[SMPPCLINET1|TimerManeger.cpp|00088|26-11-2016 21:45:07:755|~DG~]Time to get Evetn:46,1
+[SMPPCLINET1|TimerManeger.cpp|00088|26-11-2016 21:45:08:756|~DG~]Time to get Evetn:45,1
+[SMPPCLINET1|TimerManeger.cpp|00088|26-11-2016 21:45:09:758|~DG~]Time to get Evetn:44,1
+[SMPPCLINET1|TimerManeger.cpp|00088|26-11-2016 21:45:10:760|~DG~]Time to get Evetn:43,1
+[SMPPCLINET1|TimerManeger.cpp|00088|26-11-2016 21:45:11:761|~DG~]Time to get Evetn:42,1
+[SMPPCLINET1|TimerManeger.cpp|00088|26-11-2016 21:45:12:764|~DG~]Time to get Evetn:41,1
+[SMPPCLINET1|TimerManeger.cpp|00088|26-11-2016 21:45:13:765|~DG~]Time to get Evetn:40,1
+[SMPPCLINET1|TimerManeger.cpp|00088|26-11-2016 21:45:14:768|~DG~]Time to get Evetn:39,1
+[SMPPCLINET1|TimerManeger.cpp|00088|26-11-2016 21:45:15:769|~DG~]Time to get Evetn:38,1
+[SMPPCLINET1|TimerManeger.cpp|00088|26-11-2016 21:45:16:771|~DG~]Time to get Evetn:37,1
+[SMPPCLINET1|TimerManeger.cpp|00088|26-11-2016 21:45:17:773|~DG~]Time to get Evetn:36,1
+[SMPPCLINET1|TimerManeger.cpp|00088|26-11-2016 21:45:18:775|~DG~]Time to get Evetn:35,1
+[SMPPCLINET1|TimerManeger.cpp|00088|26-11-2016 21:45:19:777|~DG~]Time to get Evetn:34,1
+[SMPPCLINET1|TimerManeger.cpp|00088|26-11-2016 21:45:20:779|~DG~]Time to get Evetn:33,1
+[SMPPCLINET1|TimerManeger.cpp|00088|26-11-2016 21:45:21:781|~DG~]Time to get Evetn:32,1
+[SMPPCLINET1|TimerManeger.cpp|00088|26-11-2016 21:45:22:783|~DG~]Time to get Evetn:31,1
+[SMPPCLINET1|TimerManeger.cpp|00088|26-11-2016 21:45:23:785|~DG~]Time to get Evetn:30,1
+[SMPPCLINET1|TimerManeger.cpp|00088|26-11-2016 21:45:24:787|~DG~]Time to get Evetn:29,1
+[SMPPCLINET1|TimerManeger.cpp|00088|26-11-2016 21:45:25:799|~DG~]Time to get Evetn:28,1
+[SMPPCLINET1|TimerManeger.cpp|00088|26-11-2016 21:45:26:804|~DG~]Time to get Evetn:27,1
+00000010000000150000000000000008
+[SMPPCLINET1|TimerManeger.cpp|00088|26-11-2016 21:45:27:806|~DG~]Time to get Evetn:26,1
+[SMPPCLINET1|TimerManeger.cpp|00088|26-11-2016 21:45:28:808|~DG~]Time to get Evetn:25,1
+[SMPPCLINET1|TimerManeger.cpp|00088|26-11-2016 21:45:29:810|~DG~]Time to get Evetn:24,1
+[SMPPCLINET1|TimerManeger.cpp|00088|26-11-2016 21:45:30:813|~DG~]Time to get Evetn:23,1
+[SMPPCLINET1|TimerManeger.cpp|00088|26-11-2016 21:45:31:815|~DG~]Time to get Evetn:22,1
+[SMPPCLINET1|TimerManeger.cpp|00088|26-11-2016 21:45:32:818|~DG~]Time to get Evetn:21,1
+[SMPPCLINET1|TimerManeger.cpp|00088|26-11-2016 21:45:33:819|~DG~]Time to get Evetn:20,1
+[SMPPCLINET1|TimerManeger.cpp|00088|26-11-2016 21:45:34:822|~DG~]Time to get Evetn:19,1
+[SMPPCLINET1|TimerManeger.cpp|00088|26-11-2016 21:45:35:823|~DG~]Time to get Evetn:18,1
+[SMPPCLINET1|TimerManeger.cpp|00088|26-11-2016 21:45:36:826|~DG~]Time to get Evetn:17,1
+[SMPPCLINET1|TimerManeger.cpp|00088|26-11-2016 21:45:37:829|~DG~]Time to get Evetn:16,1
+[SMPPCLINET1|TimerManeger.cpp|00088|26-11-2016 21:45:38:832|~DG~]Time to get Evetn:15,1
+[SMPPCLINET1|TimerManeger.cpp|00088|26-11-2016 21:45:39:835|~DG~]Time to get Evetn:14,1
+[SMPPCLINET1|TimerManeger.cpp|00088|26-11-2016 21:45:40:837|~DG~]Time to get Evetn:13,1
+[SMPPCLINET1|TimerManeger.cpp|00088|26-11-2016 21:45:41:841|~DG~]Time to get Evetn:12,1
+[SMPPCLINET1|TimerManeger.cpp|00088|26-11-2016 21:45:42:843|~DG~]Time to get Evetn:11,1
+[SMPPCLINET1|EsmeConnection.cpp|00057|26-11-2016 21:45:43:535|~IN~]Receiveing the data from SMPP[62]:cmdLength:62,cmdId:0x5,cmdStatus:0,mcsi_sessionId5:Error Not Configured
+0000003e00000005000000000000000555535344000101393139343933303234373035000000313235370000000000000000000004617375610501000112
+[SMPPCLINET1|TimerManeger.cpp|00088|26-11-2016 21:45:43:845|~DG~]Time to get Evetn:10,1
+0000001180000005000000000000000500
+[SMPPCLINET1|EsmeConnection.cpp|00199|26-11-2016 21:45:43:848|~VB~]Received Continue Message:919493024705,UserInput:asua
+[SMPPCLINET1|EsmeConnection.cpp|00202|26-11-2016 21:45:43:849|~IN~]USSR Session found :919493024705,Analysing User Input:asua
+[SMPPCLINET1|Menu.cpp|00140|26-11-2016 21:45:43:849|~CR~]UserInput is invalid {input:asua,menu Id:3,username:icmuser,serviceCode:1257}
+[SMPPCLINET1|TimerManeger.cpp|00061|26-11-2016 21:45:43:849|~DG~]Unregister Call came with :1480176953,0x82e8d40
+[SMPPCLINET1|TimerManeger.cpp|00066|26-11-2016 21:45:43:849|~DG~]Created and  adding to that:1480176953,0x82e8d40
+[SMPPCLINET1|EsmeConnection.cpp|00251|26-11-2016 21:45:43:849|~IN~]Session found :919493024705,Sending Continue Message :Invalid Input,Enter your phone Number:
+0000006000000004000000000000000955535344000000313235370001013931393439333032343730350000000000000000000026496e76616c696420496e7075742c456e74657220796f75722070686f6e65204e756d6265723a0501000102
+[SMPPCLINET1|EsmeConnection.cpp|00057|26-11-2016 21:45:43:850|~IN~]Receiveing the data from SMPP[18]:cmdLength:18,cmdId:0x80000004,cmdStatus:0,mcsi_sessionId9:Error Not Configured
+000000128000000400000000000000093000
+[SMPPCLINET1|TimerManeger.cpp|00051|26-11-2016 21:45:43:851|~DG~]Created and  adding to that:1480177003
+[SMPPCLINET1|TimerManeger.cpp|00088|26-11-2016 21:45:44:847|~DG~]Time to get Evetn:59,1
+[SMPPCLINET1|TimerManeger.cpp|00088|26-11-2016 21:45:45:848|~DG~]Time to get Evetn:58,1
+[SMPPCLINET1|TimerManeger.cpp|00088|26-11-2016 21:45:46:851|~DG~]Time to get Evetn:57,1
+[SMPPCLINET1|EsmeConnection.cpp|00057|26-11-2016 21:45:46:915|~IN~]Receiveing the data from SMPP[65]:cmdLength:65,cmdId:0x5,cmdStatus:0,mcsi_sessionId6:Error Not Configured
+0000004100000005000000000000000655535344000101393139343933303234373035000000313235370000000000000000000007737572313231320501000112
+[SMPPCLINET1|TimerManeger.cpp|00088|26-11-2016 21:45:47:856|~DG~]Time to get Evetn:56,1
+0000001180000005000000000000000600
+[SMPPCLINET1|EsmeConnection.cpp|00199|26-11-2016 21:45:47:862|~VB~]Received Continue Message:919493024705,UserInput:sur1212
+[SMPPCLINET1|EsmeConnection.cpp|00202|26-11-2016 21:45:47:863|~IN~]USSR Session found :919493024705,Analysing User Input:sur1212
+[SMPPCLINET1|Menu.cpp|00140|26-11-2016 21:45:47:863|~CR~]UserInput is invalid {input:sur1212,menu Id:3,username:icmuser,serviceCode:1257}
+[SMPPCLINET1|TimerManeger.cpp|00061|26-11-2016 21:45:47:863|~DG~]Unregister Call came with :1480177003,0x82e8d40
+[SMPPCLINET1|TimerManeger.cpp|00066|26-11-2016 21:45:47:863|~DG~]Created and  adding to that:1480177003,0x82e8d40
+[SMPPCLINET1|EsmeConnection.cpp|00251|26-11-2016 21:45:47:863|~IN~]Session found :919493024705,Sending Continue Message :Invalid Input,Enter your phone Number:
+0000006000000004000000000000000a55535344000000313235370001013931393439333032343730350000000000000000000026496e76616c696420496e7075742c456e74657220796f75722070686f6e65204e756d6265723a0501000102
+[SMPPCLINET1|TimerManeger.cpp|00051|26-11-2016 21:45:47:863|~DG~]Created and  adding to that:1480177007
+[SMPPCLINET1|EsmeConnection.cpp|00057|26-11-2016 21:45:47:900|~IN~]Receiveing the data from SMPP[18]:cmdLength:18,cmdId:0x80000004,cmdStatus:0,mcsi_sessionIda:Error Not Configured
+0000001280000004000000000000000a3000
+[SMPPCLINET1|TimerManeger.cpp|00088|26-11-2016 21:45:48:859|~DG~]Time to get Evetn:59,1
+[SMPPCLINET1|TimerManeger.cpp|00088|26-11-2016 21:45:49:861|~DG~]Time to get Evetn:58,1
+[SMPPCLINET1|TimerManeger.cpp|00088|26-11-2016 21:45:50:864|~DG~]Time to get Evetn:57,1
+[SMPPCLINET1|TimerManeger.cpp|00088|26-11-2016 21:45:51:866|~DG~]Time to get Evetn:56,1
+[SMPPCLINET1|TimerManeger.cpp|00088|26-11-2016 21:45:52:867|~DG~]Time to get Evetn:55,1
+[SMPPCLINET1|TimerManeger.cpp|00088|26-11-2016 21:45:53:871|~DG~]Time to get Evetn:54,1

@@ -1,0 +1,299 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.5.4	//
+ABORT	UssdData.pb.cc	/^const UssdData_operation_type UssdData::ABORT;$/;"	m	class:UssdData	file:
+ABORT	UssdData.pb.h	/^  static const operation_type ABORT = UssdData_operation_type_ABORT;$/;"	m	class:UssdData
+ByteSize	UssdData.pb.cc	/^int UssdData::ByteSize() const {$/;"	f	class:UssdData
+CC	Makefile	/^CC=g++ $/;"	m
+CFLAGS	Makefile	/^CFLAGS=-D __LINUX__  -Wno-deprecated -finline$/;"	m
+CONTINUE	UssdData.pb.cc	/^const UssdData_operation_type UssdData::CONTINUE;$/;"	m	class:UssdData	file:
+CONTINUE	UssdData.pb.h	/^  static const operation_type CONTINUE = UssdData_operation_type_CONTINUE;$/;"	m	class:UssdData
+Clear	UssdData.pb.cc	/^void UssdData::Clear() {$/;"	f	class:UssdData
+CopyFrom	UssdData.pb.cc	/^void UssdData::CopyFrom(const ::google::protobuf::Message& from) {$/;"	f	class:UssdData
+CopyFrom	UssdData.pb.cc	/^void UssdData::CopyFrom(const UssdData& from) {$/;"	f	class:UssdData
+DO_	UssdData.pb.cc	356;"	d	file:
+DO_	UssdData.pb.cc	602;"	d	file:
+END	UssdData.pb.cc	/^const UssdData_operation_type UssdData::END;$/;"	m	class:UssdData	file:
+END	UssdData.pb.h	/^  static const operation_type END = UssdData_operation_type_END;$/;"	m	class:UssdData
+ENQ_LINK	UssdData.pb.cc	/^const UssdData_operation_type UssdData::ENQ_LINK;$/;"	m	class:UssdData	file:
+ENQ_LINK	UssdData.pb.h	/^  static const operation_type ENQ_LINK = UssdData_operation_type_ENQ_LINK;$/;"	m	class:UssdData
+ENQ_LINK_RESP	UssdData.pb.cc	/^const UssdData_operation_type UssdData::ENQ_LINK_RESP;$/;"	m	class:UssdData	file:
+ENQ_LINK_RESP	UssdData.pb.h	/^  static const operation_type ENQ_LINK_RESP = UssdData_operation_type_ENQ_LINK_RESP;$/;"	m	class:UssdData
+GetCachedSize	UssdData.pb.h	/^  int GetCachedSize() const { return _cached_size_; }$/;"	f	class:UssdData
+GetDescriptor	UssdData.pb.cc	/^const ::google::protobuf::Descriptor* UssdData::GetDescriptor() const {$/;"	f	class:UssdData
+GetReflection	UssdData.pb.cc	/^const ::google::protobuf::Reflection* UssdData::GetReflection() const {$/;"	f	class:UssdData
+INCLUDES	Makefile	/^INCLUDES= $/;"	m
+InitAsDefaultInstance	UssdData.pb.cc	/^void UssdData::InitAsDefaultInstance() {}$/;"	f	class:UssdData
+IsInitialized	UssdData.pb.cc	/^bool UssdData::IsInitialized() const {$/;"	f	class:UssdData
+LIBS	Makefile	/^LIBS= $/;"	m
+LIB_NAME	Makefile	/^LIB_NAME=AggrPFlib_1.0.a$/;"	m
+LIB_PATHS	Makefile	/^LIB_PATHS=$/;"	m
+LOGIN	UssdData.pb.cc	/^const UssdData_operation_type UssdData::LOGIN;$/;"	m	class:UssdData	file:
+LOGIN	UssdData.pb.h	/^  static const operation_type LOGIN = UssdData_operation_type_LOGIN;$/;"	m	class:UssdData
+LOGIN_RESP	UssdData.pb.cc	/^const UssdData_operation_type UssdData::LOGIN_RESP;$/;"	m	class:UssdData	file:
+LOGIN_RESP	UssdData.pb.h	/^  static const operation_type LOGIN_RESP = UssdData_operation_type_LOGIN_RESP;$/;"	m	class:UssdData
+LOGOUT	UssdData.pb.cc	/^const UssdData_operation_type UssdData::LOGOUT;$/;"	m	class:UssdData	file:
+LOGOUT	UssdData.pb.h	/^  static const operation_type LOGOUT = UssdData_operation_type_LOGOUT;$/;"	m	class:UssdData
+LOGOUT_RESP	UssdData.pb.cc	/^const UssdData_operation_type UssdData::LOGOUT_RESP;$/;"	m	class:UssdData	file:
+LOGOUT_RESP	UssdData.pb.h	/^  static const operation_type LOGOUT_RESP = UssdData_operation_type_LOGOUT_RESP;$/;"	m	class:UssdData
+MergeFrom	UssdData.pb.cc	/^void UssdData::MergeFrom(const ::google::protobuf::Message& from) {$/;"	f	class:UssdData
+MergeFrom	UssdData.pb.cc	/^void UssdData::MergeFrom(const UssdData& from) {$/;"	f	class:UssdData
+MergePartialFromCodedStream	UssdData.pb.cc	/^bool UssdData::MergePartialFromCodedStream($/;"	f	class:UssdData
+Msg_Type	UssdData.pb.h	/^  typedef UssdData_Msg_Type Msg_Type;$/;"	t	class:UssdData
+Msg_Type_IsValid	UssdData.pb.h	/^  static inline bool Msg_Type_IsValid(int value) {$/;"	f	class:UssdData
+Msg_Type_MAX	UssdData.pb.cc	/^const UssdData_Msg_Type UssdData::Msg_Type_MAX;$/;"	m	class:UssdData	file:
+Msg_Type_MAX	UssdData.pb.h	/^  static const Msg_Type Msg_Type_MAX =$/;"	m	class:UssdData
+Msg_Type_MIN	UssdData.pb.cc	/^const UssdData_Msg_Type UssdData::Msg_Type_MIN;$/;"	m	class:UssdData	file:
+Msg_Type_MIN	UssdData.pb.h	/^  static const Msg_Type Msg_Type_MIN =$/;"	m	class:UssdData
+Msg_Type_Name	UssdData.pb.h	/^  static inline const ::std::string& Msg_Type_Name(Msg_Type value) {$/;"	f	class:UssdData
+Msg_Type_Parse	UssdData.pb.h	/^  static inline bool Msg_Type_Parse(const ::std::string& name,$/;"	f	class:UssdData
+Msg_Type_descriptor	UssdData.pb.h	/^  Msg_Type_descriptor() {$/;"	f	class:UssdData
+NOTIFY	UssdData.pb.cc	/^const UssdData_Msg_Type UssdData::NOTIFY;$/;"	m	class:UssdData	file:
+NOTIFY	UssdData.pb.h	/^  static const Msg_Type NOTIFY = UssdData_Msg_Type_NOTIFY;$/;"	m	class:UssdData
+New	UssdData.pb.cc	/^UssdData* UssdData::New() const {$/;"	f	class:UssdData
+OBJS	Makefile	/^OBJS=$(SRCS:%.cc=%.o)$/;"	m
+PROTOBUF_UssdData_2eproto__INCLUDED	UssdData.pb.h	4;"	d
+RELEASE	UssdData.pb.cc	/^const UssdData_Msg_Type UssdData::RELEASE;$/;"	m	class:UssdData	file:
+RELEASE	UssdData.pb.h	/^  static const Msg_Type RELEASE = UssdData_Msg_Type_RELEASE;$/;"	m	class:UssdData
+REQUEST	UssdData.pb.cc	/^const UssdData_Msg_Type UssdData::REQUEST;$/;"	m	class:UssdData	file:
+REQUEST	UssdData.pb.h	/^  static const Msg_Type REQUEST = UssdData_Msg_Type_REQUEST;$/;"	m	class:UssdData
+RESPONCE	UssdData.pb.cc	/^const UssdData_Msg_Type UssdData::RESPONCE;$/;"	m	class:UssdData	file:
+RESPONCE	UssdData.pb.h	/^  static const Msg_Type RESPONCE = UssdData_Msg_Type_RESPONCE;$/;"	m	class:UssdData
+SRCS	Makefile	/^SRCS=$(wildcard *.cc)$/;"	m
+START	UssdData.pb.cc	/^const UssdData_operation_type UssdData::START;$/;"	m	class:UssdData	file:
+START	UssdData.pb.h	/^  static const operation_type START = UssdData_operation_type_START;$/;"	m	class:UssdData
+SerializeWithCachedSizes	UssdData.pb.cc	/^void UssdData::SerializeWithCachedSizes($/;"	f	class:UssdData
+SerializeWithCachedSizesToArray	UssdData.pb.cc	/^::google::protobuf::uint8* UssdData::SerializeWithCachedSizesToArray($/;"	f	class:UssdData
+SetCachedSize	UssdData.pb.h	/^  void SetCachedSize(int size) const { _cached_size_ = size; }$/;"	f	class:UssdData
+SharedCtor	UssdData.pb.cc	/^void UssdData::SharedCtor() {$/;"	f	class:UssdData
+SharedDtor	UssdData.pb.cc	/^void UssdData::SharedDtor() {$/;"	f	class:UssdData
+StaticDescriptorInitializer_UssdData_2eproto	UssdData.pb.cc	/^  StaticDescriptorInitializer_UssdData_2eproto() {$/;"	f	struct:StaticDescriptorInitializer_UssdData_2eproto
+StaticDescriptorInitializer_UssdData_2eproto	UssdData.pb.cc	/^struct StaticDescriptorInitializer_UssdData_2eproto {$/;"	s	file:
+Swap	UssdData.pb.cc	/^void UssdData::Swap(UssdData* other) {$/;"	f	class:UssdData
+UssdData	UssdData.pb.cc	/^UssdData::UssdData()$/;"	f	class:UssdData
+UssdData	UssdData.pb.cc	/^UssdData::UssdData(const UssdData& from)$/;"	f	class:UssdData
+UssdData	UssdData.pb.h	/^class UssdData : public ::google::protobuf::Message {$/;"	c
+UssdData_Msg_Type	UssdData.pb.h	/^enum UssdData_Msg_Type {$/;"	g
+UssdData_Msg_Type_IsValid	UssdData.pb.cc	/^bool UssdData_Msg_Type_IsValid(int value) {$/;"	f
+UssdData_Msg_Type_Msg_Type_MAX	UssdData.pb.h	/^const UssdData_Msg_Type UssdData_Msg_Type_Msg_Type_MAX = UssdData_Msg_Type_RELEASE;$/;"	v
+UssdData_Msg_Type_Msg_Type_MIN	UssdData.pb.h	/^const UssdData_Msg_Type UssdData_Msg_Type_Msg_Type_MIN = UssdData_Msg_Type_REQUEST;$/;"	v
+UssdData_Msg_Type_NOTIFY	UssdData.pb.h	/^  UssdData_Msg_Type_NOTIFY = 2,$/;"	e	enum:UssdData_Msg_Type
+UssdData_Msg_Type_Name	UssdData.pb.h	/^inline const ::std::string& UssdData_Msg_Type_Name(UssdData_Msg_Type value) {$/;"	f
+UssdData_Msg_Type_Parse	UssdData.pb.h	/^inline bool UssdData_Msg_Type_Parse($/;"	f
+UssdData_Msg_Type_RELEASE	UssdData.pb.h	/^  UssdData_Msg_Type_RELEASE = 4$/;"	e	enum:UssdData_Msg_Type
+UssdData_Msg_Type_REQUEST	UssdData.pb.h	/^  UssdData_Msg_Type_REQUEST = 1,$/;"	e	enum:UssdData_Msg_Type
+UssdData_Msg_Type_RESPONCE	UssdData.pb.h	/^  UssdData_Msg_Type_RESPONCE = 3,$/;"	e	enum:UssdData_Msg_Type
+UssdData_Msg_Type_descriptor	UssdData.pb.cc	/^const ::google::protobuf::EnumDescriptor* UssdData_Msg_Type_descriptor() {$/;"	f
+UssdData_Msg_Type_descriptor_	UssdData.pb.cc	/^const ::google::protobuf::EnumDescriptor* UssdData_Msg_Type_descriptor_ = NULL;$/;"	v
+UssdData_descriptor_	UssdData.pb.cc	/^const ::google::protobuf::Descriptor* UssdData_descriptor_ = NULL;$/;"	v
+UssdData_operation_type	UssdData.pb.h	/^enum UssdData_operation_type {$/;"	g
+UssdData_operation_type_ABORT	UssdData.pb.h	/^  UssdData_operation_type_ABORT = 8,$/;"	e	enum:UssdData_operation_type
+UssdData_operation_type_CONTINUE	UssdData.pb.h	/^  UssdData_operation_type_CONTINUE = 6,$/;"	e	enum:UssdData_operation_type
+UssdData_operation_type_END	UssdData.pb.h	/^  UssdData_operation_type_END = 7,$/;"	e	enum:UssdData_operation_type
+UssdData_operation_type_ENQ_LINK	UssdData.pb.h	/^  UssdData_operation_type_ENQ_LINK = 9,$/;"	e	enum:UssdData_operation_type
+UssdData_operation_type_ENQ_LINK_RESP	UssdData.pb.h	/^  UssdData_operation_type_ENQ_LINK_RESP = 10$/;"	e	enum:UssdData_operation_type
+UssdData_operation_type_IsValid	UssdData.pb.cc	/^bool UssdData_operation_type_IsValid(int value) {$/;"	f
+UssdData_operation_type_LOGIN	UssdData.pb.h	/^  UssdData_operation_type_LOGIN = 1,$/;"	e	enum:UssdData_operation_type
+UssdData_operation_type_LOGIN_RESP	UssdData.pb.h	/^  UssdData_operation_type_LOGIN_RESP = 2,$/;"	e	enum:UssdData_operation_type
+UssdData_operation_type_LOGOUT	UssdData.pb.h	/^  UssdData_operation_type_LOGOUT = 3,$/;"	e	enum:UssdData_operation_type
+UssdData_operation_type_LOGOUT_RESP	UssdData.pb.h	/^  UssdData_operation_type_LOGOUT_RESP = 4,$/;"	e	enum:UssdData_operation_type
+UssdData_operation_type_Name	UssdData.pb.h	/^inline const ::std::string& UssdData_operation_type_Name(UssdData_operation_type value) {$/;"	f
+UssdData_operation_type_Parse	UssdData.pb.h	/^inline bool UssdData_operation_type_Parse($/;"	f
+UssdData_operation_type_START	UssdData.pb.h	/^  UssdData_operation_type_START = 5,$/;"	e	enum:UssdData_operation_type
+UssdData_operation_type_descriptor	UssdData.pb.cc	/^const ::google::protobuf::EnumDescriptor* UssdData_operation_type_descriptor() {$/;"	f
+UssdData_operation_type_descriptor_	UssdData.pb.cc	/^const ::google::protobuf::EnumDescriptor* UssdData_operation_type_descriptor_ = NULL;$/;"	v
+UssdData_operation_type_operation_type_MAX	UssdData.pb.h	/^const UssdData_operation_type UssdData_operation_type_operation_type_MAX = UssdData_operation_type_ENQ_LINK_RESP;$/;"	v
+UssdData_operation_type_operation_type_MIN	UssdData.pb.h	/^const UssdData_operation_type UssdData_operation_type_operation_type_MIN = UssdData_operation_type_LOGIN;$/;"	v
+UssdData_reflection_	UssdData.pb.cc	/^  UssdData_reflection_ = NULL;$/;"	v
+_cached_size_	UssdData.pb.h	/^  mutable int _cached_size_;$/;"	m	class:UssdData
+_clear_bit	UssdData.pb.h	/^  inline void _clear_bit(int index) {$/;"	f	class:UssdData
+_default_app_id_	UssdData.pb.cc	/^const ::std::string UssdData::_default_app_id_;$/;"	m	class:UssdData	file:
+_default_app_id_	UssdData.pb.h	/^  static const ::std::string _default_app_id_;$/;"	m	class:UssdData
+_default_da_	UssdData.pb.cc	/^const ::std::string UssdData::_default_da_;$/;"	m	class:UssdData	file:
+_default_da_	UssdData.pb.h	/^  static const ::std::string _default_da_;$/;"	m	class:UssdData
+_default_imsi_	UssdData.pb.cc	/^const ::std::string UssdData::_default_imsi_;$/;"	m	class:UssdData	file:
+_default_imsi_	UssdData.pb.h	/^  static const ::std::string _default_imsi_;$/;"	m	class:UssdData
+_default_msg_	UssdData.pb.cc	/^const ::std::string UssdData::_default_msg_;$/;"	m	class:UssdData	file:
+_default_msg_	UssdData.pb.h	/^  static const ::std::string _default_msg_;$/;"	m	class:UssdData
+_default_oa_	UssdData.pb.cc	/^const ::std::string UssdData::_default_oa_;$/;"	m	class:UssdData	file:
+_default_oa_	UssdData.pb.h	/^  static const ::std::string _default_oa_;$/;"	m	class:UssdData
+_default_password_	UssdData.pb.cc	/^const ::std::string UssdData::_default_password_;$/;"	m	class:UssdData	file:
+_default_password_	UssdData.pb.h	/^  static const ::std::string _default_password_;$/;"	m	class:UssdData
+_default_srv_code_	UssdData.pb.cc	/^const ::std::string UssdData::_default_srv_code_;$/;"	m	class:UssdData	file:
+_default_srv_code_	UssdData.pb.h	/^  static const ::std::string _default_srv_code_;$/;"	m	class:UssdData
+_default_username_	UssdData.pb.cc	/^const ::std::string UssdData::_default_username_;$/;"	m	class:UssdData	file:
+_default_username_	UssdData.pb.h	/^  static const ::std::string _default_username_;$/;"	m	class:UssdData
+_has_bit	UssdData.pb.h	/^  inline bool _has_bit(int index) const {$/;"	f	class:UssdData
+_has_bits_	UssdData.pb.h	/^  ::google::protobuf::uint32 _has_bits_[(17 + 31) \/ 32];$/;"	m	class:UssdData
+_set_bit	UssdData.pb.h	/^  inline void _set_bit(int index) {$/;"	f	class:UssdData
+_unknown_fields_	UssdData.pb.h	/^  ::google::protobuf::UnknownFieldSet _unknown_fields_;$/;"	m	class:UssdData
+app_id	UssdData.pb.h	/^inline const ::std::string& UssdData::app_id() const {$/;"	f	class:UssdData
+app_id_	UssdData.pb.h	/^  ::std::string* app_id_;$/;"	m	class:UssdData
+clear_app_id	UssdData.pb.h	/^inline void UssdData::clear_app_id() {$/;"	f	class:UssdData
+clear_da	UssdData.pb.h	/^inline void UssdData::clear_da() {$/;"	f	class:UssdData
+clear_dcs	UssdData.pb.h	/^inline void UssdData::clear_dcs() {$/;"	f	class:UssdData
+clear_delivery_report	UssdData.pb.h	/^inline void UssdData::clear_delivery_report() {$/;"	f	class:UssdData
+clear_imsi	UssdData.pb.h	/^inline void UssdData::clear_imsi() {$/;"	f	class:UssdData
+clear_msg	UssdData.pb.h	/^inline void UssdData::clear_msg() {$/;"	f	class:UssdData
+clear_msg_type	UssdData.pb.h	/^inline void UssdData::clear_msg_type() {$/;"	f	class:UssdData
+clear_oa	UssdData.pb.h	/^inline void UssdData::clear_oa() {$/;"	f	class:UssdData
+clear_op_type	UssdData.pb.h	/^inline void UssdData::clear_op_type() {$/;"	f	class:UssdData
+clear_password	UssdData.pb.h	/^inline void UssdData::clear_password() {$/;"	f	class:UssdData
+clear_receiver_session_id	UssdData.pb.h	/^inline void UssdData::clear_receiver_session_id() {$/;"	f	class:UssdData
+clear_sender_session_id	UssdData.pb.h	/^inline void UssdData::clear_sender_session_id() {$/;"	f	class:UssdData
+clear_session_status	UssdData.pb.h	/^inline void UssdData::clear_session_status() {$/;"	f	class:UssdData
+clear_srv_code	UssdData.pb.h	/^inline void UssdData::clear_srv_code() {$/;"	f	class:UssdData
+clear_status	UssdData.pb.h	/^inline void UssdData::clear_status() {$/;"	f	class:UssdData
+clear_username	UssdData.pb.h	/^inline void UssdData::clear_username() {$/;"	f	class:UssdData
+clear_version	UssdData.pb.h	/^inline void UssdData::clear_version() {$/;"	f	class:UssdData
+da	UssdData.pb.h	/^inline const ::std::string& UssdData::da() const {$/;"	f	class:UssdData
+da_	UssdData.pb.h	/^  ::std::string* da_;$/;"	m	class:UssdData
+dcs	UssdData.pb.h	/^inline ::google::protobuf::uint32 UssdData::dcs() const {$/;"	f	class:UssdData
+dcs_	UssdData.pb.h	/^  ::google::protobuf::uint32 dcs_;$/;"	m	class:UssdData
+default_instance	UssdData.pb.cc	/^const UssdData& UssdData::default_instance() {$/;"	f	class:UssdData
+default_instance_	UssdData.pb.cc	/^UssdData* UssdData::default_instance_ = NULL;$/;"	m	class:UssdData	file:
+default_instance_	UssdData.pb.h	/^  static UssdData* default_instance_;$/;"	m	class:UssdData
+delivery_report	UssdData.pb.h	/^inline ::google::protobuf::int32 UssdData::delivery_report() const {$/;"	f	class:UssdData
+delivery_report_	UssdData.pb.h	/^  ::google::protobuf::int32 delivery_report_;$/;"	m	class:UssdData
+descriptor	UssdData.pb.cc	/^const ::google::protobuf::Descriptor* UssdData::descriptor() {$/;"	f	class:UssdData
+has_app_id	UssdData.pb.h	/^inline bool UssdData::has_app_id() const {$/;"	f	class:UssdData
+has_da	UssdData.pb.h	/^inline bool UssdData::has_da() const {$/;"	f	class:UssdData
+has_dcs	UssdData.pb.h	/^inline bool UssdData::has_dcs() const {$/;"	f	class:UssdData
+has_delivery_report	UssdData.pb.h	/^inline bool UssdData::has_delivery_report() const {$/;"	f	class:UssdData
+has_imsi	UssdData.pb.h	/^inline bool UssdData::has_imsi() const {$/;"	f	class:UssdData
+has_msg	UssdData.pb.h	/^inline bool UssdData::has_msg() const {$/;"	f	class:UssdData
+has_msg_type	UssdData.pb.h	/^inline bool UssdData::has_msg_type() const {$/;"	f	class:UssdData
+has_oa	UssdData.pb.h	/^inline bool UssdData::has_oa() const {$/;"	f	class:UssdData
+has_op_type	UssdData.pb.h	/^inline bool UssdData::has_op_type() const {$/;"	f	class:UssdData
+has_password	UssdData.pb.h	/^inline bool UssdData::has_password() const {$/;"	f	class:UssdData
+has_receiver_session_id	UssdData.pb.h	/^inline bool UssdData::has_receiver_session_id() const {$/;"	f	class:UssdData
+has_sender_session_id	UssdData.pb.h	/^inline bool UssdData::has_sender_session_id() const {$/;"	f	class:UssdData
+has_session_status	UssdData.pb.h	/^inline bool UssdData::has_session_status() const {$/;"	f	class:UssdData
+has_srv_code	UssdData.pb.h	/^inline bool UssdData::has_srv_code() const {$/;"	f	class:UssdData
+has_status	UssdData.pb.h	/^inline bool UssdData::has_status() const {$/;"	f	class:UssdData
+has_username	UssdData.pb.h	/^inline bool UssdData::has_username() const {$/;"	f	class:UssdData
+has_version	UssdData.pb.h	/^inline bool UssdData::has_version() const {$/;"	f	class:UssdData
+imsi	UssdData.pb.h	/^inline const ::std::string& UssdData::imsi() const {$/;"	f	class:UssdData
+imsi_	UssdData.pb.h	/^  ::std::string* imsi_;$/;"	m	class:UssdData
+kAppIdFieldNumber	UssdData.pb.cc	/^const int UssdData::kAppIdFieldNumber;$/;"	m	class:UssdData	file:
+kAppIdFieldNumber	UssdData.pb.h	/^  static const int kAppIdFieldNumber = 17;$/;"	m	class:UssdData
+kDaFieldNumber	UssdData.pb.cc	/^const int UssdData::kDaFieldNumber;$/;"	m	class:UssdData	file:
+kDaFieldNumber	UssdData.pb.h	/^  static const int kDaFieldNumber = 4;$/;"	m	class:UssdData
+kDcsFieldNumber	UssdData.pb.cc	/^const int UssdData::kDcsFieldNumber;$/;"	m	class:UssdData	file:
+kDcsFieldNumber	UssdData.pb.h	/^  static const int kDcsFieldNumber = 2;$/;"	m	class:UssdData
+kDeliveryReportFieldNumber	UssdData.pb.cc	/^const int UssdData::kDeliveryReportFieldNumber;$/;"	m	class:UssdData	file:
+kDeliveryReportFieldNumber	UssdData.pb.h	/^  static const int kDeliveryReportFieldNumber = 11;$/;"	m	class:UssdData
+kImsiFieldNumber	UssdData.pb.cc	/^const int UssdData::kImsiFieldNumber;$/;"	m	class:UssdData	file:
+kImsiFieldNumber	UssdData.pb.h	/^  static const int kImsiFieldNumber = 12;$/;"	m	class:UssdData
+kMsgFieldNumber	UssdData.pb.cc	/^const int UssdData::kMsgFieldNumber;$/;"	m	class:UssdData	file:
+kMsgFieldNumber	UssdData.pb.h	/^  static const int kMsgFieldNumber = 5;$/;"	m	class:UssdData
+kMsgTypeFieldNumber	UssdData.pb.cc	/^const int UssdData::kMsgTypeFieldNumber;$/;"	m	class:UssdData	file:
+kMsgTypeFieldNumber	UssdData.pb.h	/^  static const int kMsgTypeFieldNumber = 7;$/;"	m	class:UssdData
+kOaFieldNumber	UssdData.pb.cc	/^const int UssdData::kOaFieldNumber;$/;"	m	class:UssdData	file:
+kOaFieldNumber	UssdData.pb.h	/^  static const int kOaFieldNumber = 3;$/;"	m	class:UssdData
+kOpTypeFieldNumber	UssdData.pb.cc	/^const int UssdData::kOpTypeFieldNumber;$/;"	m	class:UssdData	file:
+kOpTypeFieldNumber	UssdData.pb.h	/^  static const int kOpTypeFieldNumber = 6;$/;"	m	class:UssdData
+kPasswordFieldNumber	UssdData.pb.cc	/^const int UssdData::kPasswordFieldNumber;$/;"	m	class:UssdData	file:
+kPasswordFieldNumber	UssdData.pb.h	/^  static const int kPasswordFieldNumber = 16;$/;"	m	class:UssdData
+kReceiverSessionIdFieldNumber	UssdData.pb.cc	/^const int UssdData::kReceiverSessionIdFieldNumber;$/;"	m	class:UssdData	file:
+kReceiverSessionIdFieldNumber	UssdData.pb.h	/^  static const int kReceiverSessionIdFieldNumber = 14;$/;"	m	class:UssdData
+kSenderSessionIdFieldNumber	UssdData.pb.cc	/^const int UssdData::kSenderSessionIdFieldNumber;$/;"	m	class:UssdData	file:
+kSenderSessionIdFieldNumber	UssdData.pb.h	/^  static const int kSenderSessionIdFieldNumber = 13;$/;"	m	class:UssdData
+kSessionStatusFieldNumber	UssdData.pb.cc	/^const int UssdData::kSessionStatusFieldNumber;$/;"	m	class:UssdData	file:
+kSessionStatusFieldNumber	UssdData.pb.h	/^  static const int kSessionStatusFieldNumber = 10;$/;"	m	class:UssdData
+kSrvCodeFieldNumber	UssdData.pb.cc	/^const int UssdData::kSrvCodeFieldNumber;$/;"	m	class:UssdData	file:
+kSrvCodeFieldNumber	UssdData.pb.h	/^  static const int kSrvCodeFieldNumber = 8;$/;"	m	class:UssdData
+kStatusFieldNumber	UssdData.pb.cc	/^const int UssdData::kStatusFieldNumber;$/;"	m	class:UssdData	file:
+kStatusFieldNumber	UssdData.pb.h	/^  static const int kStatusFieldNumber = 9;$/;"	m	class:UssdData
+kUsernameFieldNumber	UssdData.pb.cc	/^const int UssdData::kUsernameFieldNumber;$/;"	m	class:UssdData	file:
+kUsernameFieldNumber	UssdData.pb.h	/^  static const int kUsernameFieldNumber = 15;$/;"	m	class:UssdData
+kVersionFieldNumber	UssdData.pb.cc	/^const int UssdData::kVersionFieldNumber;$/;"	m	class:UssdData	file:
+kVersionFieldNumber	UssdData.pb.h	/^  static const int kVersionFieldNumber = 1;$/;"	m	class:UssdData
+msg	UssdData.pb.h	/^inline const ::std::string& UssdData::msg() const {$/;"	f	class:UssdData
+msg_	UssdData.pb.h	/^  ::std::string* msg_;$/;"	m	class:UssdData
+msg_type	UssdData.pb.h	/^inline ::UssdData_Msg_Type UssdData::msg_type() const {$/;"	f	class:UssdData
+msg_type_	UssdData.pb.h	/^  int msg_type_;$/;"	m	class:UssdData
+mutable_app_id	UssdData.pb.h	/^inline ::std::string* UssdData::mutable_app_id() {$/;"	f	class:UssdData
+mutable_da	UssdData.pb.h	/^inline ::std::string* UssdData::mutable_da() {$/;"	f	class:UssdData
+mutable_imsi	UssdData.pb.h	/^inline ::std::string* UssdData::mutable_imsi() {$/;"	f	class:UssdData
+mutable_msg	UssdData.pb.h	/^inline ::std::string* UssdData::mutable_msg() {$/;"	f	class:UssdData
+mutable_oa	UssdData.pb.h	/^inline ::std::string* UssdData::mutable_oa() {$/;"	f	class:UssdData
+mutable_password	UssdData.pb.h	/^inline ::std::string* UssdData::mutable_password() {$/;"	f	class:UssdData
+mutable_srv_code	UssdData.pb.h	/^inline ::std::string* UssdData::mutable_srv_code() {$/;"	f	class:UssdData
+mutable_unknown_fields	UssdData.pb.h	/^  inline ::google::protobuf::UnknownFieldSet* mutable_unknown_fields() {$/;"	f	class:UssdData
+mutable_username	UssdData.pb.h	/^inline ::std::string* UssdData::mutable_username() {$/;"	f	class:UssdData
+oa	UssdData.pb.h	/^inline const ::std::string& UssdData::oa() const {$/;"	f	class:UssdData
+oa_	UssdData.pb.h	/^  ::std::string* oa_;$/;"	m	class:UssdData
+op_type	UssdData.pb.h	/^inline ::UssdData_operation_type UssdData::op_type() const {$/;"	f	class:UssdData
+op_type_	UssdData.pb.h	/^  int op_type_;$/;"	m	class:UssdData
+operation_type	UssdData.pb.h	/^  typedef UssdData_operation_type operation_type;$/;"	t	class:UssdData
+operation_type_IsValid	UssdData.pb.h	/^  static inline bool operation_type_IsValid(int value) {$/;"	f	class:UssdData
+operation_type_MAX	UssdData.pb.cc	/^const UssdData_operation_type UssdData::operation_type_MAX;$/;"	m	class:UssdData	file:
+operation_type_MAX	UssdData.pb.h	/^  static const operation_type operation_type_MAX =$/;"	m	class:UssdData
+operation_type_MIN	UssdData.pb.cc	/^const UssdData_operation_type UssdData::operation_type_MIN;$/;"	m	class:UssdData	file:
+operation_type_MIN	UssdData.pb.h	/^  static const operation_type operation_type_MIN =$/;"	m	class:UssdData
+operation_type_Name	UssdData.pb.h	/^  static inline const ::std::string& operation_type_Name(operation_type value) {$/;"	f	class:UssdData
+operation_type_Parse	UssdData.pb.h	/^  static inline bool operation_type_Parse(const ::std::string& name,$/;"	f	class:UssdData
+operation_type_descriptor	UssdData.pb.h	/^  operation_type_descriptor() {$/;"	f	class:UssdData
+operator =	UssdData.pb.h	/^  inline UssdData& operator=(const UssdData& from) {$/;"	f	class:UssdData
+password	UssdData.pb.h	/^inline const ::std::string& UssdData::password() const {$/;"	f	class:UssdData
+password_	UssdData.pb.h	/^  ::std::string* password_;$/;"	m	class:UssdData
+protobuf_AddDesc_UssdData_2eproto	UssdData.pb.cc	/^void protobuf_AddDesc_UssdData_2eproto() {$/;"	f
+protobuf_AssignDesc_UssdData_2eproto	UssdData.pb.cc	/^void protobuf_AssignDesc_UssdData_2eproto() {$/;"	f
+protobuf_AssignDescriptorsOnce	UssdData.pb.cc	/^inline void protobuf_AssignDescriptorsOnce() {$/;"	f
+protobuf_AssignDescriptors_once_	UssdData.pb.cc	/^GOOGLE_PROTOBUF_DECLARE_ONCE(protobuf_AssignDescriptors_once_);$/;"	v
+protobuf_RegisterTypes	UssdData.pb.cc	/^void protobuf_RegisterTypes() {$/;"	f
+protobuf_ShutdownFile_UssdData_2eproto	UssdData.pb.cc	/^void protobuf_ShutdownFile_UssdData_2eproto() {$/;"	f
+receiver_session_id	UssdData.pb.h	/^inline ::google::protobuf::int32 UssdData::receiver_session_id() const {$/;"	f	class:UssdData
+receiver_session_id_	UssdData.pb.h	/^  ::google::protobuf::int32 receiver_session_id_;$/;"	m	class:UssdData
+sender_session_id	UssdData.pb.h	/^inline ::google::protobuf::int32 UssdData::sender_session_id() const {$/;"	f	class:UssdData
+sender_session_id_	UssdData.pb.h	/^  ::google::protobuf::int32 sender_session_id_;$/;"	m	class:UssdData
+session_status	UssdData.pb.h	/^inline ::google::protobuf::int32 UssdData::session_status() const {$/;"	f	class:UssdData
+session_status_	UssdData.pb.h	/^  ::google::protobuf::int32 session_status_;$/;"	m	class:UssdData
+set_app_id	UssdData.pb.h	/^inline void UssdData::set_app_id(const ::std::string& value) {$/;"	f	class:UssdData
+set_app_id	UssdData.pb.h	/^inline void UssdData::set_app_id(const char* value) {$/;"	f	class:UssdData
+set_app_id	UssdData.pb.h	/^inline void UssdData::set_app_id(const char* value, size_t size) {$/;"	f	class:UssdData
+set_da	UssdData.pb.h	/^inline void UssdData::set_da(const ::std::string& value) {$/;"	f	class:UssdData
+set_da	UssdData.pb.h	/^inline void UssdData::set_da(const char* value) {$/;"	f	class:UssdData
+set_da	UssdData.pb.h	/^inline void UssdData::set_da(const char* value, size_t size) {$/;"	f	class:UssdData
+set_dcs	UssdData.pb.h	/^inline void UssdData::set_dcs(::google::protobuf::uint32 value) {$/;"	f	class:UssdData
+set_delivery_report	UssdData.pb.h	/^inline void UssdData::set_delivery_report(::google::protobuf::int32 value) {$/;"	f	class:UssdData
+set_imsi	UssdData.pb.h	/^inline void UssdData::set_imsi(const ::std::string& value) {$/;"	f	class:UssdData
+set_imsi	UssdData.pb.h	/^inline void UssdData::set_imsi(const char* value) {$/;"	f	class:UssdData
+set_imsi	UssdData.pb.h	/^inline void UssdData::set_imsi(const char* value, size_t size) {$/;"	f	class:UssdData
+set_msg	UssdData.pb.h	/^inline void UssdData::set_msg(const ::std::string& value) {$/;"	f	class:UssdData
+set_msg	UssdData.pb.h	/^inline void UssdData::set_msg(const char* value) {$/;"	f	class:UssdData
+set_msg	UssdData.pb.h	/^inline void UssdData::set_msg(const void* value, size_t size) {$/;"	f	class:UssdData
+set_msg_type	UssdData.pb.h	/^inline void UssdData::set_msg_type(::UssdData_Msg_Type value) {$/;"	f	class:UssdData
+set_oa	UssdData.pb.h	/^inline void UssdData::set_oa(const ::std::string& value) {$/;"	f	class:UssdData
+set_oa	UssdData.pb.h	/^inline void UssdData::set_oa(const char* value) {$/;"	f	class:UssdData
+set_oa	UssdData.pb.h	/^inline void UssdData::set_oa(const char* value, size_t size) {$/;"	f	class:UssdData
+set_op_type	UssdData.pb.h	/^inline void UssdData::set_op_type(::UssdData_operation_type value) {$/;"	f	class:UssdData
+set_password	UssdData.pb.h	/^inline void UssdData::set_password(const ::std::string& value) {$/;"	f	class:UssdData
+set_password	UssdData.pb.h	/^inline void UssdData::set_password(const char* value) {$/;"	f	class:UssdData
+set_password	UssdData.pb.h	/^inline void UssdData::set_password(const char* value, size_t size) {$/;"	f	class:UssdData
+set_receiver_session_id	UssdData.pb.h	/^inline void UssdData::set_receiver_session_id(::google::protobuf::int32 value) {$/;"	f	class:UssdData
+set_sender_session_id	UssdData.pb.h	/^inline void UssdData::set_sender_session_id(::google::protobuf::int32 value) {$/;"	f	class:UssdData
+set_session_status	UssdData.pb.h	/^inline void UssdData::set_session_status(::google::protobuf::int32 value) {$/;"	f	class:UssdData
+set_srv_code	UssdData.pb.h	/^inline void UssdData::set_srv_code(const ::std::string& value) {$/;"	f	class:UssdData
+set_srv_code	UssdData.pb.h	/^inline void UssdData::set_srv_code(const char* value) {$/;"	f	class:UssdData
+set_srv_code	UssdData.pb.h	/^inline void UssdData::set_srv_code(const char* value, size_t size) {$/;"	f	class:UssdData
+set_status	UssdData.pb.h	/^inline void UssdData::set_status(::google::protobuf::int32 value) {$/;"	f	class:UssdData
+set_username	UssdData.pb.h	/^inline void UssdData::set_username(const ::std::string& value) {$/;"	f	class:UssdData
+set_username	UssdData.pb.h	/^inline void UssdData::set_username(const char* value) {$/;"	f	class:UssdData
+set_username	UssdData.pb.h	/^inline void UssdData::set_username(const char* value, size_t size) {$/;"	f	class:UssdData
+set_version	UssdData.pb.h	/^inline void UssdData::set_version(::google::protobuf::uint32 value) {$/;"	f	class:UssdData
+srv_code	UssdData.pb.h	/^inline const ::std::string& UssdData::srv_code() const {$/;"	f	class:UssdData
+srv_code_	UssdData.pb.h	/^  ::std::string* srv_code_;$/;"	m	class:UssdData
+static_descriptor_initializer_UssdData_2eproto_	UssdData.pb.cc	/^} static_descriptor_initializer_UssdData_2eproto_;$/;"	v
+status	UssdData.pb.h	/^inline ::google::protobuf::int32 UssdData::status() const {$/;"	f	class:UssdData
+status_	UssdData.pb.h	/^  ::google::protobuf::int32 status_;$/;"	m	class:UssdData
+unknown_fields	UssdData.pb.h	/^  inline const ::google::protobuf::UnknownFieldSet& unknown_fields() const {$/;"	f	class:UssdData
+username	UssdData.pb.h	/^inline const ::std::string& UssdData::username() const {$/;"	f	class:UssdData
+username_	UssdData.pb.h	/^  ::std::string* username_;$/;"	m	class:UssdData
+version	UssdData.pb.h	/^inline ::google::protobuf::uint32 UssdData::version() const {$/;"	f	class:UssdData
+version_	UssdData.pb.h	/^  ::google::protobuf::uint32 version_;$/;"	m	class:UssdData
+~UssdData	UssdData.pb.cc	/^UssdData::~UssdData() {$/;"	f	class:UssdData

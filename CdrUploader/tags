@@ -1,0 +1,410 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.6	//
+ALLXMLClearTag	xmlParser.h	/^} ALLXMLClearTag;$/;"	t	typeref:struct:__anon5
+Attrib	xmlParser.cpp	/^typedef enum Attrib$/;"	g	file:
+Attrib	xmlParser.cpp	/^} Attrib;$/;"	t	typeref:enum:Attrib	file:
+BASE64DECODE_READ_NEXT_CHAR	xmlParser.cpp	2527;"	d	file:
+BASE64DECODE_READ_NEXT_CHAR	xmlParser.cpp	2576;"	d	file:
+CConfigParams	ConfigParams.cpp	/^CConfigParams::CConfigParams()$/;"	f	class:CConfigParams
+CConfigParams	ConfigParams.h	/^class CConfigParams {$/;"	c
+CDBConnPool	DBConnPool.h	/^    CDBConnPool(const char* db, const char* server,$/;"	f	class:CDBConnPool
+CDBConnPool	DBConnPool.h	/^class CDBConnPool : public mysqlpp::ConnectionPool$/;"	c
+CDBPoolManager	DBPoolManager.cpp	/^CDBPoolManager::CDBPoolManager(){$/;"	f	class:CDBPoolManager
+CDBPoolManager	DBPoolManager.cpp	/^CDBPoolManager::CDBPoolManager(int i){$/;"	f	class:CDBPoolManager
+CDBPoolManager	DBPoolManager.h	/^class CDBPoolManager{$/;"	c
+CFileUploader	FileUploader.h	/^	CFileUploader(char* DBIp,char* DBName,char* username,char* passwd,char* Table,char* Cols,char* FileInPath,\\$/;"	f	class:CFileUploader
+CFileUploader	FileUploader.h	/^class CFileUploader$/;"	c
+CG_Config	CdrMain.cpp	/^CConfigParams CG_Config;$/;"	v
+CG_EventLog	CdrMain.cpp	/^CEventLog CG_EventLog;$/;"	v
+CountLinesAndColumns	xmlParser.cpp	/^static void CountLinesAndColumns(XMLCSTR lpXML, int nUpto, XMLResults *pResults)$/;"	f	file:
+CreateXMLStringR	xmlParser.cpp	/^int XMLNode::CreateXMLStringR(XMLNodeData *pEntry, XMLSTR lpszMarker, int nFormat)$/;"	f	class:XMLNode
+DBPOOLMANAGER_H_	DBPoolManager.h	10;"	d
+DLLENTRY	xmlParser.h	527;"	d
+DLLENTRY	xmlParser.h	58;"	d
+DLLENTRY	xmlParser.h	62;"	d
+DLLENTRY	xmlParser.h	64;"	d
+DLLENTRY	xmlParser.h	67;"	d
+DLLENTRY	xmlParser.h	81;"	d
+EXTERNS_H_	Externs.h	9;"	d
+FALSE	xmlParser.h	105;"	d
+GetNextToken	xmlParser.cpp	/^static NextToken GetNextToken(XML *pXML, int *pcbToken, enum XMLTokenTypeTag *pType)$/;"	f	file:
+INDENTCHAR	xmlParser.cpp	133;"	d	file:
+LENSTR	xmlParser.cpp	1685;"	d	file:
+LENSTR	xmlParser.cpp	1930;"	d	file:
+MEMORYINCREASE	xmlParser.cpp	934;"	d	file:
+NextToken	xmlParser.cpp	/^} NextToken;$/;"	t	typeref:struct:__anon2	file:
+POOL_LIST	DBPoolManager.h	/^typedef std::vector<CDBConnPool*> POOL_LIST;$/;"	t
+ParseXMLElement	xmlParser.cpp	/^int XMLNode::ParseXMLElement(void *pa)$/;"	f	class:XMLNode
+Status	xmlParser.cpp	/^typedef enum Status$/;"	g	file:
+Status	xmlParser.cpp	/^} Status;$/;"	t	typeref:enum:Status	file:
+TRUE	xmlParser.h	108;"	d
+WIN32_LEAN_AND_MEAN	xmlParser.cpp	82;"	d	file:
+XML	xmlParser.cpp	/^typedef struct XML$/;"	s	file:
+XML	xmlParser.cpp	/^} XML;$/;"	t	typeref:struct:XML	file:
+XMLAttribute	xmlParser.h	/^} XMLAttribute;$/;"	t	typeref:struct:__anon4
+XMLCHAR	xmlParser.h	102;"	d
+XMLCHAR	xmlParser.h	95;"	d
+XMLCSTR	xmlParser.h	100;"	d
+XMLCSTR	xmlParser.h	93;"	d
+XMLCharacterEntity	xmlParser.cpp	/^typedef struct { XMLCSTR s; int l; XMLCHAR c;} XMLCharacterEntity;$/;"	t	typeref:struct:__anon1	file:
+XMLClear	xmlParser.h	/^} XMLClear;$/;"	t	typeref:struct:__anon3
+XMLClearTags	xmlParser.cpp	/^static ALLXMLClearTag XMLClearTags[] =$/;"	v	file:
+XMLElementType	xmlParser.h	/^typedef enum XMLElementType$/;"	g
+XMLElementType	xmlParser.h	/^} XMLElementType;$/;"	t	typeref:enum:XMLElementType
+XMLEntities	xmlParser.cpp	/^static XMLCharacterEntity XMLEntities[] =$/;"	v	file:
+XMLError	xmlParser.h	/^typedef enum XMLError$/;"	g
+XMLError	xmlParser.h	/^} XMLError;$/;"	t	typeref:enum:XMLError
+XMLNode	xmlParser.cpp	/^XMLNode::XMLNode(XMLNodeData *pParent, XMLCSTR lpszName, char isDeclaration)$/;"	f	class:XMLNode
+XMLNode	xmlParser.cpp	/^XMLNode::XMLNode(const XMLNode &A)$/;"	f	class:XMLNode
+XMLNode	xmlParser.cpp	/^XMLNode::XMLNode(struct XMLNodeDataTag *p){ d=p; (p->ref_count)++; }$/;"	f	class:XMLNode
+XMLNode	xmlParser.h	/^    XMLNode(): d(NULL){};$/;"	f	struct:XMLNode
+XMLNode	xmlParser.h	/^typedef struct DLLENTRY XMLNode$/;"	s
+XMLNode	xmlParser.h	/^} XMLNode;$/;"	t	typeref:struct:XMLNode
+XMLNodeContents	xmlParser.h	/^typedef struct XMLNodeContents$/;"	s
+XMLNodeContents	xmlParser.h	/^} XMLNodeContents;$/;"	t	typeref:struct:XMLNodeContents
+XMLNodeData	xmlParser.h	/^      } XMLNodeData;$/;"	t	struct:XMLNode	typeref:struct:XMLNode::XMLNodeDataTag
+XMLNodeDataTag	xmlParser.h	/^      typedef struct XMLNodeDataTag \/\/ to allow shallow copy and "intelligent\/smart" pointers (automatic delete):$/;"	s	struct:XMLNode
+XMLParserBase64Tool	xmlParser.h	/^    XMLParserBase64Tool(): buf(NULL),buflen(0){}$/;"	f	class:XMLParserBase64Tool
+XMLParserBase64Tool	xmlParser.h	/^class DLLENTRY XMLParserBase64Tool$/;"	c
+XMLResults	xmlParser.h	/^typedef struct XMLResults$/;"	s
+XMLResults	xmlParser.h	/^} XMLResults;$/;"	t	typeref:struct:XMLResults
+XMLSTR	xmlParser.h	101;"	d
+XMLSTR	xmlParser.h	94;"	d
+XMLTokenType	xmlParser.cpp	/^} XMLTokenType;$/;"	t	typeref:enum:XMLTokenTypeTag	file:
+XMLTokenTypeTag	xmlParser.cpp	/^typedef enum XMLTokenTypeTag$/;"	g	file:
+XML_ByteTable	xmlParser.cpp	/^static const char *XML_ByteTable=(const char *)XML_utf8ByteTable; \/\/ the default is "strictUTF8Parsing=1"$/;"	v	file:
+XML_asciiByteTable	xmlParser.cpp	/^static const char XML_asciiByteTable[256] =$/;"	v	file:
+XML_isSPACECHAR	xmlParser.cpp	2425;"	d	file:
+XML_isSPACECHAR	xmlParser.cpp	700;"	d	file:
+XML_utf8ByteTable	xmlParser.cpp	/^static const char XML_utf8ByteTable[256] =$/;"	v	file:
+_CONFIGPARAMS_H	ConfigParams.h	2;"	d
+_CRT_SECURE_NO_DEPRECATE	xmlParser.cpp	74;"	d	file:
+_T	xmlParser.h	91;"	d
+_T	xmlParser.h	98;"	d
+_XMLUNICODE	xmlParser.h	49;"	d
+_XMLUNICODE	xmlParser.h	75;"	d
+_XMLWINDOWS	xmlParser.h	54;"	d
+_XMLWINDOWS	xmlParser.h	74;"	d
+__DBCONNPOOL_H	DBConnPool.h	2;"	d
+__FILEPROP_	FileUploader.h	7;"	d
+__INCLUDE_XML_NODE__	xmlParser.h	39;"	d
+_strnicmp	xmlParser.cpp	/^    int _strnicmp(char *c1, char *c2, int l){ return strnicmp(c1,c2,l);}$/;"	f
+_strnicmp	xmlParser.cpp	/^    int _strnicmp(const char *c1,const char *c2, int l) { return strncasecmp(c1,c2,l);}$/;"	f
+_tcscpy	xmlParser.cpp	/^        XMLSTR _tcscpy(XMLSTR c1, XMLCSTR c2) { return (XMLSTR)strcpy(c1,c2); }$/;"	f
+_tcscpy	xmlParser.cpp	/^        XMLSTR _tcscpy(XMLSTR c1, XMLCSTR c2) { return (XMLSTR)wcscpy(c1,c2); }$/;"	f
+_tcsicmp	xmlParser.cpp	/^           int _tcsicmp(XMLCSTR c1, XMLCSTR c2) { return wcscasecmp(c1,c2); }$/;"	f
+_tcsicmp	xmlParser.cpp	/^           int _tcsicmp(XMLCSTR c1, XMLCSTR c2) { return wscasecmp(c1,c2); }$/;"	f
+_tcsicmp	xmlParser.cpp	/^        int _tcsicmp(XMLCSTR c1, XMLCSTR c2) { return strcasecmp(c1,c2); }$/;"	f
+_tcslen	xmlParser.cpp	/^        int _tcslen(XMLCSTR c)   { return strlen(c); }$/;"	f
+_tcslen	xmlParser.cpp	/^        int _tcslen(XMLCSTR c)   { return wcslen(c); }$/;"	f
+_tcsnicmp	xmlParser.cpp	/^           int _tcsnicmp(XMLCSTR c1, XMLCSTR c2, int l) { return wcsncasecmp(c1,c2,l);}$/;"	f
+_tcsnicmp	xmlParser.cpp	/^           int _tcsnicmp(XMLCSTR c1, XMLCSTR c2, int l) { return wsncasecmp(c1,c2,l);}$/;"	f
+_tcsnicmp	xmlParser.cpp	/^        int _tcsnicmp(XMLCSTR c1, XMLCSTR c2, int l) { return strncasecmp(c1,c2,l);}$/;"	f
+_tcsstr	xmlParser.cpp	/^        XMLSTR _tcsstr(XMLCSTR c1, XMLCSTR c2) { return (XMLSTR)strstr(c1,c2); }$/;"	f
+_tcsstr	xmlParser.cpp	/^        XMLSTR _tcsstr(XMLCSTR c1, XMLCSTR c2) { return (XMLSTR)wcsstr(c1,c2); }$/;"	f
+_tfopen	xmlParser.cpp	/^        FILE *_tfopen(XMLCSTR filename,XMLCSTR mode) { return fopen(filename,mode); }$/;"	f
+_tfopen	xmlParser.cpp	/^        FILE *_tfopen(XMLCSTR filename,XMLCSTR mode)$/;"	f
+addAttribute	xmlParser.cpp	/^XMLAttribute *XMLNode::addAttribute(XMLCSTR lpszName, XMLCSTR lpszValue)$/;"	f	class:XMLNode
+addAttribute_WOSD	xmlParser.cpp	/^XMLAttribute *XMLNode::addAttribute_WOSD(XMLCSTR lpszName, XMLCSTR lpszValuev)$/;"	f	class:XMLNode
+addAttribute_priv	xmlParser.cpp	/^XMLAttribute *XMLNode::addAttribute_priv(int memoryIncrease,XMLCSTR lpszName, XMLCSTR lpszValuev)$/;"	f	class:XMLNode
+addChild	xmlParser.cpp	/^XMLNode       XMLNode::addChild(XMLCSTR lpszName, char isDeclaration, int pos)$/;"	f	class:XMLNode
+addChild	xmlParser.cpp	/^XMLNode XMLNode::addChild(XMLNode childNode, int pos)$/;"	f	class:XMLNode
+addChild_WOSD	xmlParser.cpp	/^XMLNode       XMLNode::addChild_WOSD(XMLCSTR lpszName, char isDeclaration, int pos)$/;"	f	class:XMLNode
+addChild_priv	xmlParser.cpp	/^XMLNode XMLNode::addChild_priv(int memoryIncrease, XMLCSTR lpszName, char isDeclaration, int pos)$/;"	f	class:XMLNode
+addClear	xmlParser.cpp	/^XMLClear     *XMLNode::addClear(XMLCSTR lpszValue, XMLCSTR lpszOpen, XMLCSTR lpszClose, int pos)$/;"	f	class:XMLNode
+addClear_WOSD	xmlParser.cpp	/^XMLClear     *XMLNode::addClear_WOSD(XMLCSTR lpszValue, XMLCSTR lpszOpen, XMLCSTR lpszClose, int pos)$/;"	f	class:XMLNode
+addClear_priv	xmlParser.cpp	/^XMLClear *XMLNode::addClear_priv(int memoryIncrease, XMLCSTR lpszValue, XMLCSTR lpszOpen, XMLCSTR lpszClose, int pos)$/;"	f	class:XMLNode
+addText	xmlParser.cpp	/^XMLCSTR       XMLNode::addText(XMLCSTR lpszValue, int pos)$/;"	f	class:XMLNode
+addText_WOSD	xmlParser.cpp	/^XMLCSTR       XMLNode::addText_WOSD(XMLCSTR lpszValue, int pos)$/;"	f	class:XMLNode
+addText_priv	xmlParser.cpp	/^XMLCSTR XMLNode::addText_priv(int memoryIncrease, XMLCSTR lpszValue, int pos)$/;"	f	class:XMLNode
+addToOrder	xmlParser.cpp	/^void *XMLNode::addToOrder(int memoryIncrease,int *_pos, int nc, void *p, int size, XMLElementType xtype)$/;"	f	class:XMLNode
+alloc	xmlParser.cpp	/^void XMLParserBase64Tool::alloc(int newsize)$/;"	f	class:XMLParserBase64Tool
+attrib	xmlParser.h	/^    XMLAttribute attrib;$/;"	m	struct:XMLNodeContents
+base64DecodeTable	xmlParser.cpp	/^const unsigned char base64DecodeTable[] = {$/;"	v
+base64EncodeTable	xmlParser.cpp	/^XMLCSTR base64EncodeTable=_T("ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+\/");$/;"	v
+base64Fillchar	xmlParser.cpp	/^static const char base64Fillchar = _T('='); \/\/ used to mark partial words at the end$/;"	v	file:
+buf	xmlParser.h	/^    void *buf;$/;"	m	class:XMLParserBase64Tool
+buflen	xmlParser.h	/^    int buflen;$/;"	m	class:XMLParserBase64Tool
+c	xmlParser.cpp	/^typedef struct { XMLCSTR s; int l; XMLCHAR c;} XMLCharacterEntity;$/;"	m	struct:__anon1	file:
+cbEndTag	xmlParser.cpp	/^    int                    cbEndTag;$/;"	m	struct:XML	file:
+cbNewElement	xmlParser.cpp	/^    int                    cbNewElement;$/;"	m	struct:XML	file:
+charmemset	xmlParser.cpp	/^static inline void charmemset(XMLSTR dest,XMLCHAR c,int l) { while (l--) *(dest++)=c; }$/;"	f	file:
+child	xmlParser.h	/^    XMLNode child;$/;"	m	struct:XMLNodeContents
+clear	xmlParser.h	/^    XMLClear clear;$/;"	m	struct:XMLNodeContents
+create	DBConnPool.h	/^    mysqlpp::Connection* create()$/;"	f	class:CDBConnPool
+createXMLString	xmlParser.cpp	/^XMLSTR XMLNode::createXMLString(int nFormat, int *pnSize) const$/;"	f	class:XMLNode
+createXMLTopNode	xmlParser.cpp	/^XMLNode XMLNode::createXMLTopNode(XMLCSTR lpszName, char isDeclaration) { return XMLNode(NULL,stringDup(lpszName),isDeclaration); }$/;"	f	class:XMLNode
+createXMLTopNode_WOSD	xmlParser.cpp	/^XMLNode XMLNode::createXMLTopNode_WOSD(XMLCSTR lpszName, char isDeclaration) { return XMLNode(NULL,lpszName,isDeclaration); }$/;"	f	class:XMLNode
+d	xmlParser.h	/^      XMLNodeData *d;$/;"	m	struct:XMLNode
+db_	DBConnPool.h	/^    std::string db_, server_, user_, password_;$/;"	m	class:CDBConnPool
+decode	xmlParser.cpp	/^unsigned char *XMLParserBase64Tool::decode(XMLCSTR data, int *outlen, XMLError *xe)$/;"	f	class:XMLParserBase64Tool
+decode	xmlParser.cpp	/^unsigned char XMLParserBase64Tool::decode(XMLCSTR data, unsigned char *buf, int len, XMLError *xe)$/;"	f	class:XMLParserBase64Tool
+decodeSize	xmlParser.cpp	/^unsigned int XMLParserBase64Tool::decodeSize(XMLCSTR data,XMLError *xe)$/;"	f	class:XMLParserBase64Tool
+deleteAttribute	xmlParser.cpp	/^void XMLNode::deleteAttribute(XMLAttribute *a){ if (a) deleteAttribute(a->lpszName); }$/;"	f	class:XMLNode
+deleteAttribute	xmlParser.cpp	/^void XMLNode::deleteAttribute(XMLCSTR lpszName)$/;"	f	class:XMLNode
+deleteAttribute	xmlParser.cpp	/^void XMLNode::deleteAttribute(int i)$/;"	f	class:XMLNode
+deleteClear	xmlParser.cpp	/^void XMLNode::deleteClear(XMLCSTR lpszValue) { deleteClear(indexClear(lpszValue)); }$/;"	f	class:XMLNode
+deleteClear	xmlParser.cpp	/^void XMLNode::deleteClear(XMLClear *a) { if (a) deleteClear(a->lpszValue); }$/;"	f	class:XMLNode
+deleteClear	xmlParser.cpp	/^void XMLNode::deleteClear(int i)$/;"	f	class:XMLNode
+deleteNodeContent	xmlParser.cpp	/^void XMLNode::deleteNodeContent(char force)$/;"	f	class:XMLNode
+deleteText	xmlParser.cpp	/^void XMLNode::deleteText(XMLCSTR lpszValue) { deleteText(indexText(lpszValue)); }$/;"	f	class:XMLNode
+deleteText	xmlParser.cpp	/^void XMLNode::deleteText(int i)$/;"	f	class:XMLNode
+destroy	DBConnPool.h	/^    void destroy(mysqlpp::Connection* cp)$/;"	f	class:CDBConnPool
+detachFromParent	xmlParser.cpp	/^int XMLNode::detachFromParent(XMLNodeData *d)$/;"	f	class:XMLNode
+dropWhiteSpace	xmlParser.cpp	/^static char strictUTF8Parsing=1, guessUnicodeChars=1, dropWhiteSpace=1;$/;"	v	file:
+eAttribEquals	xmlParser.cpp	/^    eAttribEquals,$/;"	e	enum:Attrib	file:
+eAttribName	xmlParser.cpp	/^    eAttribName = 0,$/;"	e	enum:Attrib	file:
+eAttribValue	xmlParser.cpp	/^    eAttribValue$/;"	e	enum:Attrib	file:
+eInsideTag	xmlParser.cpp	/^    eInsideTag = 0,$/;"	e	enum:Status	file:
+eNodeAttribute	xmlParser.h	/^    eNodeAttribute=1,$/;"	e	enum:XMLElementType
+eNodeChild	xmlParser.h	/^    eNodeChild=0,$/;"	e	enum:XMLElementType
+eNodeClear	xmlParser.h	/^    eNodeClear=3,$/;"	e	enum:XMLElementType
+eNodeNULL	xmlParser.h	/^    eNodeNULL=4$/;"	e	enum:XMLElementType
+eNodeText	xmlParser.h	/^    eNodeText=2,$/;"	e	enum:XMLElementType
+eOutsideTag	xmlParser.cpp	/^    eOutsideTag$/;"	e	enum:Status	file:
+eTokenClear	xmlParser.cpp	/^    eTokenClear,$/;"	e	enum:XMLTokenTypeTag	file:
+eTokenCloseTag	xmlParser.cpp	/^    eTokenCloseTag,         \/* ">"            *\/$/;"	e	enum:XMLTokenTypeTag	file:
+eTokenDeclaration	xmlParser.cpp	/^    eTokenDeclaration,      \/* "<?"           *\/$/;"	e	enum:XMLTokenTypeTag	file:
+eTokenEquals	xmlParser.cpp	/^    eTokenEquals,           \/* "="            *\/$/;"	e	enum:XMLTokenTypeTag	file:
+eTokenError	xmlParser.cpp	/^    eTokenError$/;"	e	enum:XMLTokenTypeTag	file:
+eTokenQuotedText	xmlParser.cpp	/^    eTokenQuotedText,$/;"	e	enum:XMLTokenTypeTag	file:
+eTokenShortHandClose	xmlParser.cpp	/^    eTokenShortHandClose,   \/* "\/>"           *\/$/;"	e	enum:XMLTokenTypeTag	file:
+eTokenTagEnd	xmlParser.cpp	/^    eTokenTagEnd,           \/* "<\/"           *\/$/;"	e	enum:XMLTokenTypeTag	file:
+eTokenTagStart	xmlParser.cpp	/^    eTokenTagStart,         \/* "<"            *\/$/;"	e	enum:XMLTokenTypeTag	file:
+eTokenText	xmlParser.cpp	/^    eTokenText = 0,$/;"	e	enum:XMLTokenTypeTag	file:
+eXMLErrorBase64DataSizeIsNotMultipleOf4	xmlParser.h	/^    eXMLErrorBase64DataSizeIsNotMultipleOf4,$/;"	e	enum:XMLError
+eXMLErrorBase64DecodeBufferTooSmall	xmlParser.h	/^    eXMLErrorBase64DecodeBufferTooSmall$/;"	e	enum:XMLError
+eXMLErrorBase64DecodeIllegalCharacter	xmlParser.h	/^    eXMLErrorBase64DecodeIllegalCharacter,$/;"	e	enum:XMLError
+eXMLErrorBase64DecodeTruncatedData	xmlParser.h	/^    eXMLErrorBase64DecodeTruncatedData,$/;"	e	enum:XMLError
+eXMLErrorCannotOpenWriteFile	xmlParser.h	/^    eXMLErrorCannotOpenWriteFile,$/;"	e	enum:XMLError
+eXMLErrorCannotWriteFile	xmlParser.h	/^    eXMLErrorCannotWriteFile,$/;"	e	enum:XMLError
+eXMLErrorCharConversionError	xmlParser.h	/^    eXMLErrorCharConversionError,$/;"	e	enum:XMLError
+eXMLErrorEmpty	xmlParser.h	/^    eXMLErrorEmpty,$/;"	e	enum:XMLError
+eXMLErrorFileNotFound	xmlParser.h	/^    eXMLErrorFileNotFound,$/;"	e	enum:XMLError
+eXMLErrorFirstNotStartTag	xmlParser.h	/^    eXMLErrorFirstNotStartTag,$/;"	e	enum:XMLError
+eXMLErrorFirstTagNotFound	xmlParser.h	/^    eXMLErrorFirstTagNotFound,$/;"	e	enum:XMLError
+eXMLErrorInvalidTag	xmlParser.h	/^    eXMLErrorInvalidTag,$/;"	e	enum:XMLError
+eXMLErrorMissingEndTag	xmlParser.h	/^    eXMLErrorMissingEndTag,$/;"	e	enum:XMLError
+eXMLErrorMissingEndTagName	xmlParser.h	/^    eXMLErrorMissingEndTagName,$/;"	e	enum:XMLError
+eXMLErrorMissingTagName	xmlParser.h	/^    eXMLErrorMissingTagName,$/;"	e	enum:XMLError
+eXMLErrorNoElements	xmlParser.h	/^    eXMLErrorNoElements,$/;"	e	enum:XMLError
+eXMLErrorNoMatchingQuote	xmlParser.h	/^    eXMLErrorNoMatchingQuote,$/;"	e	enum:XMLError
+eXMLErrorNone	xmlParser.h	/^    eXMLErrorNone = 0,$/;"	e	enum:XMLError
+eXMLErrorUnexpectedToken	xmlParser.h	/^    eXMLErrorUnexpectedToken,$/;"	e	enum:XMLError
+eXMLErrorUnknownCharacterEntity	xmlParser.h	/^    eXMLErrorUnknownCharacterEntity,$/;"	e	enum:XMLError
+eXMLErrorUnmatchedEndClearTag	xmlParser.h	/^    eXMLErrorUnmatchedEndClearTag,$/;"	e	enum:XMLError
+eXMLErrorUnmatchedEndTag	xmlParser.h	/^    eXMLErrorUnmatchedEndTag,$/;"	e	enum:XMLError
+emptyXMLAttribute	xmlParser.cpp	/^XMLAttribute XMLNode::emptyXMLAttribute={ NULL, NULL};$/;"	m	class:XMLNode	file:
+emptyXMLAttribute	xmlParser.h	/^    static XMLAttribute emptyXMLAttribute;$/;"	m	struct:XMLNode
+emptyXMLClear	xmlParser.cpp	/^XMLClear XMLNode::emptyXMLClear={ NULL, NULL, NULL};$/;"	m	class:XMLNode	file:
+emptyXMLClear	xmlParser.h	/^    static XMLClear emptyXMLClear;$/;"	m	struct:XMLNode
+emptyXMLNode	xmlParser.cpp	/^XMLNode XMLNode::emptyXMLNode;$/;"	m	class:XMLNode	file:
+emptyXMLNode	xmlParser.h	/^    static XMLNode emptyXMLNode;$/;"	m	struct:XMLNode
+encode	xmlParser.cpp	/^XMLSTR XMLParserBase64Tool::encode(unsigned char *inbuf, unsigned int inlen, char formatted)$/;"	f	class:XMLParserBase64Tool
+encodeLength	xmlParser.cpp	/^int XMLParserBase64Tool::encodeLength(int inlen, char formatted)$/;"	f	class:XMLParserBase64Tool
+enumContents	xmlParser.cpp	/^XMLNodeContents XMLNode::enumContents(int i) const$/;"	f	class:XMLNode
+error	xmlParser.cpp	/^    enum XMLError          error;$/;"	m	struct:XML	typeref:enum:XML::XMLError	file:
+error	xmlParser.h	/^    enum XMLError error;$/;"	m	struct:XMLResults	typeref:enum:XMLResults::XMLError
+exactMemory	xmlParser.cpp	/^void XMLNode::exactMemory(XMLNodeData *d)$/;"	f	class:XMLNode
+fileunit	FileUploader.h	/^struct fileunit{$/;"	s
+findPosition	xmlParser.cpp	/^int XMLNode::findPosition(XMLNodeData *d, int index, XMLElementType xtype)$/;"	f	class:XMLNode
+freeBuffer	xmlParser.cpp	/^void XMLParserBase64Tool::freeBuffer(){ if (buf) free(buf); buf=NULL; buflen=0; }$/;"	f	class:XMLParserBase64Tool
+free_XMLDLL	xmlParser.cpp	/^void free_XMLDLL(void *t){free(t);}$/;"	f
+fromXMLString	xmlParser.cpp	/^XMLSTR fromXMLString(XMLCSTR s, int lo, XML *pXML)$/;"	f
+getAttribute	xmlParser.cpp	/^XMLAttribute XMLNode::getAttribute     (int i) const { if ((!d)||(i>=d->nAttribute)) return emptyXMLAttribute; return d->pAttribute[i]; }$/;"	f	class:XMLNode
+getAttribute	xmlParser.cpp	/^XMLCSTR XMLNode::getAttribute(XMLCSTR lpszAttrib, int *j) const$/;"	f	class:XMLNode
+getAttribute	xmlParser.cpp	/^XMLCSTR XMLNode::getAttribute(XMLCSTR name, int j) const$/;"	f	class:XMLNode
+getAttributeName	xmlParser.cpp	/^XMLCSTR      XMLNode::getAttributeName (int i) const { if ((!d)||(i>=d->nAttribute)) return NULL;              return d->pAttribute[i].lpszName;  }$/;"	f	class:XMLNode
+getAttributeValue	xmlParser.cpp	/^XMLCSTR      XMLNode::getAttributeValue(int i) const { if ((!d)||(i>=d->nAttribute)) return NULL;              return d->pAttribute[i].lpszValue; }$/;"	f	class:XMLNode
+getChildNode	xmlParser.cpp	/^XMLNode      XMLNode::getChildNode     (int i) const { if ((!d)||(i>=d->nChild    )) return emptyXMLNode;      return d->pChild[i];     }$/;"	f	class:XMLNode
+getChildNode	xmlParser.cpp	/^XMLNode XMLNode::getChildNode(XMLCSTR name, int *j) const$/;"	f	class:XMLNode
+getChildNode	xmlParser.cpp	/^XMLNode XMLNode::getChildNode(XMLCSTR name, int j) const$/;"	f	class:XMLNode
+getChildNodeWithAttribute	xmlParser.cpp	/^XMLNode XMLNode::getChildNodeWithAttribute(XMLCSTR name,XMLCSTR attributeName,XMLCSTR attributeValue, int *k) const$/;"	f	class:XMLNode
+getClear	xmlParser.cpp	/^XMLClear     XMLNode::getClear         (int i) const { if ((!d)||(i>=d->nClear    )) return emptyXMLClear;     return d->pClear[i];     }$/;"	f	class:XMLNode
+getClearTagTable	xmlParser.cpp	/^ALLXMLClearTag* XMLNode::getClearTagTable() { return XMLClearTags; }$/;"	f	class:XMLNode
+getError	xmlParser.cpp	/^XMLCSTR XMLNode::getError(XMLError xerror)$/;"	f	class:XMLNode
+getName	xmlParser.cpp	/^XMLCSTR XMLNode::getName() const { if (!d) return NULL; return d->lpszName;   }$/;"	f	class:XMLNode
+getNextChar	xmlParser.cpp	/^static inline XMLCHAR getNextChar(XML *pXML)$/;"	f	file:
+getParentNode	xmlParser.cpp	/^XMLNode      XMLNode::getParentNode    (     ) const { if ((!d)||(!d->pParent     )) return emptyXMLNode;      return XMLNode(d->pParent); }$/;"	f	class:XMLNode
+getText	xmlParser.cpp	/^XMLCSTR      XMLNode::getText          (int i) const { if ((!d)||(i>=d->nText     )) return NULL;              return d->pText[i];      }$/;"	f	class:XMLNode
+getVersion	xmlParser.cpp	/^XMLCSTR XMLNode::getVersion() { return _T("v2.23"); }$/;"	f	class:XMLNode
+guessUTF8ParsingParameterValue	xmlParser.cpp	/^char XMLNode::guessUTF8ParsingParameterValue(void *buf,int l, char useXMLEncodingAttribute)$/;"	f	class:XMLNode
+guessUnicodeChars	xmlParser.cpp	/^static char strictUTF8Parsing=1, guessUnicodeChars=1, dropWhiteSpace=1;$/;"	v	file:
+indexClear	xmlParser.cpp	/^int XMLNode::indexClear(XMLCSTR lpszValue) const$/;"	f	class:XMLNode
+indexText	xmlParser.cpp	/^int XMLNode::indexText(XMLCSTR lpszValue) const$/;"	f	class:XMLNode
+isAttributeSet	xmlParser.cpp	/^char XMLNode::isAttributeSet(XMLCSTR lpszAttrib) const$/;"	f	class:XMLNode
+isDeclaration	xmlParser.cpp	/^char         XMLNode::isDeclaration    (     ) const { if (!d) return 0;             return d->isDeclaration; }$/;"	f	class:XMLNode
+isDeclaration	xmlParser.h	/^          char                   isDeclaration;   \/\/ Whether node is an XML declaration - '<?xml ?>'$/;"	m	struct:XMLNode::XMLNodeDataTag
+isEmpty	xmlParser.cpp	/^char         XMLNode::isEmpty          (     ) const { return (d==NULL); }$/;"	f	class:XMLNode
+l	xmlParser.cpp	/^typedef struct { XMLCSTR s; int l; XMLCHAR c;} XMLCharacterEntity;$/;"	m	struct:__anon1	file:
+lengthXMLString	xmlParser.cpp	/^int lengthXMLString(XMLCSTR source)$/;"	f
+lpEndTag	xmlParser.cpp	/^    XMLCSTR                lpEndTag;$/;"	m	struct:XML	file:
+lpNewElement	xmlParser.cpp	/^    XMLCSTR                lpNewElement;$/;"	m	struct:XML	file:
+lpXML	xmlParser.cpp	/^    XMLCSTR                lpXML;$/;"	m	struct:XML	file:
+lpszClose	xmlParser.h	/^    XMLCSTR lpszOpen; int openTagLen; XMLCSTR lpszClose;$/;"	m	struct:__anon5
+lpszCloseTag	xmlParser.h	/^    XMLCSTR lpszValue; XMLCSTR lpszOpenTag; XMLCSTR lpszCloseTag;$/;"	m	struct:__anon3
+lpszName	xmlParser.h	/^          XMLCSTR                lpszName;        \/\/ Element name (=NULL if root)$/;"	m	struct:XMLNode::XMLNodeDataTag
+lpszName	xmlParser.h	/^    XMLCSTR lpszName; XMLCSTR lpszValue;$/;"	m	struct:__anon4
+lpszOpen	xmlParser.h	/^    XMLCSTR lpszOpen; int openTagLen; XMLCSTR lpszClose;$/;"	m	struct:__anon5
+lpszOpenTag	xmlParser.h	/^    XMLCSTR lpszValue; XMLCSTR lpszOpenTag; XMLCSTR lpszCloseTag;$/;"	m	struct:__anon3
+lpszText	xmlParser.cpp	/^    XMLCSTR                lpszText;$/;"	m	struct:XML	file:
+lpszValue	xmlParser.h	/^    XMLCSTR lpszName; XMLCSTR lpszValue;$/;"	m	struct:__anon4
+lpszValue	xmlParser.h	/^    XMLCSTR lpszValue; XMLCSTR lpszOpenTag; XMLCSTR lpszCloseTag;$/;"	m	struct:__anon3
+main	CdrMain.cpp	/^int main(int count,char* args[])$/;"	f
+max_idle_time	DBConnPool.h	/^    unsigned int max_idle_time()$/;"	f	class:CDBConnPool
+maybeAddTxT	xmlParser.cpp	/^char XMLNode::maybeAddTxT(void *pa, XMLCSTR tokenPStr)$/;"	f	class:XMLNode
+mcfnS_GetInstance	DBPoolManager.cpp	/^CDBPoolManager * CDBPoolManager::mcfnS_GetInstance(){$/;"	f	class:CDBPoolManager
+mcfn_AddDB	DBPoolManager.cpp	/^void CDBPoolManager::mcfn_AddDB(const char *pscL_DBName, const char* pscL_Ip, const char* pscL_User, const char* pscL_Pass){$/;"	f	class:CDBPoolManager
+mcfn_GetAllIdxOtherThanThis	DBPoolManager.cpp	/^std::list<int> CDBPoolManager::mcfn_GetAllIdxOtherThanThis(int siL_idx){$/;"	f	class:CDBPoolManager
+mcfn_GetNumberOfPools	DBPoolManager.cpp	/^int CDBPoolManager::mcfn_GetNumberOfPools() const{$/;"	f	class:CDBPoolManager
+mcfn_Grab	DBPoolManager.cpp	/^mysqlpp::Connection* CDBPoolManager::mcfn_Grab(int &siLo_Idx){$/;"	f	class:CDBPoolManager
+mcfn_GrabByIdx	DBPoolManager.cpp	/^mysqlpp::Connection * CDBPoolManager::mcfn_GrabByIdx(int siL_Idx){$/;"	f	class:CDBPoolManager
+mcfn_LogString	DBConnPool.h	/^    std::string mcfn_LogString(){$/;"	f	class:CDBConnPool
+mcfn_LogString	DBPoolManager.cpp	/^std::string CDBPoolManager::mcfn_LogString(){$/;"	f	class:CDBPoolManager
+mcfn_ReadConfigurations	ConfigParams.cpp	/^bool CConfigParams::mcfn_ReadConfigurations(bool IsReload)$/;"	f	class:CConfigParams
+mcfn_Release	DBPoolManager.cpp	/^void CDBPoolManager::mcfn_Release(const mysqlpp::Connection *pCL_Conn, int siL_PoolIdx){$/;"	f	class:CDBPoolManager
+mcfn_Size	DBConnPool.h	/^    int mcfn_Size() const{$/;"	f	class:CDBConnPool
+mcfn_getColumns	ConfigParams.h	/^inline const char* CConfigParams::mcfn_getColumns() const$/;"	f	class:CConfigParams
+mcfn_getDBPassword	ConfigParams.h	/^inline const char *CConfigParams::mcfn_getDBPassword() const {$/;"	f	class:CConfigParams
+mcfn_getDBServerIP	ConfigParams.h	/^inline const char *CConfigParams::mcfn_getDBServerIP() const {$/;"	f	class:CConfigParams
+mcfn_getDBSid	ConfigParams.h	/^inline const char *CConfigParams::mcfn_getDBSid() const {$/;"	f	class:CConfigParams
+mcfn_getDBUserName	ConfigParams.h	/^inline const char *CConfigParams::mcfn_getDBUserName() const {$/;"	f	class:CConfigParams
+mcfn_getDateLength	ConfigParams.h	/^inline int CConfigParams::mcfn_getDateLength() const$/;"	f	class:CConfigParams
+mcfn_getFieldSep	ConfigParams.h	/^inline const char* CConfigParams::mcfn_getFieldSep() const$/;"	f	class:CConfigParams
+mcfn_getLineSep	ConfigParams.h	/^inline const char* CConfigParams::mcfn_getLineSep() const$/;"	f	class:CConfigParams
+mcfn_getLogLevel	ConfigParams.h	/^inline int CConfigParams::mcfn_getLogLevel() const$/;"	f	class:CConfigParams
+mcfn_getLogPath	ConfigParams.h	/^inline const char* CConfigParams::mcfn_getLogPath() const$/;"	f	class:CConfigParams
+mcfn_getTableName	ConfigParams.h	/^inline const char* CConfigParams::mcfn_getTableName() const {$/;"	f	class:CConfigParams
+mcfn_getfileRegExpr	ConfigParams.h	/^inline const char* CConfigParams::mcfn_getfileRegExpr() const$/;"	f	class:CConfigParams
+mcfn_getsubmitfilespath	ConfigParams.h	/^inline const char* CConfigParams::mcfn_getsubmitfilespath() const$/;"	f	class:CConfigParams
+mcfn_processFiles	FileUploader.cpp	/^void CFileUploader::mcfn_processFiles()$/;"	f	class:CFileUploader
+mcfn_processThread	FileUploader.cpp	/^void CFileUploader::mcfn_processThread(void* pvL_This)$/;"	f	class:CFileUploader
+mcfn_submitoutputpath	ConfigParams.h	/^inline const char* CConfigParams::mcfn_submitoutputpath() const$/;"	f	class:CConfigParams
+meC_CriticalSection	DBPoolManager.h	/^	CCriticalSection meC_CriticalSection;$/;"	m	class:CDBPoolManager
+meC_ListOfDBPools	DBPoolManager.h	/^	POOL_LIST	meC_ListOfDBPools;$/;"	m	class:CDBPoolManager
+mefn_mysort	FileUploader.h	/^bool mefn_mysort(fileunit a, fileunit b){$/;"	f
+mesc_Columns	ConfigParams.h	/^	char mesc_Columns[1000];$/;"	m	class:CConfigParams
+mesc_DBPassword	ConfigParams.h	/^	char mesc_DBPassword[30];$/;"	m	class:CConfigParams
+mesc_DBServerIP	ConfigParams.h	/^	char mesc_DBServerIP[30];$/;"	m	class:CConfigParams
+mesc_DBSid	ConfigParams.h	/^	char mesc_DBSid[30];$/;"	m	class:CConfigParams
+mesc_DBUserName	ConfigParams.h	/^	char mesc_DBUserName[30];$/;"	m	class:CConfigParams
+mesc_FieldSep	ConfigParams.h	/^	char mesc_FieldSep[20];$/;"	m	class:CConfigParams
+mesc_LineSep	ConfigParams.h	/^	char mesc_LineSep[20];$/;"	m	class:CConfigParams
+mesc_LogDir	ConfigParams.h	/^	char mesc_LogDir[100];$/;"	m	class:CConfigParams
+mesc_OutPath	ConfigParams.h	/^	char mesc_OutPath[200];$/;"	m	class:CConfigParams
+mesc_RegularExpr	ConfigParams.h	/^	char mesc_RegularExpr[50];$/;"	m	class:CConfigParams
+mesc_TableName	ConfigParams.h	/^	char mesc_TableName[100];$/;"	m	class:CConfigParams
+mesc_submitfilesPath	ConfigParams.h	/^	char mesc_submitfilesPath[200];$/;"	m	class:CConfigParams
+mesi_CurrentActiveIdx	DBPoolManager.h	/^	int mesi_CurrentActiveIdx;$/;"	m	class:CDBPoolManager
+mesl_DateLength	ConfigParams.h	/^	int  mesl_DateLength;$/;"	m	class:CConfigParams
+mesl_LogDuration	ConfigParams.h	/^	int mesl_LogDuration;$/;"	m	class:CConfigParams
+mesl_LogLevel	ConfigParams.h	/^	int  mesl_LogLevel;$/;"	m	class:CConfigParams
+mesl_NoOfTables	ConfigParams.h	/^	int mesl_NoOfTables;$/;"	m	class:CConfigParams
+mmin	xmlParser.cpp	/^inline int mmin( const int t1, const int t2 ) { return t1 < t2 ? t1 : t2; }$/;"	f
+myIsTextUnicode	xmlParser.cpp	/^    char myIsTextUnicode(const void *b, int len) \/\/ inspired by the Wine API: RtlIsTextUnicode$/;"	f
+myIsTextUnicode	xmlParser.cpp	/^    char myIsTextUnicode(const void *b,int l) { return (char)IsTextUnicode((CONST LPVOID)b,l,NULL); };$/;"	f
+myIsTextUnicode	xmlParser.cpp	/^char myIsTextUnicode(const void *b, int len) { return FALSE; }$/;"	f
+myMultiByteToWideChar	xmlParser.cpp	/^        wchar_t *myMultiByteToWideChar(const char *s, int l)$/;"	f
+myMultiByteToWideChar	xmlParser.cpp	/^        wchar_t *myMultiByteToWideChar(const char *s,int l)$/;"	f
+myRealloc	xmlParser.cpp	/^static inline void *myRealloc(void *p, int newsize, int memInc, int sizeofElem)$/;"	f	file:
+myTagCompare	xmlParser.cpp	/^char myTagCompare(XMLCSTR cclose, XMLCSTR copen)$/;"	f
+myWideCharToMultiByte	xmlParser.cpp	/^        char *myWideCharToMultiByte(const wchar_t *s, int l) { return NULL; }$/;"	f
+myWideCharToMultiByte	xmlParser.cpp	/^        char *myWideCharToMultiByte(const wchar_t *s, int l)$/;"	f
+myWideCharToMultiByte	xmlParser.cpp	/^        char *myWideCharToMultiByte(const wchar_t *s,int l)$/;"	f
+nAttribute	xmlParser.cpp	/^int XMLNode::nAttribute()  const { if (!d) return 0;    return d->nAttribute; }$/;"	f	class:XMLNode
+nAttribute	xmlParser.h	/^                                 nAttribute;      \/\/ Number of attributes$/;"	m	struct:XMLNode::XMLNodeDataTag
+nChild	xmlParser.h	/^          int                    nChild,          \/\/ Number of child nodes$/;"	m	struct:XMLNode::XMLNodeDataTag
+nChildNode	xmlParser.cpp	/^int XMLNode::nChildNode()  const { if (!d) return 0;    return d->nChild;     }$/;"	f	class:XMLNode
+nChildNode	xmlParser.cpp	/^int XMLNode::nChildNode(XMLCSTR name) const$/;"	f	class:XMLNode
+nClear	xmlParser.cpp	/^int XMLNode::nClear()      const { if (!d) return 0;    return d->nClear;     }$/;"	f	class:XMLNode
+nClear	xmlParser.h	/^                                 nClear,          \/\/ Number of Clear fields (comments)$/;"	m	struct:XMLNode::XMLNodeDataTag
+nColumn	xmlParser.h	/^    int  nLine,nColumn;$/;"	m	struct:XMLResults
+nElement	xmlParser.cpp	/^int XMLNode::nElement()    const { if (!d) return 0;    return d->nAttribute+d->nChild+d->nText+d->nClear; }$/;"	f	class:XMLNode
+nFirst	xmlParser.cpp	/^    int                    nFirst;$/;"	m	struct:XML	file:
+nIndex	xmlParser.cpp	/^    int                    nIndex,nIndexMissigEndTag;$/;"	m	struct:XML	file:
+nIndexMissigEndTag	xmlParser.cpp	/^    int                    nIndex,nIndexMissigEndTag;$/;"	m	struct:XML	file:
+nLine	xmlParser.h	/^    int  nLine,nColumn;$/;"	m	struct:XMLResults
+nText	xmlParser.cpp	/^int XMLNode::nText()       const { if (!d) return 0;    return d->nText;      }$/;"	f	class:XMLNode
+nText	xmlParser.h	/^                                 nText,           \/\/ Number of text fields$/;"	m	struct:XMLNode::XMLNodeDataTag
+openFileHelper	xmlParser.cpp	/^XMLNode XMLNode::openFileHelper(XMLCSTR filename, XMLCSTR tag)$/;"	f	class:XMLNode
+openTagLen	xmlParser.h	/^    XMLCSTR lpszOpen; int openTagLen; XMLCSTR lpszClose;$/;"	m	struct:__anon5
+operator =	xmlParser.cpp	/^XMLNode& XMLNode::operator=( const XMLNode& A )$/;"	f	class:XMLNode
+pAttribute	xmlParser.h	/^          XMLAttribute           *pAttribute;     \/\/ Array of attributes$/;"	m	struct:XMLNode::XMLNodeDataTag
+pCG_Inst	CdrMain.cpp	/^CFileUploader *pCG_Inst[50];$/;"	v
+pChild	xmlParser.h	/^          XMLNode                *pChild;         \/\/ Array of child nodes$/;"	m	struct:XMLNode::XMLNodeDataTag
+pClear	xmlParser.h	/^          XMLClear               *pClear;         \/\/ Array of clear fields$/;"	m	struct:XMLNode::XMLNodeDataTag
+pClr	xmlParser.cpp	/^    ALLXMLClearTag *pClr;$/;"	m	struct:__anon2	file:
+pOrder	xmlParser.h	/^          int                    *pOrder;         \/\/ order of the child_nodes,text_fields,clear_fields$/;"	m	struct:XMLNode::XMLNodeDataTag
+pParent	xmlParser.h	/^          struct XMLNodeDataTag  *pParent;        \/\/ Pointer to parent element (=NULL if root)$/;"	m	struct:XMLNode::XMLNodeDataTag	typeref:struct:XMLNode::XMLNodeDataTag::XMLNodeDataTag
+pStr	xmlParser.cpp	/^    XMLCSTR     pStr;$/;"	m	struct:__anon2	file:
+pText	xmlParser.h	/^          XMLCSTR                *pText;          \/\/ Array of text fields$/;"	m	struct:XMLNode::XMLNodeDataTag
+parseClearTag	xmlParser.cpp	/^char XMLNode::parseClearTag(void *px, ALLXMLClearTag *pClear)$/;"	f	class:XMLNode
+parseFile	xmlParser.cpp	/^XMLNode XMLNode::parseFile(XMLCSTR filename, XMLCSTR tag, XMLResults *pResults)$/;"	f	class:XMLNode
+parseString	xmlParser.cpp	/^XMLNode XMLNode::parseString(XMLCSTR lpszXML, XMLCSTR tag, XMLResults *pResults)$/;"	f	class:XMLNode
+password_	DBConnPool.h	/^    std::string db_, server_, user_, password_;$/;"	m	class:CDBConnPool
+path	FileUploader.h	/^	boost::filesystem3::path path;$/;"	m	struct:fileunit
+pmeC_Instance	DBPoolManager.cpp	/^CDBPoolManager * CDBPoolManager::pmeC_Instance = NULL;$/;"	m	class:CDBPoolManager	file:
+pmeC_Instance	DBPoolManager.h	/^	static CDBPoolManager * pmeC_Instance;$/;"	m	class:CDBPoolManager
+pmeC_ListOfFiles	FileUploader.h	/^	std::list<fileunit> pmeC_ListOfFiles;$/;"	m	class:CFileUploader
+pmesc_Columns	FileUploader.h	/^	char pmesc_Columns[1000];$/;"	m	class:CFileUploader
+pmesc_DBIp	FileUploader.h	/^	char pmesc_DBIp[20];$/;"	m	class:CFileUploader
+pmesc_DBName	FileUploader.h	/^	char pmesc_DBName[50];$/;"	m	class:CFileUploader
+pmesc_DBPwd	FileUploader.h	/^	char pmesc_DBPwd[50];$/;"	m	class:CFileUploader
+pmesc_DBUser	FileUploader.h	/^	char pmesc_DBUser[50];$/;"	m	class:CFileUploader
+pmesc_FieldSep	FileUploader.h	/^	char pmesc_FieldSep[20];$/;"	m	class:CFileUploader
+pmesc_FileInputPath	FileUploader.h	/^	char pmesc_FileInputPath[200];$/;"	m	class:CFileUploader
+pmesc_FileOutPath	FileUploader.h	/^	char pmesc_FileOutPath[200];$/;"	m	class:CFileUploader
+pmesc_FileRegExp	FileUploader.h	/^	char pmesc_FileRegExp[50];$/;"	m	class:CFileUploader
+pmesc_LineSep	FileUploader.h	/^	char pmesc_LineSep[20];$/;"	m	class:CFileUploader
+pmesc_TableName	FileUploader.h	/^	char pmesc_TableName[50];$/;"	m	class:CFileUploader
+positionOfChildNode	xmlParser.cpp	/^int XMLNode::positionOfChildNode(XMLCSTR name, int count) const$/;"	f	class:XMLNode
+positionOfChildNode	xmlParser.cpp	/^int XMLNode::positionOfChildNode(XMLNode x)  const$/;"	f	class:XMLNode
+positionOfChildNode	xmlParser.cpp	/^int XMLNode::positionOfChildNode(int i) const { if (i>=d->nChild) i=d->nChild-1; return findPosition(d,i,eNodeChild); }$/;"	f	class:XMLNode
+positionOfClear	xmlParser.cpp	/^int XMLNode::positionOfClear    (int i) const { if (i>=d->nClear) i=d->nClear-1; return findPosition(d,i,eNodeClear); }$/;"	f	class:XMLNode
+positionOfClear	xmlParser.cpp	/^int XMLNode::positionOfClear(XMLCSTR lpszValue) const { return positionOfClear(indexClear(lpszValue)); }$/;"	f	class:XMLNode
+positionOfClear	xmlParser.cpp	/^int XMLNode::positionOfClear(XMLClear *a) const { if (a) return positionOfClear(a->lpszValue); return positionOfClear(); }$/;"	f	class:XMLNode
+positionOfText	xmlParser.cpp	/^int XMLNode::positionOfText     (int i) const { if (i>=d->nText ) i=d->nText-1;  return findPosition(d,i,eNodeText ); }$/;"	f	class:XMLNode
+positionOfText	xmlParser.cpp	/^int XMLNode::positionOfText (XMLCSTR lpszValue) const { return positionOfText (indexText (lpszValue)); }$/;"	f	class:XMLNode
+ref_count	xmlParser.h	/^          int                    ref_count;       \/\/ for garbage collection (smart pointers)$/;"	m	struct:XMLNode::XMLNodeDataTag
+removeOrderElement	xmlParser.cpp	/^int XMLNode::removeOrderElement(XMLNodeData *d, XMLElementType t, int index)$/;"	f	class:XMLNode
+s	xmlParser.cpp	/^typedef struct { XMLCSTR s; int l; XMLCHAR c;} XMLCharacterEntity;$/;"	m	struct:__anon1	file:
+scG_Delimiter	CdrMain.cpp	/^const char scG_Delimiter = '_';$/;"	v
+server_	DBConnPool.h	/^    std::string db_, server_, user_, password_;$/;"	m	class:CDBConnPool
+setGlobalOptions	xmlParser.cpp	/^void XMLNode::setGlobalOptions(char _guessUnicodeChars, char _strictUTF8Parsing, char _dropWhiteSpace)$/;"	f	class:XMLNode
+strictUTF8Parsing	xmlParser.cpp	/^static char strictUTF8Parsing=1, guessUnicodeChars=1, dropWhiteSpace=1;$/;"	v	file:
+stringDup	xmlParser.cpp	/^XMLSTR stringDup(XMLCSTR lpszData, int cbData)$/;"	f
+text	xmlParser.h	/^    XMLCSTR text;$/;"	m	struct:XMLNodeContents
+time	FileUploader.h	/^	long time;$/;"	m	struct:fileunit
+toXMLString	xmlParser.cpp	/^XMLSTR toXMLString(XMLCSTR source)$/;"	f
+toXMLString	xmlParser.cpp	/^XMLSTR toXMLString(XMLSTR dest,XMLCSTR source)$/;"	f
+toXMLStringFast	xmlParser.cpp	/^XMLSTR toXMLStringFast(XMLSTR *dest,int *destSz, XMLCSTR source)$/;"	f
+type	xmlParser.h	/^    enum XMLElementType type;$/;"	m	struct:XMLNodeContents	typeref:enum:XMLNodeContents::XMLElementType
+u16	ConfigParams.h	/^typedef unsigned short u16;$/;"	t
+u8	ConfigParams.h	/^typedef unsigned char u8;$/;"	t
+updateAttribute	xmlParser.cpp	/^XMLAttribute *XMLNode::updateAttribute(XMLAttribute *newAttribute, XMLAttribute *oldAttribute)$/;"	f	class:XMLNode
+updateAttribute	xmlParser.cpp	/^XMLAttribute *XMLNode::updateAttribute(XMLCSTR lpszNewValue, XMLCSTR lpszNewName,XMLCSTR lpszOldName)$/;"	f	class:XMLNode
+updateAttribute	xmlParser.cpp	/^XMLAttribute *XMLNode::updateAttribute(XMLCSTR lpszNewValue, XMLCSTR lpszNewName,int i)$/;"	f	class:XMLNode
+updateAttribute_WOSD	xmlParser.cpp	/^XMLAttribute *XMLNode::updateAttribute_WOSD(XMLAttribute *newAttribute, XMLAttribute *oldAttribute)$/;"	f	class:XMLNode
+updateAttribute_WOSD	xmlParser.cpp	/^XMLAttribute *XMLNode::updateAttribute_WOSD(XMLCSTR lpszNewValue, XMLCSTR lpszNewName,XMLCSTR lpszOldName)$/;"	f	class:XMLNode
+updateAttribute_WOSD	xmlParser.cpp	/^XMLAttribute *XMLNode::updateAttribute_WOSD(XMLCSTR lpszNewValue, XMLCSTR lpszNewName,int i)$/;"	f	class:XMLNode
+updateClear	xmlParser.cpp	/^XMLClear     *XMLNode::updateClear(XMLCSTR lpszNewContent, int i)$/;"	f	class:XMLNode
+updateClear	xmlParser.cpp	/^XMLClear     *XMLNode::updateClear(XMLCSTR lpszNewValue, XMLCSTR lpszOldValue)$/;"	f	class:XMLNode
+updateClear	xmlParser.cpp	/^XMLClear     *XMLNode::updateClear(XMLClear *newP,XMLClear *oldP)$/;"	f	class:XMLNode
+updateClear_WOSD	xmlParser.cpp	/^XMLClear *XMLNode::updateClear_WOSD(XMLCSTR lpszNewContent, int i)$/;"	f	class:XMLNode
+updateClear_WOSD	xmlParser.cpp	/^XMLClear *XMLNode::updateClear_WOSD(XMLCSTR lpszNewValue, XMLCSTR lpszOldValue)$/;"	f	class:XMLNode
+updateClear_WOSD	xmlParser.cpp	/^XMLClear *XMLNode::updateClear_WOSD(XMLClear *newP,XMLClear *oldP)$/;"	f	class:XMLNode
+updateName	xmlParser.cpp	/^XMLCSTR       XMLNode::updateName(XMLCSTR lpszName)$/;"	f	class:XMLNode
+updateName_WOSD	xmlParser.cpp	/^XMLCSTR XMLNode::updateName_WOSD(XMLCSTR lpszName)$/;"	f	class:XMLNode
+updateText	xmlParser.cpp	/^XMLCSTR       XMLNode::updateText(XMLCSTR lpszNewValue, XMLCSTR lpszOldValue)$/;"	f	class:XMLNode
+updateText	xmlParser.cpp	/^XMLCSTR       XMLNode::updateText(XMLCSTR lpszNewValue, int i)$/;"	f	class:XMLNode
+updateText_WOSD	xmlParser.cpp	/^XMLCSTR XMLNode::updateText_WOSD(XMLCSTR lpszNewValue, XMLCSTR lpszOldValue)$/;"	f	class:XMLNode
+updateText_WOSD	xmlParser.cpp	/^XMLCSTR XMLNode::updateText_WOSD(XMLCSTR lpszNewValue, int i)$/;"	f	class:XMLNode
+user_	DBConnPool.h	/^    std::string db_, server_, user_, password_;$/;"	m	class:CDBConnPool
+writeToFile	xmlParser.cpp	/^XMLError XMLNode::writeToFile(XMLCSTR filename, const char *encoding, char nFormat) const$/;"	f	class:XMLNode
+~CDBConnPool	DBConnPool.h	/^    ~CDBConnPool()$/;"	f	class:CDBConnPool
+~XMLNode	xmlParser.cpp	/^XMLNode::~XMLNode() { deleteNodeContent(); }$/;"	f	class:XMLNode
+~XMLParserBase64Tool	xmlParser.cpp	/^XMLParserBase64Tool::~XMLParserBase64Tool(){ freeBuffer(); }$/;"	f	class:XMLParserBase64Tool

@@ -1,0 +1,28 @@
+message UssdData{
+	enum Msg_Type
+	{
+		PUSSR=0;
+		USSR=1;
+		USSN=2;
+		PUSSR_ACK=3;
+		USSR_ACK=4;
+		USSN_ACK=5;
+	};
+	optional uint32 version = 1;
+	optional uint32 dcs = 2;
+	optional string oa = 3;
+	optional string da = 4;
+	optional bytes	msg = 5;
+	optional Msg_Type  msg_type=6;
+	optional string srv_code=7;
+	optional int32 status=8;
+	optional int32 session_starttime=9;
+	optional int32 session_endtime=10;
+	optional int32 sender_sessionid=11;
+	optional int32 receiver_sessionid=12;
+	optional int32 charge_ratio=13;
+	optional int32 charge_type=14;
+	optional string charge_source=15;
+	optional int32  charge_location=16;
+	required int32 session_status=17 [default = 0];
+}

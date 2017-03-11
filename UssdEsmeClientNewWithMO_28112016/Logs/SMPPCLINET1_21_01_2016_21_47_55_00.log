@@ -1,0 +1,66 @@
+[SMPPCLINET1|EsmeMain.cpp|00110|21-01-2016 21:47:55:431|~IN~]Version:V1.0
+[SMPPCLINET1|EsmeMain.cpp|00111|21-01-2016 21:47:55:435|~IN~]Release Date:05-Apr-2014
+[SMPPCLINET1|DBPoolManager.cpp|00013|21-01-2016 21:47:55:436|~IN~]Creating PoolManager object...
+[SMPPCLINET1|DBPoolManager.cpp|00024|21-01-2016 21:47:55:441|~VB~]CDBPoolManager::mcfn_AddDB >>
+[SMPPCLINET1|DBPoolManager.cpp|00029|21-01-2016 21:47:55:441|~VB~]CDBPoolManager::mcfn_AddDB <<
+[SMPPCLINET1|EsmeMain.cpp|00115|21-01-2016 21:47:55:441|~VB~]PoolMgr Size:1
+[SMPPCLINET1|Thread.cpp|00071|21-01-2016 21:47:55:441|~CR~]Started PrecessReceivedSmppPacketThread Thread:0
+[SMPPCLINET1|DBConnPool.h|00049|21-01-2016 21:47:56:443|~VB~]Creating connection object
+[SMPPCLINET1|DBPoolManager.cpp|00063|21-01-2016 21:47:56:696|~VB~]mesi_CurrentActiveIdx:0
+[SMPPCLINET1|DBOperations.cpp|00085|21-01-2016 21:47:56:696|~VB~]DBConn:145288184,Idx:0
+[SMPPCLINET1|DBOperations.cpp|00089|21-01-2016 21:47:56:697|~VB~]Executing Query:SELECT * from esme_details WHERE ESME_ID=1 limit 1
+[SMPPCLINET1|DBOperations.cpp|00092|21-01-2016 21:47:57:167|~VB~]Executed SuccessFully
+[SMPPCLINET1|TcpServer.cpp|00165|21-01-2016 21:47:57:170|~IN~]PublisherStartServerThread started...
+[SMPPCLINET1|DBPoolManager.cpp|00063|21-01-2016 21:47:57:187|~VB~]mesi_CurrentActiveIdx:0
+[SMPPCLINET1|DBOperations.cpp|00085|21-01-2016 21:47:57:187|~VB~]DBConn:145288184,Idx:0
+[SMPPCLINET1|DBOperations.cpp|00089|21-01-2016 21:47:57:187|~VB~]Executing Query:SELECT * from smsc_details WHERE SMSC_ID=1 limit 1
+[SMPPCLINET1|DBOperations.cpp|00092|21-01-2016 21:47:57:215|~VB~]Executed SuccessFully
+[SMPPCLINET1|SMPP.cpp|00027|21-01-2016 21:47:57:217|~IN~]Loaded initial configuration sucessfully:1
+[SMPPCLINET1|TcpClient.cpp|00083|21-01-2016 21:47:57:220|~IN~]Started mcfn_connectToSMPPThread
+[SMPPCLINET1|TcpClient.cpp|00171|21-01-2016 21:47:57:270|~ER~][0]Error in Connecting to SMPP [127.0.0.1:3014]
+[SMPPCLINET1|Thread.cpp|00071|21-01-2016 21:47:57:273|~CR~]Started ProcessReceivedMsgsThread Thread:0
+[SMPPCLINET1|SMPP.cpp|00101|21-01-2016 21:47:57:292|~IN~]Started processReceivedMsgs Thread
+[SMPPCLINET1|Thread.cpp|00071|21-01-2016 21:47:58:220|~CR~]Started SendMsgToSmscThread Thread:1
+[SMPPCLINET1|SMPP.cpp|00126|21-01-2016 21:47:58:221|~IN~]Started sendSmppMsgsToSmsc Thread
+[SMPPCLINET1|TcpClient.cpp|00171|21-01-2016 21:47:58:307|~ER~][1]Error in Connecting to SMPP [127.0.0.1:3014]
+[SMPPCLINET1|TcpClient.cpp|00171|21-01-2016 21:47:59:379|~ER~][2]Error in Connecting to SMPP [127.0.0.1:3014]
+[SMPPCLINET1|Thread.cpp|00071|21-01-2016 21:48:00:058|~CR~]Started RetryThread Thread:0
+[SMPPCLINET1|TcpClient.cpp|00171|21-01-2016 21:48:00:382|~ER~][3]Error in Connecting to SMPP [127.0.0.1:3014]
+[SMPPCLINET1|RetryPlaner.cpp|00018|21-01-2016 21:48:01:060|~IN~]Loading retry plan from configuation
+[SMPPCLINET1|DBConnPool.h|00084|21-01-2016 21:48:01:060|~IN~]Destroying the db connection
+[SMPPCLINET1|DBConnPool.h|00049|21-01-2016 21:48:01:060|~VB~]Creating connection object
+[SMPPCLINET1|DBPoolManager.cpp|00063|21-01-2016 21:48:01:201|~VB~]mesi_CurrentActiveIdx:0
+[SMPPCLINET1|DBOperations.cpp|00085|21-01-2016 21:48:01:202|~VB~]DBConn:145360544,Idx:0
+[SMPPCLINET1|DBOperations.cpp|00089|21-01-2016 21:48:01:202|~VB~]Executing Query:SELECT * from menu_retry_plan WHERE status='A'
+[SMPPCLINET1|DBOperations.cpp|00092|21-01-2016 21:48:01:291|~VB~]Executed SuccessFully
+[SMPPCLINET1|RetryPlaner.cpp|00027|21-01-2016 21:48:01:291|~IN~]retry plans are configured :1
+[SMPPCLINET1|RetryPlaner.cpp|00053|21-01-2016 21:48:01:291|~IN~]plan interval ration:1:1,interval  :10
+[SMPPCLINET1|RetryPlaner.cpp|00101|21-01-2016 21:48:01:291|~IN~]Loading planner configurations
+[SMPPCLINET1|DBPoolManager.cpp|00063|21-01-2016 21:48:01:291|~VB~]mesi_CurrentActiveIdx:0
+[SMPPCLINET1|DBOperations.cpp|00085|21-01-2016 21:48:01:291|~VB~]DBConn:145360544,Idx:0
+[SMPPCLINET1|DBOperations.cpp|00089|21-01-2016 21:48:01:291|~VB~]Executing Query:SELECT * from plan_profile WHERE  STATUS='A'
+[SMPPCLINET1|DBOperations.cpp|00092|21-01-2016 21:48:01:336|~VB~]Executed SuccessFully
+[SMPPCLINET1|RetryPlaner.cpp|00110|21-01-2016 21:48:01:336|~IN~]plan profiles are configured :1
+[SMPPCLINET1|Thread.cpp|00071|21-01-2016 21:48:01:344|~CR~]Started CdrSendThread Thread:0
+[SMPPCLINET1|TcpClient.cpp|00171|21-01-2016 21:48:01:395|~ER~][4]Error in Connecting to SMPP [127.0.0.1:3014]
+[SMPPCLINET1|TcpClient.cpp|00083|21-01-2016 21:48:02:338|~IN~]Started mcfn_connectToCdrServerThread
+[SMPPCLINET1|TcpClient.cpp|00171|21-01-2016 21:48:02:487|~ER~][5]Error in Connecting to SMPP [127.0.0.1:3014]
+[SMPPCLINET1|TcpServer.cpp|00165|21-01-2016 21:48:02:725|~IN~]RELOADStartServerThread started...
+[SMPPCLINET1|TcpClient.cpp|00175|21-01-2016 21:48:02:726|~VB~][0]Connected to CdrServer[127.0.0.1:4141]
+[SMPPCLINET1|TcpClient.cpp|00134|21-01-2016 21:48:02:726|~VB~]Receiveing From CdrServer
+[SMPPCLINET1|TcpClient.cpp|00171|21-01-2016 21:48:03:490|~ER~][6]Error in Connecting to SMPP [127.0.0.1:3014]
+[SMPPCLINET1|TcpClient.cpp|00171|21-01-2016 21:48:04:492|~ER~][7]Error in Connecting to SMPP [127.0.0.1:3014]
+[SMPPCLINET1|TcpClient.cpp|00171|21-01-2016 21:48:05:494|~ER~][8]Error in Connecting to SMPP [127.0.0.1:3014]
+[SMPPCLINET1|TcpClient.cpp|00171|21-01-2016 21:48:06:497|~ER~][9]Error in Connecting to SMPP [127.0.0.1:3014]
+[SMPPCLINET1|TcpClient.cpp|00171|21-01-2016 21:48:07:500|~ER~][0]Error in Connecting to SMPP [127.0.0.1:3014]
+[SMPPCLINET1|TcpClient.cpp|00171|21-01-2016 21:48:08:503|~ER~][1]Error in Connecting to SMPP [127.0.0.1:3014]
+140000008300000000000000ffffffffffffffff
+[SMPPCLINET1|TcpClient.cpp|00171|21-01-2016 21:48:09:549|~ER~][2]Error in Connecting to SMPP [127.0.0.1:3014]
+[SMPPCLINET1|TcpClient.cpp|00171|21-01-2016 21:48:10:553|~ER~][3]Error in Connecting to SMPP [127.0.0.1:3014]
+[SMPPCLINET1|TcpClient.cpp|00171|21-01-2016 21:48:11:555|~ER~][4]Error in Connecting to SMPP [127.0.0.1:3014]
+[SMPPCLINET1|TcpClient.cpp|00171|21-01-2016 21:48:12:557|~ER~][5]Error in Connecting to SMPP [127.0.0.1:3014]
+[SMPPCLINET1|TcpClient.cpp|00171|21-01-2016 21:48:13:560|~ER~][6]Error in Connecting to SMPP [127.0.0.1:3014]
+[SMPPCLINET1|TcpClient.cpp|00171|21-01-2016 21:48:14:563|~ER~][7]Error in Connecting to SMPP [127.0.0.1:3014]
+[SMPPCLINET1|TcpClient.cpp|00171|21-01-2016 21:48:15:565|~ER~][8]Error in Connecting to SMPP [127.0.0.1:3014]
+[SMPPCLINET1|TcpClient.cpp|00171|21-01-2016 21:48:16:567|~ER~][9]Error in Connecting to SMPP [127.0.0.1:3014]
+[SMPPCLINET1|TcpClient.cpp|00171|21-01-2016 21:48:17:572|~ER~][0]Error in Connecting to SMPP [127.0.0.1:3014]

@@ -1,0 +1,332 @@
+
+/**
+ * SixDEE Telecom Solutions Pvt. Ltd.
+ * Copyright 2006
+ * All Rights Reserved.
+ */
+
+#include "STSSocket.h"
+#include <sys/types.h>
+#include <linux/unistd.h>
+
+
+CSTSSocket::CSTSSocket()
+{
+	mesl_Error = 0x00;
+	meS_Socket = -1;
+	mesl_ServerPort = 0;
+	meb_WRClosed = false;
+	meb_RDClosed = false;
+	memset(pmesc_ErrStrg,0x00,sizeof(pmesc_ErrStrg));
+        memset(&meS_SockAddr,0x00,sizeof(meS_SockAddr));
+}
+
+void CSTSSocket::mcfn_init()
+{
+	mesl_Error = 0x00;
+        meS_Socket = -1;
+        mesl_ServerPort = 0;
+        meb_WRClosed = false;
+        meb_RDClosed = false;
+	memset(pmesc_ErrStrg,0x00,sizeof(pmesc_ErrStrg));
+	memset(&meS_SockAddr,0x00,sizeof(meS_SockAddr));
+}
+
+CSTSSocket::~CSTSSocket()
+{
+	mcfn_close();
+}
+
+bool CSTSSocket::mcfn_initialize()
+{
+#ifdef __LINUX__
+	return true;
+#else
+	WORD wVersionRequested;
+	WSADATA wsadata;
+	wVersionRequested = MAKEWORD (2,2);
+	if(WSAStartup(2,&wsadata) == 0)
+		return true;
+	return false;
+#endif
+}
+
+const char* CSTSSocket::what()
+{ 
+#define RETS(s,m) case s: return #s": "m;
+#ifdef _WIN32
+#define SRETS(s,m) case s+WSABASEERR: return #s": "m;
+#else
+#define SRETS(s,m) RETS(s,m)
+#endif
+
+	switch (mesl_Error) {
+		RETS(EWOULDBLOCK,"Resource temporarily unavailable")
+			RETS(EINPROGRESS,"Operation now in progress")
+			RETS(EALREADY,"Operation already in progress")
+			RETS(ENOTSOCK,"Socket operation on nonsocket")
+			RETS(EDESTADDRREQ,"Destination address required")
+			RETS(EMSGSIZE,"Message too long")
+			RETS(EPROTOTYPE,"Protocol wrong type for socket")
+			RETS(ENOPROTOOPT,"Bad protocol option")
+			RETS(EPROTONOSUPPORT,"Protocol not supported")
+			RETS(ESOCKTNOSUPPORT,"Socket type not supported")
+			RETS(EOPNOTSUPP,"Operation not supported")
+			RETS(EPFNOSUPPORT,"Protocol family not supported")
+			RETS(EAFNOSUPPORT,"Address family not supported by protocol family")
+			RETS(EADDRINUSE,"Address already in use")
+			RETS(EADDRNOTAVAIL,"Cannot assign requested address")
+			RETS(ENETDOWN,"Network is down")
+			RETS(ENETUNREACH,"Network is unreachable")
+			RETS(ENETRESET,"Network dropped connection on reset")
+			RETS(ECONNABORTED,"Software caused connection abort")
+			RETS(ECONNRESET,"Connection reset by peer")
+			RETS(ENOBUFS,"No buffer space available")
+			RETS(EISCONN,"Socket is already connected")
+			RETS(ENOTCONN,"Socket is not connected")
+			RETS(ESHUTDOWN,"Cannot send after socket shutdown")
+			RETS(ETIMEDOUT,"Connection timed out")
+			RETS(ECONNREFUSED,"Connection refused")
+			RETS(EHOSTDOWN,"Host is down")
+			RETS(EHOSTUNREACH,"No route to host")
+			//RETS(EPROCLIM,"Too many processes")
+			SRETS(EINTR,"Operation interrupted")
+			SRETS(EBADF,"Bad file number")
+			SRETS(EACCES,"Permission denied")
+			SRETS(EFAULT,"Bad address")
+			SRETS(EINVAL,"Invalid argument")
+			SRETS(EMFILE,"Too many files opened")
+			//RETS(ETOOMANYREFS,"")
+			//RETS(ELOOP,"")
+			//RETS(EUSERS,"")
+			//RETS(EDQUOT,"")
+			//RETS(ESTALE,"")
+			//RETS(EREMOTE,"")
+	}
+#undef RETS
+#undef SRETS
+	return "Unknown Error";
+}
+
+bool CSTSSocket::mcfn_create(int slL_Port)
+{
+	mesl_ServerPort = slL_Port;
+	meS_SockAddr.sin_family = AF_INET;
+	meS_SockAddr.sin_port= htons(mesl_ServerPort);
+	meS_SockAddr.sin_addr.s_addr= INADDR_ANY;
+	if((meS_Socket = socket(AF_INET,SOCK_STREAM,0)) == -1)
+	{
+		mesl_Error = SOCERRNO;
+		return false;
+	}
+	return true;
+}
+
+bool CSTSSocket::mcfn_create(int slL_Port,char * pscL_IP)
+{
+	mesl_ServerPort = slL_Port;
+	meS_SockAddr.sin_family = AF_INET;
+	meS_SockAddr.sin_port= htons(mesl_ServerPort);
+	meS_SockAddr.sin_addr.s_addr= inet_addr(pscL_IP);
+	if((meS_Socket = socket(AF_INET,SOCK_STREAM,0)) == -1)
+	{
+		mesl_Error = SOCERRNO;
+		return false;
+	}
+	return true;
+}
+
+bool CSTSSocket::mcfn_accept(CSTSSocket &CL_STSSocket)
+{
+#ifdef __LINUX__
+	int slL_AddrLen = sizeof(CL_STSSocket.meS_SockAddr);
+	if((CL_STSSocket.meS_Socket = accept(meS_Socket, (struct sockaddr *)&CL_STSSocket.meS_SockAddr,	(socklen_t*)&slL_AddrLen)) < 0)
+	{
+		mesl_Error = SOCERRNO;
+		return false;
+	}
+#else
+	int slL_AddrLen = sizeof(sockaddr_in);
+	if((CL_STSSocket.meS_Socket = accept(meS_Socket, (struct sockaddr *)&CL_STSSocket.meS_SockAddr,	&slL_AddrLen)) == INVALID_SOCKET)
+	{
+		mesl_Error = SOCERRNO;
+		return false;
+	}
+#endif
+	return true;
+}
+
+
+bool CSTSSocket::mcfn_receive(char *psl_Buffer,int slL_TotLen,bool bL_block)
+{
+	int slL_NoByte = 0;
+	int slL_Len = 0;
+
+	int siL_ReturnValue = 0x00;
+	/* ussing poll */
+	struct pollfd fds[2];
+	int timeout_msecs = 50;
+	/* using poll end*/
+
+	/*using select */
+	/*
+	fd_set SL_SReady;
+	struct timeval SL_NOWait; 
+	memset(&SL_NOWait,0x00,sizeof(SL_NOWait));	
+	SL_NOWait.tv_usec = 100;
+	SL_NOWait.tv_sec = 0;
+	*/
+	/*using select end */
+	
+	while(1)
+	{
+#ifdef __LINUX__
+		if(meS_Socket == -1)
+		{
+			mesl_Error = ECONNRESET;
+			return false;
+		}
+		/* using select */
+		/*
+		//clearing old entries
+		FD_ZERO(&SL_SReady);
+		//add to master set
+		FD_SET(meS_Socket, &SL_SReady);
+		siL_ReturnValue = select(meS_Socket+1,&SL_SReady,NULL,NULL,&SL_NOWait);
+		*/
+		/* using select end */
+
+		/* using poll */
+		fds[0].fd = meS_Socket;	
+		fds[0].events = POLLIN|POLLRDNORM|POLLRDBAND|POLLPRI|POLLERR|POLLHUP|POLLNVAL;
+		fds[0].revents = POLLIN|POLLRDNORM|POLLRDBAND|POLLPRI|POLLERR|POLLHUP|POLLNVAL;
+		/*
+		if(meS_fds[0]!=0)
+		{
+			fds[1].fd = meS_fds[0];
+			fds[1].events = POLLIN|POLLRDNORM|POLLRDBAND|POLLPRI|POLLERR|POLLHUP|POLLNVAL;
+			fds[1].revents = POLLIN|POLLRDNORM|POLLRDBAND|POLLPRI|POLLERR|POLLHUP|POLLNVAL;
+	
+			siL_ReturnValue = poll(fds,2,timeout_msecs);
+		}
+		else
+		*/
+			siL_ReturnValue = poll(fds,1,timeout_msecs);
+			
+		/* using poll end */
+		if(meb_WRClosed || (meS_Socket == -1))
+		{
+			mesl_Error = ECONNRESET;
+			return false;
+		}
+		if((siL_ReturnValue== -1)&& ((SOCERRNO == EINTR)||(SOCERRNO == EAGAIN)))//signal interupt 
+				continue;	
+		if((siL_ReturnValue== -1)&& ((SOCERRNO == EBADF)||(SOCERRNO == EINVAL)))//bad socket descriptor
+		{
+			mesl_Error = ECONNRESET;
+			return false;
+			
+		}
+		if(siL_ReturnValue== 0)//timeout
+			continue;	
+		if((fds[0].revents & POLLERR)||(fds[0].revents & POLLHUP)||(fds[0].revents & POLLNVAL))
+		{
+			mesl_Error = ECONNRESET;
+                        return false;	
+		}
+		/*
+		if((fds[1].revents & POLLERR)||(fds[1].revents & POLLHUP)||(fds[1].revents & POLLNVAL))
+		{
+			mesl_Error = ECONNRESET;
+                        return false;	
+		}
+		*/
+		if((slL_NoByte=recv(meS_Socket,psl_Buffer,slL_TotLen - slL_Len, MSG_NOSIGNAL)) > 0) 
+#else
+			if((slL_NoByte=recv(meS_Socket,psl_Buffer,slL_TotLen - slL_Len, 0)) > 0) 
+#endif
+			{
+				slL_Len += slL_NoByte;
+				if(slL_Len != slL_TotLen)
+					psl_Buffer += slL_NoByte;
+				else
+					return true;
+			}
+			else if(slL_NoByte == 0)
+			{
+				mesl_Error = ECONNRESET;
+				return false;
+			}
+			else
+			{
+				mesl_Error = SOCERRNO;
+				if (mesl_Error == EWOULDBLOCK) 
+				{
+					if(bL_block)
+					{
+						CSTSOSUtil::mcfn_msleep(10);
+						continue;
+					}
+					else
+						return false;
+				}
+				else
+					return false;
+			}
+	}
+}
+
+int CSTSSocket::mcfn_isDataAvailable(int siL_Timeout)
+{
+	int siL_ReturnValue = 0x00; 
+	fd_set SL_SReady; 
+	struct timeval SL_NOWait; 
+
+	FD_ZERO(&SL_SReady); 
+	FD_SET((unsigned int)meS_Socket,&SL_SReady); 
+	memset((char *)&SL_NOWait,0,sizeof(SL_NOWait)); 
+
+	if(siL_Timeout == -1)
+	{//wait infinetly
+		siL_ReturnValue = select(meS_Socket+1,&SL_SReady,NULL,NULL,NULL); 
+	}
+	else
+	{//wait till time given
+		SL_NOWait.tv_usec = siL_Timeout;
+		SL_NOWait.tv_sec = 0x00;
+		//SL_NOWait.tv_sec = siL_Timeout;
+		//SL_NOWait.tv_usec = 0x00;
+		siL_ReturnValue = select(meS_Socket+1,&SL_SReady,NULL,NULL,&SL_NOWait);
+	}
+	/*
+	   if(siL_ReturnValue == -1 || siL_ReturnValue == 0x00)
+	   return siL_ReturnValue;
+
+	   if(!FD_ISSET(meS_Socket,&SL_SReady)) 
+	   return -1;
+	 */
+	return siL_ReturnValue;
+}
+
+int CSTSSocket::mbfn_getIpAddress(char *buf, size_t buflen)
+{
+	char *ipAddress = inet_ntoa( meS_SockAddr.sin_addr );
+	mesl_Error = STS_SUCCESS;
+	if ( ipAddress )
+	{
+		size_t len = strlen( ipAddress );
+		if ( buflen > len )
+			strcpy( buf, ipAddress );
+		return STS_SUCCESS;
+	}
+	else
+		mesl_Error = STS_ERR_INV_IPADDR;
+
+	return STS_FAILURE;
+}
+
+int CSTSSocket::mbfn_getPort()
+{
+	int siL_Port = ntohs( meS_SockAddr.sin_port );
+	return siL_Port;
+}

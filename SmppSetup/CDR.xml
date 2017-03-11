@@ -1,0 +1,30 @@
+<CdrUploadParams>
+	<numberofUploaders>1</numberofUploaders>
+	<LogDuration>36000</LogDuration>
+	<LogLevel>31</LogLevel>
+	<LogPath>./logs</LogPath>
+	<MODULEID>90</MODULEID>
+	<IPC_ROUTER_ID>61</IPC_ROUTER_ID>
+	<IPC_ROUTER_PORT>10000</IPC_ROUTER_PORT>
+	<IPC_ROUTER_IP>127.0.0.1</IPC_ROUTER_IP>
+	<IPCMODE>3</IPCMODE>
+	<PM_ID>60</PM_ID>
+	<HeartBeatInterval>30</HeartBeatInterval>
+	<HeartBeatReq>Y</HeartBeatReq>
+	<DBIP>127.0.0.1:3306</DBIP>
+	<DBName>CMS_USSD</DBName>
+	<DBUserName>cmsuser</DBUserName>
+	<DBPassword>cmsuser</DBPassword>
+	<FilesInpath>./cdr</FilesInpath>
+	<FilesOutPath>./cdr/bkp</FilesOutPath>
+	<FilesErrorPath>./cdr/error_files</FilesErrorPath>
+	<LineSep><![CDATA[\n]]></LineSep>
+	<FieldSep><![CDATA[|]]></FieldSep>
+	<Uploader1>
+		<RegularExpr>^SMSC.*TXT$</RegularExpr>
+		<Columns>SCHEDULE_ID,MSG_ID,DA,MSG_DATA,SENDER_SESSIONID,RECEIVER_SESSIONID,STATUS,CHARGING_STATUS,SESSION_STARTTIME,SESSION_ENDTIME,URL,URL_STATUS</Columns>
+		<FunctionName>fnG_GetUSSDCDRTable</FunctionName>
+		<ReplicationRequired>0</ReplicationRequired>
+		<ReplicationPath></ReplicationPath>
+	</Uploader1>
+</CdrUploadParams>

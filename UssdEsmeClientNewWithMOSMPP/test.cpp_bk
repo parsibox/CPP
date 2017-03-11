@@ -1,0 +1,12 @@
+#include<stdio.h>
+#include<string>
+
+int main()
+{
+ char menu[10]="*1212*1#";
+ std::string service;
+service.assign(menu);
+ printf("%03d\n",1);
+ printf("service:%s[%d]",service.substr(0,service.find('#')).c_str(),service.length());
+ return 0;
+}

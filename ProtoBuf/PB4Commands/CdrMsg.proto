@@ -1,0 +1,41 @@
+import "DeliverToEsme.proto";
+message SubmitMsg{
+	required uint32 task_id = 1;
+	required uint32 msg_id = 2;
+	required string oa = 3;
+	required string da = 4;
+	required bytes	msg = 5;
+	required int32  interface_id = 6;
+	optional int32  reg_del=7;
+	optional int32	circle_id=8;
+	optional int32  channel_id=9;
+	optional int32  expiry_time=10;
+	optional int32  pid=11;
+	optional int32  dcs=12;
+	optional int32  lang_id=13[default=0];
+	optional int32 status=14;
+	optional int32 submit_time=15;
+	optional int32 submit_msgid=16;
+	optional int32 session_endtime=17;
+	optional int32 sender_sessionid=18;
+	optional int32 receiver_sessionid=19;
+	optional int32 charging_status=20;
+
+}
+message DeliverMsg{
+	optional int32 submit_msgid=1;
+	optional int32 submit_time=2;
+	optional int32 status=3;
+	optional int32 delivery_time=4;
+	optional int32 error_code=5;
+}
+message CdrMsg{
+	enum MSG_TYPE{
+		SUBMIT=1;
+		DELIVER=2;
+		USSD_SUBMIT=3;
+	}
+	required MSG_TYPE msg_type=1;
+	optional DeliverToEsme submit_msg=2;
+	optional DeliverMsg deliver_msg=3;
+}

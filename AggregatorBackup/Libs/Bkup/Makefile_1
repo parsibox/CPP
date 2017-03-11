@@ -1,0 +1,37 @@
+CC=g++
+BASEDIR=/home/cmstest
+CFLAGS= -Wno-deprecated -D__LINUX__ -I $(BASEDIR)/LIB/DK_SepTel/INC/
+OBJS= CriticalSection.o STSException.o STSLogFile.o STSSocket.o EventLog.o Get_pri_profile.o STSOSUtil.o File_Interpretor.o STSUtil.o IEData.o URLRequest.o
+
+STSCommonUtil_1_2_lnx: $(OBJS)
+	ar r STSCommonUtil_1_2_lnx.a $(OBJS)
+
+IEData.o:
+	$(CC) -c $(CFLAGS) IEData.cpp
+File_Interpretor.o:
+	$(CC) -c $(CFLAGS) File_Interpretor.cpp
+CriticalSection.o:
+	$(CC) -c $(CFLAGS) CriticalSection.cpp
+
+STSException.o:
+	$(CC) -c $(CFLAGS) STSException.cpp
+
+STSLogFile.o:
+	$(CC) -c $(CFLAGS) STSLogFile.cpp
+
+STSSocket.o:
+	$(CC) -c $(CFLAGS) STSSocket.cpp
+
+EventLog.o:
+	$(CC) -c $(CFLAGS) EventLog.cpp
+Get_pri_profile.o:
+	$(CC) -c $(CFLAGS) Get_pri_profile.cpp 
+STSOSUtil.o:
+	$(CC) -c $(CFLAGS) STSOSUtil.cpp 
+STSUtil.o:
+	$(CC) -c $(CFLAGS) STSUtil.cpp
+URLRequest.o:
+	$(CC) -c $(CFLAGS) URLRequest.cpp
+
+clean:
+	rm -rf *.o

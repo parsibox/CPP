@@ -1,0 +1,176 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.5.4	//
+BASEDIR	Makefile	/^BASEDIR = \/home\/cmsuser\/CMSVodafone30Jun\/$/;"	m
+CC	Makefile	/^CC = \/usr\/bin\/g++ -g  $/;"	m
+CEsmeClient	EsmeClient.cpp	/^CEsmeClient::CEsmeClient(){$/;"	f	class:CEsmeClient
+CEsmeClient	EsmeClient.hpp	/^class CEsmeClient{$/;"	c
+CFLAGS	Makefile	/^CFLAGS = -D __LINUX__  -Wno-deprecated -D LINT_ARGS -g -fPIC -O2 #-fnon-call-exceptions $/;"	m
+CHeader	UssdHeader.hpp	/^		CHeader(const CHeader &CL_copy){$/;"	f	class:CHeader
+CHeader	UssdHeader.hpp	/^		CHeader(int iL_cmdLen=0,int iL_cmdId=COMMAND_ID::USSD_NONE,int iL_cmdStatus=0x00,int iL_senderCB=0xFFFFFFFF,int iL_receiverCB=0xFFFFFFFF){$/;"	f	class:CHeader
+CHeader	UssdHeader.hpp	/^class CHeader{$/;"	c
+COMMAND_ID	UssdHeader.hpp	/^class COMMAND_ID{$/;"	c
+CONNECTED	EsmeClient.hpp	/^        CONNECTED=0,$/;"	e	enum:CONN_STATUS
+CONN_STATUS	EsmeClient.hpp	/^enum CONN_STATUS{$/;"	g
+CUssdAbort	UssdSubmit.hpp	6;"	d
+CUssdBegin	UssdSubmit.hpp	/^		CUssdBegin(){$/;"	f	class:CUssdBegin
+CUssdBegin	UssdSubmit.hpp	/^		CUssdBegin(CHeader &CL_copy):CHeader(CL_copy){$/;"	f	class:CUssdBegin
+CUssdBegin	UssdSubmit.hpp	/^class CUssdBegin:public CHeader{$/;"	c
+CUssdBind	UssdBind.hpp	/^		CUssdBind(){$/;"	f	class:CUssdBind
+CUssdBind	UssdBind.hpp	/^		CUssdBind(CHeader &CL_header):CHeader(CL_header){$/;"	f	class:CUssdBind
+CUssdBind	UssdBind.hpp	/^class CUssdBind:public CHeader{$/;"	c
+CUssdBindResp	UssdBind.hpp	/^		CUssdBindResp(CHeader &CL_header):CHeader(CL_header){$/;"	f	class:CUssdBindResp
+CUssdBindResp	UssdBind.hpp	/^class CUssdBindResp:public CHeader{$/;"	c
+CUssdChargingInd	UssdCharging.hpp	/^		CUssdChargingInd(){$/;"	f	class:CUssdChargingInd
+CUssdChargingInd	UssdCharging.hpp	/^		CUssdChargingInd(CHeader &CL_header):CHeader(CL_header){$/;"	f	class:CUssdChargingInd
+CUssdChargingInd	UssdCharging.hpp	/^class CUssdChargingInd:public CHeader$/;"	c
+CUssdChargingIndResp	UssdCharging.hpp	4;"	d
+CUssdContinue	UssdSubmit.hpp	4;"	d
+CUssdEnd	UssdSubmit.hpp	5;"	d
+CUssdShake	UssdBind.hpp	6;"	d
+CUssdShakeResp	UssdBind.hpp	7;"	d
+CUssdSwitch	UssdHeader.hpp	/^		CUssdSwitch(){$/;"	f	class:CUssdSwitch
+CUssdSwitch	UssdHeader.hpp	/^		CUssdSwitch(CHeader &CL_header):CHeader(CL_header){$/;"	f	class:CUssdSwitch
+CUssdSwitch	UssdHeader.hpp	/^class CUssdSwitch:public CHeader{$/;"	c
+CUssdUnbind	UssdBind.hpp	4;"	d
+CUssdUnbindResp	UssdBind.hpp	5;"	d
+EXENAME	Makefile	/^EXENAME=libUssdInterface.a$/;"	m
+GDEFINES	Makefile	/^GDEFINES =$/;"	m
+INCLUDES	Makefile	/^INCLUDES = -I . $/;"	m
+LIBS	Makefile	/^LIBS =  -L\/usr\/local\/lib $/;"	m
+NOT_CONNECTED	EsmeClient.hpp	/^        NOT_CONNECTED=1$/;"	e	enum:CONN_STATUS
+OBJS	Makefile	/^OBJS =$(SRCS:%.cpp=%.o)$/;"	m
+SRCS	Makefile	/^SRCS=$(wildcard *.cpp)$/;"	m
+USSD_ABORT	UssdHeader.hpp	/^			USSD_ABORT=0x72,$/;"	e	enum:COMMAND_ID::_COMMAND_ID
+USSD_ABORT_LEN	UssdHeader.hpp	/^			USSD_ABORT_LEN=20,$/;"	e	enum:COMMAND_ID::_COMMAND_LENGTH
+USSD_BEGIN	UssdHeader.hpp	/^			USSD_BEGIN=0x6F,$/;"	e	enum:COMMAND_ID::_COMMAND_ID
+USSD_BEGIN_LEN	UssdHeader.hpp	/^			USSD_BEGIN_LEN=230,$/;"	e	enum:COMMAND_ID::_COMMAND_LENGTH
+USSD_BIND	UssdHeader.hpp	/^			USSD_BIND=0x65,$/;"	e	enum:COMMAND_ID::_COMMAND_ID
+USSD_BINDRESP	UssdHeader.hpp	/^			USSD_BINDRESP=0x67,$/;"	e	enum:COMMAND_ID::_COMMAND_ID
+USSD_BINDRESP_LEN	UssdHeader.hpp	/^			USSD_BINDRESP_LEN=31,$/;"	e	enum:COMMAND_ID::_COMMAND_LENGTH
+USSD_BIND_LEN	UssdHeader.hpp	/^			USSD_BIND_LEN=57,$/;"	e	enum:COMMAND_ID::_COMMAND_LENGTH
+USSD_CHARGINGIND	UssdHeader.hpp	/^			USSD_CHARGINGIND=0x75,$/;"	e	enum:COMMAND_ID::_COMMAND_ID
+USSD_CHARGINGIND_LEN	UssdHeader.hpp	/^			USSD_CHARGINGIND_LEN=49,$/;"	e	enum:COMMAND_ID::_COMMAND_LENGTH
+USSD_CHARGINGRINDESP	UssdHeader.hpp	/^			USSD_CHARGINGRINDESP=0x76,$/;"	e	enum:COMMAND_ID::_COMMAND_ID
+USSD_CHARGINGRINDESP_LEN	UssdHeader.hpp	/^			USSD_CHARGINGRINDESP_LEN=20,$/;"	e	enum:COMMAND_ID::_COMMAND_LENGTH
+USSD_CONTINUE	UssdHeader.hpp	/^			USSD_CONTINUE=0x70,$/;"	e	enum:COMMAND_ID::_COMMAND_ID
+USSD_CONTINUE_LEN	UssdHeader.hpp	/^			USSD_CONTINUE_LEN=230,$/;"	e	enum:COMMAND_ID::_COMMAND_LENGTH
+USSD_END	UssdHeader.hpp	/^			USSD_END=0x71,$/;"	e	enum:COMMAND_ID::_COMMAND_ID
+USSD_END_LEN	UssdHeader.hpp	/^			USSD_END_LEN=230,$/;"	e	enum:COMMAND_ID::_COMMAND_LENGTH
+USSD_HANDSHAKE	UssdHeader.hpp	/^			USSD_HANDSHAKE=0x83,$/;"	e	enum:COMMAND_ID::_COMMAND_ID
+USSD_HANDSHAKERESP	UssdHeader.hpp	/^			USSD_HANDSHAKERESP=0x84$/;"	e	enum:COMMAND_ID::_COMMAND_ID
+USSD_HANDSHAKERESP_LEN	UssdHeader.hpp	/^			USSD_HANDSHAKERESP_LEN=20$/;"	e	enum:COMMAND_ID::_COMMAND_LENGTH
+USSD_HANDSHAKE_LEN	UssdHeader.hpp	/^			USSD_HANDSHAKE_LEN=20,$/;"	e	enum:COMMAND_ID::_COMMAND_LENGTH
+USSD_NONE	UssdHeader.hpp	/^			USSD_NONE=0x00,$/;"	e	enum:COMMAND_ID::_COMMAND_ID
+USSD_NONE	UssdHeader.hpp	/^			USSD_NONE=0x00,$/;"	e	enum:USSD_OPTYPE::_USSD_OPTYPE
+USSD_NOTIFY	UssdHeader.hpp	/^			USSD_NOTIFY=0x02,$/;"	e	enum:USSD_OPTYPE::_USSD_OPTYPE
+USSD_OPTYPE	UssdHeader.hpp	/^class USSD_OPTYPE{$/;"	c
+USSD_PHASE_1	UssdHeader.hpp	/^		USSD_PHASE_1=0x10,$/;"	e	enum:USSD_VERSION::_USSD_VERSION
+USSD_PHASE_2	UssdHeader.hpp	/^		USSD_PHASE_2=0x20,$/;"	e	enum:USSD_VERSION::_USSD_VERSION
+USSD_PHASE_2_PLUS	UssdHeader.hpp	/^		USSD_PHASE_2_PLUS=0x25$/;"	e	enum:USSD_VERSION::_USSD_VERSION
+USSD_RELEASE	UssdHeader.hpp	/^			USSD_RELEASE=0x04$/;"	e	enum:USSD_OPTYPE::_USSD_OPTYPE
+USSD_REQUEST	UssdHeader.hpp	/^			USSD_REQUEST=0x01,$/;"	e	enum:USSD_OPTYPE::_USSD_OPTYPE
+USSD_RESPONCE	UssdHeader.hpp	/^			USSD_RESPONCE=0x03,$/;"	e	enum:USSD_OPTYPE::_USSD_OPTYPE
+USSD_SWITCH	UssdHeader.hpp	/^			USSD_SWITCH=0x74,$/;"	e	enum:COMMAND_ID::_COMMAND_ID
+USSD_SWITCH_LEN	UssdHeader.hpp	/^			USSD_SWITCH_LEN=228,$/;"	e	enum:COMMAND_ID::_COMMAND_LENGTH
+USSD_UNBIND	UssdHeader.hpp	/^			USSD_UNBIND=0x66,$/;"	e	enum:COMMAND_ID::_COMMAND_ID
+USSD_UNBINDRESP	UssdHeader.hpp	/^			USSD_UNBINDRESP=0x68,$/;"	e	enum:COMMAND_ID::_COMMAND_ID
+USSD_UNBINDRESP_LEN	UssdHeader.hpp	/^			USSD_UNBINDRESP_LEN=20,$/;"	e	enum:COMMAND_ID::_COMMAND_LENGTH
+USSD_UNBIND_LEN	UssdHeader.hpp	/^			USSD_UNBIND_LEN=20,$/;"	e	enum:COMMAND_ID::_COMMAND_LENGTH
+USSD_VERSION	UssdHeader.hpp	/^class USSD_VERSION{$/;"	c
+_COMMAND_ID	UssdHeader.hpp	/^		enum _COMMAND_ID{$/;"	g	class:COMMAND_ID
+_COMMAND_LENGTH	UssdHeader.hpp	/^		enum _COMMAND_LENGTH{$/;"	g	class:COMMAND_ID
+_USSD_BIND_H	UssdBind.hpp	2;"	d
+_USSD_CHARGING_H_	UssdCharging.hpp	2;"	d
+_USSD_HEADER_H	UssdHeader.hpp	3;"	d
+_USSD_OPTYPE	UssdHeader.hpp	/^		enum _USSD_OPTYPE{$/;"	g	class:USSD_OPTYPE
+_USSD_SUBMIT_H_	UssdSubmit.hpp	2;"	d
+_USSD_VERSION	UssdHeader.hpp	/^	enum _USSD_VERSION{$/;"	g	class:USSD_VERSION
+__USSD_ESME_CLIENT_H	EsmeClient.hpp	2;"	d
+mcfn_ShortDebugString	UssdBind.hpp	/^		   std::string mcfn_ShortDebugString(){$/;"	f	class:CUssdBind
+mcfn_ShortDebugString	UssdBind.hpp	/^		  std::string mcfn_ShortDebugString(){$/;"	f	class:CUssdBindResp
+mcfn_ShortDebugString	UssdCharging.hpp	/^		  std::string mcfn_ShortDebugString(){$/;"	f	class:CUssdChargingInd
+mcfn_ShortDebugString	UssdHeader.hpp	/^		std::string mcfn_ShortDebugString(){$/;"	f	class:CHeader
+mcfn_ShortDebugString	UssdHeader.hpp	/^		std::string mcfn_ShortDebugString(){$/;"	f	class:CUssdSwitch
+mcfn_ShortDebugString	UssdSubmit.hpp	/^		 std::string mcfn_ShortDebugString(){$/;"	f	class:CUssdBegin
+mcfn_getHeader	UssdHeader.hpp	/^		u8* mcfn_getHeader(u8* u8L_header){$/;"	f	class:CHeader
+mcfn_getHeaderPrintable	UssdHeader.hpp	/^		std::string mcfn_getHeaderPrintable(){$/;"	f	class:CHeader
+mcfn_getParam	UssdBind.hpp	/^		u8* mcfn_getParam(u8* u8L_param){$/;"	f	class:CUssdBind
+mcfn_getParam	UssdBind.hpp	/^		u8* mcfn_getParam(u8* u8L_param){$/;"	f	class:CUssdBindResp
+mcfn_getParam	UssdCharging.hpp	/^		u8* mcfn_getParam(u8* u8L_param){$/;"	f	class:CUssdChargingInd
+mcfn_getParam	UssdHeader.hpp	/^		u8* mcfn_getParam(u8* u8L_param){$/;"	f	class:CUssdSwitch
+mcfn_getParam	UssdSubmit.hpp	/^		u8* mcfn_getParam(u8* u8L_param){$/;"	f	class:CUssdBegin
+mcfn_getSeqNumber	EsmeClient.cpp	/^int CEsmeClient::mcfn_getSeqNumber(){$/;"	f	class:CEsmeClient
+mcfn_init	UssdCharging.hpp	/^		void mcfn_init(){$/;"	f	class:CUssdChargingInd
+mcfn_init	UssdHeader.hpp	/^		void mcfn_init(){$/;"	f	class:CUssdSwitch
+mcfn_init	UssdSubmit.hpp	/^		void mcfn_init(){$/;"	f	class:CUssdBegin
+mcfn_initilise	EsmeClient.cpp	/^void CEsmeClient::mcfn_initilise(std::string CL_systemId,std::string CL_passwd,std::string CL_systemType,int iL_interfaceVer){$/;"	f	class:CEsmeClient
+mcfn_onUsddContinue	EsmeClient.hpp	/^		virtual bool mcfn_onUsddContinue(CHeader&,u8*,int){}$/;"	f	class:CEsmeClient
+mcfn_onUssdAbort	EsmeClient.hpp	/^		virtual bool mcfn_onUssdAbort(CHeader&){}$/;"	f	class:CEsmeClient
+mcfn_onUssdBegin	EsmeClient.hpp	/^		virtual bool mcfn_onUssdBegin(CHeader&,u8*,int){}$/;"	f	class:CEsmeClient
+mcfn_onUssdBind	EsmeClient.hpp	/^		virtual bool mcfn_onUssdBind(CHeader&,u8*,int){}$/;"	f	class:CEsmeClient
+mcfn_onUssdBindResp	EsmeClient.hpp	/^		virtual bool mcfn_onUssdBindResp(CHeader&,u8*,int){}$/;"	f	class:CEsmeClient
+mcfn_onUssdChargingInd	EsmeClient.hpp	/^		virtual bool mcfn_onUssdChargingInd(CHeader&,u8*,int){}$/;"	f	class:CEsmeClient
+mcfn_onUssdChargingIndRes	EsmeClient.hpp	/^		virtual bool mcfn_onUssdChargingIndRes(CHeader&){}$/;"	f	class:CEsmeClient
+mcfn_onUssdEnd	EsmeClient.hpp	/^		virtual bool mcfn_onUssdEnd(CHeader&,u8*,int){}$/;"	f	class:CEsmeClient
+mcfn_onUssdShake	EsmeClient.hpp	/^		virtual bool mcfn_onUssdShake(CHeader&){}$/;"	f	class:CEsmeClient
+mcfn_onUssdShakeResp	EsmeClient.hpp	/^		virtual bool mcfn_onUssdShakeResp(CHeader&){}$/;"	f	class:CEsmeClient
+mcfn_onUssdSwitch	EsmeClient.hpp	/^		virtual bool mcfn_onUssdSwitch(CHeader&,u8*,int){}$/;"	f	class:CEsmeClient
+mcfn_onUssdUnbind	EsmeClient.hpp	/^		virtual bool mcfn_onUssdUnbind(CHeader&){}$/;"	f	class:CEsmeClient
+mcfn_onUssdUnbindResp	EsmeClient.hpp	/^		virtual bool mcfn_onUssdUnbindResp(CHeader&){}$/;"	f	class:CEsmeClient
+mcfn_processReceivedMessage	EsmeClient.cpp	/^bool CEsmeClient::mcfn_processReceivedMessage(CHeader& CL_header,u8* u8_param,int iL_paramLen){$/;"	f	class:CEsmeClient
+mcfn_sendUssdAbort	EsmeClient.cpp	/^bool CEsmeClient::mcfn_sendUssdAbort(CHeader &CL_header){$/;"	f	class:CEsmeClient
+mcfn_sendUssdBegin	EsmeClient.cpp	/^bool CEsmeClient::mcfn_sendUssdBegin(CHeader& CL_Header,std::string CL_msisdn,std::string CL_serviceCode,u8 u8L_codeScema,std::string CL_ussdString,u8 u8L_ussdOptype){$/;"	f	class:CEsmeClient
+mcfn_sendUssdBind	EsmeClient.cpp	/^bool CEsmeClient::mcfn_sendUssdBind(){$/;"	f	class:CEsmeClient
+mcfn_sendUssdBindResp	EsmeClient.cpp	/^bool CEsmeClient::mcfn_sendUssdBindResp(CHeader &CL_header,int iL_status,std::string CL_accName){$/;"	f	class:CEsmeClient
+mcfn_sendUssdChargingInd	EsmeClient.cpp	/^bool CEsmeClient::mcfn_sendUssdChargingInd(CHeader &CL_header,int iL_chargeRatio,int iL_chargeType,u8 *pu8L_chargeSource,u8 u8_chargeLocation){$/;"	f	class:CEsmeClient
+mcfn_sendUssdContinue	EsmeClient.cpp	/^bool CEsmeClient::mcfn_sendUssdContinue(CHeader& CL_header,std::string CL_msisdn,std::string CL_serviceCode,u8 u8L_codeScema,std::string CL_ussdString,u8 u8L_ussdOptype){$/;"	f	class:CEsmeClient
+mcfn_sendUssdEnd	EsmeClient.cpp	/^bool CEsmeClient::mcfn_sendUssdEnd(CHeader& CL_header,std::string CL_msisdn,std::string CL_serviceCode,u8 u8L_codeScema,std::string CL_ussdString,u8 u8L_ussdOptype){$/;"	f	class:CEsmeClient
+mcfn_sendUssdShake	EsmeClient.cpp	/^bool CEsmeClient::mcfn_sendUssdShake(){$/;"	f	class:CEsmeClient
+mcfn_sendUssdSwitch	EsmeClient.cpp	/^bool CEsmeClient::mcfn_sendUssdSwitch(CHeader &CL_header,u8 u8L_switchMode,std::string CL_msisdn,std::string CL_serviceCode,std::string CL_ussdStr){$/;"	f	class:CEsmeClient
+mcfn_sendUssdUnbind	EsmeClient.cpp	/^bool CEsmeClient::mcfn_sendUssdUnbind(){$/;"	f	class:CEsmeClient
+mcfn_setHeader	UssdHeader.hpp	/^	        void mcfn_setHeader(u8* u8L_header){$/;"	f	class:CHeader
+mcfn_setParam	UssdBind.hpp	/^		void mcfn_setParam(u8* u8L_param){$/;"	f	class:CUssdBind
+mcfn_setParam	UssdBind.hpp	/^		void mcfn_setParam(u8* u8L_param){$/;"	f	class:CUssdBindResp
+mcfn_setParam	UssdCharging.hpp	/^		void mcfn_setParam(u8* u8L_param){$/;"	f	class:CUssdChargingInd
+mcfn_setParam	UssdHeader.hpp	/^		void mcfn_setParam(u8* u8L_param){$/;"	f	class:CUssdSwitch
+mcfn_setParam	UssdSubmit.hpp	/^		void mcfn_setParam(u8* u8L_param){$/;"	f	class:CUssdBegin
+mcsi_chargeRation	UssdCharging.hpp	/^		int mcsi_chargeRation;\/\/Its unit is fen (0.01 yuan). The value 0 means free of charge$/;"	m	class:CUssdChargingInd
+mcsi_chargeType	UssdCharging.hpp	/^		int mcsi_chargeType;\/\/:0: free, 1: per message, 2: per monthly flat rate, and 3: per monthly flat rate for downlink$/;"	m	class:CUssdChargingInd
+mcsi_cmdId	UssdHeader.hpp	/^		int mcsi_cmdId;$/;"	m	class:CHeader
+mcsi_cmdLength	UssdHeader.hpp	/^		int mcsi_cmdLength;$/;"	m	class:CHeader
+mcsi_cmdStatus	UssdHeader.hpp	/^		int mcsi_cmdStatus;$/;"	m	class:CHeader
+mcsi_interfaceVersion	UssdBind.hpp	/^		int mcsi_interfaceVersion;$/;"	m	class:CUssdBind
+mcsi_paramLen	UssdSubmit.hpp	/^		int mcsi_paramLen;$/;"	m	class:CUssdBegin
+mcsi_receiverCB	UssdHeader.hpp	/^		int mcsi_receiverCB;$/;"	m	class:CHeader
+mcsi_senderCB	UssdHeader.hpp	/^		int mcsi_senderCB;$/;"	m	class:CHeader
+mcu8_chargeLocation	UssdCharging.hpp	/^		u8 mcu8_chargeLocation;\/\/The ChargeLocation field indicates the location where bills are generated. There are the following three cases: 1: Both the USSDC and the USSD service platform generate bills. 2: Only the USSDC generates bills. 3: Only the USSD service platform generates bills$/;"	m	class:CUssdChargingInd
+mcu8_codeSchema	UssdSubmit.hpp	/^		u8 mcu8_codeSchema;\/\/0x0F for 7 bit,0x44 for 8 bit,0x48 for 16 bit$/;"	m	class:CUssdBegin
+mcu8_switchMode	UssdHeader.hpp	/^		u8 mcu8_switchMode;\/\/The SwitchMode field indicates the modes of service switching. It comprises two switching modes:0: global switching and 1: local switching. Global switching means that the service switching is implemented by the USSD central office where the service application resides. Local switching means that the service switching is implemented by the service platform (or the USSDC) directly connecting the service application$/;"	m	class:CUssdSwitch
+mcu8_ussdOptype	UssdSubmit.hpp	/^		u8 mcu8_ussdOptype;$/;"	m	class:CUssdBegin
+mcu8_ussdVersion	UssdSubmit.hpp	/^		u8 mcu8_ussdVersion;$/;"	m	class:CUssdBegin
+mdfn_getConnectionStatus	EsmeClient.hpp	/^		CONN_STATUS mdfn_getConnectionStatus(){return meE_ConnStatus;}	$/;"	f	class:CEsmeClient
+meC_password	EsmeClient.hpp	/^		std::string meC_password;$/;"	m	class:CEsmeClient
+meC_serviceType	EsmeClient.hpp	/^		std::string meC_serviceType;$/;"	m	class:CEsmeClient
+meC_systemId	EsmeClient.hpp	/^		std::string meC_systemId;$/;"	m	class:CEsmeClient
+meE_ConnStatus	EsmeClient.hpp	/^		CONN_STATUS meE_ConnStatus;$/;"	m	class:CEsmeClient
+mesi_interfaceVersion	EsmeClient.hpp	/^		int mesi_interfaceVersion;$/;"	m	class:CEsmeClient
+mesi_seqNum	EsmeClient.hpp	/^		int mesi_seqNum;$/;"	m	class:CEsmeClient
+meu8_ussdVersion	EsmeClient.hpp	/^		u8 meu8_ussdVersion;$/;"	m	class:CEsmeClient
+pmcu8_AccountName	UssdBind.hpp	/^		u8 pmcu8_AccountName[11];$/;"	m	class:CUssdBind
+pmcu8_AccountName	UssdBind.hpp	/^		u8 pmcu8_AccountName[11];$/;"	m	class:CUssdBindResp
+pmcu8_chargeSource	UssdCharging.hpp	/^		u8 pmcu8_chargeSource[21];$/;"	m	class:CUssdChargingInd
+pmcu8_msisdn	UssdHeader.hpp	/^		u8 pmcu8_msisdn[21];$/;"	m	class:CUssdSwitch
+pmcu8_msisdn	UssdSubmit.hpp	/^		u8 pmcu8_msisdn[21];$/;"	m	class:CUssdBegin
+pmcu8_password	UssdBind.hpp	/^		u8 pmcu8_password[9];$/;"	m	class:CUssdBind
+pmcu8_serviceCode	UssdHeader.hpp	/^		u8 pmcu8_serviceCode[4];$/;"	m	class:CUssdSwitch
+pmcu8_serviceCode	UssdSubmit.hpp	/^		u8 pmcu8_serviceCode[21];\/\/not in use$/;"	m	class:CUssdBegin
+pmcu8_systemType	UssdBind.hpp	/^		u8 pmcu8_systemType[13];$/;"	m	class:CUssdBind
+pmcu8_ussdString	UssdHeader.hpp	/^		u8 pmcu8_ussdString[182];$/;"	m	class:CUssdSwitch
+pmcu8_ussdString	UssdSubmit.hpp	/^		u8 pmcu8_ussdString[182];\/\/182 chars of 7 bit,160 chars of 8 bit ,80 chars of 16 bit$/;"	m	class:CUssdBegin
+u8	UssdHeader.hpp	/^typedef unsigned char u8;$/;"	t
+~CEsmeClient	EsmeClient.cpp	/^CEsmeClient::~CEsmeClient(){$/;"	f	class:CEsmeClient
+~CHeader	UssdHeader.hpp	/^		~CHeader(){};$/;"	f	class:CHeader

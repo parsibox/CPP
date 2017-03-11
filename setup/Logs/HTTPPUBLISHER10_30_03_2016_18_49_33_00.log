@@ -1,0 +1,22 @@
+[HTTPPUBLISHER10|Main.cpp|00063|30-03-2016 18:49:33:786|~IN~]Version:V1.0
+[HTTPPUBLISHER10|Main.cpp|00064|30-03-2016 18:49:33:786|~IN~]Release Date:14-Apr-2014
+[HTTPPUBLISHER10|DBPoolManager.cpp|00013|30-03-2016 18:49:33:786|~IN~]Creating PoolManager object...
+[HTTPPUBLISHER10|Main.cpp|00067|30-03-2016 18:49:33:786|~VB~]PoolMgr Size:0
+[HTTPPUBLISHER10|DBPoolManager.cpp|00024|30-03-2016 18:49:33:786|~VB~]CDBPoolManager::mcfn_AddDB >>
+[HTTPPUBLISHER10|DBPoolManager.cpp|00029|30-03-2016 18:49:33:786|~VB~]CDBPoolManager::mcfn_AddDB <<
+[HTTPPUBLISHER10|Publisher.cpp|00039|30-03-2016 18:49:33:786|~IN~]Creating Publisher object...
+[HTTPPUBLISHER10|Thread.cpp|00071|30-03-2016 18:49:33:787|~CR~]Started PublisherThread Thread:0
+[HTTPPUBLISHER10|Publisher.cpp|00086|30-03-2016 18:49:33:787|~DG~]Messages are not there to send to Esme
+[HTTPPUBLISHER10|Publisher.cpp|00086|30-03-2016 18:49:34:789|~DG~]Messages are not there to send to Esme
+[HTTPPUBLISHER10|DBConnPool.h|00049|30-03-2016 18:49:35:791|~VB~]Creating connection object
+[HTTPPUBLISHER10|Publisher.cpp|00086|30-03-2016 18:49:35:792|~DG~]Messages are not there to send to Esme
+[HTTPPUBLISHER10|DBPoolManager.cpp|00063|30-03-2016 18:49:35:835|~VB~]mesi_CurrentActiveIdx:0
+[HTTPPUBLISHER10|DBOperations.cpp|00085|30-03-2016 18:49:35:835|~VB~]DBConn:138585360,Idx:0
+[HTTPPUBLISHER10|DBOperations.cpp|00089|30-03-2016 18:49:35:835|~VB~]Executing Query:select * from esme_details where SMSC_ID in (select SMSC_ID from publisher_smsc_map where MODULE_ID=10)
+[HTTPPUBLISHER10|DBOperations.cpp|00092|30-03-2016 18:49:35:837|~VB~]Executed SuccessFully
+[HTTPPUBLISHER10|DBPicker.cpp|00033|30-03-2016 18:49:35:837|~IN~]Number of  Esme configuration present for ModuleId:10[1]
+[HTTPPUBLISHER10|TcpClient.cpp|00083|30-03-2016 18:49:35:837|~IN~]Started mcfn_connectToEsmeClinetThread
+[HTTPPUBLISHER10|TcpClient.cpp|00175|30-03-2016 18:49:35:837|~VB~][0]Connected to EsmeClinet[127.0.0.1:9898]
+[HTTPPUBLISHER10|Publisher.cpp|00026|30-03-2016 18:49:35:837|~ER~]EsmeClinet Thowtteling Message Received 0
+[HTTPPUBLISHER10|Publisher.cpp|00086|30-03-2016 18:49:36:793|~DG~]Messages are not there to send to Esme
+[HTTPPUBLISHER10|Publisher.cpp|00086|30-03-2016 18:49:37:795|~DG~]Messages are not there to send to Esme

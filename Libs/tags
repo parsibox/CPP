@@ -1,0 +1,472 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.6	//
+AFX_MSGLIST_H__966EAF0A_4F62_4EEE_B30E_6D6348638594__INCLUDED_	STSMsgQue.h	17;"	d
+AFX_MSGMAP_H__966EAF0A_4F62_4EEE_B30E_6D6348638594__INCLUDED_	MsgMap.h	17;"	d
+BASEDIR	Makefile	/^BASEDIR=\/home\/mcauser$/;"	m
+ByteStreamQ	StsUserTypes.h	/^typedef CMsgQue<SByteStream> ByteStreamQ;$/;"	t
+CC	Makefile	/^CC=g++$/;"	m
+CCriticalSection	CriticalSection.cpp	/^CCriticalSection::CCriticalSection()$/;"	f	class:CCriticalSection
+CCriticalSection	CriticalSection.h	/^class  CCriticalSection  $/;"	c
+CDBConnPool	DBConnPool.h	/^    CDBConnPool(const char* db, const char* server,$/;"	f	class:CDBConnPool
+CDBConnPool	DBConnPool.h	/^class CDBConnPool : public mysqlpp::ConnectionPool$/;"	c
+CEventLog	EventLog.cpp	/^CEventLog::CEventLog()$/;"	f	class:CEventLog
+CEventLog	EventLog.h	/^class CEventLog$/;"	c
+CFLAGS	Makefile	/^CFLAGS= -Wno-deprecated -D__LINUX__ -I $(BASEDIR)\/LIB\/DK_SepTel\/INC\/ -I. $/;"	m
+CFileInterpretor	File_Interpretor.cpp	/^CFileInterpretor::CFileInterpretor()$/;"	f	class:CFileInterpretor
+CFileInterpretor	File_Interpretor.cpp	/^CFileInterpretor::CFileInterpretor(const std::string& CL_FileName)$/;"	f	class:CFileInterpretor
+CFileInterpretor	File_Interpretor.h	/^class CFileInterpretor$/;"	c
+CMsgMap	MsgMap.h	/^CMsgMap<pt_Key,pt_Val>::CMsgMap()$/;"	f	class:CMsgMap
+CMsgMap	MsgMap.h	/^class CMsgMap  $/;"	c
+CMsgQue	STSMsgQue.h	/^CMsgQue<T>::CMsgQue()$/;"	f	class:CMsgQue
+CMsgQue	STSMsgQue.h	/^class CMsgQue  $/;"	c
+CONSOLE	EventLog.h	16;"	d
+CPGConnection	PGConnection.cpp	/^CPGConnection::CPGConnection()$/;"	f	class:CPGConnection
+CPGConnection	PGConnection.h	/^class CPGConnection$/;"	c
+CRITICAL	EventLog.h	11;"	d
+CSTSLogFile	STSLogFile.cpp	/^CSTSLogFile::CSTSLogFile(char *pscL_Filename)$/;"	f	class:CSTSLogFile
+CSTSLogFile	STSLogFile.h	/^class CSTSLogFile$/;"	c
+CSTSOSUtil	STSOSUtil.h	/^class CSTSOSUtil$/;"	c
+CSTSPGSet	STSPGSet.cpp	/^CSTSPGSet::CSTSPGSet(CPGConnection* pCL_temp)$/;"	f	class:CSTSPGSet
+CSTSPGSet	STSPGSet.cpp	/^CSTSPGSet::CSTSPGSet(char* pscL_hostAddr, char* pscL_dbName, char* pscL_user, char* pscL_password)$/;"	f	class:CSTSPGSet
+CSTSPGSet	STSPGSet.h	/^class CSTSPGSet$/;"	c
+CSTSSocket	STSSocket.cpp	/^CSTSSocket::CSTSSocket()$/;"	f	class:CSTSSocket
+CSTSSocket	STSSocket.h	/^class CSTSSocket$/;"	c
+CSTSSocket	STSSocketCP.cpp	/^CSTSSocket::CSTSSocket()$/;"	f	class:CSTSSocket
+CSTSSocket	STSSocketCP.h	/^class CSTSSocket$/;"	c
+CServer	Server.cpp	/^CServer::CServer(u16 u16L_ServerPort, u8 u8L_NumLenBytes, bool bL_StartServerProcess){$/;"	f	class:CServer
+CServer	Server.h	/^class CServer:public CSTSSocket{$/;"	c
+DBG_CPCRITICAL	EventLog.h	32;"	d
+DBG_CPDEBUG	EventLog.h	28;"	d
+DBG_CPERROR	EventLog.h	31;"	d
+DBG_CPINFO	EventLog.h	30;"	d
+DBG_CPVERBOSE	EventLog.h	29;"	d
+DBG_CRITICAL	EventLog.h	38;"	d
+DBG_DEBUG	EventLog.h	34;"	d
+DBG_ERROR	EventLog.h	37;"	d
+DBG_INFO	EventLog.h	36;"	d
+DBG_VERBOSE	EventLog.h	35;"	d
+DEBUG	EventLog.h	17;"	d
+EADDRINUSE	STSSocket.h	50;"	d
+EADDRNOTAVAIL	STSSocket.h	51;"	d
+EAFNOSUPPORT	STSSocket.h	49;"	d
+EALREADY	STSSocket.h	39;"	d
+ECONNABORTED	STSSocket.h	55;"	d
+ECONNREFUSED	STSSocket.h	63;"	d
+ECONNRESET	STSSocket.h	56;"	d
+EDESTADDRREQ	STSSocket.h	41;"	d
+EDQUOT	STSSocket.h	69;"	d
+EHOSTDOWN	STSSocket.h	65;"	d
+EHOSTUNREACH	STSSocket.h	66;"	d
+EINPROGRESS	STSSocket.h	38;"	d
+EISCONN	STSSocket.h	58;"	d
+ELOOP	STSSocket.h	64;"	d
+EMSGSIZE	STSSocket.h	42;"	d
+ENETDOWN	STSSocket.h	52;"	d
+ENETRESET	STSSocket.h	54;"	d
+ENETUNREACH	STSSocket.h	53;"	d
+ENOBUFS	STSSocket.h	57;"	d
+ENOPROTOOPT	STSSocket.h	44;"	d
+ENOTCONN	STSSocket.h	59;"	d
+ENOTSOCK	STSSocket.h	40;"	d
+EOPNOTSUPP	STSSocket.h	47;"	d
+EPFNOSUPPORT	STSSocket.h	48;"	d
+EPROCLIM	STSSocket.h	67;"	d
+EPROTONOSUPPORT	STSSocket.h	45;"	d
+EPROTOTYPE	STSSocket.h	43;"	d
+EREMOTE	STSSocket.h	71;"	d
+ESHUTDOWN	STSSocket.h	60;"	d
+ESOCKTNOSUPPORT	STSSocket.h	46;"	d
+ESTALE	STSSocket.h	70;"	d
+ETIMEDOUT	CriticalSection.h	24;"	d
+ETIMEDOUT	STSSocket.h	62;"	d
+ETOOMANYREFS	STSSocket.h	61;"	d
+EUSERS	STSSocket.h	68;"	d
+EWOULDBLOCK	STSSocket.h	37;"	d
+FNVOID	STSOSUtil.h	10;"	d
+FNVOID	STSOSUtil.h	21;"	d
+GetPrivateProfileSection	Get_pri_profile.cpp	/^unsigned long GetPrivateProfileSection(char *pscL_Sec,char *pscL_Data,unsigned long ulL_Size,char *pscL_Filename)$/;"	f
+GetPrivateProfileString	Get_pri_profile.cpp	/^unsigned long GetPrivateProfileString(char *pscL_Sec,char *pscL_Key,char *pscL_Defaultstr, char *pscL_Data,unsigned long ulL_Size,char *pscL_Filename)$/;"	f
+INFO	EventLog.h	13;"	d
+INPUT_PARAMETER	STSPGSet.h	15;"	d
+INVALID_SOCKET	STSSocket.h	30;"	d
+INVALID_SOCKET	STSSocketCP.h	15;"	d
+LOGERROR	EventLog.h	12;"	d
+LOGMSG	EventLog.h	15;"	d
+Lock	CriticalSection.cpp	/^void CCriticalSection::Lock()$/;"	f	class:CCriticalSection
+MAX_PARAM_LEN	EventLog.cpp	17;"	d	file:
+MAX_SQLQUERY_SIZE	STSPGSet.h	10;"	d
+MEMFAIL	EventLog.cpp	16;"	d	file:
+MSG_NOSIGNAL	STSSocket.h	32;"	d
+OBJS	Makefile	/^OBJS= CriticalSection.o STSException.o STSLogFile.o STSSocket.o EventLog.o Server.o \\$/;"	m
+OPENFAIL	EventLog.cpp	15;"	d	file:
+OUTPUT_PARAMETER	STSPGSet.h	16;"	d
+PG_FETCH_FIRST	STSPGSet.h	26;"	d
+PG_FETCH_LAST	STSPGSet.h	27;"	d
+PG_FETCH_NEXT	STSPGSet.h	24;"	d
+PG_FETCH_PREV	STSPGSet.h	25;"	d
+RETS	STSSocket.cpp	106;"	d	file:
+RETS	STSSocket.cpp	56;"	d	file:
+RETURN	STSOSUtil.h	20;"	d
+RETURN	STSOSUtil.h	9;"	d
+SByteStream	StsUserTypes.h	/^	SByteStream(u8* pu8L_Ptr, u32 u32L_Len){$/;"	f	struct:SByteStream
+SByteStream	StsUserTypes.h	/^struct SByteStream{$/;"	s
+SClientHandlerParam	Server.h	/^	SClientHandlerParam(CServer *pCL_This, CSTSSocket  *pCL_ConnSocket){$/;"	f	struct:SClientHandlerParam
+SClientHandlerParam	Server.h	/^struct SClientHandlerParam{$/;"	s
+SD_BOTH	STSSocket.h	76;"	d
+SD_BOTH	STSSocket.h	84;"	d
+SD_BOTH	STSSocketCP.h	22;"	d
+SD_RECV	STSSocket.h	74;"	d
+SD_RECV	STSSocket.h	82;"	d
+SD_SEND	STSSocket.h	75;"	d
+SD_SEND	STSSocket.h	83;"	d
+SIZE_CONNSTRING	STSPGSet.h	11;"	d
+SOCERRNO	STSSocket.h	28;"	d
+SOCERRNO	STSSocket.h	73;"	d
+SOCKET	STSSocket.h	27;"	d
+SOCKET	STSSocketCP.h	13;"	d
+SOCKET_ERROR	STSSocket.h	29;"	d
+SOCKET_ERROR	STSSocketCP.h	14;"	d
+SQLT_BOOL	STSPGSet.h	19;"	d
+SQLT_CHR	STSPGSet.h	22;"	d
+SQLT_FLOAT	STSPGSet.h	20;"	d
+SQLT_INT	STSPGSet.h	18;"	d
+SQLT_STR	STSPGSet.h	21;"	d
+SRETS	STSSocket.cpp	107;"	d	file:
+SRETS	STSSocket.cpp	58;"	d	file:
+STSGenException	STSException.cpp	/^	STSGenException::STSGenException(int code, const char* resn)$/;"	f	class:STSGenException
+STSGenException	STSException.h	/^class   STSGenException$/;"	c
+STSHDR	STSMsg.h	/^} STSHDR;$/;"	t	typeref:struct:stshdr
+STSMAX_PARAM	STSMsg.h	40;"	d
+STSMSF	STSMsg.h	52;"	d
+STSMSG_H	STSMsg.h	19;"	d
+STSMSG_SS7	STSMsg.h	/^} STSMSG_SS7;$/;"	t	typeref:struct:stsm_frame
+STSSYSTEM_H	STSSystem.h	19;"	d
+STSTimeoutException	STSException.h	/^class STSTimeoutException$/;"	c
+STS_BLACK	STSOSUtil.h	39;"	d
+STS_BLACK	STSOSUtil.h	50;"	d
+STS_BLINK	STSOSUtil.h	35;"	d
+STS_BLUE	STSOSUtil.h	43;"	d
+STS_BLUE	STSOSUtil.h	54;"	d
+STS_BRIGHT	STSOSUtil.h	32;"	d
+STS_BRIGHT	STSOSUtil.h	49;"	d
+STS_CYAN	STSOSUtil.h	45;"	d
+STS_DIM	STSOSUtil.h	33;"	d
+STS_ERR_INV_IPADDR	STSSocket.h	88;"	d
+STS_FAILURE	STSSocket.h	87;"	d
+STS_GREEN	STSOSUtil.h	41;"	d
+STS_GREEN	STSOSUtil.h	52;"	d
+STS_HIDDEN	STSOSUtil.h	37;"	d
+STS_MAGENTA	STSOSUtil.h	44;"	d
+STS_RED	STSOSUtil.h	40;"	d
+STS_RED	STSOSUtil.h	51;"	d
+STS_RESET	STSOSUtil.h	31;"	d
+STS_REVERSE	STSOSUtil.h	36;"	d
+STS_SUCCESS	STSSocket.h	86;"	d
+STS_UNDERLINE	STSOSUtil.h	34;"	d
+STS_WHITE	STSOSUtil.h	46;"	d
+STS_WHITE	STSOSUtil.h	55;"	d
+STS_YELLOW	STSOSUtil.h	42;"	d
+STS_YELLOW	STSOSUtil.h	53;"	d
+THREAD_EXITCODE	STSOSUtil.h	12;"	d
+THREAD_EXITCODE	STSOSUtil.h	23;"	d
+THREAD_HANDLE	STSOSUtil.h	11;"	d
+THREAD_HANDLE	STSOSUtil.h	22;"	d
+TYPE_BINARY	STSPGSet.h	13;"	d
+TYPE_DATE	STSPGSet.h	14;"	d
+TYPE_TEXT	STSPGSet.h	12;"	d
+UK_FAILURE	CriticalSection.h	33;"	d
+UK_RET_GOTOBJECT	CriticalSection.h	36;"	d
+UK_RET_TIMEOUT	CriticalSection.h	35;"	d
+UK_SUCCESS	CriticalSection.h	34;"	d
+UK_UNLIMITED	CriticalSection.h	32;"	d
+Unlock	CriticalSection.cpp	/^void CCriticalSection::Unlock()$/;"	f	class:CCriticalSection
+VERBOSE	EventLog.h	14;"	d
+_CRITICALSECTION_H_	CriticalSection.h	18;"	d
+_GET_PRIVATE_PROFILE_H	Get_pri_profile.h	2;"	d
+_PGCONNECTION_	PGConnection.h	2;"	d
+_STSPGSET_H_	STSPGSet.h	2;"	d
+_STSSOCKET_H	STSSocket.h	8;"	d
+_STSSOCKET_H	STSSocketCP.h	2;"	d
+_STS_EXCEPTION_H	STSException.h	2;"	d
+_STS_LOGFILE_H	STSLogFile.h	3;"	d
+__DBCONNPOOL_H	DBConnPool.h	2;"	d
+__EVENTLOG_H	EventLog.h	9;"	d
+__FILE_INTERPRETOR_H	File_Interpretor.h	23;"	d
+__SERVER_H	Server.h	2;"	d
+__STSOSUTIL_H	STSOSUtil.h	2;"	d
+__STSUSERTYPES_H	StsUserTypes.h	2;"	d
+create	DBConnPool.h	/^    mysqlpp::Connection* create()$/;"	f	class:CDBConnPool
+db_	DBConnPool.h	/^    std::string db_, server_, user_, password_;$/;"	m	class:CDBConnPool
+destroy	DBConnPool.h	/^    void destroy(mysqlpp::Connection* cp)$/;"	f	class:CDBConnPool
+dst	STSMsg.h	/^	unsigned char	dst;		\/* destination module ID*\/$/;"	m	struct:stshdr
+err_info	STSMsg.h	/^	unsigned long	err_info;	\/* status information	*\/$/;"	m	struct:stshdr
+fnG_WrapperClientHandler	Server.cpp	/^static FNVOID fnG_WrapperClientHandler(void *pvL_Param){$/;"	f	file:
+fnG_WrapperInternalProcessor	Server.cpp	/^static FNVOID fnG_WrapperInternalProcessor(void *pvL_This){$/;"	f	file:
+fnG_WrapperServerThread	Server.cpp	/^static FNVOID fnG_WrapperServerThread(void *pvL_This){$/;"	f	file:
+hclass	STSMsg.h	/^	unsigned char   hclass;     \/* generic MSG type     *\/$/;"	m	struct:stshdr
+hdr	STSMsg.h	/^	STSHDR		hdr;$/;"	m	struct:stsm_frame
+id	STSMsg.h	/^	unsigned short	id;			\/* module instantiation	*\/$/;"	m	struct:stshdr
+len	STSMsg.h	/^	unsigned short	len;		\/* param field length	*\/$/;"	m	struct:stsm_frame
+mC_Iterator	MsgMap.h	/^	typename std::map<pt_Key,pt_Val>::iterator mC_Iterator;$/;"	m	class:CMsgMap
+m_oConditionalVariable	CriticalSection.h	/^	pthread_cond_t m_oConditionalVariable;$/;"	m	class:CCriticalSection
+m_oCriticalRegion	CriticalSection.h	/^	pthread_mutex_t	m_oCriticalRegion;$/;"	m	class:CCriticalSection
+m_oEvent	CriticalSection.h	/^	pthread_mutex_t m_oEvent;$/;"	m	class:CCriticalSection
+max_idle_time	DBConnPool.h	/^    unsigned int max_idle_time()$/;"	f	class:CDBConnPool
+mbfn_PrintTimeStamp	STSLogFile.cpp	/^void CSTSLogFile::mbfn_PrintTimeStamp()$/;"	f	class:CSTSLogFile
+mbfn_getIpAddress	STSSocket.cpp	/^int CSTSSocket::mbfn_getIpAddress(char *buf, size_t buflen)$/;"	f	class:CSTSSocket
+mbfn_getPort	STSSocket.cpp	/^int CSTSSocket::mbfn_getPort()$/;"	f	class:CSTSSocket
+mcf_clear	MsgMap.h	/^	void mcf_clear()$/;"	f	class:CMsgMap
+mcf_clearQue	STSMsgQue.h	/^	void mcf_clearQue()$/;"	f	class:CMsgQue
+mcf_resetItr	MsgMap.h	/^void CMsgMap<pt_Key,pt_Val>::mcf_resetItr()$/;"	f	class:CMsgMap
+mcf_startGet	MsgMap.h	/^void CMsgMap<pt_Key,pt_Val>::mcf_startGet()$/;"	f	class:CMsgMap
+mcfb_findElement	MsgMap.h	/^bool CMsgMap<pt_Key,pt_Val>::mcfb_findElement(const pt_Key& p_element, pt_Val& p_val)$/;"	f	class:CMsgMap
+mcfb_getCount	STSMsgQue.h	/^int CMsgQue<T>::mcfb_getCount()$/;"	f	class:CMsgQue
+mcfb_getElement	MsgMap.h	/^bool CMsgMap<pt_Key,pt_Val>::mcfb_getElement(const pt_Key& p_element, pt_Val& p_val)$/;"	f	class:CMsgMap
+mcfb_getNextElement	MsgMap.h	/^bool CMsgMap<pt_Key,pt_Val>::mcfb_getNextElement(pt_Key& p_element, pt_Val& p_val)$/;"	f	class:CMsgMap
+mcfb_getNextMessage	STSMsgQue.h	/^bool CMsgQue<T>::mcfb_getNextMessage(T &element,bool bL_Blocking)$/;"	f	class:CMsgQue
+mcfb_insert	MsgMap.h	/^bool CMsgMap<pt_Key,pt_Val>::mcfb_insert(const pt_Key& p_k, const pt_Val& p_element)$/;"	f	class:CMsgMap
+mcfb_insertIntoQue	STSMsgQue.h	/^bool CMsgQue<T>::mcfb_insertIntoQue (T &element)$/;"	f	class:CMsgQue
+mcfb_readTopMessage	STSMsgQue.h	/^bool CMsgQue<T>::mcfb_readTopMessage(T &element)$/;"	f	class:CMsgQue
+mcfb_removeElement	MsgMap.h	/^bool CMsgMap<pt_Key,pt_Val>::mcfb_removeElement(const pt_Key& p_element)$/;"	f	class:CMsgMap
+mcfi_getCount	MsgMap.h	/^int CMsgMap<pt_Key,pt_Val>::mcfi_getCount()$/;"	f	class:CMsgMap
+mcfn_ClientHandler	Server.cpp	/^void CServer::mcfn_ClientHandler(CSTSSocket *pCL_Conn){$/;"	f	class:CServer
+mcfn_Close	File_Interpretor.cpp	/^void CFileInterpretor::mcfn_Close()$/;"	f	class:CFileInterpretor
+mcfn_GetFields	File_Interpretor.cpp	/^bool CFileInterpretor::mcfn_GetFields(std::string CL_InStr,$/;"	f	class:CFileInterpretor
+mcfn_GetFields	File_Interpretor.cpp	/^bool CFileInterpretor::mcfn_GetFields(std::vector<std::string>& CL_Fields,$/;"	f	class:CFileInterpretor
+mcfn_GetMilliSpan	STSOSUtil.cpp	/^int CSTSOSUtil::mcfn_GetMilliSpan( int nTimeStart )$/;"	f	class:CSTSOSUtil
+mcfn_GetNextLine	File_Interpretor.cpp	/^bool CFileInterpretor::mcfn_GetNextLine(std::string& CL_OutputStr)$/;"	f	class:CFileInterpretor
+mcfn_GetSocketDescriptor	STSSocket.h	/^SOCKET CSTSSocket::mcfn_GetSocketDescriptor()$/;"	f	class:CSTSSocket
+mcfn_InternalProcessor	Server.cpp	/^void CServer::mcfn_InternalProcessor(){$/;"	f	class:CServer
+mcfn_Lock	EventLog.h	/^void CEventLog::mcfn_Lock()$/;"	f	class:CEventLog
+mcfn_LogString	DBConnPool.h	/^    std::string mcfn_LogString(){$/;"	f	class:CDBConnPool
+mcfn_NextLineNumber	File_Interpretor.cpp	/^long CFileInterpretor::mcfn_NextLineNumber()$/;"	f	class:CFileInterpretor
+mcfn_Open	File_Interpretor.cpp	/^bool CFileInterpretor::mcfn_Open(std::string CL_FileName)$/;"	f	class:CFileInterpretor
+mcfn_Release	StsUserTypes.h	/^	void mcfn_Release(){$/;"	f	struct:SByteStream
+mcfn_Rewind	File_Interpretor.cpp	/^void CFileInterpretor::mcfn_Rewind()$/;"	f	class:CFileInterpretor
+mcfn_ServerThread	Server.cpp	/^void CServer::mcfn_ServerThread(){$/;"	f	class:CServer
+mcfn_SetEvent	CriticalSection.cpp	/^int CCriticalSection::mcfn_SetEvent()$/;"	f	class:CCriticalSection
+mcfn_Size	DBConnPool.h	/^    int mcfn_Size() const{$/;"	f	class:CDBConnPool
+mcfn_StartServer	Server.cpp	/^bool CServer::mcfn_StartServer(){$/;"	f	class:CServer
+mcfn_TotalNumber_Of_Lines	File_Interpretor.cpp	/^long CFileInterpretor::mcfn_TotalNumber_Of_Lines(bool bL_CareNull_Lines)$/;"	f	class:CFileInterpretor
+mcfn_Trim	File_Interpretor.cpp	/^char* CFileInterpretor::mcfn_Trim(const char* pscL_StrToTrim) $/;"	f	class:CFileInterpretor
+mcfn_Trim	File_Interpretor.cpp	/^std::string CFileInterpretor::mcfn_Trim(const std::string& CL_StrToTrim)$/;"	f	class:CFileInterpretor
+mcfn_Unlock	EventLog.h	/^void CEventLog::mcfn_Unlock()$/;"	f	class:CEventLog
+mcfn_WaitForSingleObject	CriticalSection.cpp	/^int CCriticalSection::mcfn_WaitForSingleObject(signed int sL_Milliseconds)$/;"	f	class:CCriticalSection
+mcfn_accept	STSSocket.cpp	/^bool CSTSSocket::mcfn_accept(CSTSSocket &CL_STSSocket)$/;"	f	class:CSTSSocket
+mcfn_accept	STSSocketCP.cpp	/^bool CSTSSocket::mcfn_accept(CSTSSocket &CL_STSSocket)$/;"	f	class:CSTSSocket
+mcfn_atoll	STSOSUtil.cpp	/^__int64 CSTSOSUtil::mcfn_atoll(const char *nptr)$/;"	f	class:CSTSOSUtil
+mcfn_atoll	STSOSUtil.cpp	/^long long CSTSOSUtil::mcfn_atoll(const char *nptr)$/;"	f	class:CSTSOSUtil
+mcfn_beginAndDetachThread	STSOSUtil.cpp	/^long CSTSOSUtil::mcfn_beginAndDetachThread(THREAD_HANDLE &hThread,pthread_attr_t *attr,void *(*func_ptr)(void *),void *pArgs)$/;"	f	class:CSTSOSUtil
+mcfn_beginAndDetachThread	STSOSUtil.cpp	/^long CSTSOSUtil::mcfn_beginAndDetachThread(THREAD_HANDLE &hThread,void (*func_ptr)(void *),void *pArgs)$/;"	f	class:CSTSOSUtil
+mcfn_beginAndDetachThread	STSOSUtil.cpp	/^long CSTSOSUtil::mcfn_beginAndDetachThread(THREAD_HANDLE &hThread,void *(*func_ptr)(void *),void *pArgs)$/;"	f	class:CSTSOSUtil
+mcfn_beginAndDetachThread	STSOSUtil.cpp	/^long CSTSOSUtil::mcfn_beginAndDetachThread(pthread_attr_t *attr,void *(*func_ptr)(void *),void *pArgs)$/;"	f	class:CSTSOSUtil
+mcfn_beginAndDetachThread	STSOSUtil.cpp	/^long CSTSOSUtil::mcfn_beginAndDetachThread(void (*func_ptr)(void *),void *pArgs)$/;"	f	class:CSTSOSUtil
+mcfn_beginAndDetachThread	STSOSUtil.cpp	/^long CSTSOSUtil::mcfn_beginAndDetachThread(void *(*func_ptr)(void *),void *pArgs)$/;"	f	class:CSTSOSUtil
+mcfn_beginThread	STSOSUtil.cpp	/^long CSTSOSUtil::mcfn_beginThread(THREAD_HANDLE &hThread,pthread_attr_t *attr,void *(*func_ptr)(void *),void *pArgs)$/;"	f	class:CSTSOSUtil
+mcfn_beginThread	STSOSUtil.cpp	/^long CSTSOSUtil::mcfn_beginThread(THREAD_HANDLE &hThread,void (*func_ptr)(void *),void *pArgs)$/;"	f	class:CSTSOSUtil
+mcfn_beginThread	STSOSUtil.cpp	/^long CSTSOSUtil::mcfn_beginThread(THREAD_HANDLE &hThread,void *(*func_ptr)(void *),void *pArgs)$/;"	f	class:CSTSOSUtil
+mcfn_beginThread	STSOSUtil.cpp	/^long CSTSOSUtil::mcfn_beginThread(pthread_attr_t *attr,void *(*func_ptr)(void *),void *pArgs)$/;"	f	class:CSTSOSUtil
+mcfn_beginThread	STSOSUtil.cpp	/^long CSTSOSUtil::mcfn_beginThread(void (*func_ptr)(void *),void *pArgs)$/;"	f	class:CSTSOSUtil
+mcfn_beginThread	STSOSUtil.cpp	/^long CSTSOSUtil::mcfn_beginThread(void *(*func_ptr)(void *),void *pArgs)$/;"	f	class:CSTSOSUtil
+mcfn_bind	STSSocket.h	/^bool CSTSSocket::mcfn_bind(bool bL_ReuseAddr,bool bL_KeppAlive,bool bL_NoDelay)$/;"	f	class:CSTSSocket
+mcfn_bind	STSSocketCP.h	/^bool CSTSSocket::mcfn_bind()$/;"	f	class:CSTSSocket
+mcfn_clear	STSOSUtil.cpp	/^void CSTSOSUtil::mcfn_clear()$/;"	f	class:CSTSOSUtil
+mcfn_close	EventLog.cpp	/^void CEventLog::mcfn_close()$/;"	f	class:CEventLog
+mcfn_close	STSPGSet.cpp	/^void CSTSPGSet::mcfn_close()$/;"	f	class:CSTSPGSet
+mcfn_close	STSSocket.h	/^bool CSTSSocket::mcfn_close()$/;"	f	class:CSTSSocket
+mcfn_close	STSSocketCP.h	/^bool CSTSSocket::mcfn_close()$/;"	f	class:CSTSSocket
+mcfn_closeByDirection	STSSocket.h	/^bool CSTSSocket::mcfn_closeByDirection(int siL_CloseType)$/;"	f	class:CSTSSocket
+mcfn_connect	STSSocket.h	/^bool CSTSSocket::mcfn_connect(char *pscL_IP)$/;"	f	class:CSTSSocket
+mcfn_connect	STSSocketCP.h	/^bool CSTSSocket::mcfn_connect(char *pscL_IP)$/;"	f	class:CSTSSocket
+mcfn_create	STSSocket.cpp	/^bool CSTSSocket::mcfn_create(int slL_Port)$/;"	f	class:CSTSSocket
+mcfn_create	STSSocket.cpp	/^bool CSTSSocket::mcfn_create(int slL_Port,char * pscL_IP)$/;"	f	class:CSTSSocket
+mcfn_create	STSSocketCP.cpp	/^bool CSTSSocket::mcfn_create(int slL_Port)$/;"	f	class:CSTSSocket
+mcfn_createProcess	STSOSUtil.cpp	/^int CSTSOSUtil::mcfn_createProcess(char *pscL_ProcessString,char *pscL_ExePath,bool bL_Foreground)$/;"	f	class:CSTSOSUtil
+mcfn_createProcess	STSOSUtil.cpp	/^int CSTSOSUtil::mcfn_createProcess(char *pscL_ProcessString,char *pscL_ExePath,bool bL_IsForeground)       $/;"	f	class:CSTSOSUtil
+mcfn_destroyAttr	STSOSUtil.cpp	/^int CSTSOSUtil::mcfn_destroyAttr(pthread_attr_t &attr)$/;"	f	class:CSTSOSUtil
+mcfn_endThread	STSOSUtil.cpp	/^void CSTSOSUtil::mcfn_endThread(void *retval)$/;"	f	class:CSTSOSUtil
+mcfn_execute	STSPGSet.cpp	/^bool CSTSPGSet::mcfn_execute()$/;"	f	class:CSTSPGSet
+mcfn_getDBGLevel	EventLog.h	/^int CEventLog::mcfn_getDBGLevel() const$/;"	f	class:CEventLog
+mcfn_getErrStrg	STSSocket.h	/^char* CSTSSocket::mcfn_getErrStrg()$/;"	f	class:CSTSSocket
+mcfn_getFileSize	EventLog.cpp	/^void CEventLog::mcfn_getFileSize()                                                                         $/;"	f	class:CEventLog
+mcfn_getFileSizeBY	STSOSUtil.cpp	/^int CSTSOSUtil::mcfn_getFileSizeBY(const char * pscL_File)$/;"	f	class:CSTSOSUtil
+mcfn_getFileSizeBY	STSOSUtil.cpp	/^static int mcfn_getFileSizeBY(const char * pscL_File)$/;"	f	file:
+mcfn_getFileSizeGB	STSOSUtil.cpp	/^int CSTSOSUtil::mcfn_getFileSizeGB(const char * pscL_File)$/;"	f	class:CSTSOSUtil
+mcfn_getFileSizeGB	STSOSUtil.cpp	/^static int mcfn_getFileSizeGB(const char * pscL_File)$/;"	f	file:
+mcfn_getFileSizeKB	STSOSUtil.cpp	/^int CSTSOSUtil::mcfn_getFileSizeKB(const char * pscL_File)$/;"	f	class:CSTSOSUtil
+mcfn_getFileSizeKB	STSOSUtil.cpp	/^static int mcfn_getFileSizeKB(const char * pscL_File)$/;"	f	file:
+mcfn_getFileSizeMB	STSOSUtil.cpp	/^int CSTSOSUtil::mcfn_getFileSizeMB(const char * pscL_File)$/;"	f	class:CSTSOSUtil
+mcfn_getFileSizeMB	STSOSUtil.cpp	/^static int mcfn_getFileSizeMB(const char * pscL_File)$/;"	f	file:
+mcfn_getLastError	STSSocket.h	/^long CSTSSocket::mcfn_getLastError()$/;"	f	class:CSTSSocket
+mcfn_getLastError	STSSocketCP.h	/^long CSTSSocket::mcfn_getLastError()$/;"	f	class:CSTSSocket
+mcfn_getLastErrorCode	STSSocket.h	/^long CSTSSocket::mcfn_getLastErrorCode()$/;"	f	class:CSTSSocket
+mcfn_getMilliCount	STSOSUtil.cpp	/^int CSTSOSUtil::mcfn_getMilliCount()$/;"	f	class:CSTSOSUtil
+mcfn_getSS7LoggingReq	EventLog.h	/^u8 CEventLog::mcfn_getSS7LoggingReq()                                                                      $/;"	f	class:CEventLog
+mcfn_getpid	STSOSUtil.cpp	/^long CSTSOSUtil::mcfn_getpid()$/;"	f	class:CSTSOSUtil
+mcfn_init	STSSocket.cpp	/^void CSTSSocket::mcfn_init()$/;"	f	class:CSTSSocket
+mcfn_initAttr	STSOSUtil.cpp	/^int CSTSOSUtil::mcfn_initAttr(pthread_attr_t &attr)$/;"	f	class:CSTSOSUtil
+mcfn_initPG	PGConnection.cpp	/^bool CPGConnection::mcfn_initPG(const char* pscL_hostAddr, const char* pscL_dbName, const char* pscL_user, const char* pscL_password)$/;"	f	class:CPGConnection
+mcfn_initialize	STSSocket.cpp	/^bool CSTSSocket::mcfn_initialize()$/;"	f	class:CSTSSocket
+mcfn_initialize	STSSocketCP.cpp	/^bool CSTSSocket::mcfn_initialize()$/;"	f	class:CSTSSocket
+mcfn_isDataAvailable	STSSocket.cpp	/^int CSTSSocket::mcfn_isDataAvailable(int siL_Timeout)$/;"	f	class:CSTSSocket
+mcfn_joinThread	STSOSUtil.cpp	/^int CSTSOSUtil::mcfn_joinThread(THREAD_HANDLE hProcess,void ** vL_Val)$/;"	f	class:CSTSOSUtil
+mcfn_killThread	STSOSUtil.cpp	/^int CSTSOSUtil::mcfn_killThread(THREAD_HANDLE &hProcess,THREAD_EXITCODE exitcode)$/;"	f	class:CSTSOSUtil
+mcfn_listen	STSSocket.h	/^bool CSTSSocket::mcfn_listen(int i)$/;"	f	class:CSTSSocket
+mcfn_listen	STSSocketCP.h	/^bool CSTSSocket::mcfn_listen(int i)$/;"	f	class:CSTSSocket
+mcfn_logByteStream	EventLog.cpp	/^void CEventLog::mcfn_logByteStream(char *pscL_MsgTag,unsigned char *pu8L_Pptr,int siL_Len)                 $/;"	f	class:CEventLog
+mcfn_logCallerInfo	EventLog.cpp	/^void CEventLog::mcfn_logCallerInfo(int LogLevel,char *pscL_DBGLevel,char *pscL_FilePath,int siL_LineNo,void * pvL_ptr)$/;"	f	class:CEventLog
+mcfn_logMessage	EventLog.cpp	/^void CEventLog::mcfn_logMessage(const char *pscL_Format,...)$/;"	f	class:CEventLog
+mcfn_logSS7Message	EventLog.cpp	/^void CEventLog::mcfn_logSS7Message(STSMSG_SS7 *pSL_Msg)$/;"	f	class:CEventLog
+mcfn_logU8Message	EventLog.cpp	/^void CEventLog::mcfn_logU8Message(u8 *p,int len)$/;"	f	class:CEventLog
+mcfn_moveFirst	STSPGSet.h	/^bool CSTSPGSet::mcfn_moveFirst()$/;"	f	class:CSTSPGSet
+mcfn_moveLast	STSPGSet.h	/^bool CSTSPGSet::mcfn_moveLast()$/;"	f	class:CSTSPGSet
+mcfn_moveNext	STSPGSet.h	/^bool CSTSPGSet::mcfn_moveNext()$/;"	f	class:CSTSPGSet
+mcfn_movePrev	STSPGSet.h	/^bool CSTSPGSet::mcfn_movePrev()$/;"	f	class:CSTSPGSet
+mcfn_msleep	STSOSUtil.cpp	/^void CSTSOSUtil::mcfn_msleep(int milliseconds) \/\/in milliseconds$/;"	f	class:CSTSOSUtil
+mcfn_open	STSPGSet.cpp	/^bool CSTSPGSet::mcfn_open()$/;"	f	class:CSTSPGSet
+mcfn_openNewFile	EventLog.cpp	/^void CEventLog::mcfn_openNewFile()$/;"	f	class:CEventLog
+mcfn_receive	STSSocket.cpp	/^bool CSTSSocket::mcfn_receive(char *psl_Buffer,int slL_TotLen,bool bL_block)$/;"	f	class:CSTSSocket
+mcfn_receive	STSSocketCP.cpp	/^bool CSTSSocket::mcfn_receive(char *psl_Buffer,int slL_TotLen)$/;"	f	class:CSTSSocket
+mcfn_recvAvail	STSSocket.h	/^int CSTSSocket::mcfn_recvAvail(char *pscL_Buffer,int slL_Len)$/;"	f	class:CSTSSocket
+mcfn_recvAvail	STSSocketCP.h	/^int CSTSSocket::mcfn_recvAvail(char *pscL_Buffer,int slL_Len)$/;"	f	class:CSTSSocket
+mcfn_recvByte	STSSocket.h	/^bool CSTSSocket::mcfn_recvByte(char *pscL_Buffer)$/;"	f	class:CSTSSocket
+mcfn_recvByte	STSSocketCP.h	/^bool CSTSSocket::mcfn_recvByte(char *pscL_Buffer)$/;"	f	class:CSTSSocket
+mcfn_send	STSSocket.h	/^bool CSTSSocket::mcfn_send(const char *psl_Buffer,int slL_Len)$/;"	f	class:CSTSSocket
+mcfn_send	STSSocket.h	/^bool CSTSSocket::mcfn_send(const char *psl_Buffer,int slL_Len,int siL_Flag)$/;"	f	class:CSTSSocket
+mcfn_send	STSSocketCP.h	/^bool CSTSSocket::mcfn_send(const char *psl_Buffer,int slL_Len)$/;"	f	class:CSTSSocket
+mcfn_setAPPTag	EventLog.h	/^void CEventLog::mcfn_setAPPTag(char *pscL_AppTag)$/;"	f	class:CEventLog
+mcfn_setDBOperation	STSPGSet.h	/^void CSTSPGSet::mcfn_setDBOperation(int siL_Value)$/;"	f	class:CSTSPGSet
+mcfn_setFilePath	EventLog.h	/^void CEventLog::mcfn_setFilePath(char *pscL_FilePath)$/;"	f	class:CEventLog
+mcfn_setLogLevel	EventLog.h	/^void CEventLog::mcfn_setLogLevel(int siL_LogLevel)$/;"	f	class:CEventLog
+mcfn_setMaxFileSize	EventLog.h	/^void CEventLog::mcfn_setMaxFileSize(int siL_Val)                                                           $/;"	f	class:CEventLog
+mcfn_setNewFileGenerationPeriod	EventLog.h	/^void CEventLog::mcfn_setNewFileGenerationPeriod(long slL_Duration)$/;"	f	class:CEventLog
+mcfn_setSS7LoggingReq	EventLog.h	/^void CEventLog::mcfn_setSS7LoggingReq(u8 u8L_LogLevel)                                                     $/;"	f	class:CEventLog
+mcfn_setSocketDescriptor	STSSocket.h	/^bool CSTSSocket::mcfn_setSocketDescriptor(SOCKET SL_Socket)$/;"	f	class:CSTSSocket
+mcfn_sleep	STSOSUtil.cpp	/^void CSTSOSUtil::mcfn_sleep(int siL_Duration)$/;"	f	class:CSTSOSUtil
+mcfn_strcasecmp	STSOSUtil.cpp	/^int CSTSOSUtil::mcfn_strcasecmp(const char *s1, const char *s2)$/;"	f	class:CSTSOSUtil
+mcfn_strncasecmp	STSOSUtil.cpp	/^int CSTSOSUtil::mcfn_strncasecmp(const char *s1, const char *s2,int len)$/;"	f	class:CSTSOSUtil
+mcfn_terminateProcess	STSOSUtil.cpp	/^bool CSTSOSUtil::mcfn_terminateProcess(int siL_ProcessId)                                                  $/;"	f	class:CSTSOSUtil
+mcfn_textColorEffect	STSOSUtil.cpp	/^void CSTSOSUtil::mcfn_textColorEffect(int slL_Attr, int slL_ForeGrd, int slL_BkGrd)$/;"	f	class:CSTSOSUtil
+mcfn_usleep	STSOSUtil.cpp	/^void CSTSOSUtil::mcfn_usleep(int microseconds)$/;"	f	class:CSTSOSUtil
+mcu32_Len	StsUserTypes.h	/^	u32 mcu32_Len;$/;"	m	struct:SByteStream
+mcu8_DBGLevel	EventLog.h	/^	u8 mcu8_DBGLevel;$/;"	m	class:CEventLog
+mdC_ProcessQ	Server.h	/^		ByteStreamQ mdC_ProcessQ;$/;"	m	class:CServer
+mdfn_bindColumn	STSPGSet.cpp	/^void CSTSPGSet::mdfn_bindColumn(void *pL_param, int siL_ParamLen, int siL_ParamType, short siL_ParamPos, short siL_mode)$/;"	f	class:CSTSPGSet
+mdfn_replace	STSPGSet.cpp	/^void CSTSPGSet::mdfn_replace(const char* pscL_in, char* pscL_out)$/;"	f	class:CSTSPGSet
+meCL_conn	PGConnection.h	/^		PGconn *meCL_conn;$/;"	m	class:CPGConnection
+meCL_conn	STSPGSet.h	/^        PGconn *meCL_conn;$/;"	m	class:CSTSPGSet
+meCL_res	STSPGSet.h	/^        PGresult *meCL_res;$/;"	m	class:CSTSPGSet
+meC_CriticalSection	EventLog.h	/^	CCriticalSection meC_CriticalSection;$/;"	m	class:CEventLog
+meC_FileName	File_Interpretor.h	/^	std::string   meC_FileName;$/;"	m	class:CFileInterpretor
+meC_InputFile	File_Interpretor.h	/^	std::ifstream meC_InputFile;$/;"	m	class:CFileInterpretor
+meC_List	STSMsgQue.h	/^	std::list<T> meC_List;			\/\/\/ Que for storing SS7 messages $/;"	m	class:CMsgQue
+meC_LockObj	MsgMap.h	/^	CCriticalSection meC_LockObj;	\/\/\/ Variable for Critical Section$/;"	m	class:CMsgMap
+meC_LockObj	STSMsgQue.h	/^	CCriticalSection meC_LockObj;	\/\/\/ Variable for Critical Section$/;"	m	class:CMsgQue
+meC_LockObj	STSSocket.h	/^	CCriticalSection meC_LockObj;$/;"	m	class:CSTSSocket
+meC_Map	MsgMap.h	/^	std::map<pt_Key, pt_Val> meC_Map;			\/\/\/ List for storing SS7 messages $/;"	m	class:CMsgMap
+meS_Mutex	STSMsgQue.h	/^	pthread_mutex_t meS_Mutex;$/;"	m	class:CMsgQue
+meS_SockAddr	STSSocket.h	/^	sockaddr_in meS_SockAddr;$/;"	m	class:CSTSSocket
+meS_SockAddr	STSSocketCP.h	/^	sockaddr_in meS_SockAddr;$/;"	m	class:CSTSSocket
+meS_Socket	STSSocket.h	/^	SOCKET meS_Socket;$/;"	m	class:CSTSSocket
+meS_Socket	STSSocketCP.h	/^	SOCKET meS_Socket;$/;"	m	class:CSTSSocket
+meb_Is2Log	EventLog.h	/^	bool meb_Is2Log;$/;"	m	class:CEventLog
+meb_RDClosed	STSSocket.h	/^	bool meb_RDClosed;$/;"	m	class:CSTSSocket
+meb_WRClosed	STSSocket.h	/^	bool meb_WRClosed;$/;"	m	class:CSTSSocket
+meb_isExConn	STSPGSet.h	/^	bool meb_isExConn;$/;"	m	class:CSTSPGSet
+meca_Reason	STSException.h	/^	char meca_Reason[100];$/;"	m	class:STSGenException
+mefn_CreateConnStr	STSPGSet.cpp	/^void CSTSPGSet::mefn_CreateConnStr(char* pscL_hostAddr, char* pscL_dbName, char* pscL_user, char* pscL_password)$/;"	f	class:CSTSPGSet
+mefn_Initialize	File_Interpretor.cpp	/^void CFileInterpretor::mefn_Initialize()$/;"	f	class:CFileInterpretor
+mefn_fetch	STSPGSet.cpp	/^bool CSTSPGSet::mefn_fetch(int siL_direction)$/;"	f	class:CSTSPGSet
+mefn_prepareToExecute	STSPGSet.cpp	/^void CSTSPGSet::mefn_prepareToExecute()$/;"	f	class:CSTSPGSet
+mei_ErrCode	STSException.h	/^	int mei_ErrCode;$/;"	m	class:STSGenException
+mei_Handle	STSMsgQue.h	/^	HANDLE mei_Handle;$/;"	m	class:CMsgQue
+mei_Handle	STSMsgQue.h	/^	pthread_cond_t	mei_Handle;$/;"	m	class:CMsgQue
+mesc_ServerIp	Server.h	/^		char	mesc_ServerIp[30];$/;"	m	class:CServer
+mesi_CurrRowNum	STSPGSet.h	/^        int  mesi_CurrRowNum;$/;"	m	class:CSTSPGSet
+mesi_DBOperation	STSPGSet.h	/^	int  mesi_DBOperation;$/;"	m	class:CSTSPGSet
+mesi_DayofMonth	EventLog.h	/^	int  mesi_DayofMonth;$/;"	m	class:CEventLog
+mesi_FileCount	EventLog.h	/^	int mesi_FileCount;$/;"	m	class:CEventLog
+mesi_FileMaxSize	EventLog.h	/^	int mesi_FileMaxSize;$/;"	m	class:CEventLog
+mesi_FileSize	EventLog.h	/^	int mesi_FileSize;$/;"	m	class:CEventLog
+mesi_NumOfTuples	STSPGSet.h	/^	int  mesi_NumOfTuples;$/;"	m	class:CSTSPGSet
+mesi_resultFormat	STSPGSet.h	/^        int          mesi_resultFormat;$/;"	m	class:CSTSPGSet
+mesl_CurrentLineNumber	File_Interpretor.h	/^	long 		  mesl_CurrentLineNumber;$/;"	m	class:CFileInterpretor
+mesl_Duration	EventLog.h	/^	long mesl_Duration;$/;"	m	class:CEventLog
+mesl_Error	STSSocket.h	/^	int mesl_Error;$/;"	m	class:CSTSSocket
+mesl_INFieldCount	STSPGSet.h	/^	int  mesl_INFieldCount;$/;"	m	class:CSTSPGSet
+mesl_OUTFieldCount	STSPGSet.h	/^        int  mesl_OUTFieldCount;$/;"	m	class:CSTSPGSet
+mesl_ServerPort	STSSocket.h	/^	int mesl_ServerPort;$/;"	m	class:CSTSSocket
+mesl_ServerPort	STSSocketCP.h	/^	int mesl_ServerPort;$/;"	m	class:CSTSSocket
+mesl_StartTime	EventLog.h	/^	long mesl_StartTime;$/;"	m	class:CEventLog
+meu16_ServerPort	Server.h	/^		u16		meu16_ServerPort;$/;"	m	class:CServer
+meu8_NumOfLenBytes	Server.h	/^		u8		meu8_NumOfLenBytes;$/;"	m	class:CServer
+meu8_SS7LOG	EventLog.h	/^	u8   meu8_SS7LOG;$/;"	m	class:CEventLog
+next	STSMsg.h	/^	struct stshdr	*next;			\/* for message chaining	*\/$/;"	m	struct:stshdr	typeref:struct:stshdr::stshdr
+operator <<	STSLogFile.cpp	/^CSTSLogFile & operator << (CSTSLogFile& pmvS_File,const char * pscL_String)$/;"	f
+param	STSMsg.h	/^	long		param[STSMAX_PARAM];$/;"	m	struct:stsm_frame
+password_	DBConnPool.h	/^    std::string db_, server_, user_, password_;$/;"	m	class:CDBConnPool
+pmcC_ConnSocket	Server.h	/^	CSTSSocket  *pmcC_ConnSocket;$/;"	m	struct:SClientHandlerParam
+pmcC_This	Server.h	/^	CServer		*pmcC_This;$/;"	m	struct:SClientHandlerParam
+pmcu8_Ptr	StsUserTypes.h	/^	u8 *pmcu8_Ptr;$/;"	m	struct:SByteStream
+pmeS_File	EventLog.h	/^	FILE *pmeS_File;$/;"	m	class:CEventLog
+pme_OutParam	STSPGSet.h	/^        void *       pme_OutParam[100];$/;"	m	class:CSTSPGSet
+pmesc_AppTag	EventLog.h	/^	char pmesc_AppTag[20];$/;"	m	class:CEventLog
+pmesc_ConnStr	STSPGSet.h	/^        char pmesc_ConnStr[SIZE_CONNSTRING];$/;"	m	class:CSTSPGSet
+pmesc_ErrStrg	STSSocket.h	/^	char pmesc_ErrStrg[1024];$/;"	m	class:CSTSSocket
+pmesc_FileName	EventLog.h	/^	char pmesc_FileName[3000];$/;"	m	class:CEventLog
+pmesc_FilePath	EventLog.h	/^	char pmesc_FilePath[2000];$/;"	m	class:CEventLog
+pmesc_TempBuffer	EventLog.h	/^	char pmesc_TempBuffer[2000];$/;"	m	class:CEventLog
+pmesc_paramValues	STSPGSet.h	/^        char **pmesc_paramValues;$/;"	m	class:CSTSPGSet
+pmesi_OutParamLength	STSPGSet.h	/^	int 	     pmesi_OutParamLength[100];$/;"	m	class:CSTSPGSet
+pmesi_OutParamType	STSPGSet.h	/^	int 	     pmesi_OutParamType[100];$/;"	m	class:CSTSPGSet
+pmesi_paramFormats	STSPGSet.h	/^        int         *pmesi_paramFormats;$/;"	m	class:CSTSPGSet
+pmesi_paramLengths	STSPGSet.h	/^        int         *pmesi_paramLengths;$/;"	m	class:CSTSPGSet
+pmvS_File	STSLogFile.h	/^	FILE *pmvS_File;					\/\/Maintains the file handle$/;"	m	class:CSTSLogFile
+reasonCode	STSException.cpp	/^	int STSGenException::reasonCode()$/;"	f	class:STSGenException
+reasonString	STSException.cpp	/^	char* STSGenException::reasonString()$/;"	f	class:STSGenException
+reasonString	STSException.cpp	/^	char* STSGenException::reasonString(char* res)$/;"	f	class:STSGenException
+rsp_req	STSMsg.h	/^	unsigned short	rsp_req;	\/* response required	*\/$/;"	m	struct:stshdr
+s16	STSSystem.h	/^typedef short  s16;				\/* Exactly 2 bytes (16 bits) *\/$/;"	t
+s32	STSSystem.h	/^typedef int			   s32;	   \/* Exactly 4 bytes (32 bits) *\/$/;"	t
+s32	STSSystem.h	/^typedef long			s32;	   \/* Exactly 4 bytes (32 bits) *\/$/;"	t
+s64	STSSystem.h	/^typedef long		   s64;	   \/* Exactly 4 bytes (32 bits) *\/$/;"	t
+s8	STSSystem.h	/^typedef char   s8;				\/* Exactly one byte (8 bits) *\/$/;"	t
+server_	DBConnPool.h	/^    std::string db_, server_, user_, password_;$/;"	m	class:CDBConnPool
+socklen_t	STSSocket.h	/^	typedef int socklen_t;$/;"	t
+src	STSMsg.h	/^	unsigned char	src;		\/* sending module ID	*\/$/;"	m	struct:stshdr
+status	STSMsg.h	/^	unsigned char	status;		\/* returned status		*\/$/;"	m	struct:stshdr
+stsget_hdr	STSMsg.h	62;"	d
+stsget_param	STSMsg.h	57;"	d
+stsget_unusedBY1	STSMsg.h	67;"	d
+stsget_unusedBY2	STSMsg.h	71;"	d
+stshdr	STSMsg.h	/^typedef struct stshdr$/;"	s
+stsm_frame	STSMsg.h	/^typedef struct stsm_frame$/;"	s
+stsset_unusedBY1	STSMsg.h	75;"	d
+stsset_unusedBY2	STSMsg.h	79;"	d
+type	STSMsg.h	/^	unsigned short	type;		\/* type of message		*\/$/;"	m	struct:stshdr
+u16	STSSystem.h	/^typedef unsigned short	u16;	\/* Exactly 2 bytes (16 bits) *\/$/;"	t
+u16	StsUserTypes.h	/^typedef unsigned short 	u16;$/;"	t
+u32	STSSystem.h	/^typedef unsigned int   u32;    \/* Exactly 4 bytes (32 bits) *\/$/;"	t
+u32	STSSystem.h	/^typedef unsigned long   u32;    \/* Exactly 4 bytes (32 bits) *\/$/;"	t
+u32	StsUserTypes.h	/^typedef unsigned int	u32;$/;"	t
+u64	STSSystem.h	/^typedef unsigned long  u64;    \/* Exactly 4 bytes (32 bits) *\/$/;"	t
+u64	StsUserTypes.h	/^typedef unsigned long u64;$/;"	t
+u8	STSSystem.h	/^typedef unsigned char	u8;		\/* Exactly one byte (8 bits) *\/$/;"	t
+u8	StsUserTypes.h	/^typedef unsigned char 	u8;$/;"	t
+user_	DBConnPool.h	/^    std::string db_, server_, user_, password_;$/;"	m	class:CDBConnPool
+what	STSSocket.cpp	/^const char* CSTSSocket::what()$/;"	f	class:CSTSSocket
+~CCriticalSection	CriticalSection.cpp	/^CCriticalSection::~CCriticalSection()$/;"	f	class:CCriticalSection
+~CDBConnPool	DBConnPool.h	/^    ~CDBConnPool()$/;"	f	class:CDBConnPool
+~CEventLog	EventLog.cpp	/^CEventLog::~CEventLog()$/;"	f	class:CEventLog
+~CFileInterpretor	File_Interpretor.cpp	/^CFileInterpretor::~CFileInterpretor()$/;"	f	class:CFileInterpretor
+~CMsgMap	MsgMap.h	/^CMsgMap<pt_Key,pt_Val>::~CMsgMap()$/;"	f	class:CMsgMap
+~CMsgQue	STSMsgQue.h	/^CMsgQue<T>::~CMsgQue()$/;"	f	class:CMsgQue
+~CPGConnection	PGConnection.cpp	/^CPGConnection::~CPGConnection()$/;"	f	class:CPGConnection
+~CSTSLogFile	STSLogFile.cpp	/^CSTSLogFile::~CSTSLogFile()$/;"	f	class:CSTSLogFile
+~CSTSPGSet	STSPGSet.cpp	/^CSTSPGSet::~CSTSPGSet()$/;"	f	class:CSTSPGSet
+~CSTSSocket	STSSocket.cpp	/^CSTSSocket::~CSTSSocket()$/;"	f	class:CSTSSocket
+~CSTSSocket	STSSocketCP.cpp	/^CSTSSocket::~CSTSSocket()$/;"	f	class:CSTSSocket

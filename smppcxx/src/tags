@@ -1,0 +1,1428 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.5.4	//
+ACCEPTED	aux_types.hpp	/^            ACCEPTED = 6,$/;"	e	enum:Smpp::MessageState::<anonymous>
+AR	Makefile	/^AR = ar$/;"	m
+ARFLAGS	Makefile	/^ARFLAGS = rc$/;"	m
+ARLIB	Makefile	/^ARLIB = libsmpp.a$/;"	m
+Abbreviated	aux_types.hpp	/^            Abbreviated   = 0x06  \/\/\/< Abbreviated$/;"	e	enum:Smpp::Ton::<anonymous>
+Address	aux_types.hpp	/^        Address() : len_(MaxLen) {}$/;"	f	class:Smpp::Address
+Address	aux_types.hpp	/^        explicit Address(const Smpp::Char* p, size_t len = MaxLen) :$/;"	f	class:Smpp::Address
+Address	aux_types.hpp	/^        explicit Address(const Smpp::String& p, size_t len = MaxLen) :$/;"	f	class:Smpp::Address
+Address	aux_types.hpp	/^    class Address {$/;"	c	namespace:Smpp
+AddressRange	aux_types.hpp	/^        AddressRange() {}$/;"	f	class:Smpp::AddressRange
+AddressRange	aux_types.hpp	/^        explicit AddressRange(const Smpp::Char* p) :$/;"	f	class:Smpp::AddressRange
+AddressRange	aux_types.hpp	/^        explicit AddressRange(const Smpp::String& p) :$/;"	f	class:Smpp::AddressRange
+AddressRange	aux_types.hpp	/^    class AddressRange {$/;"	c	namespace:Smpp
+AlertNotification	alert_notification.cpp	/^Smpp::AlertNotification::AlertNotification($/;"	f	class:Smpp::AlertNotification
+AlertNotification	alert_notification.cpp	/^Smpp::AlertNotification::AlertNotification() :$/;"	f	class:Smpp::AlertNotification
+AlertNotification	alert_notification.cpp	/^Smpp::AlertNotification::AlertNotification(const Smpp::Uint8* b) :$/;"	f	class:Smpp::AlertNotification
+AlertNotification	alert_notification.hpp	/^    class AlertNotification : public Request {$/;"	c	namespace:Smpp
+AlertNotification	command_id.hpp	/^            AlertNotification     = 0x00000102, \/**< alert_notification command id. *\/$/;"	e	enum:Smpp::CommandId::<anonymous>
+Alphanumeric	aux_types.hpp	/^            Alphanumeric  = 0x05, \/\/\/< Alphanumeric$/;"	e	enum:Smpp::Ton::<anonymous>
+Background	aux_types.hpp	/^            Background = 0x04$/;"	e	enum:Smpp::PriorityFlag::<anonymous>
+BindReceiver	bind_receiver.cpp	/^Smpp::BindReceiver::BindReceiver($/;"	f	class:Smpp::BindReceiver
+BindReceiver	bind_receiver.cpp	/^Smpp::BindReceiver::BindReceiver() :$/;"	f	class:Smpp::BindReceiver
+BindReceiver	bind_receiver.cpp	/^Smpp::BindReceiver::BindReceiver(const Smpp::Uint8* b) :$/;"	f	class:Smpp::BindReceiver
+BindReceiver	bind_receiver.hpp	/^    class BindReceiver : public Request {$/;"	c	namespace:Smpp
+BindReceiver	command_id.hpp	/^            BindReceiver          = 0x00000001, \/**< bind_receiver command id. *\/$/;"	e	enum:Smpp::CommandId::<anonymous>
+BindReceiverResp	bind_receiver_resp.cpp	/^Smpp::BindReceiverResp::BindReceiverResp($/;"	f	class:Smpp::BindReceiverResp
+BindReceiverResp	bind_receiver_resp.cpp	/^Smpp::BindReceiverResp::BindReceiverResp() :$/;"	f	class:Smpp::BindReceiverResp
+BindReceiverResp	bind_receiver_resp.cpp	/^Smpp::BindReceiverResp::BindReceiverResp(const Smpp::Uint8* b) :$/;"	f	class:Smpp::BindReceiverResp
+BindReceiverResp	bind_receiver_resp.hpp	/^    class BindReceiverResp : public Response {$/;"	c	namespace:Smpp
+BindReceiverResp	command_id.hpp	/^            BindReceiverResp      = 0x80000001, \/**< bind_receiver_resp command id. *\/$/;"	e	enum:Smpp::CommandId::<anonymous>
+BindTransceiver	bind_transceiver.cpp	/^Smpp::BindTransceiver::BindTransceiver($/;"	f	class:Smpp::BindTransceiver
+BindTransceiver	bind_transceiver.cpp	/^Smpp::BindTransceiver::BindTransceiver() :$/;"	f	class:Smpp::BindTransceiver
+BindTransceiver	bind_transceiver.cpp	/^Smpp::BindTransceiver::BindTransceiver(const Smpp::Uint8* b) :$/;"	f	class:Smpp::BindTransceiver
+BindTransceiver	bind_transceiver.hpp	/^    class BindTransceiver : public Request {$/;"	c	namespace:Smpp
+BindTransceiver	command_id.hpp	/^            BindTransceiver       = 0x00000009, \/**< bind_transceiver command id. *\/$/;"	e	enum:Smpp::CommandId::<anonymous>
+BindTransceiverResp	bind_transceiver_resp.cpp	/^Smpp::BindTransceiverResp::BindTransceiverResp($/;"	f	class:Smpp::BindTransceiverResp
+BindTransceiverResp	bind_transceiver_resp.cpp	/^Smpp::BindTransceiverResp::BindTransceiverResp() :$/;"	f	class:Smpp::BindTransceiverResp
+BindTransceiverResp	bind_transceiver_resp.cpp	/^Smpp::BindTransceiverResp::BindTransceiverResp(const Smpp::Uint8* b) :$/;"	f	class:Smpp::BindTransceiverResp
+BindTransceiverResp	bind_transceiver_resp.hpp	/^    class BindTransceiverResp : public Response {$/;"	c	namespace:Smpp
+BindTransceiverResp	command_id.hpp	/^            BindTransceiverResp   = 0x80000009, \/**< bind_transceiver_resp command id. *\/$/;"	e	enum:Smpp::CommandId::<anonymous>
+BindTransmitter	bind_transmitter.cpp	/^Smpp::BindTransmitter::BindTransmitter($/;"	f	class:Smpp::BindTransmitter
+BindTransmitter	bind_transmitter.cpp	/^Smpp::BindTransmitter::BindTransmitter() :$/;"	f	class:Smpp::BindTransmitter
+BindTransmitter	bind_transmitter.cpp	/^Smpp::BindTransmitter::BindTransmitter(const Smpp::Uint8* b) :$/;"	f	class:Smpp::BindTransmitter
+BindTransmitter	bind_transmitter.hpp	/^    class BindTransmitter : public Request {$/;"	c	namespace:Smpp
+BindTransmitter	command_id.hpp	/^            BindTransmitter       = 0x00000002, \/**< bind_transmitter command id. *\/$/;"	e	enum:Smpp::CommandId::<anonymous>
+BindTransmitterResp	bind_transmitter_resp.cpp	/^Smpp::BindTransmitterResp::BindTransmitterResp($/;"	f	class:Smpp::BindTransmitterResp
+BindTransmitterResp	bind_transmitter_resp.cpp	/^Smpp::BindTransmitterResp::BindTransmitterResp() :$/;"	f	class:Smpp::BindTransmitterResp
+BindTransmitterResp	bind_transmitter_resp.cpp	/^Smpp::BindTransmitterResp::BindTransmitterResp(const Smpp::Uint8* b) :$/;"	f	class:Smpp::BindTransmitterResp
+BindTransmitterResp	bind_transmitter_resp.hpp	/^    class BindTransmitterResp : public Response {$/;"	c	namespace:Smpp
+BindTransmitterResp	command_id.hpp	/^            BindTransmitterResp   = 0x80000002, \/**< bind_transmitter_resp command id. *\/$/;"	e	enum:Smpp::CommandId::<anonymous>
+BroadcastAreaIdentifier	tlv.hpp	/^        BroadcastAreaIdentifier(const Smpp::Uint8& format,$/;"	f	class:Smpp::BroadcastAreaIdentifier
+BroadcastAreaIdentifier	tlv.hpp	/^    class BroadcastAreaIdentifier : public Tlv {$/;"	c	namespace:Smpp
+BroadcastAreaSuccess	tlv.hpp	/^        BroadcastAreaSuccess(const Smpp::Uint8& sRate) :$/;"	f	class:Smpp::BroadcastAreaSuccess
+BroadcastAreaSuccess	tlv.hpp	/^    class BroadcastAreaSuccess : public Tlv {$/;"	c	namespace:Smpp
+BroadcastContentType	tlv.hpp	/^        BroadcastContentType(const Smpp::Uint8& typeTag, const Smpp::Uint16& type) :$/;"	f	class:Smpp::BroadcastContentType
+BroadcastContentType	tlv.hpp	/^    class BroadcastContentType : public Tlv {$/;"	c	namespace:Smpp
+BroadcastFrequencyInterval	tlv.hpp	/^        BroadcastFrequencyInterval(const Smpp::Uint8& type, const Smpp::Uint16& units) :$/;"	f	class:Smpp::BroadcastFrequencyInterval
+BroadcastFrequencyInterval	tlv.hpp	/^    class BroadcastFrequencyInterval : public Tlv {$/;"	c	namespace:Smpp
+BroadcastSm	broadcast_sm.cpp	/^Smpp::BroadcastSm::BroadcastSm($/;"	f	class:Smpp::BroadcastSm
+BroadcastSm	broadcast_sm.cpp	/^Smpp::BroadcastSm::BroadcastSm() :$/;"	f	class:Smpp::BroadcastSm
+BroadcastSm	broadcast_sm.cpp	/^Smpp::BroadcastSm::BroadcastSm(const Smpp::Uint8* b) :$/;"	f	class:Smpp::BroadcastSm
+BroadcastSm	broadcast_sm.hpp	/^    class BroadcastSm : public Request {$/;"	c	namespace:Smpp
+BroadcastSm	command_id.hpp	/^            BroadcastSm           = 0x00000111, \/**< broadcast_sm command id. *\/$/;"	e	enum:Smpp::CommandId::<anonymous>
+BroadcastSmResp	broadcast_sm_resp.cpp	/^Smpp::BroadcastSmResp::BroadcastSmResp($/;"	f	class:Smpp::BroadcastSmResp
+BroadcastSmResp	broadcast_sm_resp.cpp	/^Smpp::BroadcastSmResp::BroadcastSmResp() :$/;"	f	class:Smpp::BroadcastSmResp
+BroadcastSmResp	broadcast_sm_resp.cpp	/^Smpp::BroadcastSmResp::BroadcastSmResp(const Smpp::Uint8* b) :$/;"	f	class:Smpp::BroadcastSmResp
+BroadcastSmResp	broadcast_sm_resp.hpp	/^    class BroadcastSmResp : public Response {$/;"	c	namespace:Smpp
+BroadcastSmResp	command_id.hpp	/^            BroadcastSmResp       = 0x80000111, \/**< broadcast_sm_resp command id. *\/$/;"	e	enum:Smpp::CommandId::<anonymous>
+Buffer	buffer.cpp	/^Smpp::Buffer::Buffer() : data_(0), offset_(0)$/;"	f	class:Smpp::Buffer
+Buffer	buffer.cpp	/^Smpp::Buffer::Buffer(Uint32 len) : data_(new Smpp::Uint8[len]), offset_(0)$/;"	f	class:Smpp::Buffer
+Buffer	buffer.hpp	/^    class Buffer {$/;"	c	namespace:Smpp
+CTlvList	header.hpp	/^            CTlvList() {}$/;"	f	struct:Smpp::Header::CTlvList
+CTlvList	header.hpp	/^            CTlvList(const CTlvList& t) {$/;"	f	struct:Smpp::Header::CTlvList
+CTlvList	header.hpp	/^        struct CTlvList {$/;"	s	class:Smpp::Header
+CXX	Makefile	/^CXX = g++$/;"	m
+CXXFLAGS	Makefile	/^CXXFLAGS = -Wall -Werror -Winline -ansi -pedantic -fPIC -O3$/;"	m
+CancelBroadcastSm	cancel_broadcast_sm.cpp	/^Smpp::CancelBroadcastSm::CancelBroadcastSm($/;"	f	class:Smpp::CancelBroadcastSm
+CancelBroadcastSm	cancel_broadcast_sm.cpp	/^Smpp::CancelBroadcastSm::CancelBroadcastSm() :$/;"	f	class:Smpp::CancelBroadcastSm
+CancelBroadcastSm	cancel_broadcast_sm.cpp	/^Smpp::CancelBroadcastSm::CancelBroadcastSm(const Smpp::Uint8* b) :$/;"	f	class:Smpp::CancelBroadcastSm
+CancelBroadcastSm	cancel_broadcast_sm.hpp	/^    class CancelBroadcastSm : public Request {$/;"	c	namespace:Smpp
+CancelBroadcastSm	command_id.hpp	/^            CancelBroadcastSm     = 0x00000113, \/**< cancel_broadcast_sm command id. *\/$/;"	e	enum:Smpp::CommandId::<anonymous>
+CancelBroadcastSmResp	cancel_broadcast_sm_resp.cpp	/^Smpp::CancelBroadcastSmResp::CancelBroadcastSmResp($/;"	f	class:Smpp::CancelBroadcastSmResp
+CancelBroadcastSmResp	cancel_broadcast_sm_resp.cpp	/^Smpp::CancelBroadcastSmResp::CancelBroadcastSmResp() :$/;"	f	class:Smpp::CancelBroadcastSmResp
+CancelBroadcastSmResp	cancel_broadcast_sm_resp.cpp	/^Smpp::CancelBroadcastSmResp::CancelBroadcastSmResp(const Smpp::Uint8* b) :$/;"	f	class:Smpp::CancelBroadcastSmResp
+CancelBroadcastSmResp	cancel_broadcast_sm_resp.hpp	/^    class CancelBroadcastSmResp : public Response {$/;"	c	namespace:Smpp
+CancelBroadcastSmResp	command_id.hpp	/^            CancelBroadcastSmResp = 0x80000113  \/**< cancel_broadcast_sm_resp command id. *\/$/;"	e	enum:Smpp::CommandId::<anonymous>
+CancelSm	cancel_sm.cpp	/^Smpp::CancelSm::CancelSm($/;"	f	class:Smpp::CancelSm
+CancelSm	cancel_sm.cpp	/^Smpp::CancelSm::CancelSm() :$/;"	f	class:Smpp::CancelSm
+CancelSm	cancel_sm.cpp	/^Smpp::CancelSm::CancelSm(const Smpp::Uint8* b) :$/;"	f	class:Smpp::CancelSm
+CancelSm	cancel_sm.hpp	/^    class CancelSm : public Request {$/;"	c	namespace:Smpp
+CancelSm	command_id.hpp	/^            CancelSm              = 0x00000008, \/**< cancel_sm command id. *\/$/;"	e	enum:Smpp::CommandId::<anonymous>
+CancelSmResp	cancel_sm_resp.cpp	/^Smpp::CancelSmResp::CancelSmResp() :$/;"	f	class:Smpp::CancelSmResp
+CancelSmResp	cancel_sm_resp.cpp	/^Smpp::CancelSmResp::CancelSmResp(const CommandStatus& commandStatus,$/;"	f	class:Smpp::CancelSmResp
+CancelSmResp	cancel_sm_resp.cpp	/^Smpp::CancelSmResp::CancelSmResp(const Smpp::Uint8* b) :$/;"	f	class:Smpp::CancelSmResp
+CancelSmResp	cancel_sm_resp.hpp	/^    class CancelSmResp : public Response {$/;"	c	namespace:Smpp
+CancelSmResp	command_id.hpp	/^            CancelSmResp          = 0x80000008, \/**< cancel_sm_resp command id. *\/$/;"	e	enum:Smpp::CommandId::<anonymous>
+Char	aux_types.hpp	/^    typedef char Char;$/;"	t	namespace:Smpp
+CommandId	command_id.hpp	/^        explicit CommandId(const Smpp::Uint32& p) : val_(p) {}$/;"	f	class:Smpp::CommandId
+CommandId	command_id.hpp	/^    class CommandId {$/;"	c	namespace:Smpp
+CommandLength	command_length.hpp	/^        CommandLength(const Smpp::Uint32& p) : val_(p) {}$/;"	f	class:Smpp::CommandLength
+CommandLength	command_length.hpp	/^    class CommandLength {$/;"	c	namespace:Smpp
+CommandStatus	command_status.hpp	/^        CommandStatus(const Smpp::Uint32& p) : val_(p) {}$/;"	f	class:Smpp::CommandStatus
+CommandStatus	command_status.hpp	/^    class CommandStatus {$/;"	c	namespace:Smpp
+CompareTag	tlv.hpp	/^            CompareTag(const Smpp::Uint16& tag) : tag_(tag) {}$/;"	f	class:Smpp::Tlv::CompareTag
+CompareTag	tlv.hpp	/^        class CompareTag {$/;"	c	class:Smpp::Tlv
+Copy	header.hpp	/^            struct Copy {$/;"	s	struct:Smpp::Header::CTlvList
+CopySubmitMultiAddresses	buffer.hpp	/^        CopySubmitMultiAddresses(Smpp::Buffer& b) : b_(b) {}$/;"	f	class:Smpp::CopySubmitMultiAddresses
+CopySubmitMultiAddresses	buffer.hpp	/^    class CopySubmitMultiAddresses {$/;"	c	namespace:Smpp
+CopyUnsuccessSmeColl	buffer.hpp	/^        CopyUnsuccessSmeColl(Smpp::Buffer& b) : b_(b) {}$/;"	f	class:Smpp::CopyUnsuccessSmeColl
+CopyUnsuccessSmeColl	buffer.hpp	/^    class CopyUnsuccessSmeColl {$/;"	c	namespace:Smpp
+DELETED	aux_types.hpp	/^            DELETED = 4,$/;"	e	enum:Smpp::MessageState::<anonymous>
+DELIVERED	aux_types.hpp	/^            DELIVERED = 2,$/;"	e	enum:Smpp::MessageState::<anonymous>
+Data	aux_types.hpp	/^            Data     = 0x03, \/\/\/< Data$/;"	e	enum:Smpp::Npi::<anonymous>
+DataCoding	aux_types.hpp	/^        DataCoding() : v_(0x00) {}$/;"	f	class:Smpp::DataCoding
+DataCoding	aux_types.hpp	/^        DataCoding(const Smpp::Uint8& p) : v_(check(p)) {}$/;"	f	class:Smpp::DataCoding
+DataCoding	aux_types.hpp	/^    class DataCoding {$/;"	c	namespace:Smpp
+DataSm	command_id.hpp	/^            DataSm                = 0x00000103, \/**< data_sm command id. *\/$/;"	e	enum:Smpp::CommandId::<anonymous>
+DataSm	data_sm.cpp	/^Smpp::DataSm::DataSm($/;"	f	class:Smpp::DataSm
+DataSm	data_sm.cpp	/^Smpp::DataSm::DataSm() :$/;"	f	class:Smpp::DataSm
+DataSm	data_sm.cpp	/^Smpp::DataSm::DataSm(const Smpp::Uint8* b) :$/;"	f	class:Smpp::DataSm
+DataSm	data_sm.hpp	/^    class DataSm : public Request {$/;"	c	namespace:Smpp
+DataSmResp	command_id.hpp	/^            DataSmResp            = 0x80000103, \/**< data_sm command_resp id. *\/$/;"	e	enum:Smpp::CommandId::<anonymous>
+DataSmResp	data_sm_resp.cpp	/^Smpp::DataSmResp::DataSmResp($/;"	f	class:Smpp::DataSmResp
+DataSmResp	data_sm_resp.cpp	/^Smpp::DataSmResp::DataSmResp() :$/;"	f	class:Smpp::DataSmResp
+DataSmResp	data_sm_resp.cpp	/^Smpp::DataSmResp::DataSmResp(const Smpp::Uint8* b) :$/;"	f	class:Smpp::DataSmResp
+DataSmResp	data_sm_resp.hpp	/^    class DataSmResp : public Response {$/;"	c	namespace:Smpp
+Default	aux_types.hpp	/^        enum { Default = 0x00 };$/;"	e	enum:Smpp::RegisteredDelivery::<anonymous>
+Delete	aux_types.hpp	/^        struct Delete {$/;"	s	class:Smpp::MultiDestinationAddresses
+Delete	aux_types.hpp	/^        struct Delete {$/;"	s	class:Smpp::UnsuccessSmeColl
+Delete	header.hpp	/^            struct Delete {$/;"	s	struct:Smpp::Header::CTlvList
+DeliverSm	command_id.hpp	/^            DeliverSm             = 0x00000005, \/**< deliver_sm command id. *\/$/;"	e	enum:Smpp::CommandId::<anonymous>
+DeliverSm	deliver_sm.cpp	/^Smpp::DeliverSm::DeliverSm($/;"	f	class:Smpp::DeliverSm
+DeliverSm	deliver_sm.cpp	/^Smpp::DeliverSm::DeliverSm() :$/;"	f	class:Smpp::DeliverSm
+DeliverSm	deliver_sm.cpp	/^Smpp::DeliverSm::DeliverSm(const Smpp::Uint8* b) :$/;"	f	class:Smpp::DeliverSm
+DeliverSm	deliver_sm.hpp	/^    class DeliverSm : public Request {$/;"	c	namespace:Smpp
+DeliverSmResp	command_id.hpp	/^            DeliverSmResp         = 0x80000005, \/**< deliver_sm_resp command id. *\/$/;"	e	enum:Smpp::CommandId::<anonymous>
+DeliverSmResp	deliver_sm_resp.cpp	/^Smpp::DeliverSmResp::DeliverSmResp($/;"	f	class:Smpp::DeliverSmResp
+DeliverSmResp	deliver_sm_resp.cpp	/^Smpp::DeliverSmResp::DeliverSmResp() :$/;"	f	class:Smpp::DeliverSmResp
+DeliverSmResp	deliver_sm_resp.cpp	/^Smpp::DeliverSmResp::DeliverSmResp(const Smpp::Uint8* b) :$/;"	f	class:Smpp::DeliverSmResp
+DeliverSmResp	deliver_sm_resp.hpp	/^    class DeliverSmResp : public Response {$/;"	c	namespace:Smpp
+DistributionListAddress	aux_types.hpp	/^        DistributionListAddress(const Smpp::String& addr) : addr_(addr) {}$/;"	f	class:Smpp::DistributionListAddress
+DistributionListAddress	aux_types.hpp	/^    class DistributionListAddress : public MultiDestinationAddressBase {$/;"	c	namespace:Smpp
+E164	aux_types.hpp	/^            E164     = 0x01, \/\/\/< E164$/;"	e	enum:Smpp::Npi::<anonymous>
+ENROUTE	aux_types.hpp	/^            ENROUTE = 1,$/;"	e	enum:Smpp::MessageState::<anonymous>
+ESME_RALYBND	command_status.hpp	/^            ESME_RALYBND = 0x00000005,$/;"	e	enum:Smpp::CommandStatus::<anonymous>
+ESME_RBCASTCANCELFAIL	command_status.hpp	/^            ESME_RBCASTCANCELFAIL = 0x0000010F,$/;"	e	enum:Smpp::CommandStatus::<anonymous>
+ESME_RBCASTFAIL	command_status.hpp	/^            ESME_RBCASTFAIL = 0x0000010D,$/;"	e	enum:Smpp::CommandStatus::<anonymous>
+ESME_RBCASTQUERYFAIL	command_status.hpp	/^            ESME_RBCASTQUERYFAIL = 0x0000010E,$/;"	e	enum:Smpp::CommandStatus::<anonymous>
+ESME_RBINDFAIL	command_status.hpp	/^            ESME_RBINDFAIL = 0x0000000D,$/;"	e	enum:Smpp::CommandStatus::<anonymous>
+ESME_RCANCELFAIL	command_status.hpp	/^            ESME_RCANCELFAIL = 0x00000011,$/;"	e	enum:Smpp::CommandStatus::<anonymous>
+ESME_RCNTSUBDL	command_status.hpp	/^            ESME_RCNTSUBDL = 0x00000044,$/;"	e	enum:Smpp::CommandStatus::<anonymous>
+ESME_RDELIVERYFAILURE	command_status.hpp	/^            ESME_RDELIVERYFAILURE = 0x000000FE,$/;"	e	enum:Smpp::CommandStatus::<anonymous>
+ESME_RINVBCASTALIAS_NAME	command_status.hpp	/^            ESME_RINVBCASTALIAS_NAME = 0x00000108,$/;"	e	enum:Smpp::CommandStatus::<anonymous>
+ESME_RINVBCASTAREAFMT	command_status.hpp	/^            ESME_RINVBCASTAREAFMT = 0x00000109,$/;"	e	enum:Smpp::CommandStatus::<anonymous>
+ESME_RINVBCASTCHANIND	command_status.hpp	/^            ESME_RINVBCASTCHANIND = 0x00000112$/;"	e	enum:Smpp::CommandStatus::<anonymous>
+ESME_RINVBCASTCNTTYPE	command_status.hpp	/^            ESME_RINVBCASTCNTTYPE = 0x0000010B,$/;"	e	enum:Smpp::CommandStatus::<anonymous>
+ESME_RINVBCASTFREQINT	command_status.hpp	/^            ESME_RINVBCASTFREQINT = 0x00000107,$/;"	e	enum:Smpp::CommandStatus::<anonymous>
+ESME_RINVBCASTMSGCLASS	command_status.hpp	/^            ESME_RINVBCASTMSGCLASS = 0x0000010C,$/;"	e	enum:Smpp::CommandStatus::<anonymous>
+ESME_RINVBCASTSRVGRP	command_status.hpp	/^            ESME_RINVBCASTSRVGRP = 0x00000111,$/;"	e	enum:Smpp::CommandStatus::<anonymous>
+ESME_RINVBCAST_REP	command_status.hpp	/^            ESME_RINVBCAST_REP = 0x00000110,$/;"	e	enum:Smpp::CommandStatus::<anonymous>
+ESME_RINVBNDSTS	command_status.hpp	/^            ESME_RINVBNDSTS = 0x00000004,$/;"	e	enum:Smpp::CommandStatus::<anonymous>
+ESME_RINVCMDID	command_status.hpp	/^            ESME_RINVCMDID = 0x00000003,$/;"	e	enum:Smpp::CommandStatus::<anonymous>
+ESME_RINVCMDLEN	command_status.hpp	/^            ESME_RINVCMDLEN = 0x00000002,$/;"	e	enum:Smpp::CommandStatus::<anonymous>
+ESME_RINVDCS	command_status.hpp	/^            ESME_RINVDCS = 0x00000104,$/;"	e	enum:Smpp::CommandStatus::<anonymous>
+ESME_RINVDESTFLAG	command_status.hpp	/^            ESME_RINVDESTFLAG = 0x00000040,$/;"	e	enum:Smpp::CommandStatus::<anonymous>
+ESME_RINVDFTMSGID	command_status.hpp	/^            ESME_RINVDFTMSGID = 0x00000063,$/;"	e	enum:Smpp::CommandStatus::<anonymous>
+ESME_RINVDLNAME	command_status.hpp	/^            ESME_RINVDLNAME = 0x00000034,$/;"	e	enum:Smpp::CommandStatus::<anonymous>
+ESME_RINVDSTADDRSUBUNIT	command_status.hpp	/^            ESME_RINVDSTADDRSUBUNIT = 0x00000106,$/;"	e	enum:Smpp::CommandStatus::<anonymous>
+ESME_RINVDSTADR	command_status.hpp	/^            ESME_RINVDSTADR = 0x0000000B,$/;"	e	enum:Smpp::CommandStatus::<anonymous>
+ESME_RINVDSTNPI	command_status.hpp	/^            ESME_RINVDSTNPI = 0x00000051,$/;"	e	enum:Smpp::CommandStatus::<anonymous>
+ESME_RINVDSTTON	command_status.hpp	/^            ESME_RINVDSTTON = 0x00000050,$/;"	e	enum:Smpp::CommandStatus::<anonymous>
+ESME_RINVESMCLASS	command_status.hpp	/^            ESME_RINVESMCLASS = 0x00000043,$/;"	e	enum:Smpp::CommandStatus::<anonymous>
+ESME_RINVEXPIRY	command_status.hpp	/^            ESME_RINVEXPIRY = 0x00000062,$/;"	e	enum:Smpp::CommandStatus::<anonymous>
+ESME_RINVMSGID	command_status.hpp	/^            ESME_RINVMSGID = 0x0000000C,$/;"	e	enum:Smpp::CommandStatus::<anonymous>
+ESME_RINVMSGLEN	command_status.hpp	/^            ESME_RINVMSGLEN = 0x00000001,$/;"	e	enum:Smpp::CommandStatus::<anonymous>
+ESME_RINVNUMBCAST_AREAS	command_status.hpp	/^            ESME_RINVNUMBCAST_AREAS = 0x0000010A,$/;"	e	enum:Smpp::CommandStatus::<anonymous>
+ESME_RINVNUMDESTS	command_status.hpp	/^            ESME_RINVNUMDESTS = 0x00000033,$/;"	e	enum:Smpp::CommandStatus::<anonymous>
+ESME_RINVNUMMSGS	command_status.hpp	/^            ESME_RINVNUMMSGS = 0x00000055,$/;"	e	enum:Smpp::CommandStatus::<anonymous>
+ESME_RINVPASWD	command_status.hpp	/^            ESME_RINVPASWD = 0x0000000E,$/;"	e	enum:Smpp::CommandStatus::<anonymous>
+ESME_RINVPRTFLG	command_status.hpp	/^            ESME_RINVPRTFLG = 0x00000006,$/;"	e	enum:Smpp::CommandStatus::<anonymous>
+ESME_RINVREGDLVFLG	command_status.hpp	/^            ESME_RINVREGDLVFLG = 0x00000007,$/;"	e	enum:Smpp::CommandStatus::<anonymous>
+ESME_RINVREPFLAG	command_status.hpp	/^            ESME_RINVREPFLAG = 0x00000054,$/;"	e	enum:Smpp::CommandStatus::<anonymous>
+ESME_RINVSCHED	command_status.hpp	/^            ESME_RINVSCHED = 0x00000061,$/;"	e	enum:Smpp::CommandStatus::<anonymous>
+ESME_RINVSERTYP	command_status.hpp	/^            ESME_RINVSERTYP = 0x00000015,$/;"	e	enum:Smpp::CommandStatus::<anonymous>
+ESME_RINVSRCADDRSUBUNIT	command_status.hpp	/^            ESME_RINVSRCADDRSUBUNIT = 0x00000105,$/;"	e	enum:Smpp::CommandStatus::<anonymous>
+ESME_RINVSRCADR	command_status.hpp	/^            ESME_RINVSRCADR = 0x0000000A,$/;"	e	enum:Smpp::CommandStatus::<anonymous>
+ESME_RINVSRCNPI	command_status.hpp	/^            ESME_RINVSRCNPI = 0x00000049,$/;"	e	enum:Smpp::CommandStatus::<anonymous>
+ESME_RINVSRCTON	command_status.hpp	/^            ESME_RINVSRCTON = 0x00000048,$/;"	e	enum:Smpp::CommandStatus::<anonymous>
+ESME_RINVSUBREP	command_status.hpp	/^            ESME_RINVSUBREP = 0x00000042,$/;"	e	enum:Smpp::CommandStatus::<anonymous>
+ESME_RINVSYSID	command_status.hpp	/^            ESME_RINVSYSID = 0x0000000F,$/;"	e	enum:Smpp::CommandStatus::<anonymous>
+ESME_RINVSYSTYP	command_status.hpp	/^            ESME_RINVSYSTYP = 0x00000053,$/;"	e	enum:Smpp::CommandStatus::<anonymous>
+ESME_RINVTLVLEN	command_status.hpp	/^            ESME_RINVTLVLEN = 0x000000C2,$/;"	e	enum:Smpp::CommandStatus::<anonymous>
+ESME_RINVTLVSTREAM	command_status.hpp	/^            ESME_RINVTLVSTREAM = 0x000000C0,$/;"	e	enum:Smpp::CommandStatus::<anonymous>
+ESME_RINVTLVVAL	command_status.hpp	/^            ESME_RINVTLVVAL = 0x000000C4,$/;"	e	enum:Smpp::CommandStatus::<anonymous>
+ESME_RMISSINGTLV	command_status.hpp	/^            ESME_RMISSINGTLV = 0x000000C3,$/;"	e	enum:Smpp::CommandStatus::<anonymous>
+ESME_RMSGQFUL	command_status.hpp	/^            ESME_RMSGQFUL = 0x00000014,$/;"	e	enum:Smpp::CommandStatus::<anonymous>
+ESME_ROK	command_status.hpp	/^            ESME_ROK = 0x00000000,$/;"	e	enum:Smpp::CommandStatus::<anonymous>
+ESME_RPROHIBITED	command_status.hpp	/^            ESME_RPROHIBITED = 0x00000101,$/;"	e	enum:Smpp::CommandStatus::<anonymous>
+ESME_RQUERYFAIL	command_status.hpp	/^            ESME_RQUERYFAIL = 0x00000067,$/;"	e	enum:Smpp::CommandStatus::<anonymous>
+ESME_RREPLACEFAIL	command_status.hpp	/^            ESME_RREPLACEFAIL = 0x00000013,$/;"	e	enum:Smpp::CommandStatus::<anonymous>
+ESME_RSERTYPDENIED	command_status.hpp	/^            ESME_RSERTYPDENIED = 0x00000103,$/;"	e	enum:Smpp::CommandStatus::<anonymous>
+ESME_RSERTYPUNAUTH	command_status.hpp	/^            ESME_RSERTYPUNAUTH = 0x00000100,$/;"	e	enum:Smpp::CommandStatus::<anonymous>
+ESME_RSERTYPUNAVAIL	command_status.hpp	/^            ESME_RSERTYPUNAVAIL = 0x00000102,$/;"	e	enum:Smpp::CommandStatus::<anonymous>
+ESME_RSUBMITFAIL	command_status.hpp	/^            ESME_RSUBMITFAIL = 0x00000045,$/;"	e	enum:Smpp::CommandStatus::<anonymous>
+ESME_RSYSERR	command_status.hpp	/^            ESME_RSYSERR = 0x00000008,$/;"	e	enum:Smpp::CommandStatus::<anonymous>
+ESME_RTHROTTLED	command_status.hpp	/^            ESME_RTHROTTLED = 0x00000058,$/;"	e	enum:Smpp::CommandStatus::<anonymous>
+ESME_RTLVNOTALLWD	command_status.hpp	/^            ESME_RTLVNOTALLWD = 0x000000C1,$/;"	e	enum:Smpp::CommandStatus::<anonymous>
+ESME_RUNKNOWNERR	command_status.hpp	/^            ESME_RUNKNOWNERR = 0x000000FF,$/;"	e	enum:Smpp::CommandStatus::<anonymous>
+ESME_RX_P_APPN	command_status.hpp	/^            ESME_RX_P_APPN = 0x00000065,$/;"	e	enum:Smpp::CommandStatus::<anonymous>
+ESME_RX_R_APPN	command_status.hpp	/^            ESME_RX_R_APPN = 0x00000066,$/;"	e	enum:Smpp::CommandStatus::<anonymous>
+ESME_RX_T_APPN	command_status.hpp	/^            ESME_RX_T_APPN = 0x00000064,$/;"	e	enum:Smpp::CommandStatus::<anonymous>
+EXPIRED	aux_types.hpp	/^            EXPIRED = 3,$/;"	e	enum:Smpp::MessageState::<anonymous>
+Encoder	tlv.hpp	/^            Encoder(Smpp::Buffer& b) : b_(b) {}$/;"	f	class:Smpp::Tlv::Encoder
+Encoder	tlv.hpp	/^        class Encoder {$/;"	c	class:Smpp::Tlv
+EnquireLink	command_id.hpp	/^            EnquireLink           = 0x00000015, \/**< enquire_link command id. *\/$/;"	e	enum:Smpp::CommandId::<anonymous>
+EnquireLink	enquire_link.cpp	/^Smpp::EnquireLink::EnquireLink() :$/;"	f	class:Smpp::EnquireLink
+EnquireLink	enquire_link.cpp	/^Smpp::EnquireLink::EnquireLink(const SequenceNumber& sequenceNumber) :$/;"	f	class:Smpp::EnquireLink
+EnquireLink	enquire_link.cpp	/^Smpp::EnquireLink::EnquireLink(const Smpp::Uint8* b) :$/;"	f	class:Smpp::EnquireLink
+EnquireLink	enquire_link.hpp	/^    class EnquireLink : public Request {$/;"	c	namespace:Smpp
+EnquireLinkResp	command_id.hpp	/^            EnquireLinkResp       = 0x80000015, \/**< enquire_link_resp command id. *\/$/;"	e	enum:Smpp::CommandId::<anonymous>
+EnquireLinkResp	enquire_link_resp.cpp	/^Smpp::EnquireLinkResp::EnquireLinkResp() :$/;"	f	class:Smpp::EnquireLinkResp
+EnquireLinkResp	enquire_link_resp.cpp	/^Smpp::EnquireLinkResp::EnquireLinkResp(const CommandStatus& commandStatus,$/;"	f	class:Smpp::EnquireLinkResp
+EnquireLinkResp	enquire_link_resp.cpp	/^Smpp::EnquireLinkResp::EnquireLinkResp(const Smpp::Uint8* b) :$/;"	f	class:Smpp::EnquireLinkResp
+EnquireLinkResp	enquire_link_resp.hpp	/^    class EnquireLinkResp : public Response {$/;"	c	namespace:Smpp
+Ermes	aux_types.hpp	/^            Ermes    = 0x0a, \/\/\/< ERMES$/;"	e	enum:Smpp::Npi::<anonymous>
+Error	error.cpp	/^Smpp::Error::Error(const std::string& s) : std::runtime_error(s)$/;"	f	class:Smpp::Error
+Error	error.hpp	/^    struct Error : public std::runtime_error {$/;"	s	namespace:Smpp
+ErrorCode	aux_types.hpp	/^        ErrorCode() : v_(0x00) {}$/;"	f	class:Smpp::ErrorCode
+ErrorCode	aux_types.hpp	/^        ErrorCode(const Smpp::Uint8& p) : v_(check(p)) {}$/;"	f	class:Smpp::ErrorCode
+ErrorCode	aux_types.hpp	/^    class ErrorCode {$/;"	c	namespace:Smpp
+EsmClass	aux_types.hpp	/^        explicit EsmClass(const Smpp::Uint8& p = 0x00) : v_(p) {}$/;"	f	class:Smpp::EsmClass
+EsmClass	aux_types.hpp	/^    class EsmClass {$/;"	c	namespace:Smpp
+GenericNack	command_id.hpp	/^            GenericNack           = 0x80000000, \/**< generic_nack command id. *\/$/;"	e	enum:Smpp::CommandId::<anonymous>
+GenericNack	generic_nack.cpp	/^Smpp::GenericNack::GenericNack() :$/;"	f	class:Smpp::GenericNack
+GenericNack	generic_nack.cpp	/^Smpp::GenericNack::GenericNack(const CommandStatus& commandStatus,$/;"	f	class:Smpp::GenericNack
+GenericNack	generic_nack.cpp	/^Smpp::GenericNack::GenericNack(const Smpp::Uint8* b) :$/;"	f	class:Smpp::GenericNack
+GenericNack	generic_nack.hpp	/^    class GenericNack : public Response {$/;"	c	namespace:Smpp
+Header	header.cpp	/^Smpp::Header::Header(const CommandLength& commandLength, $/;"	f	class:Smpp::Header
+Header	header.hpp	/^    class Header {$/;"	c	namespace:Smpp
+High	aux_types.hpp	/^            High       = 0x02,$/;"	e	enum:Smpp::PriorityFlag::<anonymous>
+Immediate	aux_types.hpp	/^            Immediate  = 0x01,$/;"	e	enum:Smpp::PriorityFlag::<anonymous>
+InterfaceVersion	aux_types.hpp	/^        InterfaceVersion() : v_(V34) {}$/;"	f	class:Smpp::InterfaceVersion
+InterfaceVersion	aux_types.hpp	/^        explicit InterfaceVersion(const Smpp::Uint8& p) : v_(check(p)) {}$/;"	f	class:Smpp::InterfaceVersion
+InterfaceVersion	aux_types.hpp	/^        explicit InterfaceVersion(int p) : v_(check(p)) {}$/;"	f	class:Smpp::InterfaceVersion
+InterfaceVersion	aux_types.hpp	/^    class InterfaceVersion {$/;"	c	namespace:Smpp
+International	aux_types.hpp	/^            International = 0x01, \/\/\/< International$/;"	e	enum:Smpp::Ton::<anonymous>
+Internet	aux_types.hpp	/^            Internet = 0x0e, \/\/\/< Internet$/;"	e	enum:Smpp::Npi::<anonymous>
+List	aux_types.hpp	/^        typedef std::list<MultiDestinationAddressBase*> List;$/;"	t	class:Smpp::MultiDestinationAddresses
+List	aux_types.hpp	/^        typedef std::list<UnsuccessSme*> List;$/;"	t	class:Smpp::UnsuccessSmeColl
+ListFinder	header.hpp	/^            ListFinder(TlvList& l, Smpp::Uint16 tag) : l_(l), tag_(tag) {}$/;"	f	class:Smpp::Header::ListFinder
+ListFinder	header.hpp	/^        class ListFinder {$/;"	c	class:Smpp::Header
+Max	sequence_number.hpp	/^            Max = 0x7fffffff  \/\/\/< maximum sequence number$/;"	e	enum:Smpp::SequenceNumber::<anonymous>
+MaxDataSmLen	aux_types.hpp	/^            MaxDataSmLen = 65 \/\/\/< Extended address lenth - data_sm$/;"	e	enum:Smpp::Address::<anonymous>
+MaxLen	aux_types.hpp	/^            MaxLen = 21,   \/\/\/< Normal address length$/;"	e	enum:Smpp::Address::<anonymous>
+MaxLength	aux_types.hpp	/^        enum { MaxLength = 13 };$/;"	e	enum:Smpp::SystemType::<anonymous>
+MaxLength	aux_types.hpp	/^        enum { MaxLength = 16 };$/;"	e	enum:Smpp::SystemId::<anonymous>
+MaxLength	aux_types.hpp	/^        enum { MaxLength = 17 };$/;"	e	enum:Smpp::Time::<anonymous>
+MaxLength	aux_types.hpp	/^        enum { MaxLength = 255 };$/;"	e	enum:Smpp::ShortMessage::<anonymous>
+MaxLength	aux_types.hpp	/^        enum { MaxLength = 41 };$/;"	e	enum:Smpp::AddressRange::<anonymous>
+MaxLength	aux_types.hpp	/^        enum { MaxLength = 6 };$/;"	e	enum:Smpp::ServiceType::<anonymous>
+MaxLength	aux_types.hpp	/^        enum { MaxLength = 65 };$/;"	e	enum:Smpp::MessageId::<anonymous>
+MaxLength	aux_types.hpp	/^        enum { MaxLength = 9 };$/;"	e	enum:Smpp::Password::<anonymous>
+MessageId	aux_types.hpp	/^        MessageId() {}$/;"	f	class:Smpp::MessageId
+MessageId	aux_types.hpp	/^        explicit MessageId(const Smpp::Char* p) :$/;"	f	class:Smpp::MessageId
+MessageId	aux_types.hpp	/^        explicit MessageId(const Smpp::String& p) :$/;"	f	class:Smpp::MessageId
+MessageId	aux_types.hpp	/^    class MessageId {$/;"	c	namespace:Smpp
+MessageState	aux_types.hpp	/^        MessageState() : v_(0x00) {}$/;"	f	class:Smpp::MessageState
+MessageState	aux_types.hpp	/^        MessageState(const Smpp::Uint8& p) : v_(check(p)) {}$/;"	f	class:Smpp::MessageState
+MessageState	aux_types.hpp	/^    class MessageState {$/;"	c	namespace:Smpp
+Min	sequence_number.hpp	/^            Min = 0x00000001, \/\/\/< minimum sequence number$/;"	e	enum:Smpp::SequenceNumber::<anonymous>
+MinLength	alert_notification.hpp	/^        const static int MinLength = 22;$/;"	m	class:Smpp::AlertNotification
+MinLength	bind_receiver.hpp	/^        const static int MinLength = 23;$/;"	m	class:Smpp::BindReceiver
+MinLength	bind_receiver_resp.hpp	/^        const static int MinLength = 17;$/;"	m	class:Smpp::BindReceiverResp
+MinLength	bind_transceiver.hpp	/^        const static int MinLength = 23;$/;"	m	class:Smpp::BindTransceiver
+MinLength	bind_transceiver_resp.hpp	/^        const static int MinLength = 17;$/;"	m	class:Smpp::BindTransceiverResp
+MinLength	bind_transmitter.hpp	/^        const static int MinLength = 23;$/;"	m	class:Smpp::BindTransmitter
+MinLength	bind_transmitter_resp.hpp	/^        const static int MinLength = 17;$/;"	m	class:Smpp::BindTransmitterResp
+MinLength	broadcast_sm.hpp	/^        const static int MinLength = 27; \/\/ not including mandatory TLVs$/;"	m	class:Smpp::BroadcastSm
+MinLength	broadcast_sm_resp.hpp	/^        const static int MinLength = 17;$/;"	m	class:Smpp::BroadcastSmResp
+MinLength	cancel_broadcast_sm.hpp	/^        const static int MinLength = 21;$/;"	m	class:Smpp::CancelBroadcastSm
+MinLength	cancel_broadcast_sm_resp.hpp	/^        const static int MinLength = 16;$/;"	m	class:Smpp::CancelBroadcastSmResp
+MinLength	cancel_sm.hpp	/^        const static int MinLength = 24;$/;"	m	class:Smpp::CancelSm
+MinLength	cancel_sm_resp.hpp	/^        const static int MinLength = 16;$/;"	m	class:Smpp::CancelSmResp
+MinLength	data_sm.hpp	/^        const static int MinLength = 26;$/;"	m	class:Smpp::DataSm
+MinLength	data_sm_resp.hpp	/^        const static int MinLength = 17;$/;"	m	class:Smpp::DataSmResp
+MinLength	deliver_sm.hpp	/^        const static int MinLength = 33;$/;"	m	class:Smpp::DeliverSm
+MinLength	deliver_sm_resp.hpp	/^        const static int MinLength = 17;$/;"	m	class:Smpp::DeliverSmResp
+MinLength	enquire_link.hpp	/^        const static int MinLength = 16;$/;"	m	class:Smpp::EnquireLink
+MinLength	enquire_link_resp.hpp	/^        const static int MinLength = 16;$/;"	m	class:Smpp::EnquireLinkResp
+MinLength	generic_nack.hpp	/^        const static int MinLength = 16;$/;"	m	class:Smpp::GenericNack
+MinLength	outbind.hpp	/^        const static int MinLength = 18;$/;"	m	class:Smpp::Outbind
+MinLength	query_broadcast_sm.hpp	/^        const static int MinLength = 20;$/;"	m	class:Smpp::QueryBroadcastSm
+MinLength	query_broadcast_sm_resp.hpp	/^        const static int MinLength = 18; \/\/ not including mandatory TLVs$/;"	m	class:Smpp::QueryBroadcastSmResp
+MinLength	query_sm.hpp	/^        const static int MinLength = 20;$/;"	m	class:Smpp::QuerySm
+MinLength	query_sm_resp.hpp	/^        const static int MinLength = 20;$/;"	m	class:Smpp::QuerySmResp
+MinLength	replace_sm.hpp	/^        const static int MinLength = 25;$/;"	m	class:Smpp::ReplaceSm
+MinLength	replace_sm_resp.hpp	/^        const static int MinLength = 16;$/;"	m	class:Smpp::ReplaceSmResp
+MinLength	submit_multi.hpp	/^        const static int MinLength = 31;$/;"	m	class:Smpp::SubmitMulti
+MinLength	submit_multi_resp.hpp	/^        const static int MinLength = 18;$/;"	m	class:Smpp::SubmitMultiResp
+MinLength	submit_sm.hpp	/^        const static int MinLength = 33;$/;"	m	class:Smpp::SubmitSm
+MinLength	submit_sm_resp.hpp	/^        const static int MinLength = 17;$/;"	m	class:Smpp::SubmitSmResp
+MinLength	unbind.hpp	/^        const static int MinLength = 16;$/;"	m	class:Smpp::Unbind
+MinLength	unbind_resp.hpp	/^        const static int MinLength = 16;$/;"	m	class:Smpp::UnbindResp
+Mobile	aux_types.hpp	/^            Mobile   = 0x06, \/\/\/< Mobile$/;"	e	enum:Smpp::Npi::<anonymous>
+MultiDestinationAddressBase	aux_types.hpp	/^    class MultiDestinationAddressBase {$/;"	c	namespace:Smpp
+MultiDestinationAddresses	aux_types.hpp	/^        MultiDestinationAddresses() : octetCount_(0) {}$/;"	f	class:Smpp::MultiDestinationAddresses
+MultiDestinationAddresses	aux_types.hpp	/^    class MultiDestinationAddresses {$/;"	c	namespace:Smpp
+National	aux_types.hpp	/^            National      = 0x02, \/\/\/< National$/;"	e	enum:Smpp::Ton::<anonymous>
+National	aux_types.hpp	/^            National = 0x08, \/\/\/< National$/;"	e	enum:Smpp::Npi::<anonymous>
+Network	aux_types.hpp	/^            Network       = 0x03, \/\/\/< Network$/;"	e	enum:Smpp::Ton::<anonymous>
+NoReplace	aux_types.hpp	/^        enum { NoReplace = 0x00, Replace   = 0x01 };$/;"	e	enum:Smpp::ReplaceIfPresentFlag::<anonymous>
+Normal	aux_types.hpp	/^            Normal     = 0x00,$/;"	e	enum:Smpp::PriorityFlag::<anonymous>
+Npi	aux_types.hpp	/^        Npi() : v_(Unknown) {}$/;"	f	class:Smpp::Npi
+Npi	aux_types.hpp	/^        explicit Npi(const Smpp::Uint8& p) : v_(check(p)) {}$/;"	f	class:Smpp::Npi
+Npi	aux_types.hpp	/^    class Npi {$/;"	c	namespace:Smpp
+OBJECTS	Makefile	/^OBJECTS = $(SOURCES:.cpp=.o)$/;"	m
+Outbind	command_id.hpp	/^            Outbind               = 0x0000000B, \/**< outbind command id. *\/$/;"	e	enum:Smpp::CommandId::<anonymous>
+Outbind	outbind.cpp	/^Smpp::Outbind::Outbind($/;"	f	class:Smpp::Outbind
+Outbind	outbind.cpp	/^Smpp::Outbind::Outbind() :$/;"	f	class:Smpp::Outbind
+Outbind	outbind.cpp	/^Smpp::Outbind::Outbind(const Smpp::Uint8* b) :$/;"	f	class:Smpp::Outbind
+Outbind	outbind.hpp	/^    class Outbind : public Request {$/;"	c	namespace:Smpp
+Password	aux_types.hpp	/^        Password() {}$/;"	f	class:Smpp::Password
+Password	aux_types.hpp	/^        explicit Password(const Smpp::Char* p) :$/;"	f	class:Smpp::Password
+Password	aux_types.hpp	/^        explicit Password(const Smpp::String& p) :$/;"	f	class:Smpp::Password
+Password	aux_types.hpp	/^    class Password {$/;"	c	namespace:Smpp
+PriorityFlag	aux_types.hpp	/^        PriorityFlag() : v_(Normal) {}$/;"	f	class:Smpp::PriorityFlag
+PriorityFlag	aux_types.hpp	/^        explicit PriorityFlag(const Smpp::Uint8& p) : v_(check(p)) {}$/;"	f	class:Smpp::PriorityFlag
+PriorityFlag	aux_types.hpp	/^    class PriorityFlag {$/;"	c	namespace:Smpp
+Private	aux_types.hpp	/^            Private  = 0x09, \/\/\/< Private$/;"	e	enum:Smpp::Npi::<anonymous>
+ProtocolId	aux_types.hpp	/^        explicit ProtocolId(const Smpp::Uint8& p = 0x00) : v_(p) {}$/;"	f	class:Smpp::ProtocolId
+ProtocolId	aux_types.hpp	/^    class ProtocolId {$/;"	c	namespace:Smpp
+QueryBroadcastSm	command_id.hpp	/^            QueryBroadcastSm      = 0x00000112, \/**< query_broadcast_sm command id. *\/$/;"	e	enum:Smpp::CommandId::<anonymous>
+QueryBroadcastSm	query_broadcast_sm.cpp	/^Smpp::QueryBroadcastSm::QueryBroadcastSm($/;"	f	class:Smpp::QueryBroadcastSm
+QueryBroadcastSm	query_broadcast_sm.cpp	/^Smpp::QueryBroadcastSm::QueryBroadcastSm() :$/;"	f	class:Smpp::QueryBroadcastSm
+QueryBroadcastSm	query_broadcast_sm.cpp	/^Smpp::QueryBroadcastSm::QueryBroadcastSm(const Smpp::Uint8* b) :$/;"	f	class:Smpp::QueryBroadcastSm
+QueryBroadcastSm	query_broadcast_sm.hpp	/^    class QueryBroadcastSm : public Request {$/;"	c	namespace:Smpp
+QueryBroadcastSmResp	command_id.hpp	/^            QueryBroadcastSmResp  = 0x80000112, \/**< query_broadcast_sm_resp command id. *\/$/;"	e	enum:Smpp::CommandId::<anonymous>
+QueryBroadcastSmResp	query_broadcast_sm_resp.cpp	/^Smpp::QueryBroadcastSmResp::QueryBroadcastSmResp($/;"	f	class:Smpp::QueryBroadcastSmResp
+QueryBroadcastSmResp	query_broadcast_sm_resp.cpp	/^Smpp::QueryBroadcastSmResp::QueryBroadcastSmResp() :$/;"	f	class:Smpp::QueryBroadcastSmResp
+QueryBroadcastSmResp	query_broadcast_sm_resp.cpp	/^Smpp::QueryBroadcastSmResp::QueryBroadcastSmResp(const Smpp::Uint8* b) :$/;"	f	class:Smpp::QueryBroadcastSmResp
+QueryBroadcastSmResp	query_broadcast_sm_resp.hpp	/^    class QueryBroadcastSmResp : public Response {$/;"	c	namespace:Smpp
+QuerySm	command_id.hpp	/^            QuerySm               = 0x00000003, \/**< query_sm command id. *\/$/;"	e	enum:Smpp::CommandId::<anonymous>
+QuerySm	query_sm.cpp	/^Smpp::QuerySm::QuerySm($/;"	f	class:Smpp::QuerySm
+QuerySm	query_sm.cpp	/^Smpp::QuerySm::QuerySm() :$/;"	f	class:Smpp::QuerySm
+QuerySm	query_sm.cpp	/^Smpp::QuerySm::QuerySm(const Smpp::Uint8* b) :$/;"	f	class:Smpp::QuerySm
+QuerySm	query_sm.hpp	/^    class QuerySm : public Request {$/;"	c	namespace:Smpp
+QuerySmResp	command_id.hpp	/^            QuerySmResp           = 0x80000003, \/**< query_sm_resp command id. *\/$/;"	e	enum:Smpp::CommandId::<anonymous>
+QuerySmResp	query_sm_resp.cpp	/^Smpp::QuerySmResp::QuerySmResp($/;"	f	class:Smpp::QuerySmResp
+QuerySmResp	query_sm_resp.cpp	/^Smpp::QuerySmResp::QuerySmResp() :$/;"	f	class:Smpp::QuerySmResp
+QuerySmResp	query_sm_resp.cpp	/^Smpp::QuerySmResp::QuerySmResp(const Smpp::Uint8* b) :$/;"	f	class:Smpp::QuerySmResp
+QuerySmResp	query_sm_resp.hpp	/^    class QuerySmResp : public Response {$/;"	c	namespace:Smpp
+REJECTED	aux_types.hpp	/^            REJECTED = 8,$/;"	e	enum:Smpp::MessageState::<anonymous>
+RegisteredDelivery	aux_types.hpp	/^        RegisteredDelivery() : v_(Default) {}$/;"	f	class:Smpp::RegisteredDelivery
+RegisteredDelivery	aux_types.hpp	/^        RegisteredDelivery(const Smpp::Uint8& p) : v_(check(p)) {}$/;"	f	class:Smpp::RegisteredDelivery
+RegisteredDelivery	aux_types.hpp	/^    class RegisteredDelivery {$/;"	c	namespace:Smpp
+Replace	aux_types.hpp	/^        enum { NoReplace = 0x00, Replace   = 0x01 };$/;"	e	enum:Smpp::ReplaceIfPresentFlag::<anonymous>
+ReplaceIfPresentFlag	aux_types.hpp	/^        ReplaceIfPresentFlag() : v_(NoReplace) {}$/;"	f	class:Smpp::ReplaceIfPresentFlag
+ReplaceIfPresentFlag	aux_types.hpp	/^        ReplaceIfPresentFlag(const Smpp::Uint8& p) : v_(check(p)) {}$/;"	f	class:Smpp::ReplaceIfPresentFlag
+ReplaceIfPresentFlag	aux_types.hpp	/^    class ReplaceIfPresentFlag {$/;"	c	namespace:Smpp
+ReplaceSm	command_id.hpp	/^            ReplaceSm             = 0x00000007, \/**< replace_sm command id. *\/$/;"	e	enum:Smpp::CommandId::<anonymous>
+ReplaceSm	replace_sm.cpp	/^Smpp::ReplaceSm::ReplaceSm($/;"	f	class:Smpp::ReplaceSm
+ReplaceSm	replace_sm.cpp	/^Smpp::ReplaceSm::ReplaceSm() :$/;"	f	class:Smpp::ReplaceSm
+ReplaceSm	replace_sm.cpp	/^Smpp::ReplaceSm::ReplaceSm(const Smpp::Uint8* b) :$/;"	f	class:Smpp::ReplaceSm
+ReplaceSm	replace_sm.hpp	/^    class ReplaceSm : public Request {$/;"	c	namespace:Smpp
+ReplaceSmResp	command_id.hpp	/^            ReplaceSmResp         = 0x80000007, \/**< replace_sm_resp command id. *\/$/;"	e	enum:Smpp::CommandId::<anonymous>
+ReplaceSmResp	replace_sm_resp.cpp	/^Smpp::ReplaceSmResp::ReplaceSmResp() :$/;"	f	class:Smpp::ReplaceSmResp
+ReplaceSmResp	replace_sm_resp.cpp	/^Smpp::ReplaceSmResp::ReplaceSmResp(const CommandStatus& commandStatus,$/;"	f	class:Smpp::ReplaceSmResp
+ReplaceSmResp	replace_sm_resp.cpp	/^Smpp::ReplaceSmResp::ReplaceSmResp(const Smpp::Uint8* b) :$/;"	f	class:Smpp::ReplaceSmResp
+ReplaceSmResp	replace_sm_resp.hpp	/^    class ReplaceSmResp : public Response {$/;"	c	namespace:Smpp
+Request	header.cpp	/^Smpp::Request::Request($/;"	f	class:Smpp::Request
+Request	header.hpp	/^    class Request : public Header {$/;"	c	namespace:Smpp
+Reserved	aux_types.hpp	/^            Reserved   = 0x03, \/\/ very urgent, emergency$/;"	e	enum:Smpp::PriorityFlag::<anonymous>
+Response	header.cpp	/^Smpp::Response::Response($/;"	f	class:Smpp::Response
+Response	header.hpp	/^    class Response : public Header {$/;"	c	namespace:Smpp
+SCHEDULED	aux_types.hpp	/^            SCHEDULED = 0,$/;"	e	enum:Smpp::MessageState::<anonymous>
+SHLIB	Makefile	/^SHLIB = libsmpp.so$/;"	m
+SKIPPED	aux_types.hpp	/^            SKIPPED = 9$/;"	e	enum:Smpp::MessageState::<anonymous>
+SOURCES	Makefile	/^SOURCES = $(shell ls *.cpp)$/;"	m
+SequenceNumber	sequence_number.hpp	/^        SequenceNumber(const Smpp::Uint32& p,  bool allow_0 = false) : $/;"	f	class:Smpp::SequenceNumber
+SequenceNumber	sequence_number.hpp	/^    class SequenceNumber {$/;"	c	namespace:Smpp
+ServiceType	aux_types.hpp	/^        ServiceType() {}$/;"	f	class:Smpp::ServiceType
+ServiceType	aux_types.hpp	/^        explicit ServiceType(const Smpp::Char* p) :$/;"	f	class:Smpp::ServiceType
+ServiceType	aux_types.hpp	/^        explicit ServiceType(const Smpp::String& p) :$/;"	f	class:Smpp::ServiceType
+ServiceType	aux_types.hpp	/^    class ServiceType {$/;"	c	namespace:Smpp
+ShortMessage	aux_types.hpp	/^        ShortMessage() { v_.reserve(MaxLength); }$/;"	f	class:Smpp::ShortMessage
+ShortMessage	aux_types.hpp	/^        ShortMessage(const Smpp::Uint8* p, Smpp::Uint8 len) : v_(p, p+len) {}$/;"	f	class:Smpp::ShortMessage
+ShortMessage	aux_types.hpp	/^        explicit ShortMessage(const Smpp::Char* p) : v_(p, p+strlen(p)) {}$/;"	f	class:Smpp::ShortMessage
+ShortMessage	aux_types.hpp	/^        explicit ShortMessage(const Smpp::String& p) : v_(p.begin(), p.end()) {}$/;"	f	class:Smpp::ShortMessage
+ShortMessage	aux_types.hpp	/^    class ShortMessage {$/;"	c	namespace:Smpp
+SmDefaultMsgId	aux_types.hpp	/^        SmDefaultMsgId() : v_(Unused) {}$/;"	f	class:Smpp::SmDefaultMsgId
+SmDefaultMsgId	aux_types.hpp	/^        SmDefaultMsgId(const Smpp::Uint8& p) : v_(check(p)) {}$/;"	f	class:Smpp::SmDefaultMsgId
+SmDefaultMsgId	aux_types.hpp	/^    class SmDefaultMsgId {$/;"	c	namespace:Smpp
+SmeAddress	aux_types.hpp	/^        SmeAddress() {}$/;"	f	class:Smpp::SmeAddress
+SmeAddress	aux_types.hpp	/^        SmeAddress(const Ton& ton, const Npi& npi, const Address& addr,$/;"	f	class:Smpp::SmeAddress
+SmeAddress	aux_types.hpp	/^        explicit SmeAddress($/;"	f	class:Smpp::SmeAddress
+SmeAddress	aux_types.hpp	/^    class SmeAddress {$/;"	c	namespace:Smpp
+SmeMultiAddress	aux_types.hpp	/^        SmeMultiAddress(const SmeAddress& addr) : addr_(addr) {}$/;"	f	class:Smpp::SmeMultiAddress
+SmeMultiAddress	aux_types.hpp	/^    class SmeMultiAddress : public MultiDestinationAddressBase {$/;"	c	namespace:Smpp
+Smpp	alert_notification.hpp	/^namespace Smpp {$/;"	n
+Smpp	aux_types.hpp	/^namespace Smpp {$/;"	n
+Smpp	bind_receiver.hpp	/^namespace Smpp {$/;"	n
+Smpp	bind_receiver_resp.hpp	/^namespace Smpp {$/;"	n
+Smpp	bind_transceiver.hpp	/^namespace Smpp {$/;"	n
+Smpp	bind_transceiver_resp.hpp	/^namespace Smpp {$/;"	n
+Smpp	bind_transmitter.hpp	/^namespace Smpp {$/;"	n
+Smpp	bind_transmitter_resp.hpp	/^namespace Smpp {$/;"	n
+Smpp	broadcast_sm.hpp	/^namespace Smpp {$/;"	n
+Smpp	broadcast_sm_resp.hpp	/^namespace Smpp {$/;"	n
+Smpp	buffer.hpp	/^namespace Smpp {$/;"	n
+Smpp	cancel_broadcast_sm.hpp	/^namespace Smpp {$/;"	n
+Smpp	cancel_broadcast_sm_resp.hpp	/^namespace Smpp {$/;"	n
+Smpp	cancel_sm.hpp	/^namespace Smpp {$/;"	n
+Smpp	cancel_sm_resp.hpp	/^namespace Smpp {$/;"	n
+Smpp	command_id.hpp	/^namespace Smpp {$/;"	n
+Smpp	command_length.hpp	/^namespace Smpp {$/;"	n
+Smpp	command_status.hpp	/^namespace Smpp {$/;"	n
+Smpp	data_sm.hpp	/^namespace Smpp {$/;"	n
+Smpp	data_sm_resp.hpp	/^namespace Smpp {$/;"	n
+Smpp	deliver_sm.hpp	/^namespace Smpp {$/;"	n
+Smpp	deliver_sm_resp.hpp	/^namespace Smpp {$/;"	n
+Smpp	enquire_link.hpp	/^namespace Smpp {$/;"	n
+Smpp	enquire_link_resp.hpp	/^namespace Smpp {$/;"	n
+Smpp	error.hpp	/^namespace Smpp {$/;"	n
+Smpp	generic_nack.hpp	/^namespace Smpp {$/;"	n
+Smpp	header.hpp	/^namespace Smpp {$/;"	n
+Smpp	outbind.hpp	/^namespace Smpp {$/;"	n
+Smpp	query_broadcast_sm.hpp	/^namespace Smpp {$/;"	n
+Smpp	query_broadcast_sm_resp.hpp	/^namespace Smpp {$/;"	n
+Smpp	query_sm.hpp	/^namespace Smpp {$/;"	n
+Smpp	query_sm_resp.hpp	/^namespace Smpp {$/;"	n
+Smpp	replace_sm.hpp	/^namespace Smpp {$/;"	n
+Smpp	replace_sm_resp.hpp	/^namespace Smpp {$/;"	n
+Smpp	sequence_number.hpp	/^namespace Smpp {$/;"	n
+Smpp	submit_multi.hpp	/^namespace Smpp {$/;"	n
+Smpp	submit_multi_resp.hpp	/^namespace Smpp {$/;"	n
+Smpp	submit_sm.hpp	/^namespace Smpp {$/;"	n
+Smpp	submit_sm_resp.hpp	/^namespace Smpp {$/;"	n
+Smpp	tlv.hpp	/^namespace Smpp {$/;"	n
+Smpp	unbind.hpp	/^namespace Smpp {$/;"	n
+Smpp	unbind_resp.hpp	/^namespace Smpp {$/;"	n
+String	aux_types.hpp	/^    typedef std::basic_string<Char> String;$/;"	t	namespace:Smpp
+SubmitMulti	command_id.hpp	/^            SubmitMulti           = 0x00000021, \/**< submit_multi command id. *\/$/;"	e	enum:Smpp::CommandId::<anonymous>
+SubmitMulti	submit_multi.cpp	/^Smpp::SubmitMulti::SubmitMulti($/;"	f	class:Smpp::SubmitMulti
+SubmitMulti	submit_multi.cpp	/^Smpp::SubmitMulti::SubmitMulti() :$/;"	f	class:Smpp::SubmitMulti
+SubmitMulti	submit_multi.cpp	/^Smpp::SubmitMulti::SubmitMulti(const Smpp::Uint8* b) :$/;"	f	class:Smpp::SubmitMulti
+SubmitMulti	submit_multi.hpp	/^    class SubmitMulti : public Request {$/;"	c	namespace:Smpp
+SubmitMultiResp	command_id.hpp	/^            SubmitMultiResp       = 0x80000021, \/**< submit_multi_resp command id. *\/$/;"	e	enum:Smpp::CommandId::<anonymous>
+SubmitMultiResp	submit_multi_resp.cpp	/^Smpp::SubmitMultiResp::SubmitMultiResp($/;"	f	class:Smpp::SubmitMultiResp
+SubmitMultiResp	submit_multi_resp.cpp	/^Smpp::SubmitMultiResp::SubmitMultiResp() :$/;"	f	class:Smpp::SubmitMultiResp
+SubmitMultiResp	submit_multi_resp.cpp	/^Smpp::SubmitMultiResp::SubmitMultiResp(const Smpp::Uint8* b) :$/;"	f	class:Smpp::SubmitMultiResp
+SubmitMultiResp	submit_multi_resp.hpp	/^    class SubmitMultiResp : public Response {$/;"	c	namespace:Smpp
+SubmitSm	command_id.hpp	/^            SubmitSm              = 0x00000004, \/**< submit_sm command id. *\/$/;"	e	enum:Smpp::CommandId::<anonymous>
+SubmitSm	submit_sm.cpp	/^Smpp::SubmitSm::SubmitSm($/;"	f	class:Smpp::SubmitSm
+SubmitSm	submit_sm.cpp	/^Smpp::SubmitSm::SubmitSm() :$/;"	f	class:Smpp::SubmitSm
+SubmitSm	submit_sm.cpp	/^Smpp::SubmitSm::SubmitSm(const Smpp::Uint8* b) :$/;"	f	class:Smpp::SubmitSm
+SubmitSm	submit_sm.hpp	/^    class SubmitSm : public Request {$/;"	c	namespace:Smpp
+SubmitSmResp	command_id.hpp	/^            SubmitSmResp          = 0x80000004, \/**< submit_sm_resp command id. *\/$/;"	e	enum:Smpp::CommandId::<anonymous>
+SubmitSmResp	submit_sm_resp.cpp	/^Smpp::SubmitSmResp::SubmitSmResp($/;"	f	class:Smpp::SubmitSmResp
+SubmitSmResp	submit_sm_resp.cpp	/^Smpp::SubmitSmResp::SubmitSmResp() :$/;"	f	class:Smpp::SubmitSmResp
+SubmitSmResp	submit_sm_resp.cpp	/^Smpp::SubmitSmResp::SubmitSmResp(const Smpp::Uint8* b) :$/;"	f	class:Smpp::SubmitSmResp
+SubmitSmResp	submit_sm_resp.hpp	/^    class SubmitSmResp : public Response {$/;"	c	namespace:Smpp
+Subscriber	aux_types.hpp	/^            Subscriber    = 0x04, \/\/\/< Subscriber$/;"	e	enum:Smpp::Ton::<anonymous>
+SystemId	aux_types.hpp	/^        SystemId() {}$/;"	f	class:Smpp::SystemId
+SystemId	aux_types.hpp	/^        explicit SystemId(const Smpp::Char* p) :$/;"	f	class:Smpp::SystemId
+SystemId	aux_types.hpp	/^        explicit SystemId(const Smpp::String& p) :$/;"	f	class:Smpp::SystemId
+SystemId	aux_types.hpp	/^    class SystemId {$/;"	c	namespace:Smpp
+SystemType	aux_types.hpp	/^        SystemType() {}$/;"	f	class:Smpp::SystemType
+SystemType	aux_types.hpp	/^        explicit SystemType(const Smpp::Char* p) :$/;"	f	class:Smpp::SystemType
+SystemType	aux_types.hpp	/^        explicit SystemType(const Smpp::String& p) :$/;"	f	class:Smpp::SystemType
+SystemType	aux_types.hpp	/^    class SystemType {$/;"	c	namespace:Smpp
+Telex	aux_types.hpp	/^            Telex    = 0x04, \/\/\/< Telex$/;"	e	enum:Smpp::Npi::<anonymous>
+Time	aux_types.hpp	/^        Time() {}$/;"	f	class:Smpp::Time
+Time	aux_types.hpp	/^        explicit Time(const Smpp::Char* p) :$/;"	f	class:Smpp::Time
+Time	aux_types.hpp	/^        explicit Time(const Smpp::String& p) :$/;"	f	class:Smpp::Time
+Time	aux_types.hpp	/^    class Time {$/;"	c	namespace:Smpp
+Tlv	tlv.hpp	/^        Tlv() : tag_(0), length_(0), value_(0) {}$/;"	f	class:Smpp::Tlv
+Tlv	tlv.hpp	/^        Tlv(const Smpp::Uint16& t, const Smpp::Uint16& l, const Smpp::Uint8* v) :$/;"	f	class:Smpp::Tlv
+Tlv	tlv.hpp	/^        Tlv(const Smpp::Uint16& t,$/;"	f	class:Smpp::Tlv
+Tlv	tlv.hpp	/^        Tlv(const Tlv& tlv) :$/;"	f	class:Smpp::Tlv
+Tlv	tlv.hpp	/^    class Tlv {$/;"	c	namespace:Smpp
+TlvList	header.hpp	/^    typedef std::list<const Tlv*> TlvList;$/;"	t	namespace:Smpp
+Ton	aux_types.hpp	/^        Ton() : v_(Unknown) {}$/;"	f	class:Smpp::Ton
+Ton	aux_types.hpp	/^        explicit Ton(const Smpp::Uint8& p) : v_(check(p)) {}$/;"	f	class:Smpp::Ton
+Ton	aux_types.hpp	/^        explicit Ton(int p) : v_(check(p)) {}$/;"	f	class:Smpp::Ton
+Ton	aux_types.hpp	/^    class Ton {$/;"	c	namespace:Smpp
+Type	aux_types.hpp	/^        virtual Smpp::Uint8 Type() const { return 0x01; }$/;"	f	class:Smpp::SmeMultiAddress
+Type	aux_types.hpp	/^        virtual Smpp::Uint8 Type() const { return 0x02; }$/;"	f	class:Smpp::DistributionListAddress
+UNDELIVERABLE	aux_types.hpp	/^            UNDELIVERABLE = 5,$/;"	e	enum:Smpp::MessageState::<anonymous>
+UNKNOWN	aux_types.hpp	/^            UNKNOWN = 7,$/;"	e	enum:Smpp::MessageState::<anonymous>
+Uint16	aux_types.hpp	/^    typedef unsigned short int Uint16;$/;"	t	namespace:Smpp
+Uint32	aux_types.hpp	/^    typedef unsigned int Uint32;$/;"	t	namespace:Smpp
+Uint8	aux_types.hpp	/^    typedef unsigned char Uint8;$/;"	t	namespace:Smpp
+Unbind	command_id.hpp	/^            Unbind                = 0x00000006, \/**< unbind command id. *\/$/;"	e	enum:Smpp::CommandId::<anonymous>
+Unbind	unbind.cpp	/^Smpp::Unbind::Unbind() :$/;"	f	class:Smpp::Unbind
+Unbind	unbind.cpp	/^Smpp::Unbind::Unbind(const SequenceNumber& sequenceNumber) :$/;"	f	class:Smpp::Unbind
+Unbind	unbind.cpp	/^Smpp::Unbind::Unbind(const Smpp::Uint8* b) :$/;"	f	class:Smpp::Unbind
+Unbind	unbind.hpp	/^    class Unbind : public Request {$/;"	c	namespace:Smpp
+UnbindResp	command_id.hpp	/^            UnbindResp            = 0x80000006, \/**< unbind_resp command id. *\/$/;"	e	enum:Smpp::CommandId::<anonymous>
+UnbindResp	unbind_resp.cpp	/^Smpp::UnbindResp::UnbindResp() :$/;"	f	class:Smpp::UnbindResp
+UnbindResp	unbind_resp.cpp	/^Smpp::UnbindResp::UnbindResp(const CommandStatus& commandStatus,$/;"	f	class:Smpp::UnbindResp
+UnbindResp	unbind_resp.cpp	/^Smpp::UnbindResp::UnbindResp(const Smpp::Uint8* b) :$/;"	f	class:Smpp::UnbindResp
+UnbindResp	unbind_resp.hpp	/^    class UnbindResp : public Response {$/;"	c	namespace:Smpp
+Unknown	aux_types.hpp	/^            Unknown       = 0x00, \/\/\/< Unknown (default)$/;"	e	enum:Smpp::Ton::<anonymous>
+Unknown	aux_types.hpp	/^            Unknown  = 0x00, \/\/\/< Unknown$/;"	e	enum:Smpp::Npi::<anonymous>
+UnsuccessSme	aux_types.hpp	/^        UnsuccessSme(const SmeAddress& p, const Smpp::Uint32& error) :$/;"	f	class:Smpp::UnsuccessSme
+UnsuccessSme	aux_types.hpp	/^        UnsuccessSme(const Smpp::Uint8* buff, Smpp::Uint32 len) { decode(buff, len); }$/;"	f	class:Smpp::UnsuccessSme
+UnsuccessSme	aux_types.hpp	/^        UnsuccessSme(const UnsuccessSme& p) :$/;"	f	class:Smpp::UnsuccessSme
+UnsuccessSme	aux_types.hpp	/^    class UnsuccessSme {$/;"	c	namespace:Smpp
+UnsuccessSmeColl	aux_types.hpp	/^        UnsuccessSmeColl() : octetCount_(0) {}$/;"	f	class:Smpp::UnsuccessSmeColl
+UnsuccessSmeColl	aux_types.hpp	/^    class UnsuccessSmeColl {$/;"	c	namespace:Smpp
+Unused	aux_types.hpp	/^        enum { Unused = 0x00 };$/;"	e	enum:Smpp::SmDefaultMsgId::<anonymous>
+V33	aux_types.hpp	/^            V33       = 0x33, \/\/\/< Version 3.3$/;"	e	enum:Smpp::InterfaceVersion::<anonymous>
+V34	aux_types.hpp	/^            V34       = 0x34, \/\/\/< Version 3.4$/;"	e	enum:Smpp::InterfaceVersion::<anonymous>
+V50	aux_types.hpp	/^            V50       = 0x50  \/\/\/< Version 5.0$/;"	e	enum:Smpp::InterfaceVersion::<anonymous>
+Value	aux_types.hpp	/^        const SmeAddress& Value() const { return addr_; }$/;"	f	class:Smpp::SmeMultiAddress
+Value	aux_types.hpp	/^        const Smpp::String& Value() const { return addr_; }$/;"	f	class:Smpp::DistributionListAddress
+Wap	aux_types.hpp	/^            Wap      = 0x12  \/\/\/< WAP$/;"	e	enum:Smpp::Npi::<anonymous>
+__SMPP_ALERT_NOTIFICATION_HPP__	alert_notification.hpp	20;"	d
+__SMPP_AUX_TYPES_HPP__	aux_types.hpp	20;"	d
+__SMPP_BIND_RECEIVER_HPP__	bind_receiver.hpp	20;"	d
+__SMPP_BIND_RECEIVER_RESP_HPP__	bind_receiver_resp.hpp	20;"	d
+__SMPP_BIND_TRANSCEIVER_HPP__	bind_transceiver.hpp	20;"	d
+__SMPP_BIND_TRANSCEIVER_RESP_HPP__	bind_transceiver_resp.hpp	20;"	d
+__SMPP_BIND_TRANSMITTER_HPP__	bind_transmitter.hpp	20;"	d
+__SMPP_BIND_TRANSMITTER_RESP_HPP__	bind_transmitter_resp.hpp	20;"	d
+__SMPP_BROADCAST_SM_HPP__	broadcast_sm.hpp	20;"	d
+__SMPP_BROADCAST_SM_RESP_HPP__	broadcast_sm_resp.hpp	20;"	d
+__SMPP_BUFFER_HPP__	buffer.hpp	20;"	d
+__SMPP_CANCEL_BROADCAST_SM_HPP__	cancel_broadcast_sm.hpp	20;"	d
+__SMPP_CANCEL_BROADCAST_SM_RESP_HPP__	cancel_broadcast_sm_resp.hpp	20;"	d
+__SMPP_CANCEL_SM_HPP__	cancel_sm.hpp	20;"	d
+__SMPP_CANCEL_SM_RESP_HPP__	cancel_sm_resp.hpp	20;"	d
+__SMPP_COMMAND_ID_HPP__	command_id.hpp	20;"	d
+__SMPP_COMMAND_LENGTH_HPP__	command_length.hpp	20;"	d
+__SMPP_COMMAND_STATUS_HPP__	command_status.hpp	20;"	d
+__SMPP_DATA_SM_HPP__	data_sm.hpp	20;"	d
+__SMPP_DATA_SM_RESP_HPP__	data_sm_resp.hpp	20;"	d
+__SMPP_DELIVER_SM_HPP__	deliver_sm.hpp	20;"	d
+__SMPP_DELIVER_SM_RESP_HPP__	deliver_sm_resp.hpp	20;"	d
+__SMPP_ENQUIRE_LINK_HPP__	enquire_link.hpp	20;"	d
+__SMPP_ENQUIRE_LINK_RESP_HPP__	enquire_link_resp.hpp	20;"	d
+__SMPP_ERROR_HPP__	error.hpp	20;"	d
+__SMPP_GENERIC_NACK_HPP__	generic_nack.hpp	20;"	d
+__SMPP_HEADER_HPP__	header.hpp	20;"	d
+__SMPP_OUTBIND_HPP__	outbind.hpp	20;"	d
+__SMPP_QUERY_BROADCAST_SM_HPP__	query_broadcast_sm.hpp	20;"	d
+__SMPP_QUERY_BROADCAST_SM_RESP_HPP__	query_broadcast_sm_resp.hpp	20;"	d
+__SMPP_QUERY_SM_HPP__	query_sm.hpp	20;"	d
+__SMPP_QUERY_SM_RESP_HPP__	query_sm_resp.hpp	20;"	d
+__SMPP_REPLACE_SM_HPP__	replace_sm.hpp	20;"	d
+__SMPP_REPLACE_SM_RESP_HPP__	replace_sm_resp.hpp	20;"	d
+__SMPP_SEQUENCE_NUMBER_HPP__	sequence_number.hpp	20;"	d
+__SMPP_SMPP_INCLUDES_HPP__	smpp.hpp	20;"	d
+__SMPP_SUBMIT_MULTI_HPP__	submit_multi.hpp	20;"	d
+__SMPP_SUBMIT_MULTI_RESP_HPP__	submit_multi_resp.hpp	20;"	d
+__SMPP_SUBMIT_SM_HPP__	submit_sm.hpp	20;"	d
+__SMPP_SUBMIT_SM_RESP_HPP__	submit_sm_resp.hpp	20;"	d
+__SMPP_TLV_HPP__	tlv.hpp	20;"	d
+__SMPP_UNBIND_HPP__	unbind.hpp	20;"	d
+__SMPP_UNBIND_RESP_HPP__	unbind_resp.hpp	20;"	d
+add	aux_types.hpp	/^        Smpp::Uint32 add(const SmeAddress& p) {$/;"	f	class:Smpp::MultiDestinationAddresses
+add	aux_types.hpp	/^        Smpp::Uint32 add(const Smpp::String& p) {$/;"	f	class:Smpp::MultiDestinationAddresses
+add	aux_types.hpp	/^        Smpp::Uint32 add(const UnsuccessSme& p) {$/;"	f	class:Smpp::UnsuccessSmeColl
+add_octet_array	buffer.hpp	/^    inline Buffer& Buffer::add_octet_array($/;"	f	class:Smpp::Buffer
+additional_status_info_text	tlv.hpp	/^            additional_status_info_text  = 0x001D,$/;"	e	enum:Smpp::Tlv::<anonymous>
+addr_	aux_types.hpp	/^        Address addr_;$/;"	m	class:Smpp::SmeAddress
+addr_	aux_types.hpp	/^        SmeAddress addr_;$/;"	m	class:Smpp::SmeMultiAddress
+addr_	aux_types.hpp	/^        Smpp::String addr_;$/;"	m	class:Smpp::DistributionListAddress
+addr_npi	bind_receiver.hpp	/^        const Npi& addr_npi() const { return addr_npi_; }$/;"	f	class:Smpp::BindReceiver
+addr_npi	bind_receiver.hpp	/^        void addr_npi(const int& p) { addr_npi_ = p; }$/;"	f	class:Smpp::BindReceiver
+addr_npi	bind_transceiver.hpp	/^        const Npi& addr_npi() const { return addr_npi_; }$/;"	f	class:Smpp::BindTransceiver
+addr_npi	bind_transceiver.hpp	/^        void addr_npi(const int& p) { addr_npi_ = p; }$/;"	f	class:Smpp::BindTransceiver
+addr_npi	bind_transmitter.hpp	/^        const Npi& addr_npi() const { return addr_npi_; }$/;"	f	class:Smpp::BindTransmitter
+addr_npi	bind_transmitter.hpp	/^        void addr_npi(const int& p) { addr_npi_ = p; }$/;"	f	class:Smpp::BindTransmitter
+addr_npi_	bind_receiver.hpp	/^        Npi addr_npi_;$/;"	m	class:Smpp::BindReceiver
+addr_npi_	bind_transceiver.hpp	/^        Npi addr_npi_;$/;"	m	class:Smpp::BindTransceiver
+addr_npi_	bind_transmitter.hpp	/^        Npi addr_npi_;$/;"	m	class:Smpp::BindTransmitter
+addr_ton	bind_receiver.hpp	/^        const Ton& addr_ton() const { return addr_ton_; }$/;"	f	class:Smpp::BindReceiver
+addr_ton	bind_receiver.hpp	/^        void addr_ton(const int& p) { addr_ton_ = p; }$/;"	f	class:Smpp::BindReceiver
+addr_ton	bind_transceiver.hpp	/^        const Ton& addr_ton() const { return addr_ton_; }$/;"	f	class:Smpp::BindTransceiver
+addr_ton	bind_transceiver.hpp	/^        void addr_ton(const int& p) { addr_ton_ = p; }$/;"	f	class:Smpp::BindTransceiver
+addr_ton	bind_transmitter.hpp	/^        const Ton& addr_ton() const { return addr_ton_; }$/;"	f	class:Smpp::BindTransmitter
+addr_ton	bind_transmitter.hpp	/^        void addr_ton(const int& p) { addr_ton_ = p; }$/;"	f	class:Smpp::BindTransmitter
+addr_ton_	bind_receiver.hpp	/^        Ton addr_ton_;$/;"	m	class:Smpp::BindReceiver
+addr_ton_	bind_transceiver.hpp	/^        Ton addr_ton_;$/;"	m	class:Smpp::BindTransceiver
+addr_ton_	bind_transmitter.hpp	/^        Ton addr_ton_;$/;"	m	class:Smpp::BindTransmitter
+address	aux_types.hpp	/^        const Address& address() const { return addr_; }$/;"	f	class:Smpp::SmeAddress
+address_range	bind_receiver.hpp	/^        const AddressRange& address_range() const { return address_range_; }$/;"	f	class:Smpp::BindReceiver
+address_range	bind_receiver.hpp	/^        void address_range(const AddressRange& p) {$/;"	f	class:Smpp::BindReceiver
+address_range	bind_receiver.hpp	/^        void address_range(const Smpp::Char* p) {$/;"	f	class:Smpp::BindReceiver
+address_range	bind_transceiver.hpp	/^        const AddressRange& address_range() const { return address_range_; }$/;"	f	class:Smpp::BindTransceiver
+address_range	bind_transceiver.hpp	/^        void address_range(const AddressRange& p) {$/;"	f	class:Smpp::BindTransceiver
+address_range	bind_transceiver.hpp	/^        void address_range(const Smpp::Char* p) {$/;"	f	class:Smpp::BindTransceiver
+address_range	bind_transmitter.hpp	/^        const AddressRange& address_range() const { return address_range_; }$/;"	f	class:Smpp::BindTransmitter
+address_range	bind_transmitter.hpp	/^        void address_range(const AddressRange& p) {$/;"	f	class:Smpp::BindTransmitter
+address_range	bind_transmitter.hpp	/^        void address_range(const Smpp::Char* p) {$/;"	f	class:Smpp::BindTransmitter
+address_range_	bind_receiver.hpp	/^        AddressRange address_range_;$/;"	m	class:Smpp::BindReceiver
+address_range_	bind_transceiver.hpp	/^        AddressRange address_range_;$/;"	m	class:Smpp::BindTransceiver
+address_range_	bind_transmitter.hpp	/^        AddressRange address_range_;$/;"	m	class:Smpp::BindTransmitter
+addrs_	aux_types.hpp	/^        List addrs_;$/;"	m	class:Smpp::MultiDestinationAddresses
+alert_on_message_delivery	tlv.hpp	/^            alert_on_message_delivery    = 0x130C,$/;"	e	enum:Smpp::Tlv::<anonymous>
+allocate_value	tlv.hpp	/^        Smpp::Uint8* allocate_value(const Smpp::Uint8& format,$/;"	f	class:Smpp::BroadcastAreaIdentifier
+allocate_value	tlv.hpp	/^        Smpp::Uint8* allocate_value(const Smpp::Uint8& sRate) {$/;"	f	class:Smpp::BroadcastAreaSuccess
+allocate_value	tlv.hpp	/^        Smpp::Uint8* allocate_value(const Smpp::Uint8& type, const Smpp::Uint16& units) {$/;"	f	class:Smpp::BroadcastFrequencyInterval
+allocate_value	tlv.hpp	/^        Smpp::Uint8* allocate_value(const Smpp::Uint8& typeTag, const Smpp::Uint16& type) {$/;"	f	class:Smpp::BroadcastContentType
+assign	sequence_number.hpp	/^        static Smpp::Uint32 assign(const Smpp::Uint32& p,  bool allow_0 = false) {$/;"	f	class:Smpp::SequenceNumber
+b_	buffer.hpp	/^        Smpp::Buffer& b_;$/;"	m	class:Smpp::CopySubmitMultiAddresses
+b_	buffer.hpp	/^        Smpp::Buffer& b_;$/;"	m	class:Smpp::CopyUnsuccessSmeColl
+b_	tlv.hpp	/^            Smpp::Buffer& b_;$/;"	m	class:Smpp::Tlv::Encoder
+begin	aux_types.hpp	/^        std::vector<Smpp::Uint8>::const_iterator begin() const {$/;"	f	class:Smpp::ShortMessage
+billing_identification	tlv.hpp	/^            billing_identification       = 0x060B,$/;"	e	enum:Smpp::Tlv::<anonymous>
+broadcast_Error_status	tlv.hpp	/^            broadcast_Error_status       = 0x0607,$/;"	e	enum:Smpp::Tlv::<anonymous>
+broadcast_area_identifier	broadcast_sm.hpp	/^        const TlvList broadcast_area_identifier() const {$/;"	f	class:Smpp::BroadcastSm
+broadcast_area_identifier	broadcast_sm.hpp	/^        void broadcast_area_identifier(const BroadcastAreaIdentifier& p) {$/;"	f	class:Smpp::BroadcastSm
+broadcast_area_identifier	query_broadcast_sm_resp.hpp	/^        const TlvList broadcast_area_identifier() const {$/;"	f	class:Smpp::QueryBroadcastSmResp
+broadcast_area_identifier	query_broadcast_sm_resp.hpp	/^        void broadcast_area_identifier(const BroadcastAreaIdentifier& p) {$/;"	f	class:Smpp::QueryBroadcastSmResp
+broadcast_area_identifier	tlv.hpp	/^            broadcast_area_identifier    = 0x0606,$/;"	e	enum:Smpp::Tlv::<anonymous>
+broadcast_area_success	query_broadcast_sm_resp.hpp	/^        const BroadcastAreaSuccess& broadcast_area_success() const {$/;"	f	class:Smpp::QueryBroadcastSmResp
+broadcast_area_success	query_broadcast_sm_resp.hpp	/^        void broadcast_area_success(const BroadcastAreaSuccess& p) {$/;"	f	class:Smpp::QueryBroadcastSmResp
+broadcast_area_success	tlv.hpp	/^            broadcast_area_success       = 0x0608,$/;"	e	enum:Smpp::Tlv::<anonymous>
+broadcast_channel_indicator	tlv.hpp	/^            broadcast_channel_indicator  = 0x0600,$/;"	e	enum:Smpp::Tlv::<anonymous>
+broadcast_content_type	broadcast_sm.hpp	/^        const BroadcastContentType& broadcast_content_type() const {$/;"	f	class:Smpp::BroadcastSm
+broadcast_content_type	broadcast_sm.hpp	/^        void broadcast_content_type(const BroadcastContentType& p) {$/;"	f	class:Smpp::BroadcastSm
+broadcast_content_type	tlv.hpp	/^            broadcast_content_type       = 0x0601,$/;"	e	enum:Smpp::Tlv::<anonymous>
+broadcast_content_type_info	tlv.hpp	/^            broadcast_content_type_info  = 0x0602,$/;"	e	enum:Smpp::Tlv::<anonymous>
+broadcast_end_time	tlv.hpp	/^            broadcast_end_time           = 0x0609,$/;"	e	enum:Smpp::Tlv::<anonymous>
+broadcast_frequency_interval	broadcast_sm.hpp	/^        const BroadcastFrequencyInterval& broadcast_frequency_interval() const {$/;"	f	class:Smpp::BroadcastSm
+broadcast_frequency_interval	broadcast_sm.hpp	/^        void broadcast_frequency_interval(const BroadcastFrequencyInterval& p)$/;"	f	class:Smpp::BroadcastSm
+broadcast_frequency_interval	tlv.hpp	/^            broadcast_frequency_interval = 0x0605,$/;"	e	enum:Smpp::Tlv::<anonymous>
+broadcast_message_class	tlv.hpp	/^            broadcast_message_class      = 0x0603,$/;"	e	enum:Smpp::Tlv::<anonymous>
+broadcast_rep_num	broadcast_sm.hpp	/^        Smpp::Uint16 broadcast_rep_num() const {$/;"	f	class:Smpp::BroadcastSm
+broadcast_rep_num	broadcast_sm.hpp	/^        void broadcast_rep_num(const Smpp::Uint16& p) {$/;"	f	class:Smpp::BroadcastSm
+broadcast_rep_num	tlv.hpp	/^            broadcast_rep_num            = 0x0604,$/;"	e	enum:Smpp::Tlv::<anonymous>
+broadcast_service_group	tlv.hpp	/^            broadcast_service_group      = 0x060A,$/;"	e	enum:Smpp::Tlv::<anonymous>
+buff_	alert_notification.hpp	/^        Smpp::Buffer buff_;$/;"	m	class:Smpp::AlertNotification
+buff_	bind_receiver.hpp	/^        Smpp::Buffer buff_;$/;"	m	class:Smpp::BindReceiver
+buff_	bind_receiver_resp.hpp	/^        Smpp::Buffer buff_;$/;"	m	class:Smpp::BindReceiverResp
+buff_	bind_transceiver.hpp	/^        Smpp::Buffer buff_;$/;"	m	class:Smpp::BindTransceiver
+buff_	bind_transceiver_resp.hpp	/^        Smpp::Buffer buff_;$/;"	m	class:Smpp::BindTransceiverResp
+buff_	bind_transmitter.hpp	/^        Smpp::Buffer buff_;$/;"	m	class:Smpp::BindTransmitter
+buff_	bind_transmitter_resp.hpp	/^        Smpp::Buffer buff_;$/;"	m	class:Smpp::BindTransmitterResp
+buff_	broadcast_sm.hpp	/^        Smpp::Buffer buff_;$/;"	m	class:Smpp::BroadcastSm
+buff_	broadcast_sm_resp.hpp	/^        Smpp::Buffer buff_;$/;"	m	class:Smpp::BroadcastSmResp
+buff_	cancel_broadcast_sm.hpp	/^        Smpp::Buffer buff_;$/;"	m	class:Smpp::CancelBroadcastSm
+buff_	cancel_broadcast_sm_resp.hpp	/^        Smpp::Buffer buff_;$/;"	m	class:Smpp::CancelBroadcastSmResp
+buff_	cancel_sm.hpp	/^        Smpp::Buffer buff_;$/;"	m	class:Smpp::CancelSm
+buff_	cancel_sm_resp.hpp	/^        Smpp::Buffer buff_;$/;"	m	class:Smpp::CancelSmResp
+buff_	data_sm.hpp	/^        Smpp::Buffer buff_;$/;"	m	class:Smpp::DataSm
+buff_	data_sm_resp.hpp	/^        Smpp::Buffer buff_; \/\/\/< Encoded buffer.$/;"	m	class:Smpp::DataSmResp
+buff_	deliver_sm.hpp	/^        Smpp::Buffer buff_;$/;"	m	class:Smpp::DeliverSm
+buff_	deliver_sm_resp.hpp	/^        Smpp::Buffer buff_;$/;"	m	class:Smpp::DeliverSmResp
+buff_	enquire_link.hpp	/^        Smpp::Buffer buff_;$/;"	m	class:Smpp::EnquireLink
+buff_	enquire_link_resp.hpp	/^        Smpp::Buffer buff_;$/;"	m	class:Smpp::EnquireLinkResp
+buff_	generic_nack.hpp	/^        Smpp::Buffer buff_;$/;"	m	class:Smpp::GenericNack
+buff_	outbind.hpp	/^        Smpp::Buffer buff_;$/;"	m	class:Smpp::Outbind
+buff_	query_broadcast_sm.hpp	/^        Smpp::Buffer buff_;$/;"	m	class:Smpp::QueryBroadcastSm
+buff_	query_broadcast_sm_resp.hpp	/^        Smpp::Buffer buff_;$/;"	m	class:Smpp::QueryBroadcastSmResp
+buff_	query_sm.hpp	/^        Smpp::Buffer buff_;$/;"	m	class:Smpp::QuerySm
+buff_	query_sm_resp.hpp	/^        Smpp::Buffer buff_;$/;"	m	class:Smpp::QuerySmResp
+buff_	replace_sm.hpp	/^        Smpp::Buffer buff_;$/;"	m	class:Smpp::ReplaceSm
+buff_	replace_sm_resp.hpp	/^        Smpp::Buffer buff_;$/;"	m	class:Smpp::ReplaceSmResp
+buff_	submit_multi.hpp	/^        Smpp::Buffer buff_;$/;"	m	class:Smpp::SubmitMulti
+buff_	submit_multi_resp.hpp	/^        Smpp::Buffer buff_;$/;"	m	class:Smpp::SubmitMultiResp
+buff_	submit_sm.hpp	/^        Smpp::Buffer buff_;$/;"	m	class:Smpp::SubmitSm
+buff_	submit_sm_resp.hpp	/^        Smpp::Buffer buff_;$/;"	m	class:Smpp::SubmitSmResp
+buff_	unbind.hpp	/^        Smpp::Buffer buff_;$/;"	m	class:Smpp::Unbind
+buff_	unbind_resp.hpp	/^        Smpp::Buffer buff_;$/;"	m	class:Smpp::UnbindResp
+build_value	tlv.hpp	/^        Smpp::Uint8* build_value(const Smpp::Uint16& l, const Smpp::Uint8* v) {$/;"	f	class:Smpp::Tlv
+callback_num	tlv.hpp	/^            callback_num                 = 0x0381,$/;"	e	enum:Smpp::Tlv::<anonymous>
+callback_num_atag	tlv.hpp	/^            callback_num_atag            = 0x0303,$/;"	e	enum:Smpp::Tlv::<anonymous>
+callback_num_pres_ind	tlv.hpp	/^            callback_num_pres_ind        = 0x0302,$/;"	e	enum:Smpp::Tlv::<anonymous>
+check	aux_types.hpp	/^        Smpp::Uint8 check(const Smpp::Uint8& p) {$/;"	f	class:Smpp::Npi
+check	aux_types.hpp	/^        Smpp::Uint8 check(const int& p) {$/;"	f	class:Smpp::InterfaceVersion
+check	aux_types.hpp	/^        Smpp::Uint8 check(const int& p) {$/;"	f	class:Smpp::Ton
+check	aux_types.hpp	/^        const Smpp::Uint8& check(const Smpp::Uint8& p) {$/;"	f	class:Smpp::DataCoding
+check	aux_types.hpp	/^        const Smpp::Uint8& check(const Smpp::Uint8& p) {$/;"	f	class:Smpp::ErrorCode
+check	aux_types.hpp	/^        const Smpp::Uint8& check(const Smpp::Uint8& p) {$/;"	f	class:Smpp::MessageState
+check	aux_types.hpp	/^        const Smpp::Uint8& check(const Smpp::Uint8& p) {$/;"	f	class:Smpp::PriorityFlag
+check	aux_types.hpp	/^        const Smpp::Uint8& check(const Smpp::Uint8& p) {$/;"	f	class:Smpp::RegisteredDelivery
+check	aux_types.hpp	/^        const Smpp::Uint8& check(const Smpp::Uint8& p) {$/;"	f	class:Smpp::ReplaceIfPresentFlag
+check	aux_types.hpp	/^        const Smpp::Uint8& check(const Smpp::Uint8& p) {$/;"	f	class:Smpp::SmDefaultMsgId
+chex_dump	aux_types.cpp	/^void Smpp::chex_dump(const Smpp::Uint8* buff, Smpp::Uint32 len, FILE* file)$/;"	f	class:Smpp
+command_id	header.hpp	/^        Smpp::Uint32 command_id() const { return command_id_; }$/;"	f	class:Smpp::Header
+command_id_	header.hpp	/^        CommandId command_id_;$/;"	m	class:Smpp::Header
+command_length	header.hpp	/^        Smpp::Uint32 command_length() const { return command_length_; }$/;"	f	class:Smpp::Header
+command_length	header.hpp	/^        void command_length(const Smpp::Uint32& p) { command_length_ = p; }$/;"	f	class:Smpp::Header
+command_length_	header.hpp	/^        CommandLength command_length_;$/;"	m	class:Smpp::Header
+command_status	header.hpp	/^        Smpp::Uint32 command_status() const { $/;"	f	class:Smpp::Response
+command_status	header.hpp	/^        Smpp::Uint32 command_status() const { return Header::get_command_status(); }$/;"	f	class:Smpp::Request
+command_status	header.hpp	/^        void command_status(const Smpp::Uint32& p) {$/;"	f	class:Smpp::Response
+command_status	header.hpp	/^        void command_status(const Smpp::Uint32& p) {}$/;"	f	class:Smpp::Request
+command_status_	header.hpp	/^        CommandStatus command_status_;$/;"	m	class:Smpp::Header
+congestion_state	tlv.hpp	/^            congestion_state             = 0x0428,$/;"	e	enum:Smpp::Tlv::<anonymous>
+data_	buffer.hpp	/^        Smpp::Uint8* data_;$/;"	m	class:Smpp::Buffer
+data_coding	broadcast_sm.hpp	/^        const DataCoding& data_coding() const { return data_coding_; }$/;"	f	class:Smpp::BroadcastSm
+data_coding	broadcast_sm.hpp	/^        void data_coding(const DataCoding& p) { data_coding_ = p; }$/;"	f	class:Smpp::BroadcastSm
+data_coding	data_sm.hpp	/^        const DataCoding& data_coding() const { return data_coding_; }$/;"	f	class:Smpp::DataSm
+data_coding	data_sm.hpp	/^        void data_coding(const DataCoding& p) { data_coding_ = p; }$/;"	f	class:Smpp::DataSm
+data_coding	deliver_sm.hpp	/^        const DataCoding& data_coding() const { return data_coding_; }$/;"	f	class:Smpp::DeliverSm
+data_coding	deliver_sm.hpp	/^        void data_coding(const DataCoding& p) { data_coding_ = p; }$/;"	f	class:Smpp::DeliverSm
+data_coding	submit_multi.hpp	/^        const DataCoding& data_coding() const { return data_coding_; }$/;"	f	class:Smpp::SubmitMulti
+data_coding	submit_multi.hpp	/^        void data_coding(const DataCoding& p) { data_coding_ = p; }$/;"	f	class:Smpp::SubmitMulti
+data_coding	submit_sm.hpp	/^        const DataCoding& data_coding() const { return data_coding_; }$/;"	f	class:Smpp::SubmitSm
+data_coding	submit_sm.hpp	/^        void data_coding(const DataCoding& p) { data_coding_ = p; }$/;"	f	class:Smpp::SubmitSm
+data_coding_	broadcast_sm.hpp	/^        DataCoding data_coding_;$/;"	m	class:Smpp::BroadcastSm
+data_coding_	data_sm.hpp	/^        DataCoding data_coding_;$/;"	m	class:Smpp::DataSm
+data_coding_	deliver_sm.hpp	/^        DataCoding data_coding_;$/;"	m	class:Smpp::DeliverSm
+data_coding_	submit_multi.hpp	/^        DataCoding data_coding_;$/;"	m	class:Smpp::SubmitMulti
+data_coding_	submit_sm.hpp	/^        DataCoding data_coding_;$/;"	m	class:Smpp::SubmitSm
+decode	alert_notification.cpp	/^Smpp::AlertNotification::decode(const Smpp::Uint8* buff)$/;"	f	class:Smpp::AlertNotification
+decode	aux_types.cpp	/^Smpp::SmeAddress::decode(const Smpp::Uint8* buff, Smpp::Uint32 len)$/;"	f	class:Smpp::SmeAddress
+decode	aux_types.cpp	/^Smpp::UnsuccessSmeColl::decode(const Smpp::Uint8* buff, Smpp::Uint32 len) {$/;"	f	class:Smpp::UnsuccessSmeColl
+decode	aux_types.cpp	/^void Smpp::MultiDestinationAddresses::decode(const Smpp::Uint8* buff, Smpp::Uint32 len)$/;"	f	class:Smpp::MultiDestinationAddresses
+decode	aux_types.hpp	/^        void decode(const Smpp::Uint8* buff, Smpp::Uint32 len) {$/;"	f	class:Smpp::UnsuccessSme
+decode	bind_receiver.cpp	/^Smpp::BindReceiver::decode(const Smpp::Uint8* buff)$/;"	f	class:Smpp::BindReceiver
+decode	bind_receiver_resp.cpp	/^Smpp::BindReceiverResp::decode(const Smpp::Uint8* buff)$/;"	f	class:Smpp::BindReceiverResp
+decode	bind_transceiver.cpp	/^Smpp::BindTransceiver::decode(const Smpp::Uint8* buff)$/;"	f	class:Smpp::BindTransceiver
+decode	bind_transceiver_resp.cpp	/^Smpp::BindTransceiverResp::decode(const Smpp::Uint8* buff)$/;"	f	class:Smpp::BindTransceiverResp
+decode	bind_transmitter.cpp	/^Smpp::BindTransmitter::decode(const Smpp::Uint8* buff)$/;"	f	class:Smpp::BindTransmitter
+decode	bind_transmitter_resp.cpp	/^Smpp::BindTransmitterResp::decode(const Smpp::Uint8* buff)$/;"	f	class:Smpp::BindTransmitterResp
+decode	broadcast_sm.cpp	/^Smpp::BroadcastSm::decode(const Smpp::Uint8* buff)$/;"	f	class:Smpp::BroadcastSm
+decode	broadcast_sm_resp.cpp	/^Smpp::BroadcastSmResp::decode(const Smpp::Uint8* buff)$/;"	f	class:Smpp::BroadcastSmResp
+decode	cancel_broadcast_sm.cpp	/^Smpp::CancelBroadcastSm::decode(const Smpp::Uint8* buff)$/;"	f	class:Smpp::CancelBroadcastSm
+decode	cancel_broadcast_sm_resp.cpp	/^Smpp::CancelBroadcastSmResp::decode(const Smpp::Uint8* buff)$/;"	f	class:Smpp::CancelBroadcastSmResp
+decode	cancel_sm.cpp	/^Smpp::CancelSm::decode(const Smpp::Uint8* buff)$/;"	f	class:Smpp::CancelSm
+decode	cancel_sm_resp.cpp	/^Smpp::CancelSmResp::decode(const Smpp::Uint8* buff)$/;"	f	class:Smpp::CancelSmResp
+decode	command_id.hpp	/^        static Smpp::Uint32 decode(const Smpp::Char* buff)$/;"	f	class:Smpp::CommandId
+decode	command_length.hpp	/^        static Smpp::Uint32 decode(const Smpp::Char* buff) {$/;"	f	class:Smpp::CommandLength
+decode	command_status.hpp	/^        Smpp::Uint32 decode(const Smpp::Char* buff) {$/;"	f	class:Smpp::CommandStatus
+decode	data_sm.cpp	/^Smpp::DataSm::decode(const Smpp::Uint8* buff)$/;"	f	class:Smpp::DataSm
+decode	data_sm_resp.cpp	/^Smpp::DataSmResp::decode(const Smpp::Uint8* buff)$/;"	f	class:Smpp::DataSmResp
+decode	deliver_sm.cpp	/^Smpp::DeliverSm::decode(const Smpp::Uint8* buff)$/;"	f	class:Smpp::DeliverSm
+decode	deliver_sm_resp.cpp	/^Smpp::DeliverSmResp::decode(const Smpp::Uint8* buff)$/;"	f	class:Smpp::DeliverSmResp
+decode	enquire_link.cpp	/^Smpp::EnquireLink::decode(const Smpp::Uint8* buff)$/;"	f	class:Smpp::EnquireLink
+decode	enquire_link_resp.cpp	/^Smpp::EnquireLinkResp::decode(const Smpp::Uint8* buff)$/;"	f	class:Smpp::EnquireLinkResp
+decode	generic_nack.cpp	/^Smpp::GenericNack::decode(const Smpp::Uint8* buff)$/;"	f	class:Smpp::GenericNack
+decode	header.hpp	/^        void decode(const Smpp::Uint8* b) { Header::decode(b); }$/;"	f	class:Smpp::Request
+decode	header.hpp	/^        void decode(const Smpp::Uint8* b) { Header::decode(b); }$/;"	f	class:Smpp::Response
+decode	header.hpp	/^        void decode(const Smpp::Uint8* buff) {$/;"	f	class:Smpp::Header
+decode	outbind.cpp	/^Smpp::Outbind::decode(const Smpp::Uint8* buff)$/;"	f	class:Smpp::Outbind
+decode	query_broadcast_sm.cpp	/^Smpp::QueryBroadcastSm::decode(const Smpp::Uint8* buff)$/;"	f	class:Smpp::QueryBroadcastSm
+decode	query_broadcast_sm_resp.cpp	/^Smpp::QueryBroadcastSmResp::decode(const Smpp::Uint8* buff)$/;"	f	class:Smpp::QueryBroadcastSmResp
+decode	query_sm.cpp	/^Smpp::QuerySm::decode(const Smpp::Uint8* buff)$/;"	f	class:Smpp::QuerySm
+decode	query_sm_resp.cpp	/^Smpp::QuerySmResp::decode(const Smpp::Uint8* buff)$/;"	f	class:Smpp::QuerySmResp
+decode	replace_sm.cpp	/^Smpp::ReplaceSm::decode(const Smpp::Uint8* buff)$/;"	f	class:Smpp::ReplaceSm
+decode	replace_sm_resp.cpp	/^Smpp::ReplaceSmResp::decode(const Smpp::Uint8* buff)$/;"	f	class:Smpp::ReplaceSmResp
+decode	sequence_number.hpp	/^        static Smpp::Uint32 decode(const Smpp::Char* buff) {$/;"	f	class:Smpp::SequenceNumber
+decode	submit_multi.cpp	/^Smpp::SubmitMulti::decode(const Smpp::Uint8* buff)$/;"	f	class:Smpp::SubmitMulti
+decode	submit_multi_resp.cpp	/^Smpp::SubmitMultiResp::decode(const Smpp::Uint8* buff)$/;"	f	class:Smpp::SubmitMultiResp
+decode	submit_sm.cpp	/^Smpp::SubmitSm::decode(const Smpp::Uint8* buff)$/;"	f	class:Smpp::SubmitSm
+decode	submit_sm_resp.cpp	/^Smpp::SubmitSmResp::decode(const Smpp::Uint8* buff)$/;"	f	class:Smpp::SubmitSmResp
+decode	unbind.cpp	/^Smpp::Unbind::decode(const Smpp::Uint8* buff)$/;"	f	class:Smpp::Unbind
+decode	unbind_resp.cpp	/^Smpp::UnbindResp::decode(const Smpp::Uint8* buff)$/;"	f	class:Smpp::UnbindResp
+decode_tlvs	header.cpp	/^Smpp::Header::decode_tlvs(const Smpp::Uint8* b, Smpp::Uint32 len)$/;"	f	class:Smpp::Header
+defaultBroadcastAreaIdentifier_	broadcast_sm.hpp	/^        bool defaultBroadcastAreaIdentifier_;$/;"	m	class:Smpp::BroadcastSm
+defaultBroadcastAreaIdentifier_	query_broadcast_sm_resp.hpp	/^        bool defaultBroadcastAreaIdentifier_;$/;"	m	class:Smpp::QueryBroadcastSmResp
+delivery_failure_reason	tlv.hpp	/^            delivery_failure_reason      = 0x0425,$/;"	e	enum:Smpp::Tlv::<anonymous>
+description	command_status.hpp	/^        inline static std::string description(const CommandStatus& p) {$/;"	f	class:Smpp::CommandStatus
+dest_addr_np_country	tlv.hpp	/^            dest_addr_np_country         = 0x0613,$/;"	e	enum:Smpp::Tlv::<anonymous>
+dest_addr_np_information	tlv.hpp	/^            dest_addr_np_information     = 0x0612,$/;"	e	enum:Smpp::Tlv::<anonymous>
+dest_addr_np_resolution	tlv.hpp	/^            dest_addr_np_resolution      = 0x0611,$/;"	e	enum:Smpp::Tlv::<anonymous>
+dest_addr_subunit	tlv.hpp	/^            dest_addr_subunit            = 0x0005,$/;"	e	enum:Smpp::Tlv::<anonymous>
+dest_bearer_type	tlv.hpp	/^            dest_bearer_type             = 0x0007,$/;"	e	enum:Smpp::Tlv::<anonymous>
+dest_network_id	tlv.hpp	/^            dest_network_id              = 0x060E,$/;"	e	enum:Smpp::Tlv::<anonymous>
+dest_network_type	tlv.hpp	/^            dest_network_type            = 0x0006,$/;"	e	enum:Smpp::Tlv::<anonymous>
+dest_node_id	tlv.hpp	/^            dest_node_id                 = 0x0610,$/;"	e	enum:Smpp::Tlv::<anonymous>
+dest_port	tlv.hpp	/^            dest_port                    = 0x020B,$/;"	e	enum:Smpp::Tlv::<anonymous>
+dest_subaddress	tlv.hpp	/^            dest_subaddress              = 0x0203,$/;"	e	enum:Smpp::Tlv::<anonymous>
+dest_telematics_id	tlv.hpp	/^            dest_telematics_id           = 0x0008,$/;"	e	enum:Smpp::Tlv::<anonymous>
+destination_addr	alert_notification.hpp	/^        void destination_addr(const Ton& t, const Npi& n, const Address& p) {$/;"	f	class:Smpp::AlertNotification
+destination_addr	cancel_sm.hpp	/^        const SmeAddress& destination_addr() const { return destination_addr_; }$/;"	f	class:Smpp::CancelSm
+destination_addr	cancel_sm.hpp	/^        void destination_addr(const Address& p) {$/;"	f	class:Smpp::CancelSm
+destination_addr	cancel_sm.hpp	/^        void destination_addr(const SmeAddress& p) {$/;"	f	class:Smpp::CancelSm
+destination_addr	data_sm.hpp	/^        const SmeAddress& destination_addr() const { return destination_addr_; }$/;"	f	class:Smpp::DataSm
+destination_addr	data_sm.hpp	/^        void destination_addr(const Address& p) {$/;"	f	class:Smpp::DataSm
+destination_addr	data_sm.hpp	/^        void destination_addr(const SmeAddress& p) {$/;"	f	class:Smpp::DataSm
+destination_addr	deliver_sm.hpp	/^        const SmeAddress& destination_addr() const { return destination_addr_; }$/;"	f	class:Smpp::DeliverSm
+destination_addr	deliver_sm.hpp	/^        void destination_addr(const Address& p) {$/;"	f	class:Smpp::DeliverSm
+destination_addr	deliver_sm.hpp	/^        void destination_addr(const SmeAddress& p) {$/;"	f	class:Smpp::DeliverSm
+destination_addr	submit_multi.hpp	/^        const MultiDestinationAddresses& destination_addr() const {$/;"	f	class:Smpp::SubmitMulti
+destination_addr	submit_multi.hpp	/^        void destination_addr(const SmeAddress& p) {$/;"	f	class:Smpp::SubmitMulti
+destination_addr	submit_multi.hpp	/^        void destination_addr(const Smpp::String& p) {$/;"	f	class:Smpp::SubmitMulti
+destination_addr	submit_sm.hpp	/^        const SmeAddress& destination_addr() const { return destination_addr_; }$/;"	f	class:Smpp::SubmitSm
+destination_addr	submit_sm.hpp	/^        void destination_addr(const Address& p) {$/;"	f	class:Smpp::SubmitSm
+destination_addr	submit_sm.hpp	/^        void destination_addr(const SmeAddress& p) {$/;"	f	class:Smpp::SubmitSm
+destination_addr_	cancel_sm.hpp	/^        SmeAddress destination_addr_;$/;"	m	class:Smpp::CancelSm
+destination_addr_	data_sm.hpp	/^        SmeAddress destination_addr_;$/;"	m	class:Smpp::DataSm
+destination_addr_	deliver_sm.hpp	/^        SmeAddress destination_addr_;$/;"	m	class:Smpp::DeliverSm
+destination_addr_	submit_multi.hpp	/^        MultiDestinationAddresses destination_addr_;$/;"	m	class:Smpp::SubmitMulti
+destination_addr_	submit_sm.hpp	/^        SmeAddress destination_addr_;$/;"	m	class:Smpp::SubmitSm
+display_time	tlv.hpp	/^            display_time                 = 0x1201,$/;"	e	enum:Smpp::Tlv::<anonymous>
+dpf_result	tlv.hpp	/^            dpf_result                   = 0x0420,$/;"	e	enum:Smpp::Tlv::<anonymous>
+encode	alert_notification.cpp	/^Smpp::AlertNotification::encode()$/;"	f	class:Smpp::AlertNotification
+encode	bind_receiver.cpp	/^Smpp::BindReceiver::encode()$/;"	f	class:Smpp::BindReceiver
+encode	bind_receiver_resp.cpp	/^Smpp::BindReceiverResp::encode()$/;"	f	class:Smpp::BindReceiverResp
+encode	bind_transceiver.cpp	/^Smpp::BindTransceiver::encode()$/;"	f	class:Smpp::BindTransceiver
+encode	bind_transceiver_resp.cpp	/^Smpp::BindTransceiverResp::encode()$/;"	f	class:Smpp::BindTransceiverResp
+encode	bind_transmitter.cpp	/^Smpp::BindTransmitter::encode()$/;"	f	class:Smpp::BindTransmitter
+encode	bind_transmitter_resp.cpp	/^Smpp::BindTransmitterResp::encode()$/;"	f	class:Smpp::BindTransmitterResp
+encode	broadcast_sm.cpp	/^Smpp::BroadcastSm::encode()$/;"	f	class:Smpp::BroadcastSm
+encode	broadcast_sm_resp.cpp	/^Smpp::BroadcastSmResp::encode()$/;"	f	class:Smpp::BroadcastSmResp
+encode	cancel_broadcast_sm.cpp	/^Smpp::CancelBroadcastSm::encode()$/;"	f	class:Smpp::CancelBroadcastSm
+encode	cancel_broadcast_sm_resp.cpp	/^Smpp::CancelBroadcastSmResp::encode()$/;"	f	class:Smpp::CancelBroadcastSmResp
+encode	cancel_sm.cpp	/^Smpp::CancelSm::encode()$/;"	f	class:Smpp::CancelSm
+encode	cancel_sm_resp.cpp	/^Smpp::CancelSmResp::encode()$/;"	f	class:Smpp::CancelSmResp
+encode	data_sm.cpp	/^Smpp::DataSm::encode()$/;"	f	class:Smpp::DataSm
+encode	data_sm_resp.cpp	/^Smpp::DataSmResp::encode()$/;"	f	class:Smpp::DataSmResp
+encode	deliver_sm.cpp	/^Smpp::DeliverSm::encode()$/;"	f	class:Smpp::DeliverSm
+encode	deliver_sm_resp.cpp	/^Smpp::DeliverSmResp::encode()$/;"	f	class:Smpp::DeliverSmResp
+encode	enquire_link.cpp	/^Smpp::EnquireLink::encode()$/;"	f	class:Smpp::EnquireLink
+encode	enquire_link_resp.cpp	/^Smpp::EnquireLinkResp::encode()$/;"	f	class:Smpp::EnquireLinkResp
+encode	generic_nack.cpp	/^Smpp::GenericNack::encode()$/;"	f	class:Smpp::GenericNack
+encode	header.hpp	/^        void encode(Smpp::Buffer& b) const { Header::encode(b); }$/;"	f	class:Smpp::Request
+encode	header.hpp	/^        void encode(Smpp::Buffer& b) const { Header::encode(b); }$/;"	f	class:Smpp::Response
+encode	header.hpp	/^        void encode(Smpp::Buffer& b) const {$/;"	f	class:Smpp::Header
+encode	outbind.cpp	/^Smpp::Outbind::encode()$/;"	f	class:Smpp::Outbind
+encode	query_broadcast_sm.cpp	/^Smpp::QueryBroadcastSm::encode()$/;"	f	class:Smpp::QueryBroadcastSm
+encode	query_broadcast_sm_resp.cpp	/^Smpp::QueryBroadcastSmResp::encode()$/;"	f	class:Smpp::QueryBroadcastSmResp
+encode	query_sm.cpp	/^Smpp::QuerySm::encode()$/;"	f	class:Smpp::QuerySm
+encode	query_sm_resp.cpp	/^Smpp::QuerySmResp::encode()$/;"	f	class:Smpp::QuerySmResp
+encode	replace_sm.cpp	/^Smpp::ReplaceSm::encode()$/;"	f	class:Smpp::ReplaceSm
+encode	replace_sm_resp.cpp	/^Smpp::ReplaceSmResp::encode()$/;"	f	class:Smpp::ReplaceSmResp
+encode	submit_multi.cpp	/^Smpp::SubmitMulti::encode()$/;"	f	class:Smpp::SubmitMulti
+encode	submit_multi_resp.cpp	/^Smpp::SubmitMultiResp::encode()$/;"	f	class:Smpp::SubmitMultiResp
+encode	submit_sm.cpp	/^Smpp::SubmitSm::encode()$/;"	f	class:Smpp::SubmitSm
+encode	submit_sm_resp.cpp	/^Smpp::SubmitSmResp::encode()$/;"	f	class:Smpp::SubmitSmResp
+encode	unbind.cpp	/^Smpp::Unbind::encode()$/;"	f	class:Smpp::Unbind
+encode	unbind_resp.cpp	/^Smpp::UnbindResp::encode()$/;"	f	class:Smpp::UnbindResp
+encode_tlvs	header.hpp	/^        void encode_tlvs(Smpp::Buffer& b)$/;"	f	class:Smpp::Header
+end	aux_types.hpp	/^        std::vector<Smpp::Uint8>::const_iterator end() const {$/;"	f	class:Smpp::ShortMessage
+error	aux_types.hpp	/^        const Smpp::Uint32& error() const { return error_; }$/;"	f	class:Smpp::UnsuccessSme
+error_	aux_types.hpp	/^        Smpp::Uint32 error_;$/;"	m	class:Smpp::UnsuccessSme
+error_code	query_sm_resp.hpp	/^        const ErrorCode& error_code() const { return error_code_; }$/;"	f	class:Smpp::QuerySmResp
+error_code	query_sm_resp.hpp	/^        void error_code(const ErrorCode& p) {$/;"	f	class:Smpp::QuerySmResp
+error_code_	query_sm_resp.hpp	/^        ErrorCode error_code_;$/;"	m	class:Smpp::QuerySmResp
+esm_class	data_sm.hpp	/^        const EsmClass& esm_class() const { return esm_class_; }$/;"	f	class:Smpp::DataSm
+esm_class	data_sm.hpp	/^        void esm_class(const int& p) { esm_class_ = p; }$/;"	f	class:Smpp::DataSm
+esm_class	deliver_sm.hpp	/^        const EsmClass& esm_class() const { return esm_class_; }$/;"	f	class:Smpp::DeliverSm
+esm_class	deliver_sm.hpp	/^        void esm_class(const int& p) { esm_class_ = p; }$/;"	f	class:Smpp::DeliverSm
+esm_class	submit_multi.hpp	/^        const EsmClass& esm_class() const { return esm_class_; }$/;"	f	class:Smpp::SubmitMulti
+esm_class	submit_multi.hpp	/^        void esm_class(const int& p) { esm_class_ = p; }$/;"	f	class:Smpp::SubmitMulti
+esm_class	submit_sm.hpp	/^        const EsmClass& esm_class() const { return esm_class_; }$/;"	f	class:Smpp::SubmitSm
+esm_class	submit_sm.hpp	/^        void esm_class(const int& p) { esm_class_ = p; }$/;"	f	class:Smpp::SubmitSm
+esm_class_	data_sm.hpp	/^        EsmClass esm_class_;$/;"	m	class:Smpp::DataSm
+esm_class_	deliver_sm.hpp	/^        EsmClass esm_class_;$/;"	m	class:Smpp::DeliverSm
+esm_class_	submit_multi.hpp	/^        EsmClass esm_class_;$/;"	m	class:Smpp::SubmitMulti
+esm_class_	submit_sm.hpp	/^        EsmClass esm_class_;$/;"	m	class:Smpp::SubmitSm
+esme_addr	alert_notification.hpp	/^        const SmeAddress& esme_addr() const { return esme_addr_; }$/;"	f	class:Smpp::AlertNotification
+esme_addr	alert_notification.hpp	/^        void esme_addr(const SmeAddress& p) {$/;"	f	class:Smpp::AlertNotification
+esme_addr_	alert_notification.hpp	/^        SmeAddress esme_addr_;$/;"	m	class:Smpp::AlertNotification
+final_date	query_sm_resp.hpp	/^        const Time& final_date() const { return final_date_; }$/;"	f	class:Smpp::QuerySmResp
+final_date	query_sm_resp.hpp	/^        void final_date(const Smpp::Char* p) {$/;"	f	class:Smpp::QuerySmResp
+final_date	query_sm_resp.hpp	/^        void final_date(const Time& p) {$/;"	f	class:Smpp::QuerySmResp
+final_date_	query_sm_resp.hpp	/^        Smpp::Time final_date_;$/;"	m	class:Smpp::QuerySmResp
+find_tlv	header.hpp	/^        const Tlv* find_tlv(Uint16 tag) const {$/;"	f	class:Smpp::Header
+find_tlv_list	header.hpp	/^        const TlvList find_tlv_list(Uint16 tag) const {$/;"	f	class:Smpp::Header
+get	buffer.hpp	/^        Smpp::Buffer& get() { return b_; }$/;"	f	class:Smpp::CopySubmitMultiAddresses
+get	buffer.hpp	/^        Smpp::Buffer& get() { return b_; }$/;"	f	class:Smpp::CopyUnsuccessSmeColl
+get	buffer.hpp	/^        const Smpp::Uint8* get() const { return data_; }$/;"	f	class:Smpp::Buffer
+get_command_id	aux_types.hpp	/^    inline Smpp::Uint32 get_command_id(const Smpp::Uint8* b) {$/;"	f	namespace:Smpp
+get_command_length	aux_types.hpp	/^    inline Smpp::Uint32 get_command_length(const Smpp::Uint8* b) {$/;"	f	namespace:Smpp
+get_command_status	aux_types.hpp	/^    inline Smpp::Uint32 get_command_status(const Smpp::Uint8* b) {$/;"	f	namespace:Smpp
+get_command_status	header.hpp	/^        const CommandStatus& get_command_status(void) const {$/;"	f	class:Smpp::Header
+get_list	aux_types.hpp	/^        const List& get_list() const { return addrs_; }$/;"	f	class:Smpp::MultiDestinationAddresses
+get_list	aux_types.hpp	/^        const List& get_list() const { return v_; }$/;"	f	class:Smpp::UnsuccessSmeColl
+get_list	header.hpp	/^            const TlvList& get_list() const { return l_; }$/;"	f	class:Smpp::Header::ListFinder
+get_sequence_number	aux_types.hpp	/^    inline Smpp::Uint32 get_sequence_number(const Smpp::Uint8* b) {$/;"	f	namespace:Smpp
+hex_dump	aux_types.cpp	/^void Smpp::hex_dump(const Smpp::Uint8* buff, Smpp::Uint32 len, std::ostream& os)$/;"	f	class:Smpp
+hton16	aux_types.hpp	/^    inline Smpp::Uint16 hton16(const Smpp::Uint16& n)$/;"	f	namespace:Smpp
+hton32	aux_types.hpp	/^    inline Smpp::Uint32 hton32(const Smpp::Uint32& n)$/;"	f	namespace:Smpp
+insert_16bit_tlv	header.hpp	/^        void insert_16bit_tlv(Uint16 t, Smpp::Uint16 v)$/;"	f	class:Smpp::Header
+insert_32bit_tlv	header.hpp	/^        void insert_32bit_tlv(Uint16 t, Smpp::Uint32 v)$/;"	f	class:Smpp::Header
+insert_8bit_tlv	header.hpp	/^        void insert_8bit_tlv(Uint16 t, const Smpp::Uint8 v)$/;"	f	class:Smpp::Header
+insert_after_tlv	header.cpp	/^Smpp::Header::insert_after_tlv(const Tlv* tlv, Smpp::Uint16 tag)$/;"	f	class:Smpp::Header
+insert_array_tlv	header.hpp	/^        void insert_array_tlv(Uint16 t, Smpp::Uint16 l, const Smpp::Uint8* v)$/;"	f	class:Smpp::Header
+insert_before_tlv	header.cpp	/^Smpp::Header::insert_before_tlv(const Tlv* tlv, Smpp::Uint16 tag)$/;"	f	class:Smpp::Header
+insert_string_tlv	header.hpp	/^        void insert_string_tlv(Uint16 t, const Smpp::String& v)$/;"	f	class:Smpp::Header
+insert_tlv	header.hpp	/^        void insert_tlv(const Tlv& tlv) {$/;"	f	class:Smpp::Header
+insert_tlv	header.hpp	/^        void insert_tlv(const Tlv* tlv) {$/;"	f	class:Smpp::Header
+interface_version	bind_receiver.hpp	/^        const InterfaceVersion& interface_version() const {$/;"	f	class:Smpp::BindReceiver
+interface_version	bind_receiver.hpp	/^        void interface_version(const int& p) { interface_version_ = p; }$/;"	f	class:Smpp::BindReceiver
+interface_version	bind_transceiver.hpp	/^        const InterfaceVersion& interface_version() const {$/;"	f	class:Smpp::BindTransceiver
+interface_version	bind_transceiver.hpp	/^        void interface_version(const int& p) { interface_version_ = p; }$/;"	f	class:Smpp::BindTransceiver
+interface_version	bind_transmitter.hpp	/^        const InterfaceVersion& interface_version() const {$/;"	f	class:Smpp::BindTransmitter
+interface_version	bind_transmitter.hpp	/^        void interface_version(const int& p) { interface_version_ = p; }$/;"	f	class:Smpp::BindTransmitter
+interface_version_	bind_receiver.hpp	/^        InterfaceVersion interface_version_;$/;"	m	class:Smpp::BindReceiver
+interface_version_	bind_transceiver.hpp	/^        InterfaceVersion interface_version_;$/;"	m	class:Smpp::BindTransceiver
+interface_version_	bind_transmitter.hpp	/^        InterfaceVersion interface_version_;$/;"	m	class:Smpp::BindTransmitter
+is_big_endian	aux_types.hpp	/^    inline bool is_big_endian() \/\/ Big Endian is network byte order.$/;"	f	namespace:Smpp
+its_reply_type	tlv.hpp	/^            its_reply_type               = 0x1380,$/;"	e	enum:Smpp::Tlv::<anonymous>
+its_session_info	tlv.hpp	/^            its_session_info             = 0x1383$/;"	e	enum:Smpp::Tlv::<anonymous>
+l_	header.hpp	/^            TlvList& l_;$/;"	m	class:Smpp::Header::ListFinder
+language_indicator	tlv.hpp	/^            language_indicator           = 0x020D,$/;"	e	enum:Smpp::Tlv::<anonymous>
+len_	aux_types.hpp	/^        size_t len_;$/;"	m	class:Smpp::Address
+length	aux_types.hpp	/^        Smpp::Uint32 length() const {$/;"	f	class:Smpp::UnsuccessSme
+length	aux_types.hpp	/^        size_t length() const { return 2 + addr_.length() + 1; }$/;"	f	class:Smpp::SmeAddress
+length	aux_types.hpp	/^        size_t length() const { return v_.length(); }$/;"	f	class:Smpp::Address
+length	aux_types.hpp	/^        size_t length() const { return v_.length(); }$/;"	f	class:Smpp::AddressRange
+length	aux_types.hpp	/^        size_t length() const { return v_.length(); }$/;"	f	class:Smpp::MessageId
+length	aux_types.hpp	/^        size_t length() const { return v_.length(); }$/;"	f	class:Smpp::Password
+length	aux_types.hpp	/^        size_t length() const { return v_.length(); }$/;"	f	class:Smpp::ServiceType
+length	aux_types.hpp	/^        size_t length() const { return v_.length(); }$/;"	f	class:Smpp::SystemId
+length	aux_types.hpp	/^        size_t length() const { return v_.length(); }$/;"	f	class:Smpp::SystemType
+length	aux_types.hpp	/^        size_t length() const { return v_.length(); }$/;"	f	class:Smpp::Time
+length	aux_types.hpp	/^        size_t length() const { return v_.size(); }$/;"	f	class:Smpp::ShortMessage
+length	tlv.hpp	/^        Smpp::Uint16 length() const { return length_; }$/;"	f	class:Smpp::Tlv
+length_	tlv.hpp	/^        Smpp::Uint16 length_;$/;"	m	class:Smpp::Tlv
+list_	header.hpp	/^            TlvList list_;$/;"	m	struct:Smpp::Header::CTlvList
+long_description	command_status.hpp	/^        inline static std::string long_description(const CommandStatus& p) {$/;"	f	class:Smpp::CommandStatus
+message_id	broadcast_sm.hpp	/^        const MessageId& message_id() const { return message_id_; }$/;"	f	class:Smpp::BroadcastSm
+message_id	broadcast_sm.hpp	/^        void message_id(const MessageId& p) {$/;"	f	class:Smpp::BroadcastSm
+message_id	broadcast_sm.hpp	/^        void message_id(const Smpp::Char* p) {$/;"	f	class:Smpp::BroadcastSm
+message_id	broadcast_sm_resp.hpp	/^        const MessageId& message_id() const { return message_id_; }$/;"	f	class:Smpp::BroadcastSmResp
+message_id	broadcast_sm_resp.hpp	/^        void message_id(const MessageId& p) {$/;"	f	class:Smpp::BroadcastSmResp
+message_id	broadcast_sm_resp.hpp	/^        void message_id(const Smpp::Char* p) {$/;"	f	class:Smpp::BroadcastSmResp
+message_id	cancel_broadcast_sm.hpp	/^        const MessageId& message_id() const { return message_id_; }$/;"	f	class:Smpp::CancelBroadcastSm
+message_id	cancel_broadcast_sm.hpp	/^        void message_id(const MessageId& p) {$/;"	f	class:Smpp::CancelBroadcastSm
+message_id	cancel_broadcast_sm.hpp	/^        void message_id(const Smpp::Char* p) {$/;"	f	class:Smpp::CancelBroadcastSm
+message_id	cancel_sm.hpp	/^        const MessageId& message_id() const { return message_id_; }$/;"	f	class:Smpp::CancelSm
+message_id	cancel_sm.hpp	/^        void message_id(const MessageId& p) {$/;"	f	class:Smpp::CancelSm
+message_id	cancel_sm.hpp	/^        void message_id(const Smpp::Char* p) {$/;"	f	class:Smpp::CancelSm
+message_id	data_sm_resp.hpp	/^        const MessageId& message_id() const { return message_id_; }$/;"	f	class:Smpp::DataSmResp
+message_id	data_sm_resp.hpp	/^        void message_id(const MessageId& p) {$/;"	f	class:Smpp::DataSmResp
+message_id	data_sm_resp.hpp	/^        void message_id(const Smpp::Char* p) {$/;"	f	class:Smpp::DataSmResp
+message_id	deliver_sm_resp.hpp	/^        const MessageId& message_id() const { return message_id_; }$/;"	f	class:Smpp::DeliverSmResp
+message_id	deliver_sm_resp.hpp	/^        void message_id(const MessageId& p) {$/;"	f	class:Smpp::DeliverSmResp
+message_id	deliver_sm_resp.hpp	/^        void message_id(const Smpp::Char* p) {$/;"	f	class:Smpp::DeliverSmResp
+message_id	query_broadcast_sm.hpp	/^        const MessageId& message_id() const { return message_id_; }$/;"	f	class:Smpp::QueryBroadcastSm
+message_id	query_broadcast_sm.hpp	/^        void message_id(const MessageId& p) {$/;"	f	class:Smpp::QueryBroadcastSm
+message_id	query_broadcast_sm.hpp	/^        void message_id(const Smpp::Char* p) {$/;"	f	class:Smpp::QueryBroadcastSm
+message_id	query_broadcast_sm_resp.hpp	/^        const MessageId& message_id() const { return message_id_; }$/;"	f	class:Smpp::QueryBroadcastSmResp
+message_id	query_broadcast_sm_resp.hpp	/^        void message_id(const MessageId& p) {$/;"	f	class:Smpp::QueryBroadcastSmResp
+message_id	query_broadcast_sm_resp.hpp	/^        void message_id(const Smpp::Char* p) {$/;"	f	class:Smpp::QueryBroadcastSmResp
+message_id	query_sm.hpp	/^        const MessageId& message_id() const { return message_id_; }$/;"	f	class:Smpp::QuerySm
+message_id	query_sm.hpp	/^        void message_id(const MessageId& p) {$/;"	f	class:Smpp::QuerySm
+message_id	query_sm.hpp	/^        void message_id(const Smpp::Char* p) {$/;"	f	class:Smpp::QuerySm
+message_id	query_sm_resp.hpp	/^        const MessageId& message_id() const { return message_id_; }$/;"	f	class:Smpp::QuerySmResp
+message_id	query_sm_resp.hpp	/^        void message_id(const MessageId& p) {$/;"	f	class:Smpp::QuerySmResp
+message_id	query_sm_resp.hpp	/^        void message_id(const Smpp::Char* p) {$/;"	f	class:Smpp::QuerySmResp
+message_id	replace_sm.hpp	/^        const MessageId& message_id() const { return message_id_; }$/;"	f	class:Smpp::ReplaceSm
+message_id	replace_sm.hpp	/^        void message_id(const MessageId& p) {$/;"	f	class:Smpp::ReplaceSm
+message_id	replace_sm.hpp	/^        void message_id(const Smpp::Char* p) {$/;"	f	class:Smpp::ReplaceSm
+message_id	submit_multi_resp.hpp	/^        const MessageId& message_id() const { return message_id_; }$/;"	f	class:Smpp::SubmitMultiResp
+message_id	submit_multi_resp.hpp	/^        void message_id(const MessageId& p) {$/;"	f	class:Smpp::SubmitMultiResp
+message_id	submit_multi_resp.hpp	/^        void message_id(const Smpp::Char* p) {$/;"	f	class:Smpp::SubmitMultiResp
+message_id	submit_sm_resp.hpp	/^        const MessageId& message_id() const { return message_id_; }$/;"	f	class:Smpp::SubmitSmResp
+message_id	submit_sm_resp.hpp	/^        void message_id(const MessageId& p) {$/;"	f	class:Smpp::SubmitSmResp
+message_id	submit_sm_resp.hpp	/^        void message_id(const Smpp::Char* p) {$/;"	f	class:Smpp::SubmitSmResp
+message_id_	broadcast_sm.hpp	/^        MessageId message_id_;$/;"	m	class:Smpp::BroadcastSm
+message_id_	broadcast_sm_resp.hpp	/^        MessageId message_id_;$/;"	m	class:Smpp::BroadcastSmResp
+message_id_	cancel_broadcast_sm.hpp	/^        MessageId message_id_;$/;"	m	class:Smpp::CancelBroadcastSm
+message_id_	cancel_sm.hpp	/^        MessageId message_id_;$/;"	m	class:Smpp::CancelSm
+message_id_	data_sm_resp.hpp	/^        MessageId message_id_; \/\/\/< The message id.$/;"	m	class:Smpp::DataSmResp
+message_id_	deliver_sm_resp.hpp	/^        MessageId message_id_;$/;"	m	class:Smpp::DeliverSmResp
+message_id_	query_broadcast_sm.hpp	/^        MessageId message_id_;$/;"	m	class:Smpp::QueryBroadcastSm
+message_id_	query_broadcast_sm_resp.hpp	/^        MessageId message_id_;$/;"	m	class:Smpp::QueryBroadcastSmResp
+message_id_	query_sm.hpp	/^        MessageId message_id_;$/;"	m	class:Smpp::QuerySm
+message_id_	query_sm_resp.hpp	/^        MessageId message_id_;$/;"	m	class:Smpp::QuerySmResp
+message_id_	replace_sm.hpp	/^        MessageId message_id_;$/;"	m	class:Smpp::ReplaceSm
+message_id_	submit_multi_resp.hpp	/^        MessageId message_id_;$/;"	m	class:Smpp::SubmitMultiResp
+message_id_	submit_sm_resp.hpp	/^        MessageId message_id_;$/;"	m	class:Smpp::SubmitSmResp
+message_payload	tlv.hpp	/^            message_payload              = 0x0424,$/;"	e	enum:Smpp::Tlv::<anonymous>
+message_state	query_broadcast_sm_resp.hpp	/^        const MessageState& message_state() const { return message_state_; }$/;"	f	class:Smpp::QueryBroadcastSmResp
+message_state	query_broadcast_sm_resp.hpp	/^        void message_state(const MessageState& p) {$/;"	f	class:Smpp::QueryBroadcastSmResp
+message_state	query_sm_resp.hpp	/^        const MessageState& message_state() const { return message_state_; }$/;"	f	class:Smpp::QuerySmResp
+message_state	query_sm_resp.hpp	/^        void message_state(const MessageState& p) {$/;"	f	class:Smpp::QuerySmResp
+message_state	tlv.hpp	/^            message_state                = 0x0427,$/;"	e	enum:Smpp::Tlv::<anonymous>
+message_state_	query_broadcast_sm_resp.hpp	/^        MessageState message_state_;$/;"	m	class:Smpp::QueryBroadcastSmResp
+message_state_	query_sm_resp.hpp	/^        MessageState message_state_;$/;"	m	class:Smpp::QuerySmResp
+more_messages_to_send	tlv.hpp	/^            more_messages_to_send        = 0x0426,$/;"	e	enum:Smpp::Tlv::<anonymous>
+ms_availability_status	tlv.hpp	/^            ms_availability_status       = 0x0422,$/;"	e	enum:Smpp::Tlv::<anonymous>
+ms_msg_wait_facilities	tlv.hpp	/^            ms_msg_wait_facilities       = 0x0030,$/;"	e	enum:Smpp::Tlv::<anonymous>
+ms_validity	tlv.hpp	/^            ms_validity                  = 0x1204,$/;"	e	enum:Smpp::Tlv::<anonymous>
+network_error_code	tlv.hpp	/^            network_error_code           = 0x0423,$/;"	e	enum:Smpp::Tlv::<anonymous>
+npi	aux_types.hpp	/^        const Npi& npi() const { return npi_; }$/;"	f	class:Smpp::SmeAddress
+npi_	aux_types.hpp	/^        Npi npi_;$/;"	m	class:Smpp::SmeAddress
+ntoh16	aux_types.hpp	/^    inline Smpp::Uint16 ntoh16(const Smpp::Uint16& n)$/;"	f	namespace:Smpp
+ntoh16	aux_types.hpp	/^    inline Smpp::Uint16 ntoh16(const Smpp::Uint8* b)$/;"	f	namespace:Smpp
+ntoh32	aux_types.hpp	/^    inline Smpp::Uint32 ntoh32(const Smpp::Uint32& n)$/;"	f	namespace:Smpp
+ntoh32	aux_types.hpp	/^    inline Smpp::Uint32 ntoh32(const Smpp::Uint8* b)$/;"	f	namespace:Smpp
+number_of_messages	tlv.hpp	/^            number_of_messages           = 0x0304,$/;"	e	enum:Smpp::Tlv::<anonymous>
+octetCount_	aux_types.hpp	/^        Smpp::Uint32 octetCount_;$/;"	m	class:Smpp::MultiDestinationAddresses
+octetCount_	aux_types.hpp	/^        Smpp::Uint32 octetCount_;$/;"	m	class:Smpp::UnsuccessSmeColl
+octet_count	aux_types.hpp	/^        Smpp::Uint32 octet_count() const { return octetCount_; }$/;"	f	class:Smpp::MultiDestinationAddresses
+octet_count	aux_types.hpp	/^        Smpp::Uint32 octet_count() const { return octetCount_; }$/;"	f	class:Smpp::UnsuccessSmeColl
+offset_	buffer.hpp	/^        Smpp::Uint32 offset_;$/;"	m	class:Smpp::Buffer
+operator ()	aux_types.hpp	/^            void operator()(const MultiDestinationAddressBase* p) {$/;"	f	struct:Smpp::MultiDestinationAddresses::Delete
+operator ()	aux_types.hpp	/^            void operator()(const UnsuccessSme* p) { delete p; }$/;"	f	struct:Smpp::UnsuccessSmeColl::Delete
+operator ()	buffer.cpp	/^Smpp::CopySubmitMultiAddresses::operator()(const MultiDestinationAddressBase* p)$/;"	f	class:Smpp::CopySubmitMultiAddresses
+operator ()	buffer.hpp	/^        void operator()(const UnsuccessSme* p) {$/;"	f	class:Smpp::CopyUnsuccessSmeColl
+operator ()	header.hpp	/^                Tlv* operator()(const Tlv* tp) { return new Tlv(*tp); }$/;"	f	struct:Smpp::Header::CTlvList::Copy
+operator ()	header.hpp	/^                void operator()(const Smpp::Tlv* tlv) { delete tlv; }$/;"	f	struct:Smpp::Header::CTlvList::Delete
+operator ()	header.hpp	/^            void operator()(const Tlv* tlv) {$/;"	f	class:Smpp::Header::ListFinder
+operator ()	tlv.hpp	/^            bool operator()(const Tlv* p) const {$/;"	f	class:Smpp::Tlv::CompareTag
+operator ()	tlv.hpp	/^            void operator()(const Tlv*& tlv) {$/;"	f	class:Smpp::Tlv::Encoder
+operator ++	sequence_number.hpp	/^        SequenceNumber operator++(int) {$/;"	f	class:Smpp::SequenceNumber
+operator ++	sequence_number.hpp	/^        SequenceNumber& operator++() {$/;"	f	class:Smpp::SequenceNumber
+operator +=	buffer.hpp	/^    inline Buffer& Buffer::operator+=(const MultiDestinationAddresses& p)$/;"	f	class:Smpp::Buffer
+operator +=	buffer.hpp	/^    inline Buffer& Buffer::operator+=(const ShortMessage& p)$/;"	f	class:Smpp::Buffer
+operator +=	buffer.hpp	/^    inline Buffer& Buffer::operator+=(const SmeAddress& p)$/;"	f	class:Smpp::Buffer
+operator +=	buffer.hpp	/^    inline Buffer& Buffer::operator+=(const Smpp::String& p)$/;"	f	class:Smpp::Buffer
+operator +=	buffer.hpp	/^    inline Buffer& Buffer::operator+=(const Smpp::Uint16& p)$/;"	f	class:Smpp::Buffer
+operator +=	buffer.hpp	/^    inline Buffer& Buffer::operator+=(const Smpp::Uint32& p)$/;"	f	class:Smpp::Buffer
+operator +=	buffer.hpp	/^    inline Buffer& Buffer::operator+=(const Smpp::Uint8& p)$/;"	f	class:Smpp::Buffer
+operator +=	buffer.hpp	/^    inline Buffer& Buffer::operator+=(const UnsuccessSmeColl& p)$/;"	f	class:Smpp::Buffer
+operator +=	command_length.hpp	/^        CommandLength& operator+=(int i) { val_ += i; return *this; }$/;"	f	class:Smpp::CommandLength
+operator =	aux_types.hpp	/^        Address& operator=(const char* p) {$/;"	f	class:Smpp::Address
+operator =	aux_types.hpp	/^        AddressRange& operator=(const Smpp::Char* p) {$/;"	f	class:Smpp::AddressRange
+operator =	aux_types.hpp	/^        DataCoding& operator=(const Smpp::Uint8& p) {$/;"	f	class:Smpp::DataCoding
+operator =	aux_types.hpp	/^        ErrorCode& operator=(const Smpp::Uint8& p) {$/;"	f	class:Smpp::ErrorCode
+operator =	aux_types.hpp	/^        EsmClass& operator=(const Smpp::Uint8& p) { v_ = p;  return *this; }$/;"	f	class:Smpp::EsmClass
+operator =	aux_types.hpp	/^        InterfaceVersion& operator=(const Smpp::Uint8& p) {$/;"	f	class:Smpp::InterfaceVersion
+operator =	aux_types.hpp	/^        InterfaceVersion& operator=(const int& p) {$/;"	f	class:Smpp::InterfaceVersion
+operator =	aux_types.hpp	/^        MessageId& operator=(const Smpp::Char* p) {$/;"	f	class:Smpp::MessageId
+operator =	aux_types.hpp	/^        MessageState& operator=(const Smpp::Uint8& p) {$/;"	f	class:Smpp::MessageState
+operator =	aux_types.hpp	/^        Npi& operator=(const Smpp::Uint8& p) { v_ = p; return *this; }$/;"	f	class:Smpp::Npi
+operator =	aux_types.hpp	/^        Password& operator=(const Smpp::Char* p) {$/;"	f	class:Smpp::Password
+operator =	aux_types.hpp	/^        PriorityFlag& operator=(const Smpp::Uint8& p) { v_ = p; return *this; }$/;"	f	class:Smpp::PriorityFlag
+operator =	aux_types.hpp	/^        ProtocolId& operator=(const Smpp::Uint8& p) { v_ = p;  return *this; }$/;"	f	class:Smpp::ProtocolId
+operator =	aux_types.hpp	/^        RegisteredDelivery& operator=(const Smpp::Uint8& p) {$/;"	f	class:Smpp::RegisteredDelivery
+operator =	aux_types.hpp	/^        ReplaceIfPresentFlag& operator=(const Smpp::Uint8& p) { $/;"	f	class:Smpp::ReplaceIfPresentFlag
+operator =	aux_types.hpp	/^        ServiceType& operator=(const Smpp::Char* p) {$/;"	f	class:Smpp::ServiceType
+operator =	aux_types.hpp	/^        ShortMessage& operator=(const Smpp::Char* p) {$/;"	f	class:Smpp::ShortMessage
+operator =	aux_types.hpp	/^        ShortMessage& operator=(const Smpp::String& p) {$/;"	f	class:Smpp::ShortMessage
+operator =	aux_types.hpp	/^        ShortMessage& operator=(const Smpp::Uint8* p) {$/;"	f	class:Smpp::ShortMessage
+operator =	aux_types.hpp	/^        SmDefaultMsgId& operator=(const Smpp::Uint8& p) {$/;"	f	class:Smpp::SmDefaultMsgId
+operator =	aux_types.hpp	/^        SystemId& operator=(const Smpp::Char* p) {$/;"	f	class:Smpp::SystemId
+operator =	aux_types.hpp	/^        SystemType& operator=(const Smpp::Char* p) {$/;"	f	class:Smpp::SystemType
+operator =	aux_types.hpp	/^        Time& operator=(const char* p) {$/;"	f	class:Smpp::Time
+operator =	aux_types.hpp	/^        Ton& operator=(const Smpp::Uint8& p) { v_ =  p; return *this; }$/;"	f	class:Smpp::Ton
+operator =	aux_types.hpp	/^        Ton& operator=(const int& p) { v_ = p; return *this; }$/;"	f	class:Smpp::Ton
+operator =	command_id.hpp	/^        CommandId& operator=(const Smpp::Uint32& p) { val_ = p; return *this; }$/;"	f	class:Smpp::CommandId
+operator =	header.hpp	/^            CTlvList& operator=(const CTlvList& t) {$/;"	f	struct:Smpp::Header::CTlvList
+operator =	tlv.hpp	/^        Tlv& operator=(const Tlv& rhs) {$/;"	f	class:Smpp::Tlv
+operator ==	tlv.hpp	/^        bool operator==(const Smpp::Uint16& tag) const { return tag == tag_; }$/;"	f	class:Smpp::Tlv
+operator Smpp::String	aux_types.hpp	/^        operator Smpp::String() const { return v_; }$/;"	f	class:Smpp::Address
+operator Smpp::String	aux_types.hpp	/^        operator Smpp::String() const { return v_; }$/;"	f	class:Smpp::AddressRange
+operator Smpp::String	aux_types.hpp	/^        operator Smpp::String() const { return v_; }$/;"	f	class:Smpp::MessageId
+operator Smpp::String	aux_types.hpp	/^        operator Smpp::String() const { return v_; }$/;"	f	class:Smpp::Password
+operator Smpp::String	aux_types.hpp	/^        operator Smpp::String() const { return v_; }$/;"	f	class:Smpp::ServiceType
+operator Smpp::String	aux_types.hpp	/^        operator Smpp::String() const { return v_; }$/;"	f	class:Smpp::SystemId
+operator Smpp::String	aux_types.hpp	/^        operator Smpp::String() const { return v_; }$/;"	f	class:Smpp::SystemType
+operator Smpp::String	aux_types.hpp	/^        operator Smpp::String() const { return v_; }$/;"	f	class:Smpp::Time
+operator Smpp::Uint32	command_id.hpp	/^        operator Smpp::Uint32() const { return val_; }$/;"	f	class:Smpp::CommandId
+operator Smpp::Uint32	command_length.hpp	/^        operator Smpp::Uint32() const { return val_; }$/;"	f	class:Smpp::CommandLength
+operator Smpp::Uint32	command_status.hpp	/^        operator Smpp::Uint32() const { return val_; }$/;"	f	class:Smpp::CommandStatus
+operator Smpp::Uint32	sequence_number.hpp	/^        operator Smpp::Uint32() const { return val_; }$/;"	f	class:Smpp::SequenceNumber
+operator Smpp::Uint8	aux_types.hpp	/^        operator Smpp::Uint8() const { return v_; }$/;"	f	class:Smpp::DataCoding
+operator Smpp::Uint8	aux_types.hpp	/^        operator Smpp::Uint8() const { return v_; }$/;"	f	class:Smpp::ErrorCode
+operator Smpp::Uint8	aux_types.hpp	/^        operator Smpp::Uint8() const { return v_; }$/;"	f	class:Smpp::EsmClass
+operator Smpp::Uint8	aux_types.hpp	/^        operator Smpp::Uint8() const { return v_; }$/;"	f	class:Smpp::InterfaceVersion
+operator Smpp::Uint8	aux_types.hpp	/^        operator Smpp::Uint8() const { return v_; }$/;"	f	class:Smpp::MessageState
+operator Smpp::Uint8	aux_types.hpp	/^        operator Smpp::Uint8() const { return v_; }$/;"	f	class:Smpp::Npi
+operator Smpp::Uint8	aux_types.hpp	/^        operator Smpp::Uint8() const { return v_; }$/;"	f	class:Smpp::PriorityFlag
+operator Smpp::Uint8	aux_types.hpp	/^        operator Smpp::Uint8() const { return v_; }$/;"	f	class:Smpp::ProtocolId
+operator Smpp::Uint8	aux_types.hpp	/^        operator Smpp::Uint8() const { return v_; }$/;"	f	class:Smpp::RegisteredDelivery
+operator Smpp::Uint8	aux_types.hpp	/^        operator Smpp::Uint8() const { return v_; }$/;"	f	class:Smpp::ReplaceIfPresentFlag
+operator Smpp::Uint8	aux_types.hpp	/^        operator Smpp::Uint8() const { return v_; }$/;"	f	class:Smpp::SmDefaultMsgId
+operator Smpp::Uint8	aux_types.hpp	/^        operator Smpp::Uint8() const { return v_; }$/;"	f	class:Smpp::Ton
+operator bool	tlv.hpp	/^        operator bool() const { return tag_ != 0; }$/;"	f	class:Smpp::Tlv
+operator const std::vector<Smpp::Uint8>&	aux_types.hpp	/^        operator const std::vector<Smpp::Uint8>&() const { return v_; }$/;"	f	class:Smpp::ShortMessage
+password	bind_receiver.hpp	/^        const Password& password() const { return password_; }$/;"	f	class:Smpp::BindReceiver
+password	bind_receiver.hpp	/^        void password(const Password& p) {$/;"	f	class:Smpp::BindReceiver
+password	bind_receiver.hpp	/^        void password(const Smpp::Char* p) {$/;"	f	class:Smpp::BindReceiver
+password	bind_transceiver.hpp	/^        const Password& password() const { return password_; }$/;"	f	class:Smpp::BindTransceiver
+password	bind_transceiver.hpp	/^        void password(const Password& p) {$/;"	f	class:Smpp::BindTransceiver
+password	bind_transceiver.hpp	/^        void password(const Smpp::Char* p) {$/;"	f	class:Smpp::BindTransceiver
+password	bind_transmitter.hpp	/^        const Password& password() const { return password_; }$/;"	f	class:Smpp::BindTransmitter
+password	bind_transmitter.hpp	/^        void password(const Password& p) {$/;"	f	class:Smpp::BindTransmitter
+password	bind_transmitter.hpp	/^        void password(const Smpp::Char* p) {$/;"	f	class:Smpp::BindTransmitter
+password	outbind.hpp	/^        const Password& password() const { return password_; }$/;"	f	class:Smpp::Outbind
+password	outbind.hpp	/^        void password(const Password& p) {$/;"	f	class:Smpp::Outbind
+password	outbind.hpp	/^        void password(const Smpp::Char* p) {$/;"	f	class:Smpp::Outbind
+password_	bind_receiver.hpp	/^        Password password_;$/;"	m	class:Smpp::BindReceiver
+password_	bind_transceiver.hpp	/^        Password password_;$/;"	m	class:Smpp::BindTransceiver
+password_	bind_transmitter.hpp	/^        Password password_;$/;"	m	class:Smpp::BindTransmitter
+password_	outbind.hpp	/^        Password password_;$/;"	m	class:Smpp::Outbind
+payload_type	tlv.hpp	/^            payload_type                 = 0x0019,$/;"	e	enum:Smpp::Tlv::<anonymous>
+priority_flag	broadcast_sm.hpp	/^        const PriorityFlag& priority_flag() const { return priority_flag_; }$/;"	f	class:Smpp::BroadcastSm
+priority_flag	broadcast_sm.hpp	/^        void priority_flag(const int& p) { priority_flag_ = p; }$/;"	f	class:Smpp::BroadcastSm
+priority_flag	deliver_sm.hpp	/^        const PriorityFlag& priority_flag() const { return priority_flag_; }$/;"	f	class:Smpp::DeliverSm
+priority_flag	deliver_sm.hpp	/^        void priority_flag(const int& p) { priority_flag_ = p; }$/;"	f	class:Smpp::DeliverSm
+priority_flag	submit_multi.hpp	/^        const PriorityFlag& priority_flag() const { return priority_flag_; }$/;"	f	class:Smpp::SubmitMulti
+priority_flag	submit_multi.hpp	/^        void priority_flag(const int& p) { priority_flag_ = p; }$/;"	f	class:Smpp::SubmitMulti
+priority_flag	submit_sm.hpp	/^        const PriorityFlag& priority_flag() const { return priority_flag_; }$/;"	f	class:Smpp::SubmitSm
+priority_flag	submit_sm.hpp	/^        void priority_flag(const int& p) { priority_flag_ = p; }$/;"	f	class:Smpp::SubmitSm
+priority_flag_	broadcast_sm.hpp	/^        PriorityFlag priority_flag_;$/;"	m	class:Smpp::BroadcastSm
+priority_flag_	deliver_sm.hpp	/^        PriorityFlag priority_flag_;$/;"	m	class:Smpp::DeliverSm
+priority_flag_	submit_multi.hpp	/^        PriorityFlag priority_flag_;$/;"	m	class:Smpp::SubmitMulti
+priority_flag_	submit_sm.hpp	/^        PriorityFlag priority_flag_;$/;"	m	class:Smpp::SubmitSm
+privacy_indicator	tlv.hpp	/^            privacy_indicator            = 0x0201,$/;"	e	enum:Smpp::Tlv::<anonymous>
+protocol_id	deliver_sm.hpp	/^        const ProtocolId& protocol_id() const { return protocol_id_; }$/;"	f	class:Smpp::DeliverSm
+protocol_id	deliver_sm.hpp	/^        void protocol_id(const int& p) { protocol_id_ = p; }$/;"	f	class:Smpp::DeliverSm
+protocol_id	submit_multi.hpp	/^        const ProtocolId& protocol_id() const { return protocol_id_; }$/;"	f	class:Smpp::SubmitMulti
+protocol_id	submit_multi.hpp	/^        void protocol_id(const int& p) { protocol_id_ = p; }$/;"	f	class:Smpp::SubmitMulti
+protocol_id	submit_sm.hpp	/^        const ProtocolId& protocol_id() const { return protocol_id_; }$/;"	f	class:Smpp::SubmitSm
+protocol_id	submit_sm.hpp	/^        void protocol_id(const int& p) { protocol_id_ = p; }$/;"	f	class:Smpp::SubmitSm
+protocol_id_	deliver_sm.hpp	/^        ProtocolId protocol_id_;$/;"	m	class:Smpp::DeliverSm
+protocol_id_	submit_multi.hpp	/^        ProtocolId protocol_id_;$/;"	m	class:Smpp::SubmitMulti
+protocol_id_	submit_sm.hpp	/^        ProtocolId protocol_id_;$/;"	m	class:Smpp::SubmitSm
+qos_time_to_live	tlv.hpp	/^            qos_time_to_live             = 0x0017,$/;"	e	enum:Smpp::Tlv::<anonymous>
+receipted_message_id	tlv.hpp	/^            receipted_message_id         = 0x001E,$/;"	e	enum:Smpp::Tlv::<anonymous>
+registered_delivery	data_sm.hpp	/^        const RegisteredDelivery& registered_delivery() const {$/;"	f	class:Smpp::DataSm
+registered_delivery	data_sm.hpp	/^        void registered_delivery(const RegisteredDelivery& p) {$/;"	f	class:Smpp::DataSm
+registered_delivery	deliver_sm.hpp	/^        const RegisteredDelivery& registered_delivery() const {$/;"	f	class:Smpp::DeliverSm
+registered_delivery	deliver_sm.hpp	/^        void registered_delivery(const RegisteredDelivery& p) {$/;"	f	class:Smpp::DeliverSm
+registered_delivery	replace_sm.hpp	/^        const RegisteredDelivery& registered_delivery() const {$/;"	f	class:Smpp::ReplaceSm
+registered_delivery	replace_sm.hpp	/^        void registered_delivery(const RegisteredDelivery& p) {$/;"	f	class:Smpp::ReplaceSm
+registered_delivery	submit_multi.hpp	/^        const RegisteredDelivery& registered_delivery() const {$/;"	f	class:Smpp::SubmitMulti
+registered_delivery	submit_multi.hpp	/^        void registered_delivery(const RegisteredDelivery& p) {$/;"	f	class:Smpp::SubmitMulti
+registered_delivery	submit_sm.hpp	/^        const RegisteredDelivery& registered_delivery() const {$/;"	f	class:Smpp::SubmitSm
+registered_delivery	submit_sm.hpp	/^        void registered_delivery(const RegisteredDelivery& p) {$/;"	f	class:Smpp::SubmitSm
+registered_delivery_	data_sm.hpp	/^        RegisteredDelivery registered_delivery_;$/;"	m	class:Smpp::DataSm
+registered_delivery_	deliver_sm.hpp	/^        RegisteredDelivery registered_delivery_;$/;"	m	class:Smpp::DeliverSm
+registered_delivery_	replace_sm.hpp	/^        RegisteredDelivery registered_delivery_;$/;"	m	class:Smpp::ReplaceSm
+registered_delivery_	submit_multi.hpp	/^        RegisteredDelivery registered_delivery_;$/;"	m	class:Smpp::SubmitMulti
+registered_delivery_	submit_sm.hpp	/^        RegisteredDelivery registered_delivery_;$/;"	m	class:Smpp::SubmitSm
+remove_tlv	header.hpp	/^        void remove_tlv(Uint16 t)$/;"	f	class:Smpp::Header
+replace_if_present_flag	broadcast_sm.hpp	/^        const ReplaceIfPresentFlag& replace_if_present_flag() const {$/;"	f	class:Smpp::BroadcastSm
+replace_if_present_flag	broadcast_sm.hpp	/^        void replace_if_present_flag(const ReplaceIfPresentFlag& p) {$/;"	f	class:Smpp::BroadcastSm
+replace_if_present_flag	deliver_sm.hpp	/^        const ReplaceIfPresentFlag& replace_if_present_flag() const {$/;"	f	class:Smpp::DeliverSm
+replace_if_present_flag	deliver_sm.hpp	/^        void replace_if_present_flag(const ReplaceIfPresentFlag& p) {$/;"	f	class:Smpp::DeliverSm
+replace_if_present_flag	submit_multi.hpp	/^        const ReplaceIfPresentFlag& replace_if_present_flag() const {$/;"	f	class:Smpp::SubmitMulti
+replace_if_present_flag	submit_multi.hpp	/^        void replace_if_present_flag(const ReplaceIfPresentFlag& p) {$/;"	f	class:Smpp::SubmitMulti
+replace_if_present_flag	submit_sm.hpp	/^        const ReplaceIfPresentFlag& replace_if_present_flag() const {$/;"	f	class:Smpp::SubmitSm
+replace_if_present_flag	submit_sm.hpp	/^        void replace_if_present_flag(const ReplaceIfPresentFlag& p) {$/;"	f	class:Smpp::SubmitSm
+replace_if_present_flag_	broadcast_sm.hpp	/^        ReplaceIfPresentFlag replace_if_present_flag_;$/;"	m	class:Smpp::BroadcastSm
+replace_if_present_flag_	deliver_sm.hpp	/^        ReplaceIfPresentFlag replace_if_present_flag_;$/;"	m	class:Smpp::DeliverSm
+replace_if_present_flag_	submit_multi.hpp	/^        ReplaceIfPresentFlag replace_if_present_flag_;$/;"	m	class:Smpp::SubmitMulti
+replace_if_present_flag_	submit_sm.hpp	/^        ReplaceIfPresentFlag replace_if_present_flag_;$/;"	m	class:Smpp::SubmitSm
+reset	buffer.hpp	/^    inline void Buffer::reset()$/;"	f	class:Smpp::Buffer
+reset	buffer.hpp	/^    inline void Buffer::reset(const Smpp::Uint32& l)$/;"	f	class:Smpp::Buffer
+sar_msg_ref_num	tlv.hpp	/^            sar_msg_ref_num              = 0x020C,$/;"	e	enum:Smpp::Tlv::<anonymous>
+sar_segment_seqnum	tlv.hpp	/^            sar_segment_seqnum           = 0x020F,$/;"	e	enum:Smpp::Tlv::<anonymous>
+sar_total_segments	tlv.hpp	/^            sar_total_segments           = 0x020E,$/;"	e	enum:Smpp::Tlv::<anonymous>
+sc_interface_version	tlv.hpp	/^            sc_interface_version         = 0x0210,$/;"	e	enum:Smpp::Tlv::<anonymous>
+schedule_delivery_time	broadcast_sm.hpp	/^        const Time& schedule_delivery_time() const {$/;"	f	class:Smpp::BroadcastSm
+schedule_delivery_time	broadcast_sm.hpp	/^        void schedule_delivery_time(const Smpp::Char* p) {$/;"	f	class:Smpp::BroadcastSm
+schedule_delivery_time	broadcast_sm.hpp	/^        void schedule_delivery_time(const Time& p) {$/;"	f	class:Smpp::BroadcastSm
+schedule_delivery_time	deliver_sm.hpp	/^        const Time& schedule_delivery_time() const {$/;"	f	class:Smpp::DeliverSm
+schedule_delivery_time	deliver_sm.hpp	/^        void schedule_delivery_time(const Smpp::Char* p) {$/;"	f	class:Smpp::DeliverSm
+schedule_delivery_time	deliver_sm.hpp	/^        void schedule_delivery_time(const Time& p) {$/;"	f	class:Smpp::DeliverSm
+schedule_delivery_time	replace_sm.hpp	/^        const Time& schedule_delivery_time() const {$/;"	f	class:Smpp::ReplaceSm
+schedule_delivery_time	replace_sm.hpp	/^        void schedule_delivery_time(const Smpp::Char* p) {$/;"	f	class:Smpp::ReplaceSm
+schedule_delivery_time	replace_sm.hpp	/^        void schedule_delivery_time(const Time& p) {$/;"	f	class:Smpp::ReplaceSm
+schedule_delivery_time	submit_multi.hpp	/^        const Time& schedule_delivery_time() const {$/;"	f	class:Smpp::SubmitMulti
+schedule_delivery_time	submit_multi.hpp	/^        void schedule_delivery_time(const Smpp::Char* p) {$/;"	f	class:Smpp::SubmitMulti
+schedule_delivery_time	submit_multi.hpp	/^        void schedule_delivery_time(const Time& p) {$/;"	f	class:Smpp::SubmitMulti
+schedule_delivery_time	submit_sm.hpp	/^        const Time& schedule_delivery_time() const {$/;"	f	class:Smpp::SubmitSm
+schedule_delivery_time	submit_sm.hpp	/^        void schedule_delivery_time(const Smpp::Char* p) {$/;"	f	class:Smpp::SubmitSm
+schedule_delivery_time	submit_sm.hpp	/^        void schedule_delivery_time(const Time& p) {$/;"	f	class:Smpp::SubmitSm
+schedule_delivery_time_	broadcast_sm.hpp	/^        Time schedule_delivery_time_;$/;"	m	class:Smpp::BroadcastSm
+schedule_delivery_time_	deliver_sm.hpp	/^        Time schedule_delivery_time_;$/;"	m	class:Smpp::DeliverSm
+schedule_delivery_time_	replace_sm.hpp	/^        Time schedule_delivery_time_;$/;"	m	class:Smpp::ReplaceSm
+schedule_delivery_time_	submit_multi.hpp	/^        Time schedule_delivery_time_;$/;"	m	class:Smpp::SubmitMulti
+schedule_delivery_time_	submit_sm.hpp	/^        Time schedule_delivery_time_;$/;"	m	class:Smpp::SubmitSm
+sequence_number	header.hpp	/^        Smpp::Uint32 sequence_number() const { return sequence_number_; }$/;"	f	class:Smpp::Header
+sequence_number	header.hpp	/^        void sequence_number(const Smpp::Uint32& p, bool allow_0 = false) {$/;"	f	class:Smpp::Header
+sequence_number_	header.hpp	/^        SequenceNumber sequence_number_;$/;"	m	class:Smpp::Header
+service_type	broadcast_sm.hpp	/^        const ServiceType& service_type() const { return service_type_; }$/;"	f	class:Smpp::BroadcastSm
+service_type	broadcast_sm.hpp	/^        void service_type(const ServiceType& p) {$/;"	f	class:Smpp::BroadcastSm
+service_type	broadcast_sm.hpp	/^        void service_type(const Smpp::Char* p) {$/;"	f	class:Smpp::BroadcastSm
+service_type	cancel_broadcast_sm.hpp	/^        const ServiceType& service_type() const { return service_type_; }$/;"	f	class:Smpp::CancelBroadcastSm
+service_type	cancel_broadcast_sm.hpp	/^        void service_type(const ServiceType& p) {$/;"	f	class:Smpp::CancelBroadcastSm
+service_type	cancel_broadcast_sm.hpp	/^        void service_type(const Smpp::Char* p) {$/;"	f	class:Smpp::CancelBroadcastSm
+service_type	cancel_sm.hpp	/^        const ServiceType& service_type() const { return service_type_; }$/;"	f	class:Smpp::CancelSm
+service_type	cancel_sm.hpp	/^        void service_type(const ServiceType& p) {$/;"	f	class:Smpp::CancelSm
+service_type	cancel_sm.hpp	/^        void service_type(const Smpp::Char* p) {$/;"	f	class:Smpp::CancelSm
+service_type	data_sm.hpp	/^        const ServiceType& service_type() const { return service_type_; }$/;"	f	class:Smpp::DataSm
+service_type	data_sm.hpp	/^        void service_type(const ServiceType& p) {$/;"	f	class:Smpp::DataSm
+service_type	data_sm.hpp	/^        void service_type(const Smpp::Char* p) {$/;"	f	class:Smpp::DataSm
+service_type	deliver_sm.hpp	/^        const ServiceType& service_type() const { return service_type_; }$/;"	f	class:Smpp::DeliverSm
+service_type	deliver_sm.hpp	/^        void service_type(const ServiceType& p) {$/;"	f	class:Smpp::DeliverSm
+service_type	deliver_sm.hpp	/^        void service_type(const Smpp::Char* p) {$/;"	f	class:Smpp::DeliverSm
+service_type	submit_multi.hpp	/^        const ServiceType& service_type() const { return service_type_; }$/;"	f	class:Smpp::SubmitMulti
+service_type	submit_multi.hpp	/^        void service_type(const ServiceType& p) {$/;"	f	class:Smpp::SubmitMulti
+service_type	submit_multi.hpp	/^        void service_type(const Smpp::Char* p) {$/;"	f	class:Smpp::SubmitMulti
+service_type	submit_sm.hpp	/^        const ServiceType& service_type() const { return service_type_; }$/;"	f	class:Smpp::SubmitSm
+service_type	submit_sm.hpp	/^        void service_type(const ServiceType& p) {$/;"	f	class:Smpp::SubmitSm
+service_type	submit_sm.hpp	/^        void service_type(const Smpp::Char* p) {$/;"	f	class:Smpp::SubmitSm
+service_type_	broadcast_sm.hpp	/^        ServiceType service_type_;$/;"	m	class:Smpp::BroadcastSm
+service_type_	cancel_broadcast_sm.hpp	/^        ServiceType service_type_;$/;"	m	class:Smpp::CancelBroadcastSm
+service_type_	cancel_sm.hpp	/^        ServiceType service_type_;$/;"	m	class:Smpp::CancelSm
+service_type_	data_sm.hpp	/^        ServiceType service_type_;$/;"	m	class:Smpp::DataSm
+service_type_	deliver_sm.hpp	/^        ServiceType service_type_;$/;"	m	class:Smpp::DeliverSm
+service_type_	submit_multi.hpp	/^        ServiceType service_type_;$/;"	m	class:Smpp::SubmitMulti
+service_type_	submit_sm.hpp	/^        ServiceType service_type_;$/;"	m	class:Smpp::SubmitSm
+set_command_status	header.hpp	/^        void set_command_status(const CommandStatus& p) {$/;"	f	class:Smpp::Header
+set_dpf	tlv.hpp	/^            set_dpf                      = 0x0421,$/;"	e	enum:Smpp::Tlv::<anonymous>
+short_message	deliver_sm.hpp	/^        const ShortMessage& short_message() const { return short_message_; }$/;"	f	class:Smpp::DeliverSm
+short_message	deliver_sm.hpp	/^        void short_message(const Smpp::Uint8* p, Smpp::Uint8 l) {$/;"	f	class:Smpp::DeliverSm
+short_message	replace_sm.hpp	/^        const ShortMessage& short_message() const { return short_message_; }$/;"	f	class:Smpp::ReplaceSm
+short_message	replace_sm.hpp	/^        void short_message(const Smpp::Uint8* p, Smpp::Uint8 l) {$/;"	f	class:Smpp::ReplaceSm
+short_message	submit_multi.hpp	/^        const ShortMessage& short_message() const { return short_message_; }$/;"	f	class:Smpp::SubmitMulti
+short_message	submit_multi.hpp	/^        void short_message(const Smpp::Uint8* p, Smpp::Uint8 l) {$/;"	f	class:Smpp::SubmitMulti
+short_message	submit_sm.hpp	/^        const ShortMessage& short_message() const { return short_message_; }$/;"	f	class:Smpp::SubmitSm
+short_message	submit_sm.hpp	/^        void short_message(const Smpp::Uint8* p, Smpp::Uint8 l) {$/;"	f	class:Smpp::SubmitSm
+short_message_	deliver_sm.hpp	/^        ShortMessage short_message_;$/;"	m	class:Smpp::DeliverSm
+short_message_	replace_sm.hpp	/^        ShortMessage short_message_;$/;"	m	class:Smpp::ReplaceSm
+short_message_	submit_multi.hpp	/^        ShortMessage short_message_;$/;"	m	class:Smpp::SubmitMulti
+short_message_	submit_sm.hpp	/^        ShortMessage short_message_;$/;"	m	class:Smpp::SubmitSm
+size	aux_types.hpp	/^        Smpp::Uint8 size() const { return addrs_.size(); }$/;"	f	class:Smpp::MultiDestinationAddresses
+size	aux_types.hpp	/^        Smpp::Uint8 size() const { return v_.size(); }$/;"	f	class:Smpp::UnsuccessSmeColl
+sm_default_msg_id	broadcast_sm.hpp	/^        const SmDefaultMsgId& sm_default_msg_id() const {$/;"	f	class:Smpp::BroadcastSm
+sm_default_msg_id	broadcast_sm.hpp	/^        void sm_default_msg_id(const SmDefaultMsgId& p) {$/;"	f	class:Smpp::BroadcastSm
+sm_default_msg_id	deliver_sm.hpp	/^        const SmDefaultMsgId& sm_default_msg_id() const {$/;"	f	class:Smpp::DeliverSm
+sm_default_msg_id	deliver_sm.hpp	/^        void sm_default_msg_id(const SmDefaultMsgId& p) {$/;"	f	class:Smpp::DeliverSm
+sm_default_msg_id	replace_sm.hpp	/^        const SmDefaultMsgId& sm_default_msg_id() const {$/;"	f	class:Smpp::ReplaceSm
+sm_default_msg_id	replace_sm.hpp	/^        void sm_default_msg_id(const SmDefaultMsgId& p) {$/;"	f	class:Smpp::ReplaceSm
+sm_default_msg_id	submit_multi.hpp	/^        const SmDefaultMsgId& sm_default_msg_id() const {$/;"	f	class:Smpp::SubmitMulti
+sm_default_msg_id	submit_multi.hpp	/^        void sm_default_msg_id(const SmDefaultMsgId& p) {$/;"	f	class:Smpp::SubmitMulti
+sm_default_msg_id	submit_sm.hpp	/^        const SmDefaultMsgId& sm_default_msg_id() const {$/;"	f	class:Smpp::SubmitSm
+sm_default_msg_id	submit_sm.hpp	/^        void sm_default_msg_id(const SmDefaultMsgId& p) {$/;"	f	class:Smpp::SubmitSm
+sm_default_msg_id_	broadcast_sm.hpp	/^        SmDefaultMsgId sm_default_msg_id_;$/;"	m	class:Smpp::BroadcastSm
+sm_default_msg_id_	deliver_sm.hpp	/^        SmDefaultMsgId sm_default_msg_id_;$/;"	m	class:Smpp::DeliverSm
+sm_default_msg_id_	replace_sm.hpp	/^        SmDefaultMsgId sm_default_msg_id_;$/;"	m	class:Smpp::ReplaceSm
+sm_default_msg_id_	submit_multi.hpp	/^        SmDefaultMsgId sm_default_msg_id_;$/;"	m	class:Smpp::SubmitMulti
+sm_default_msg_id_	submit_sm.hpp	/^        SmDefaultMsgId sm_default_msg_id_;$/;"	m	class:Smpp::SubmitSm
+sm_length	deliver_sm.hpp	/^        const Smpp::String::size_type sm_length() const {$/;"	f	class:Smpp::DeliverSm
+sm_length	replace_sm.hpp	/^        const Smpp::String::size_type sm_length() const {$/;"	f	class:Smpp::ReplaceSm
+sm_length	submit_multi.hpp	/^        const Smpp::String::size_type sm_length() const {$/;"	f	class:Smpp::SubmitMulti
+sm_length	submit_sm.hpp	/^        const Smpp::String::size_type sm_length() const {$/;"	f	class:Smpp::SubmitSm
+smeAddress	aux_types.hpp	/^        const SmeAddress& smeAddress() const { return smeAddress_; }$/;"	f	class:Smpp::UnsuccessSme
+smeAddress_	aux_types.hpp	/^        SmeAddress smeAddress_;$/;"	m	class:Smpp::UnsuccessSme
+sms_signal	tlv.hpp	/^            sms_signal                   = 0x1203,$/;"	e	enum:Smpp::Tlv::<anonymous>
+source_addr	alert_notification.hpp	/^        const SmeAddress& source_addr() const { return source_addr_; }$/;"	f	class:Smpp::AlertNotification
+source_addr	alert_notification.hpp	/^        void source_addr(const Address& p) {$/;"	f	class:Smpp::AlertNotification
+source_addr	alert_notification.hpp	/^        void source_addr(const SmeAddress& p) {$/;"	f	class:Smpp::AlertNotification
+source_addr	broadcast_sm.hpp	/^        const SmeAddress& source_addr() const { return source_addr_; }$/;"	f	class:Smpp::BroadcastSm
+source_addr	broadcast_sm.hpp	/^        void source_addr(const Address& p) {$/;"	f	class:Smpp::BroadcastSm
+source_addr	broadcast_sm.hpp	/^        void source_addr(const SmeAddress& p) {$/;"	f	class:Smpp::BroadcastSm
+source_addr	cancel_broadcast_sm.hpp	/^        const SmeAddress& source_addr() const { return source_addr_; }$/;"	f	class:Smpp::CancelBroadcastSm
+source_addr	cancel_broadcast_sm.hpp	/^        void source_addr(const Address& p) {$/;"	f	class:Smpp::CancelBroadcastSm
+source_addr	cancel_broadcast_sm.hpp	/^        void source_addr(const SmeAddress& p) {$/;"	f	class:Smpp::CancelBroadcastSm
+source_addr	cancel_sm.hpp	/^        const SmeAddress& source_addr() const { return source_addr_; }$/;"	f	class:Smpp::CancelSm
+source_addr	cancel_sm.hpp	/^        void source_addr(const Address& p) {$/;"	f	class:Smpp::CancelSm
+source_addr	cancel_sm.hpp	/^        void source_addr(const SmeAddress& p) {$/;"	f	class:Smpp::CancelSm
+source_addr	data_sm.hpp	/^        const SmeAddress& source_addr() const { return source_addr_; }$/;"	f	class:Smpp::DataSm
+source_addr	data_sm.hpp	/^        void source_addr(const Address& p) {$/;"	f	class:Smpp::DataSm
+source_addr	data_sm.hpp	/^        void source_addr(const SmeAddress& p) {$/;"	f	class:Smpp::DataSm
+source_addr	deliver_sm.hpp	/^        const SmeAddress& source_addr() const { return source_addr_; }$/;"	f	class:Smpp::DeliverSm
+source_addr	deliver_sm.hpp	/^        void source_addr(const Address& p) {$/;"	f	class:Smpp::DeliverSm
+source_addr	deliver_sm.hpp	/^        void source_addr(const SmeAddress& p) {$/;"	f	class:Smpp::DeliverSm
+source_addr	query_broadcast_sm.hpp	/^        const SmeAddress& source_addr() const { return source_addr_; }$/;"	f	class:Smpp::QueryBroadcastSm
+source_addr	query_broadcast_sm.hpp	/^        void source_addr(const Address& p) {$/;"	f	class:Smpp::QueryBroadcastSm
+source_addr	query_broadcast_sm.hpp	/^        void source_addr(const SmeAddress& p) {$/;"	f	class:Smpp::QueryBroadcastSm
+source_addr	query_sm.hpp	/^        const SmeAddress& source_addr() const { return source_addr_; }$/;"	f	class:Smpp::QuerySm
+source_addr	query_sm.hpp	/^        void source_addr(const Address& p) {$/;"	f	class:Smpp::QuerySm
+source_addr	query_sm.hpp	/^        void source_addr(const SmeAddress& p) {$/;"	f	class:Smpp::QuerySm
+source_addr	replace_sm.hpp	/^        const SmeAddress& source_addr() const { return source_addr_; }$/;"	f	class:Smpp::ReplaceSm
+source_addr	replace_sm.hpp	/^        void source_addr(const Address& p) {$/;"	f	class:Smpp::ReplaceSm
+source_addr	replace_sm.hpp	/^        void source_addr(const SmeAddress& p) {$/;"	f	class:Smpp::ReplaceSm
+source_addr	submit_multi.hpp	/^        const SmeAddress& source_addr() const { return source_addr_; }$/;"	f	class:Smpp::SubmitMulti
+source_addr	submit_multi.hpp	/^        void source_addr(const Address& p) {$/;"	f	class:Smpp::SubmitMulti
+source_addr	submit_multi.hpp	/^        void source_addr(const SmeAddress& p) {$/;"	f	class:Smpp::SubmitMulti
+source_addr	submit_sm.hpp	/^        const SmeAddress& source_addr() const { return source_addr_; }$/;"	f	class:Smpp::SubmitSm
+source_addr	submit_sm.hpp	/^        void source_addr(const Address& p) {$/;"	f	class:Smpp::SubmitSm
+source_addr	submit_sm.hpp	/^        void source_addr(const SmeAddress& p) {$/;"	f	class:Smpp::SubmitSm
+source_addr_	alert_notification.hpp	/^        SmeAddress source_addr_;$/;"	m	class:Smpp::AlertNotification
+source_addr_	broadcast_sm.hpp	/^        SmeAddress source_addr_;$/;"	m	class:Smpp::BroadcastSm
+source_addr_	cancel_broadcast_sm.hpp	/^        SmeAddress source_addr_;$/;"	m	class:Smpp::CancelBroadcastSm
+source_addr_	cancel_sm.hpp	/^        SmeAddress source_addr_;$/;"	m	class:Smpp::CancelSm
+source_addr_	data_sm.hpp	/^        SmeAddress source_addr_;$/;"	m	class:Smpp::DataSm
+source_addr_	deliver_sm.hpp	/^        SmeAddress source_addr_;$/;"	m	class:Smpp::DeliverSm
+source_addr_	query_broadcast_sm.hpp	/^        SmeAddress source_addr_;$/;"	m	class:Smpp::QueryBroadcastSm
+source_addr_	query_sm.hpp	/^        SmeAddress source_addr_;$/;"	m	class:Smpp::QuerySm
+source_addr_	replace_sm.hpp	/^        SmeAddress source_addr_;$/;"	m	class:Smpp::ReplaceSm
+source_addr_	submit_multi.hpp	/^        SmeAddress source_addr_;$/;"	m	class:Smpp::SubmitMulti
+source_addr_	submit_sm.hpp	/^        SmeAddress source_addr_;$/;"	m	class:Smpp::SubmitSm
+source_addr_subunit	tlv.hpp	/^            source_addr_subunit          = 0x000D,$/;"	e	enum:Smpp::Tlv::<anonymous>
+source_bearer_type	tlv.hpp	/^            source_bearer_type           = 0x000F,$/;"	e	enum:Smpp::Tlv::<anonymous>
+source_network_id	tlv.hpp	/^            source_network_id            = 0x060D,$/;"	e	enum:Smpp::Tlv::<anonymous>
+source_network_type	tlv.hpp	/^            source_network_type          = 0x000E,$/;"	e	enum:Smpp::Tlv::<anonymous>
+source_node_id	tlv.hpp	/^            source_node_id               = 0x060F,$/;"	e	enum:Smpp::Tlv::<anonymous>
+source_port	tlv.hpp	/^            source_port                  = 0x020A,$/;"	e	enum:Smpp::Tlv::<anonymous>
+source_subaddress	tlv.hpp	/^            source_subaddress            = 0x0202,$/;"	e	enum:Smpp::Tlv::<anonymous>
+source_telematics_id	tlv.hpp	/^            source_telematics_id         = 0x0010,$/;"	e	enum:Smpp::Tlv::<anonymous>
+system_id	bind_receiver.hpp	/^        const SystemId& system_id() const { return system_id_; }$/;"	f	class:Smpp::BindReceiver
+system_id	bind_receiver.hpp	/^        void system_id(const Smpp::Char* p) {$/;"	f	class:Smpp::BindReceiver
+system_id	bind_receiver.hpp	/^        void system_id(const SystemId& p) {$/;"	f	class:Smpp::BindReceiver
+system_id	bind_receiver_resp.hpp	/^        const SystemId& system_id() const { return system_id_; }$/;"	f	class:Smpp::BindReceiverResp
+system_id	bind_receiver_resp.hpp	/^        void system_id(const Smpp::Char* p) {$/;"	f	class:Smpp::BindReceiverResp
+system_id	bind_receiver_resp.hpp	/^        void system_id(const SystemId& p) {$/;"	f	class:Smpp::BindReceiverResp
+system_id	bind_transceiver.hpp	/^        const SystemId& system_id() const { return system_id_; }$/;"	f	class:Smpp::BindTransceiver
+system_id	bind_transceiver.hpp	/^        void system_id(const Smpp::Char* p) {$/;"	f	class:Smpp::BindTransceiver
+system_id	bind_transceiver.hpp	/^        void system_id(const SystemId& p) {$/;"	f	class:Smpp::BindTransceiver
+system_id	bind_transceiver_resp.hpp	/^        const SystemId& system_id() const { return system_id_; }$/;"	f	class:Smpp::BindTransceiverResp
+system_id	bind_transceiver_resp.hpp	/^        void system_id(const Smpp::Char* p) {$/;"	f	class:Smpp::BindTransceiverResp
+system_id	bind_transceiver_resp.hpp	/^        void system_id(const SystemId& p) {$/;"	f	class:Smpp::BindTransceiverResp
+system_id	bind_transmitter.hpp	/^        const SystemId& system_id() const { return system_id_; }$/;"	f	class:Smpp::BindTransmitter
+system_id	bind_transmitter.hpp	/^        void system_id(const Smpp::Char* p) {$/;"	f	class:Smpp::BindTransmitter
+system_id	bind_transmitter.hpp	/^        void system_id(const SystemId& p) {$/;"	f	class:Smpp::BindTransmitter
+system_id	bind_transmitter_resp.hpp	/^        const SystemId& system_id() const { return system_id_; }$/;"	f	class:Smpp::BindTransmitterResp
+system_id	bind_transmitter_resp.hpp	/^        void system_id(const Smpp::Char* p) {$/;"	f	class:Smpp::BindTransmitterResp
+system_id	bind_transmitter_resp.hpp	/^        void system_id(const SystemId& p) {$/;"	f	class:Smpp::BindTransmitterResp
+system_id	outbind.hpp	/^        const SystemId& system_id() const { return system_id_; }$/;"	f	class:Smpp::Outbind
+system_id	outbind.hpp	/^        void system_id(const Smpp::Char* p) {$/;"	f	class:Smpp::Outbind
+system_id	outbind.hpp	/^        void system_id(const SystemId& p) {$/;"	f	class:Smpp::Outbind
+system_id_	bind_receiver.hpp	/^        SystemId system_id_;$/;"	m	class:Smpp::BindReceiver
+system_id_	bind_receiver_resp.hpp	/^        SystemId system_id_;$/;"	m	class:Smpp::BindReceiverResp
+system_id_	bind_transceiver.hpp	/^        SystemId system_id_;$/;"	m	class:Smpp::BindTransceiver
+system_id_	bind_transceiver_resp.hpp	/^        SystemId system_id_;$/;"	m	class:Smpp::BindTransceiverResp
+system_id_	bind_transmitter.hpp	/^        SystemId system_id_;$/;"	m	class:Smpp::BindTransmitter
+system_id_	bind_transmitter_resp.hpp	/^        SystemId system_id_;$/;"	m	class:Smpp::BindTransmitterResp
+system_id_	outbind.hpp	/^        SystemId system_id_;$/;"	m	class:Smpp::Outbind
+system_type	bind_receiver.hpp	/^        const SystemType& system_type() const { return system_type_; }$/;"	f	class:Smpp::BindReceiver
+system_type	bind_receiver.hpp	/^        void system_type(const Smpp::Char* p) {$/;"	f	class:Smpp::BindReceiver
+system_type	bind_receiver.hpp	/^        void system_type(const SystemType& p) {$/;"	f	class:Smpp::BindReceiver
+system_type	bind_transceiver.hpp	/^        const SystemType& system_type() const { return system_type_; }$/;"	f	class:Smpp::BindTransceiver
+system_type	bind_transceiver.hpp	/^        void system_type(const Smpp::Char* p) {$/;"	f	class:Smpp::BindTransceiver
+system_type	bind_transceiver.hpp	/^        void system_type(const SystemType& p) {$/;"	f	class:Smpp::BindTransceiver
+system_type	bind_transmitter.hpp	/^        const SystemType& system_type() const { return system_type_; }$/;"	f	class:Smpp::BindTransmitter
+system_type	bind_transmitter.hpp	/^        void system_type(const Smpp::Char* p) {$/;"	f	class:Smpp::BindTransmitter
+system_type	bind_transmitter.hpp	/^        void system_type(const SystemType& p) {$/;"	f	class:Smpp::BindTransmitter
+system_type_	bind_receiver.hpp	/^        SystemType system_type_;$/;"	m	class:Smpp::BindReceiver
+system_type_	bind_transceiver.hpp	/^        SystemType system_type_;$/;"	m	class:Smpp::BindTransceiver
+system_type_	bind_transmitter.hpp	/^        SystemType system_type_;$/;"	m	class:Smpp::BindTransmitter
+tag	tlv.hpp	/^        Smpp::Uint16 tag() const { return tag_; }$/;"	f	class:Smpp::Tlv
+tag_	header.hpp	/^            Smpp::Uint16 tag_;$/;"	m	class:Smpp::Header::ListFinder
+tag_	tlv.hpp	/^            const Smpp::Uint16& tag_;$/;"	m	class:Smpp::Tlv::CompareTag
+tag_	tlv.hpp	/^        Smpp::Uint16 tag_;$/;"	m	class:Smpp::Tlv
+tlv_list	header.hpp	/^        const TlvList& tlv_list() const {$/;"	f	class:Smpp::Header
+tlvs_	header.hpp	/^        } tlvs_;$/;"	m	class:Smpp::Header
+ton	aux_types.hpp	/^        const Ton& ton() const { return ton_; }$/;"	f	class:Smpp::SmeAddress
+ton_	aux_types.hpp	/^        Ton ton_;$/;"	m	class:Smpp::SmeAddress
+unsuccess_sme	submit_multi_resp.hpp	/^        void unsuccess_sme(const UnsuccessSme& p) {$/;"	f	class:Smpp::SubmitMultiResp
+unsuccess_sme_	submit_multi_resp.hpp	/^        UnsuccessSmeColl unsuccess_sme_;$/;"	m	class:Smpp::SubmitMultiResp
+update_length	header.hpp	/^        void update_length(const int& p) { command_length_ += p; }$/;"	f	class:Smpp::Header
+user_message_reference	tlv.hpp	/^            user_message_reference       = 0x0204,$/;"	e	enum:Smpp::Tlv::<anonymous>
+user_response_code	tlv.hpp	/^            user_response_code           = 0x0205,$/;"	e	enum:Smpp::Tlv::<anonymous>
+ussd_service_op	tlv.hpp	/^            ussd_service_op              = 0x0501,$/;"	e	enum:Smpp::Tlv::<anonymous>
+v_	aux_types.hpp	/^        List v_;$/;"	m	class:Smpp::UnsuccessSmeColl
+v_	aux_types.hpp	/^        Smpp::String v_;$/;"	m	class:Smpp::Address
+v_	aux_types.hpp	/^        Smpp::String v_;$/;"	m	class:Smpp::MessageId
+v_	aux_types.hpp	/^        Smpp::String v_;$/;"	m	class:Smpp::Time
+v_	aux_types.hpp	/^        Smpp::Uint8 v_;$/;"	m	class:Smpp::DataCoding
+v_	aux_types.hpp	/^        Smpp::Uint8 v_;$/;"	m	class:Smpp::ErrorCode
+v_	aux_types.hpp	/^        Smpp::Uint8 v_;$/;"	m	class:Smpp::EsmClass
+v_	aux_types.hpp	/^        Smpp::Uint8 v_;$/;"	m	class:Smpp::InterfaceVersion
+v_	aux_types.hpp	/^        Smpp::Uint8 v_;$/;"	m	class:Smpp::MessageState
+v_	aux_types.hpp	/^        Smpp::Uint8 v_;$/;"	m	class:Smpp::Npi
+v_	aux_types.hpp	/^        Smpp::Uint8 v_;$/;"	m	class:Smpp::PriorityFlag
+v_	aux_types.hpp	/^        Smpp::Uint8 v_;$/;"	m	class:Smpp::ProtocolId
+v_	aux_types.hpp	/^        Smpp::Uint8 v_;$/;"	m	class:Smpp::RegisteredDelivery
+v_	aux_types.hpp	/^        Smpp::Uint8 v_;$/;"	m	class:Smpp::ReplaceIfPresentFlag
+v_	aux_types.hpp	/^        Smpp::Uint8 v_;$/;"	m	class:Smpp::SmDefaultMsgId
+v_	aux_types.hpp	/^        Smpp::Uint8 v_;$/;"	m	class:Smpp::Ton
+v_	aux_types.hpp	/^        std::basic_string<Char> v_;$/;"	m	class:Smpp::AddressRange
+v_	aux_types.hpp	/^        std::basic_string<Char> v_;$/;"	m	class:Smpp::Password
+v_	aux_types.hpp	/^        std::basic_string<Char> v_;$/;"	m	class:Smpp::ServiceType
+v_	aux_types.hpp	/^        std::basic_string<Char> v_;$/;"	m	class:Smpp::SystemId
+v_	aux_types.hpp	/^        std::basic_string<Char> v_;$/;"	m	class:Smpp::SystemType
+v_	aux_types.hpp	/^        std::vector<Smpp::Uint8> v_;$/;"	m	class:Smpp::ShortMessage
+val_	command_id.hpp	/^        Smpp::Uint32 val_;$/;"	m	class:Smpp::CommandId
+val_	command_length.hpp	/^        Smpp::Uint32 val_;$/;"	m	class:Smpp::CommandLength
+val_	command_status.hpp	/^        Smpp::Uint32 val_;$/;"	m	class:Smpp::CommandStatus
+val_	sequence_number.hpp	/^        Smpp::Uint32 val_;$/;"	m	class:Smpp::SequenceNumber
+valid_length	aux_types.hpp	/^    valid_length(const Smpp::Char* s, size_t len, const char* err) {$/;"	f	namespace:Smpp
+valid_length	aux_types.hpp	/^    valid_length(const Smpp::String& s, size_t len, const char* err) {$/;"	f	namespace:Smpp
+validity_period	broadcast_sm.hpp	/^        const Time& validity_period() const { return validity_period_; }$/;"	f	class:Smpp::BroadcastSm
+validity_period	broadcast_sm.hpp	/^        void validity_period(const Smpp::Char* p) {$/;"	f	class:Smpp::BroadcastSm
+validity_period	broadcast_sm.hpp	/^        void validity_period(const Time& p) {$/;"	f	class:Smpp::BroadcastSm
+validity_period	deliver_sm.hpp	/^        const Time& validity_period() const { return validity_period_; }$/;"	f	class:Smpp::DeliverSm
+validity_period	deliver_sm.hpp	/^        void validity_period(const Smpp::Char* p) {$/;"	f	class:Smpp::DeliverSm
+validity_period	deliver_sm.hpp	/^        void validity_period(const Time& p) {$/;"	f	class:Smpp::DeliverSm
+validity_period	replace_sm.hpp	/^        const Time& validity_period() const { return validity_period_; }$/;"	f	class:Smpp::ReplaceSm
+validity_period	replace_sm.hpp	/^        void validity_period(const Smpp::Char* p) {$/;"	f	class:Smpp::ReplaceSm
+validity_period	replace_sm.hpp	/^        void validity_period(const Time& p) {$/;"	f	class:Smpp::ReplaceSm
+validity_period	submit_multi.hpp	/^        const Time& validity_period() const { return validity_period_; }$/;"	f	class:Smpp::SubmitMulti
+validity_period	submit_multi.hpp	/^        void validity_period(const Smpp::Char* p) {$/;"	f	class:Smpp::SubmitMulti
+validity_period	submit_multi.hpp	/^        void validity_period(const Time& p) {$/;"	f	class:Smpp::SubmitMulti
+validity_period	submit_sm.hpp	/^        const Time& validity_period() const { return validity_period_; }$/;"	f	class:Smpp::SubmitSm
+validity_period	submit_sm.hpp	/^        void validity_period(const Smpp::Char* p) {$/;"	f	class:Smpp::SubmitSm
+validity_period	submit_sm.hpp	/^        void validity_period(const Time& p) {$/;"	f	class:Smpp::SubmitSm
+validity_period_	broadcast_sm.hpp	/^        Time validity_period_;$/;"	m	class:Smpp::BroadcastSm
+validity_period_	deliver_sm.hpp	/^        Time validity_period_;$/;"	m	class:Smpp::DeliverSm
+validity_period_	replace_sm.hpp	/^        Time validity_period_;$/;"	m	class:Smpp::ReplaceSm
+validity_period_	submit_multi.hpp	/^        Time validity_period_;$/;"	m	class:Smpp::SubmitMulti
+validity_period_	submit_sm.hpp	/^        Time validity_period_;$/;"	m	class:Smpp::SubmitSm
+value	tlv.hpp	/^        const Smpp::Uint8* value() const { return value_; }$/;"	f	class:Smpp::Tlv
+value_	tlv.hpp	/^        const Smpp::Uint8* value_;$/;"	m	class:Smpp::Tlv
+~AlertNotification	alert_notification.cpp	/^Smpp::AlertNotification::~AlertNotification()$/;"	f	class:Smpp::AlertNotification
+~BindReceiver	bind_receiver.cpp	/^Smpp::BindReceiver::~BindReceiver()$/;"	f	class:Smpp::BindReceiver
+~BindReceiverResp	bind_receiver_resp.cpp	/^Smpp::BindReceiverResp::~BindReceiverResp()$/;"	f	class:Smpp::BindReceiverResp
+~BindTransceiver	bind_transceiver.cpp	/^Smpp::BindTransceiver::~BindTransceiver()$/;"	f	class:Smpp::BindTransceiver
+~BindTransceiverResp	bind_transceiver_resp.cpp	/^Smpp::BindTransceiverResp::~BindTransceiverResp()$/;"	f	class:Smpp::BindTransceiverResp
+~BindTransmitter	bind_transmitter.cpp	/^Smpp::BindTransmitter::~BindTransmitter()$/;"	f	class:Smpp::BindTransmitter
+~BindTransmitterResp	bind_transmitter_resp.cpp	/^Smpp::BindTransmitterResp::~BindTransmitterResp()$/;"	f	class:Smpp::BindTransmitterResp
+~BroadcastSm	broadcast_sm.cpp	/^Smpp::BroadcastSm::~BroadcastSm()$/;"	f	class:Smpp::BroadcastSm
+~BroadcastSmResp	broadcast_sm_resp.cpp	/^Smpp::BroadcastSmResp::~BroadcastSmResp()$/;"	f	class:Smpp::BroadcastSmResp
+~Buffer	buffer.cpp	/^Smpp::Buffer::~Buffer() throw()$/;"	f	class:Smpp::Buffer
+~CTlvList	header.hpp	/^            ~CTlvList() throw() {$/;"	f	struct:Smpp::Header::CTlvList
+~CancelBroadcastSm	cancel_broadcast_sm.cpp	/^Smpp::CancelBroadcastSm::~CancelBroadcastSm()$/;"	f	class:Smpp::CancelBroadcastSm
+~CancelBroadcastSmResp	cancel_broadcast_sm_resp.cpp	/^Smpp::CancelBroadcastSmResp::~CancelBroadcastSmResp()$/;"	f	class:Smpp::CancelBroadcastSmResp
+~CancelSm	cancel_sm.cpp	/^Smpp::CancelSm::~CancelSm()$/;"	f	class:Smpp::CancelSm
+~CancelSmResp	cancel_sm_resp.cpp	/^Smpp::CancelSmResp::~CancelSmResp()$/;"	f	class:Smpp::CancelSmResp
+~DataSm	data_sm.cpp	/^Smpp::DataSm::~DataSm()$/;"	f	class:Smpp::DataSm
+~DataSmResp	data_sm_resp.cpp	/^Smpp::DataSmResp::~DataSmResp()$/;"	f	class:Smpp::DataSmResp
+~DeliverSm	deliver_sm.cpp	/^Smpp::DeliverSm::~DeliverSm()$/;"	f	class:Smpp::DeliverSm
+~DeliverSmResp	deliver_sm_resp.cpp	/^Smpp::DeliverSmResp::~DeliverSmResp()$/;"	f	class:Smpp::DeliverSmResp
+~EnquireLink	enquire_link.cpp	/^Smpp::EnquireLink::~EnquireLink()$/;"	f	class:Smpp::EnquireLink
+~EnquireLinkResp	enquire_link_resp.cpp	/^Smpp::EnquireLinkResp::~EnquireLinkResp()$/;"	f	class:Smpp::EnquireLinkResp
+~Error	error.cpp	/^Smpp::Error::~Error() throw()$/;"	f	class:Smpp::Error
+~GenericNack	generic_nack.cpp	/^Smpp::GenericNack::~GenericNack()$/;"	f	class:Smpp::GenericNack
+~Header	header.cpp	/^Smpp::Header::~Header()$/;"	f	class:Smpp::Header
+~MultiDestinationAddressBase	aux_types.hpp	/^          virtual ~MultiDestinationAddressBase() {}$/;"	f	class:Smpp::MultiDestinationAddressBase
+~MultiDestinationAddresses	aux_types.hpp	/^        ~MultiDestinationAddresses() throw() {$/;"	f	class:Smpp::MultiDestinationAddresses
+~Outbind	outbind.cpp	/^Smpp::Outbind::~Outbind()$/;"	f	class:Smpp::Outbind
+~QueryBroadcastSm	query_broadcast_sm.cpp	/^Smpp::QueryBroadcastSm::~QueryBroadcastSm()$/;"	f	class:Smpp::QueryBroadcastSm
+~QueryBroadcastSmResp	query_broadcast_sm_resp.cpp	/^Smpp::QueryBroadcastSmResp::~QueryBroadcastSmResp()$/;"	f	class:Smpp::QueryBroadcastSmResp
+~QuerySm	query_sm.cpp	/^Smpp::QuerySm::~QuerySm()$/;"	f	class:Smpp::QuerySm
+~QuerySmResp	query_sm_resp.cpp	/^Smpp::QuerySmResp::~QuerySmResp()$/;"	f	class:Smpp::QuerySmResp
+~ReplaceSm	replace_sm.cpp	/^Smpp::ReplaceSm::~ReplaceSm()$/;"	f	class:Smpp::ReplaceSm
+~ReplaceSmResp	replace_sm_resp.cpp	/^Smpp::ReplaceSmResp::~ReplaceSmResp()$/;"	f	class:Smpp::ReplaceSmResp
+~SubmitMulti	submit_multi.cpp	/^Smpp::SubmitMulti::~SubmitMulti()$/;"	f	class:Smpp::SubmitMulti
+~SubmitMultiResp	submit_multi_resp.cpp	/^Smpp::SubmitMultiResp::~SubmitMultiResp()$/;"	f	class:Smpp::SubmitMultiResp
+~SubmitSm	submit_sm.cpp	/^Smpp::SubmitSm::~SubmitSm()$/;"	f	class:Smpp::SubmitSm
+~SubmitSmResp	submit_sm_resp.cpp	/^Smpp::SubmitSmResp::~SubmitSmResp()$/;"	f	class:Smpp::SubmitSmResp
+~Tlv	tlv.hpp	/^        virtual ~Tlv() { delete [] value_; }$/;"	f	class:Smpp::Tlv
+~Unbind	unbind.cpp	/^Smpp::Unbind::~Unbind()$/;"	f	class:Smpp::Unbind
+~UnbindResp	unbind_resp.cpp	/^Smpp::UnbindResp::~UnbindResp()$/;"	f	class:Smpp::UnbindResp
+~UnsuccessSmeColl	aux_types.hpp	/^        ~UnsuccessSmeColl() throw() {$/;"	f	class:Smpp::UnsuccessSmeColl
