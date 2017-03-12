@@ -1,5 +1,5 @@
 BASEDIR = /home/cmsuser/CMSVodafone30Jun/
-EXENAME=Publisher.exe
+EXENAME=OnlinePublisher.exe
 
 SRCS=$(wildcard *.cpp)
 OBJS =$(SRCS:%.cpp=%.o)

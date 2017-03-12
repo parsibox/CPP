@@ -23,7 +23,8 @@ class CDBPicker:public CThread{
 	private:
 		bool mefn_addTaskToList(CTask* );
 		bool mefn_updateTaskStaus(int,int);	
-		bool mefn_updateTaskStaus(int,int,int,std::string,std::string);	
+		bool mefn_updateTaskStaus(int,int,int,std::string,std::string);
+		bool mefn_updateScheduleMappingStaus();	
 	public:
 		CDBPicker(int,int);
 		~CDBPicker();

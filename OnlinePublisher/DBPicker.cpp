@@ -15,6 +15,7 @@ CDBPicker::CDBPicker(int iL_modId,int iL_numOfWorkerThreads){
 	mesi_workerThreadCounter=0;
 	while(!mcfn_loadEsmeDetails(iL_modId));
 	sleep(1);
+	mefn_updateScheduleMappingStaus();
 	int iL_threadId[3]={1,2,3};
 	for(int i=0;i<iL_numOfWorkerThreads;i++){
 		mcfn_start(&iL_threadId[2]);
@@ -227,7 +228,6 @@ bool CDBPicker::mefn_updateTaskStaus(int iL_taskId,int iL_status){
 bool CDBPicker::mefn_updateTaskStaus(int iL_taskId,int iL_status,int iL_count,std::string CL_tableName,std::string CL_msgCsv){
 	if(CL_msgCsv.empty())
 	return true;
-	mysqlpp::StoreQueryResult CL_ResultSet;
 	CDBOperations CL_dbObj;
 	std::stringstream CL_QueryStream;
 	CL_QueryStream.str("");
@@ -239,6 +239,16 @@ bool CDBPicker::mefn_updateTaskStaus(int iL_taskId,int iL_status,int iL_count,st
 	if(CL_dbObj.mcfn_ExecuteQuery(CL_QueryStream.str())!=0)
 		return false;
 
+	return true;
+}
+
+bool CDBPicker::mefn_updateScheduleMappingStaus(){
+	CDBOperations CL_dbObj;
+	std::stringstream CL_QueryStream;
+	CL_QueryStream.str("");
+	CL_QueryStream<<"update schedule_table_mapping set STATUS ='P' where STATUS='E' and SCHEDULE_ID in (select SCHEDULE_ID from schedule_profile where STATUS in (2,5) AND CHANNEL_ID in ("<<CG_Cfg.mcfn_getChannelId()<<") and IS_ONLINE="<<CG_Cfg.mcfn_getIsOnline()<<")";
+	if(CL_dbObj.mcfn_ExecuteQuery(CL_QueryStream.str())!=0)
+		return false;
 	return true;
 }
 
