@@ -1,9 +1,0 @@
-[2016-03-30 13:19:37] >  WebServer: Service is starting !
-[2016-03-30 13:19:37] >  OpenSSL error: Can't read certificate file
-[2016-03-30 13:22:11] >  WebServer: Service is starting !
-[2016-03-30 13:22:11] >  WebServer : Listen on port 8081
-[2016-03-30 13:22:39] >  WebServer: Connection from IP: 127.0.0.1
-[2016-03-30 13:22:44] >  WebServer: Authentification passed for user 'icmuser'
-[2016-03-30 13:22:44] >  Webserver: page not found webpush1
-[2016-03-30 13:27:32] >  WebServer: Authentification failed for user 'icmuser'
-[2016-03-30 13:29:51] >  WebServer: Authentification failed for user 'icmuser'
