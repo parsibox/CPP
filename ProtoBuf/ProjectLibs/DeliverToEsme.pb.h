@@ -338,6 +338,16 @@ class DeliverToEsme : public ::google::protobuf::Message {
   inline void set_user_input(const char* value, size_t size);
   inline ::std::string* mutable_user_input();
   
+  // optional string sms_submit_msgid = 32;
+  inline bool has_sms_submit_msgid() const;
+  inline void clear_sms_submit_msgid();
+  static const int kSmsSubmitMsgidFieldNumber = 32;
+  inline const ::std::string& sms_submit_msgid() const;
+  inline void set_sms_submit_msgid(const ::std::string& value);
+  inline void set_sms_submit_msgid(const char* value);
+  inline void set_sms_submit_msgid(const char* value, size_t size);
+  inline ::std::string* mutable_sms_submit_msgid();
+  
  private:
   ::google::protobuf::UnknownFieldSet _unknown_fields_;
   mutable int _cached_size_;
@@ -385,10 +395,12 @@ class DeliverToEsme : public ::google::protobuf::Message {
   ::google::protobuf::int32 retry_count_;
   ::std::string* user_input_;
   static const ::std::string _default_user_input_;
+  ::std::string* sms_submit_msgid_;
+  static const ::std::string _default_sms_submit_msgid_;
   friend void  protobuf_AddDesc_DeliverToEsme_2eproto();
   friend void protobuf_AssignDesc_DeliverToEsme_2eproto();
   friend void protobuf_ShutdownFile_DeliverToEsme_2eproto();
-  ::google::protobuf::uint32 _has_bits_[(31 + 31) / 32];
+  ::google::protobuf::uint32 _has_bits_[(32 + 31) / 32];
   
   // WHY DOES & HAVE LOWER PRECEDENCE THAN != !?
   inline bool _has_bit(int index) const {
@@ -1220,6 +1232,48 @@ inline ::std::string* DeliverToEsme::mutable_user_input() {
     user_input_ = new ::std::string;
   }
   return user_input_;
+}
+
+// optional string sms_submit_msgid = 32;
+inline bool DeliverToEsme::has_sms_submit_msgid() const {
+  return _has_bit(31);
+}
+inline void DeliverToEsme::clear_sms_submit_msgid() {
+  if (sms_submit_msgid_ != &_default_sms_submit_msgid_) {
+    sms_submit_msgid_->clear();
+  }
+  _clear_bit(31);
+}
+inline const ::std::string& DeliverToEsme::sms_submit_msgid() const {
+  return *sms_submit_msgid_;
+}
+inline void DeliverToEsme::set_sms_submit_msgid(const ::std::string& value) {
+  _set_bit(31);
+  if (sms_submit_msgid_ == &_default_sms_submit_msgid_) {
+    sms_submit_msgid_ = new ::std::string;
+  }
+  sms_submit_msgid_->assign(value);
+}
+inline void DeliverToEsme::set_sms_submit_msgid(const char* value) {
+  _set_bit(31);
+  if (sms_submit_msgid_ == &_default_sms_submit_msgid_) {
+    sms_submit_msgid_ = new ::std::string;
+  }
+  sms_submit_msgid_->assign(value);
+}
+inline void DeliverToEsme::set_sms_submit_msgid(const char* value, size_t size) {
+  _set_bit(31);
+  if (sms_submit_msgid_ == &_default_sms_submit_msgid_) {
+    sms_submit_msgid_ = new ::std::string;
+  }
+  sms_submit_msgid_->assign(reinterpret_cast<const char*>(value), size);
+}
+inline ::std::string* DeliverToEsme::mutable_sms_submit_msgid() {
+  _set_bit(31);
+  if (sms_submit_msgid_ == &_default_sms_submit_msgid_) {
+    sms_submit_msgid_ = new ::std::string;
+  }
+  return sms_submit_msgid_;
 }
 
 #endif  // PROTOBUF_DeliverToEsme_2eproto__INCLUDED

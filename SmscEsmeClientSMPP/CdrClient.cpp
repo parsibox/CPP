@@ -6,22 +6,10 @@
 
 extern CEventLog CG_EventLog;
 
-bool CCdrClient::mcfn_sendMsgToCdr(DeliverToEsme *pCL_msg,std::vector<std::string>& userInputs){
+bool CCdrClient::mcfn_sendMsgToCdr(DeliverToEsme *pCL_msg){
 	CdrMsg *pCL_Msg= new CdrMsg();
 
-	if(!userInputs.empty())
-	{
-		std::string userInputStr="";
-		for(int i=0;i<userInputs.size();i++)
-		{
-			DBG_INFO((CG_EventLog), ("User Input %d:%s",i,userInputs[i].c_str()));	
-			if(!userInputStr.empty())
-			userInputStr.append("*");
-			userInputStr.append(userInputs[i]);
-		}
-		pCL_msg->set_user_input(userInputStr);
-	}
-	pCL_Msg->set_msg_type(CdrMsg::USSD_SUBMIT);
+	pCL_Msg->set_msg_type(CdrMsg::SUBMIT);
 	pCL_Msg->mutable_submit_msg()->CopyFrom(*pCL_msg);
 	if(0 == pCL_msg->status() || false == mcC_retryPlanner.mcfn_getCheckForRetry(pCL_msg))
 	meC_cdrQue.mcfb_insertIntoQue(pCL_Msg);

@@ -17,7 +17,7 @@ class CCdrClient:public CTcpClient,public CThread
 		CCdrClient():CTcpClient("CdrServer"){
 			mcfn_start();
 		}
-		bool mcfn_sendMsgToCdr(DeliverToEsme *,std::vector<std::string>&);
+		bool mcfn_sendMsgToCdr(DeliverToEsme *);
 		//virtual function
 		bool mcfn_onConnect(){
 			return true;

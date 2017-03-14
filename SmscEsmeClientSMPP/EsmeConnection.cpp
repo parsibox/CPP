@@ -83,8 +83,8 @@ bool CEsmeConnection::mcfn_run(int,void *){
 			{
 				//				mcfn_sendUssdAbort(CL_recData.mcC_header);
 				DBG_ERROR((CG_EventLog),("Failed to process message sending Invalid commad id  to server"));
-				Smpp::SubmitSmResp resp(Smpp::CommandStatus::ESME_RINVCMDID,CL_recData.mcC_header.mcsi_sessionId,Smpp::MessageId("0"));
-				mcfn_sendMsgToServer((u8*)resp.encode(),resp.command_length());
+				//Smpp::SubmitSmResp resp(Smpp::CommandStatus::ESME_RINVCMDID,CL_recData.mcC_header.mcsi_sessionId,Smpp::MessageId("0"));
+				//mcfn_sendMsgToServer((u8*)resp.encode(),resp.command_length());
 			}
 		}
 	}
@@ -244,6 +244,20 @@ bool CEsmeConnection::mcfn_onSubmitSm(u8* u8_param, int iL_paramLen)
 bool CEsmeConnection::mcfn_onSubmitSmResp(u8* u8_param, int iL_paramLen)
 {
 	DBG_VERBOSE((CG_EventLog), ("Submit Sm Resp received Length:[%d]",iL_paramLen));
+	Smpp::SubmitSmResp pdu;
+	pdu.decode(&u8_param[0]);
+	MsgTypes *pcL_Msg=NULL;
+	if(CG_seqMap.mcfb_findElement(pdu.sequence_number(),pcL_Msg)){
+		DBG_CRITICAL((CG_EventLog), ("sequence number  found [%d][%d][%s]",pdu.sequence_number(),pdu.command_status(),std::string(pdu.message_id()).c_str()));	
+	        pcL_Msg->pmcC_EsmeMsg->set_status(pdu.command_status());
+		pcL_Msg->pmcC_EsmeMsg->set_sms_submit_msgid(pdu.message_id());
+		pCG_CdrClient->mcfn_sendMsgToCdr(pcL_Msg->pmcC_EsmeMsg);
+		 CG_seqMap.mcfb_removeElement(pdu.sequence_number());
+		 delete pcL_Msg;
+	}
+	else{
+		DBG_CRITICAL((CG_EventLog), ("sequence number not found [%d]",pdu.sequence_number()));	
+	}
 	return true;
 }
 

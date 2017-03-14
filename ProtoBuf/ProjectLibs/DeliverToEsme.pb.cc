@@ -23,7 +23,7 @@ void protobuf_AssignDesc_DeliverToEsme_2eproto() {
       "DeliverToEsme.proto");
   GOOGLE_CHECK(file != NULL);
   DeliverToEsme_descriptor_ = file->message_type(0);
-  static const int DeliverToEsme_offsets_[31] = {
+  static const int DeliverToEsme_offsets_[32] = {
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(DeliverToEsme, task_id_),
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(DeliverToEsme, msg_id_),
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(DeliverToEsme, oa_),
@@ -55,6 +55,7 @@ void protobuf_AssignDesc_DeliverToEsme_2eproto() {
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(DeliverToEsme, service_url_status_),
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(DeliverToEsme, retry_count_),
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(DeliverToEsme, user_input_),
+    GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(DeliverToEsme, sms_submit_msgid_),
   };
   DeliverToEsme_reflection_ =
     new ::google::protobuf::internal::GeneratedMessageReflection(
@@ -97,7 +98,7 @@ void protobuf_AddDesc_DeliverToEsme_2eproto() {
   GOOGLE_PROTOBUF_VERIFY_VERSION;
 
   ::google::protobuf::DescriptorPool::InternalAddGeneratedFile(
-    "\n\023DeliverToEsme.proto\"\332\004\n\rDeliverToEsme\022"
+    "\n\023DeliverToEsme.proto\"\364\004\n\rDeliverToEsme\022"
     "\017\n\007task_id\030\001 \002(\r\022\016\n\006msg_id\030\002 \002(\r\022\n\n\002oa\030\003"
     " \002(\t\022\n\n\002da\030\004 \002(\t\022\013\n\003msg\030\005 \002(\014\022\024\n\014interfa"
     "ce_id\030\006 \002(\005\022\017\n\007reg_del\030\007 \001(\005\022\013\n\003udh\030\010 \001("
@@ -112,7 +113,8 @@ void protobuf_AddDesc_DeliverToEsme_2eproto() {
     "\022\032\n\022receiver_sessionid\030\032 \001(\005\022\027\n\017charging"
     "_status\030\033 \001(\005\022\023\n\013service_url\030\034 \001(\t\022\032\n\022se"
     "rvice_url_status\030\035 \001(\t\022\026\n\013retry_count\030\036 "
-    "\001(\005:\0010\022\022\n\nuser_input\030\037 \001(\t", 626);
+    "\001(\005:\0010\022\022\n\nuser_input\030\037 \001(\t\022\030\n\020sms_submit"
+    "_msgid\030  \001(\t", 652);
   ::google::protobuf::MessageFactory::InternalRegisterGeneratedFile(
     "DeliverToEsme.proto", &protobuf_RegisterTypes);
   DeliverToEsme::default_instance_ = new DeliverToEsme();
@@ -142,6 +144,7 @@ const ::std::string DeliverToEsme::_default_username_;
 const ::std::string DeliverToEsme::_default_service_url_;
 const ::std::string DeliverToEsme::_default_service_url_status_;
 const ::std::string DeliverToEsme::_default_user_input_;
+const ::std::string DeliverToEsme::_default_sms_submit_msgid_;
 #ifndef _MSC_VER
 const int DeliverToEsme::kTaskIdFieldNumber;
 const int DeliverToEsme::kMsgIdFieldNumber;
@@ -174,6 +177,7 @@ const int DeliverToEsme::kServiceUrlFieldNumber;
 const int DeliverToEsme::kServiceUrlStatusFieldNumber;
 const int DeliverToEsme::kRetryCountFieldNumber;
 const int DeliverToEsme::kUserInputFieldNumber;
+const int DeliverToEsme::kSmsSubmitMsgidFieldNumber;
 #endif  // !_MSC_VER
 
 DeliverToEsme::DeliverToEsme()
@@ -222,6 +226,7 @@ void DeliverToEsme::SharedCtor() {
   service_url_status_ = const_cast< ::std::string*>(&_default_service_url_status_);
   retry_count_ = 0;
   user_input_ = const_cast< ::std::string*>(&_default_user_input_);
+  sms_submit_msgid_ = const_cast< ::std::string*>(&_default_sms_submit_msgid_);
   ::memset(_has_bits_, 0, sizeof(_has_bits_));
 }
 
@@ -265,6 +270,9 @@ void DeliverToEsme::SharedDtor() {
   }
   if (user_input_ != &_default_user_input_) {
     delete user_input_;
+  }
+  if (sms_submit_msgid_ != &_default_sms_submit_msgid_) {
+    delete sms_submit_msgid_;
   }
   if (this != default_instance_) {
   }
@@ -370,6 +378,11 @@ void DeliverToEsme::Clear() {
     if (_has_bit(30)) {
       if (user_input_ != &_default_user_input_) {
         user_input_->clear();
+      }
+    }
+    if (_has_bit(31)) {
+      if (sms_submit_msgid_ != &_default_sms_submit_msgid_) {
+        sms_submit_msgid_->clear();
       }
     }
   }
@@ -788,6 +801,18 @@ bool DeliverToEsme::MergePartialFromCodedStream(
         }
        parse_user_input:
         DO_(::google::protobuf::internal::WireFormat::ReadString(input, mutable_user_input()));
+        if (input->ExpectTag(258)) goto parse_sms_submit_msgid;
+        break;
+      }
+      
+      // optional string sms_submit_msgid = 32;
+      case 32: {
+        if (::google::protobuf::internal::WireFormat::GetTagWireType(tag) !=
+            ::google::protobuf::internal::WireFormat::WIRETYPE_LENGTH_DELIMITED) {
+          goto handle_uninterpreted;
+        }
+       parse_sms_submit_msgid:
+        DO_(::google::protobuf::internal::WireFormat::ReadString(input, mutable_sms_submit_msgid()));
         if (input->ExpectAtEnd()) return true;
         break;
       }
@@ -971,6 +996,11 @@ void DeliverToEsme::SerializeWithCachedSizes(
     ::google::protobuf::internal::WireFormat::WriteString(31, this->user_input(), output);
   }
   
+  // optional string sms_submit_msgid = 32;
+  if (_has_bit(31)) {
+    ::google::protobuf::internal::WireFormat::WriteString(32, this->sms_submit_msgid(), output);
+  }
+  
   if (!unknown_fields().empty()) {
     ::google::protobuf::internal::WireFormat::SerializeUnknownFields(
         unknown_fields(), output);
@@ -1132,6 +1162,11 @@ void DeliverToEsme::SerializeWithCachedSizes(
   // optional string user_input = 31;
   if (_has_bit(30)) {
     target = ::google::protobuf::internal::WireFormat::WriteStringToArray(31, this->user_input(), target);
+  }
+  
+  // optional string sms_submit_msgid = 32;
+  if (_has_bit(31)) {
+    target = ::google::protobuf::internal::WireFormat::WriteStringToArray(32, this->sms_submit_msgid(), target);
   }
   
   if (!unknown_fields().empty()) {
@@ -1356,6 +1391,12 @@ int DeliverToEsme::ByteSize() const {
         ::google::protobuf::internal::WireFormat::StringSize(this->user_input());
     }
     
+    // optional string sms_submit_msgid = 32;
+    if (has_sms_submit_msgid()) {
+      total_size += 2 +
+        ::google::protobuf::internal::WireFormat::StringSize(this->sms_submit_msgid());
+    }
+    
   }
   if (!unknown_fields().empty()) {
     total_size +=
@@ -1480,6 +1521,9 @@ void DeliverToEsme::MergeFrom(const DeliverToEsme& from) {
     if (from._has_bit(30)) {
       set_user_input(from.user_input());
     }
+    if (from._has_bit(31)) {
+      set_sms_submit_msgid(from.sms_submit_msgid());
+    }
   }
   mutable_unknown_fields()->MergeFrom(from.unknown_fields());
 }
@@ -1529,6 +1573,7 @@ void DeliverToEsme::Swap(DeliverToEsme* other) {
     std::swap(service_url_status_, other->service_url_status_);
     std::swap(retry_count_, other->retry_count_);
     std::swap(user_input_, other->user_input_);
+    std::swap(sms_submit_msgid_, other->sms_submit_msgid_);
     std::swap(_has_bits_[0], other->_has_bits_[0]);
     _unknown_fields_.Swap(&other->_unknown_fields_);
     std::swap(_cached_size_, other->_cached_size_);

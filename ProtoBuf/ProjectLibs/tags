@@ -54,8 +54,8 @@ DO_	CdrMsg.pb.cc	1582;"	d	file:
 DO_	CdrMsg.pb.cc	1642;"	d	file:
 DO_	CdrMsg.pb.cc	323;"	d	file:
 DO_	CdrMsg.pb.cc	613;"	d	file:
-DO_	DeliverToEsme.pb.cc	382;"	d	file:
-DO_	DeliverToEsme.pb.cc	808;"	d	file:
+DO_	DeliverToEsme.pb.cc	395;"	d	file:
+DO_	DeliverToEsme.pb.cc	833;"	d	file:
 DO_	UssdData.pb.cc	356;"	d	file:
 DO_	UssdData.pb.cc	602;"	d	file:
 DeliverMsg	CdrMsg.pb.cc	/^DeliverMsg::DeliverMsg()$/;"	f	class:DeliverMsg
@@ -282,6 +282,8 @@ _default_service_url_	DeliverToEsme.pb.cc	/^const ::std::string DeliverToEsme::_
 _default_service_url_	DeliverToEsme.pb.h	/^  static const ::std::string _default_service_url_;$/;"	m	class:DeliverToEsme
 _default_service_url_status_	DeliverToEsme.pb.cc	/^const ::std::string DeliverToEsme::_default_service_url_status_;$/;"	m	class:DeliverToEsme	file:
 _default_service_url_status_	DeliverToEsme.pb.h	/^  static const ::std::string _default_service_url_status_;$/;"	m	class:DeliverToEsme
+_default_sms_submit_msgid_	DeliverToEsme.pb.cc	/^const ::std::string DeliverToEsme::_default_sms_submit_msgid_;$/;"	m	class:DeliverToEsme	file:
+_default_sms_submit_msgid_	DeliverToEsme.pb.h	/^  static const ::std::string _default_sms_submit_msgid_;$/;"	m	class:DeliverToEsme
 _default_srv_code_	DeliverToEsme.pb.cc	/^const ::std::string DeliverToEsme::_default_srv_code_;$/;"	m	class:DeliverToEsme	file:
 _default_srv_code_	DeliverToEsme.pb.h	/^  static const ::std::string _default_srv_code_;$/;"	m	class:DeliverToEsme
 _default_srv_code_	UssdData.pb.cc	/^const ::std::string UssdData::_default_srv_code_;$/;"	m	class:UssdData	file:
@@ -308,7 +310,7 @@ _has_bit	UssdData.pb.h	/^  inline bool _has_bit(int index) const {$/;"	f	class:U
 _has_bits_	CdrMsg.pb.h	/^  ::google::protobuf::uint32 _has_bits_[(20 + 31) \/ 32];$/;"	m	class:SubmitMsg
 _has_bits_	CdrMsg.pb.h	/^  ::google::protobuf::uint32 _has_bits_[(3 + 31) \/ 32];$/;"	m	class:CdrMsg
 _has_bits_	CdrMsg.pb.h	/^  ::google::protobuf::uint32 _has_bits_[(5 + 31) \/ 32];$/;"	m	class:DeliverMsg
-_has_bits_	DeliverToEsme.pb.h	/^  ::google::protobuf::uint32 _has_bits_[(31 + 31) \/ 32];$/;"	m	class:DeliverToEsme
+_has_bits_	DeliverToEsme.pb.h	/^  ::google::protobuf::uint32 _has_bits_[(32 + 31) \/ 32];$/;"	m	class:DeliverToEsme
 _has_bits_	UssdData.pb.h	/^  ::google::protobuf::uint32 _has_bits_[(17 + 31) \/ 32];$/;"	m	class:UssdData
 _set_bit	CdrMsg.pb.h	/^  inline void _set_bit(int index) {$/;"	f	class:CdrMsg
 _set_bit	CdrMsg.pb.h	/^  inline void _set_bit(int index) {$/;"	f	class:DeliverMsg
@@ -387,6 +389,7 @@ clear_service_url_status	DeliverToEsme.pb.h	/^inline void DeliverToEsme::clear_s
 clear_session_endtime	CdrMsg.pb.h	/^inline void SubmitMsg::clear_session_endtime() {$/;"	f	class:SubmitMsg
 clear_session_endtime	DeliverToEsme.pb.h	/^inline void DeliverToEsme::clear_session_endtime() {$/;"	f	class:DeliverToEsme
 clear_session_status	UssdData.pb.h	/^inline void UssdData::clear_session_status() {$/;"	f	class:UssdData
+clear_sms_submit_msgid	DeliverToEsme.pb.h	/^inline void DeliverToEsme::clear_sms_submit_msgid() {$/;"	f	class:DeliverToEsme
 clear_srv_code	DeliverToEsme.pb.h	/^inline void DeliverToEsme::clear_srv_code() {$/;"	f	class:DeliverToEsme
 clear_srv_code	UssdData.pb.h	/^inline void UssdData::clear_srv_code() {$/;"	f	class:UssdData
 clear_status	CdrMsg.pb.h	/^inline void DeliverMsg::clear_status() {$/;"	f	class:DeliverMsg
@@ -507,6 +510,7 @@ has_service_url_status	DeliverToEsme.pb.h	/^inline bool DeliverToEsme::has_servi
 has_session_endtime	CdrMsg.pb.h	/^inline bool SubmitMsg::has_session_endtime() const {$/;"	f	class:SubmitMsg
 has_session_endtime	DeliverToEsme.pb.h	/^inline bool DeliverToEsme::has_session_endtime() const {$/;"	f	class:DeliverToEsme
 has_session_status	UssdData.pb.h	/^inline bool UssdData::has_session_status() const {$/;"	f	class:UssdData
+has_sms_submit_msgid	DeliverToEsme.pb.h	/^inline bool DeliverToEsme::has_sms_submit_msgid() const {$/;"	f	class:DeliverToEsme
 has_srv_code	DeliverToEsme.pb.h	/^inline bool DeliverToEsme::has_srv_code() const {$/;"	f	class:DeliverToEsme
 has_srv_code	UssdData.pb.h	/^inline bool UssdData::has_srv_code() const {$/;"	f	class:UssdData
 has_status	CdrMsg.pb.h	/^inline bool DeliverMsg::has_status() const {$/;"	f	class:DeliverMsg
@@ -642,6 +646,8 @@ kSessionEndtimeFieldNumber	DeliverToEsme.pb.cc	/^const int DeliverToEsme::kSessi
 kSessionEndtimeFieldNumber	DeliverToEsme.pb.h	/^  static const int kSessionEndtimeFieldNumber = 24;$/;"	m	class:DeliverToEsme
 kSessionStatusFieldNumber	UssdData.pb.cc	/^const int UssdData::kSessionStatusFieldNumber;$/;"	m	class:UssdData	file:
 kSessionStatusFieldNumber	UssdData.pb.h	/^  static const int kSessionStatusFieldNumber = 10;$/;"	m	class:UssdData
+kSmsSubmitMsgidFieldNumber	DeliverToEsme.pb.cc	/^const int DeliverToEsme::kSmsSubmitMsgidFieldNumber;$/;"	m	class:DeliverToEsme	file:
+kSmsSubmitMsgidFieldNumber	DeliverToEsme.pb.h	/^  static const int kSmsSubmitMsgidFieldNumber = 32;$/;"	m	class:DeliverToEsme
 kSrvCodeFieldNumber	DeliverToEsme.pb.cc	/^const int DeliverToEsme::kSrvCodeFieldNumber;$/;"	m	class:DeliverToEsme	file:
 kSrvCodeFieldNumber	DeliverToEsme.pb.h	/^  static const int kSrvCodeFieldNumber = 19;$/;"	m	class:DeliverToEsme
 kSrvCodeFieldNumber	UssdData.pb.cc	/^const int UssdData::kSrvCodeFieldNumber;$/;"	m	class:UssdData	file:
@@ -723,6 +729,7 @@ mutable_oa	UssdData.pb.h	/^inline ::std::string* UssdData::mutable_oa() {$/;"	f	
 mutable_password	UssdData.pb.h	/^inline ::std::string* UssdData::mutable_password() {$/;"	f	class:UssdData
 mutable_service_url	DeliverToEsme.pb.h	/^inline ::std::string* DeliverToEsme::mutable_service_url() {$/;"	f	class:DeliverToEsme
 mutable_service_url_status	DeliverToEsme.pb.h	/^inline ::std::string* DeliverToEsme::mutable_service_url_status() {$/;"	f	class:DeliverToEsme
+mutable_sms_submit_msgid	DeliverToEsme.pb.h	/^inline ::std::string* DeliverToEsme::mutable_sms_submit_msgid() {$/;"	f	class:DeliverToEsme
 mutable_srv_code	DeliverToEsme.pb.h	/^inline ::std::string* DeliverToEsme::mutable_srv_code() {$/;"	f	class:DeliverToEsme
 mutable_srv_code	UssdData.pb.h	/^inline ::std::string* UssdData::mutable_srv_code() {$/;"	f	class:UssdData
 mutable_submit_msg	CdrMsg.pb.h	/^inline ::DeliverToEsme* CdrMsg::mutable_submit_msg() {$/;"	f	class:CdrMsg
@@ -892,6 +899,9 @@ set_service_url_status	DeliverToEsme.pb.h	/^inline void DeliverToEsme::set_servi
 set_session_endtime	CdrMsg.pb.h	/^inline void SubmitMsg::set_session_endtime(::google::protobuf::int32 value) {$/;"	f	class:SubmitMsg
 set_session_endtime	DeliverToEsme.pb.h	/^inline void DeliverToEsme::set_session_endtime(::google::protobuf::int32 value) {$/;"	f	class:DeliverToEsme
 set_session_status	UssdData.pb.h	/^inline void UssdData::set_session_status(::google::protobuf::int32 value) {$/;"	f	class:UssdData
+set_sms_submit_msgid	DeliverToEsme.pb.h	/^inline void DeliverToEsme::set_sms_submit_msgid(const ::std::string& value) {$/;"	f	class:DeliverToEsme
+set_sms_submit_msgid	DeliverToEsme.pb.h	/^inline void DeliverToEsme::set_sms_submit_msgid(const char* value) {$/;"	f	class:DeliverToEsme
+set_sms_submit_msgid	DeliverToEsme.pb.h	/^inline void DeliverToEsme::set_sms_submit_msgid(const char* value, size_t size) {$/;"	f	class:DeliverToEsme
 set_srv_code	DeliverToEsme.pb.h	/^inline void DeliverToEsme::set_srv_code(const ::std::string& value) {$/;"	f	class:DeliverToEsme
 set_srv_code	DeliverToEsme.pb.h	/^inline void DeliverToEsme::set_srv_code(const char* value) {$/;"	f	class:DeliverToEsme
 set_srv_code	DeliverToEsme.pb.h	/^inline void DeliverToEsme::set_srv_code(const char* value, size_t size) {$/;"	f	class:DeliverToEsme
@@ -932,6 +942,8 @@ set_version	UssdData.pb.h	/^inline void UssdData::set_version(::google::protobuf
 set_wapdata	DeliverToEsme.pb.h	/^inline void DeliverToEsme::set_wapdata(const ::std::string& value) {$/;"	f	class:DeliverToEsme
 set_wapdata	DeliverToEsme.pb.h	/^inline void DeliverToEsme::set_wapdata(const char* value) {$/;"	f	class:DeliverToEsme
 set_wapdata	DeliverToEsme.pb.h	/^inline void DeliverToEsme::set_wapdata(const char* value, size_t size) {$/;"	f	class:DeliverToEsme
+sms_submit_msgid	DeliverToEsme.pb.h	/^inline const ::std::string& DeliverToEsme::sms_submit_msgid() const {$/;"	f	class:DeliverToEsme
+sms_submit_msgid_	DeliverToEsme.pb.h	/^  ::std::string* sms_submit_msgid_;$/;"	m	class:DeliverToEsme
 srv_code	DeliverToEsme.pb.h	/^inline const ::std::string& DeliverToEsme::srv_code() const {$/;"	f	class:DeliverToEsme
 srv_code	UssdData.pb.h	/^inline const ::std::string& UssdData::srv_code() const {$/;"	f	class:UssdData
 srv_code_	DeliverToEsme.pb.h	/^  ::std::string* srv_code_;$/;"	m	class:DeliverToEsme

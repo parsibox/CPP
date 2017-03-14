@@ -31,5 +31,6 @@ message DeliverToEsme{
 	optional string service_url_status=29;
 	optional int32 retry_count=30 [default = 0];
 	optional string user_input = 31;
+        optional string sms_submit_msgid=32;
 	
 }
