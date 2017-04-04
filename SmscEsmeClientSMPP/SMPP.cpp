@@ -145,7 +145,6 @@ bool  CSmpp::mcfn_sendSmppMsgsToSmsc(void *p){
 			}
 			else{
 				iL_heartBeatcounter=0;
-				u8 u8L_ussdOptype=0x00;
 				u8 u8L_dcs=(u8)pcL_Msg->pmcC_EsmeMsg->dcs();
 				std::string CL_msg=pcL_Msg->pmcC_EsmeMsg->msg().c_str();
 				pcL_Msg->pmcC_EsmeMsg->set_srv_code(pcL_Msg->pmcC_EsmeMsg->oa());
@@ -155,7 +154,7 @@ bool  CSmpp::mcfn_sendSmppMsgsToSmsc(void *p){
 				pcL_Msg->pmcC_EsmeMsg->set_submit_msgid(iL_sessionId);
 				pcL_Msg->pmcC_EsmeMsg->set_sender_sessionid(iL_sessionId);
 				pcL_Msg->meC_traversolPath.assign(pcL_Msg->pmcC_EsmeMsg->srv_code().c_str());
-				if(mcC_SmppClient.mcfn_sendSubmitSm(iL_sessionId,pcL_Msg->pmcC_EsmeMsg->da().c_str(),pcL_Msg->pmcC_EsmeMsg->oa().c_str(),u8L_dcs,CL_msg.c_str(),u8L_ussdOptype)==false){	
+				if(mcC_SmppClient.mcfn_sendSubmitSm(iL_sessionId,pcL_Msg->pmcC_EsmeMsg->da().c_str(),pcL_Msg->pmcC_EsmeMsg->oa().c_str(),u8L_dcs,CL_msg.c_str(),pcL_Msg->pmcC_EsmeMsg->reg_del())==false){	
 					DBG_CRITICAL((CG_EventLog),("Send failed to SMSC"));
 					sleep(1);	
 					CG_SmppQue.mcfb_insertIntoQue(pcL_Msg);
@@ -196,25 +195,9 @@ bool  CSmpp::mcfn_sendSmppMsgsToSmsc(void *p){
 	return true;
 }
 bool CSmpp::mcfn_createSmppMessage(DeliverToEsme *pCL_Msg){
-	/*	
-		Smpp::SubmitSm *pCL_submitSm=new Smpp::SubmitSm();
-		pCL_submitSm->source_addr(Smpp::Address(pCL_Msg->oa()));	
-		pCL_submitSm->destination_addr(Smpp::SmeAddress(Smpp::Ton(Smpp::Ton::International),Smpp::Npi(Smpp::Npi::E164),Smpp::Address(pCL_Msg->da())));
-		pCL_submitSm->registered_delivery(pCL_Msg->reg_del());
-		pCL_submitSm->protocol_id((Smpp::Uint8)pCL_Msg->pid());
-		pCL_submitSm->data_coding((Smpp::Uint8)pCL_Msg->dcs());
-	//TODO::here need to segment the messages if it is more than 160 chars
-	pCL_submitSm->short_message(reinterpret_cast<const Smpp::Uint8*>(pCL_Msg->msg().data()),pCL_Msg->msg().length());
 	MsgTypes *pCL_MsgObj=new MsgTypes();
-	pCL_MsgObj->pmcC_EsmeMsg=pCL_Msg;
-	pCL_MsgObj->pmcC_SmppMsg=pCL_submitSm;
-	 */
-	MsgTypes *pCL_MsgObj=new MsgTypes();
-	//TODO::need to create SMSC Begin message to send the to SMSC GW
-	//TODO::if the message is of USSN directly send the message which is present in msg part ,If it is USSR need to load the Menu from DB based on UserName and ServericCode and send the initial menu
 	pCL_MsgObj->pmcC_EsmeMsg=pCL_Msg;
 	pCL_MsgObj->pmcC_Session=new Session();
-		
 	CG_SmppQue.mcfb_insertIntoQue(pCL_MsgObj);	
 	return true;
 }

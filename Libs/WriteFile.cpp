@@ -32,7 +32,7 @@ CWriteFile::CWriteFile() {
 	mesi_FileCounter=0;
 	mesi_FileMaxSize=0;
 	meC_ThreadHandle=0;
-	//mesi_timeZoneInSec=-1*(int)(mefn_getSystemTimeZone()*60*60);
+	mesi_timeZoneInSec=-1*mefn_getSystemTimeZoneInSec();
 	
 }
 CWriteFile::~CWriteFile() {

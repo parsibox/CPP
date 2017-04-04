@@ -33,7 +33,7 @@ void* fnG_processCdrMsgsThread(void *p){
 				continue;
 			}
 			if(pCL_Msg->msg_type()==CdrMsg::SUBMIT){
-				SubmitMsg *pCL_SubMsg=pCL_Msg->mutable_submit_msg();
+				DeliverToEsme *pCL_SubMsg=pCL_Msg->mutable_submit_msg();
 				//TODO::here need to genetate submit cdr
 				std::stringstream CL_Msg;
 				CL_Msg.str("");
@@ -96,7 +96,7 @@ int main(int argc, char* argv[]) {
 
 	DBG_INFO((CG_EventLog),("Version:%s",REL_VER));
 	DBG_INFO((CG_EventLog),("Release Date:%s",RELEASE_DATE)); 
-	pCG_CdrServer= new CCdrServer(9898);
+	pCG_CdrServer= new CCdrServer(4141);
 	//TODO::need to init Write  file objects
 	while(1){
 		try{

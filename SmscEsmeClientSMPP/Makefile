@@ -1,5 +1,5 @@
 BASEDIR = /home/cmsuser/CMSVodafone30Jun/
-EXENAME=UssdClient.exe
+EXENAME=SmscClient.exe
 
 SRCS=$(wildcard *.cpp)
 OBJS =$(SRCS:%.cpp=%.o)

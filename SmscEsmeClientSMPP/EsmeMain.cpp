@@ -11,7 +11,6 @@ CMsgQue<DeliverToEsme*> CG_ReceiverQ;
 CMsgMap<int,MsgTypes*> CG_seqMap;
 CCdrClient *pCG_CdrClient =NULL;
 CSmpp *pCG_Smpp=NULL;
-CMsgMap<std::string,MenuDetails*> CG_moMenuMap;
 
 static void fnG_PrintCompanyBanner(char* pscL_ModuleName,char* pscL_Version)
 {

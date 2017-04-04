@@ -73,18 +73,14 @@ bool CEsmeConnection::mcfn_receiveData(){
 
 bool CEsmeConnection::mcfn_run(int,void *){
 	while(1){
-	 	ReceviedData CL_recData;
+		ReceviedData CL_recData;
 		if(!meC_RecDataQue.mcfb_getNextMessage(CL_recData,false)){	
 			sleep(1);
 		}
 		else{
-			//todo::need to check retry errors 
 			if(!mcfn_processReceivedMessage(CL_recData.mcC_header,&CL_recData.pmcu8_data[0],CL_recData.mcsi_len))
 			{
-				//				mcfn_sendUssdAbort(CL_recData.mcC_header);
 				DBG_ERROR((CG_EventLog),("Failed to process message sending Invalid commad id  to server"));
-				//Smpp::SubmitSmResp resp(Smpp::CommandStatus::ESME_RINVCMDID,CL_recData.mcC_header.mcsi_sessionId,Smpp::MessageId("0"));
-				//mcfn_sendMsgToServer((u8*)resp.encode(),resp.command_length());
 			}
 		}
 	}
@@ -112,6 +108,7 @@ bool CEsmeConnection::mcfn_sendMsgToServer( u8* buf, int len){
 }
 
 bool CEsmeConnection::mcfn_sendBind(){
+	try{
 	if(meC_serviceType.compare("T")==0)
 	{
 		Smpp::BindTransmitter pdu;
@@ -138,6 +135,11 @@ bool CEsmeConnection::mcfn_sendBind(){
 		pdu.system_type(meC_serviceType.c_str());
 		pdu.interface_version(mesi_interfaceVersion);
 		return mcfn_sendMsgToServer((u8*)pdu.encode(),pdu.command_length());	
+	}
+	}
+	catch(const Smpp::Error &e){
+		DBG_CRITICAL((CG_EventLog), ("Bind messages creation failed :%s",e.what()));
+		return false;
 	}
 }
 
@@ -185,22 +187,22 @@ bool CEsmeConnection::mcfn_sendSubmitSm(int iL_seqNum,std::string CL_msisdn,std:
 }
 
 bool CEsmeConnection::mcfn_onBindResp(CHeader& CL_header,u8* pu8L_param,int iL_len){
-	std::string systemId="";
-	if(Smpp::CommandId::BindReceiver == CL_header.mcsi_cmdId)
-	{
-		Smpp::BindReceiverResp pdu; pdu.decode(pu8L_param);
-		systemId=pdu.system_id();
-	}
-	else if(Smpp::CommandId::BindTransmitter == CL_header.mcsi_cmdId)
-	{
-		Smpp::BindTransceiverResp pdu; pdu.decode(pu8L_param);
-		systemId=pdu.system_id();
-	}
-	else {//Smpp::CommandId::BindTransceiver :
-		Smpp::BindTransmitterResp pdu; pdu.decode(pu8L_param);
-		systemId=pdu.system_id();
-	}
 	if(CL_header.mcsi_cmdStatus==0x00){
+		std::string systemId="";
+		if(Smpp::CommandId::BindReceiver == CL_header.mcsi_cmdId)
+		{
+			Smpp::BindReceiverResp pdu; pdu.decode(pu8L_param);
+			systemId=pdu.system_id();
+		}
+		else if(Smpp::CommandId::BindTransmitter == CL_header.mcsi_cmdId)
+		{
+			Smpp::BindTransceiverResp pdu; pdu.decode(pu8L_param);
+			systemId=pdu.system_id();
+		}
+		else {//Smpp::CommandId::BindTransceiver :
+			Smpp::BindTransmitterResp pdu; pdu.decode(pu8L_param);
+			systemId=pdu.system_id();
+		}
 
 		DBG_INFO((CG_EventLog), ("Login Sucess With :%s",systemId.c_str()));
 		meE_ConnStatus = CONNECTED;
@@ -208,7 +210,7 @@ bool CEsmeConnection::mcfn_onBindResp(CHeader& CL_header,u8* pu8L_param,int iL_l
 		return true;	
 	}
 	else{
-		DBG_CRITICAL((CG_EventLog), ("Login Failed With :%s",systemId.c_str()));
+		DBG_CRITICAL((CG_EventLog), ("Login Failed"));
 		sleep(1);	
 		return false;
 	}
@@ -286,34 +288,39 @@ bool CEsmeConnection::mcfn_onBind(CHeader&,u8*,int iL_paramLen)
 }
 
 bool CEsmeConnection::mcfn_processReceivedMessage(CHeader& CL_header,u8* u8_param,int iL_paramLen){
-	
+	try{	
 		switch(CL_header.mcsi_cmdId){
 			case Smpp::CommandId::BindReceiver :
 			case Smpp::CommandId::BindTransmitter :
 			case Smpp::CommandId::BindTransceiver :
-					return mcfn_onBind(CL_header,u8_param,iL_paramLen);	
-                        case Smpp::CommandId::BindReceiverResp :
-                        case Smpp::CommandId::BindTransmitterResp :
-                        case Smpp::CommandId::BindTransceiverResp :
-					return mcfn_onBindResp(CL_header,u8_param,iL_paramLen);
+				return mcfn_onBind(CL_header,u8_param,iL_paramLen);	
+			case Smpp::CommandId::BindReceiverResp :
+			case Smpp::CommandId::BindTransmitterResp :
+			case Smpp::CommandId::BindTransceiverResp :
+				return mcfn_onBindResp(CL_header,u8_param,iL_paramLen);
 			case Smpp::CommandId::Unbind:
-					return mcfn_onUnbind(CL_header);
+				return mcfn_onUnbind(CL_header);
 			case Smpp::CommandId::UnbindResp:
-					return mcfn_onUnbindResp(CL_header);
-                        case Smpp::CommandId::SubmitSm:
-					return mcfn_onSubmitSm(u8_param,iL_paramLen);
-                        case Smpp::CommandId::DeliverSm:
-					return mcfn_onDeliverSm(u8_param,iL_paramLen);
-                        case Smpp::CommandId::EnquireLink:
-					return mcfn_onShake(CL_header);
-                        case Smpp::CommandId::EnquireLinkResp:
-					return mcfn_onShakeResp(CL_header);
-                        case Smpp::CommandId::DeliverSmResp:
-					return mcfn_onDeliverSmResp(u8_param,iL_paramLen);
-                        case Smpp::CommandId::SubmitSmResp:
-					return mcfn_onSubmitSmResp(u8_param,iL_paramLen);
+				return mcfn_onUnbindResp(CL_header);
+			case Smpp::CommandId::SubmitSm:
+				return mcfn_onSubmitSm(u8_param,iL_paramLen);
+			case Smpp::CommandId::DeliverSm:
+				return mcfn_onDeliverSm(u8_param,iL_paramLen);
+			case Smpp::CommandId::EnquireLink:
+				return mcfn_onShake(CL_header);
+			case Smpp::CommandId::EnquireLinkResp:
+				return mcfn_onShakeResp(CL_header);
+			case Smpp::CommandId::DeliverSmResp:
+				return mcfn_onDeliverSmResp(u8_param,iL_paramLen);
+			case Smpp::CommandId::SubmitSmResp:
+				return mcfn_onSubmitSmResp(u8_param,iL_paramLen);
 			default:
 				break;
 		}
+	}
+
+	catch(const Smpp::Error &e){
+		DBG_CRITICAL((CG_EventLog), ("Exception came to process  :%s",e.what()));
+	}
 	return false;
 }
