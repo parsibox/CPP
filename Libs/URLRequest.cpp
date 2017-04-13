@@ -332,5 +332,5 @@ char* STSHttp::mcfn_GetResponseBuffer()
 
 bool STSHttp::mcfn_setHeader(char* headerStr)
 {
- 	pmeS_headerList = curl_slist_append(pmeS_headerList, "Content-Type: application/json");
+	pmeS_headerList = curl_slist_append(pmeS_headerList, headerStr);
 }

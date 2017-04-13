@@ -180,8 +180,15 @@ bool CEsmeConnection::mcfn_onUssdBegin(Smpp::DeliverSm *pCL_pdu){
 	pcL_Msg->pmcC_EsmeMsg->set_msg_id(CL_header.mcsi_sessionId);
 	pcL_Msg->pmcC_EsmeMsg->set_oa("MO");
 	pcL_Msg->pmcC_EsmeMsg->set_interface_id(10);
-
-	CG_seqMap.mcfb_removeElement(pcL_Msg->pmcC_EsmeMsg->da());
+        MsgTypes *pcL_MsgTemp=NULL;
+	if(CG_seqMap.mcfb_findElement(pcL_Msg->pmcC_EsmeMsg->da(),pcL_MsgTemp)){
+		pcL_MsgTemp->pmcC_EsmeMsg->set_session_endtime(time(NULL));
+		pcL_MsgTemp->pmcC_EsmeMsg->set_status(1011);
+		pCG_CdrClient->mcfn_sendMsgToCdr(pcL_MsgTemp->pmcC_EsmeMsg,pcL_MsgTemp->pmcC_Session->mcC_userInputs);
+		CG_seqMap.mcfb_removeElement(pcL_Msg->pmcC_EsmeMsg->da());
+		CTimerManeger::mcfnS_GetInstance()->mcfn_unregisterTimer((ITimer*)pcL_MsgTemp);
+		delete pcL_MsgTemp;	
+	}
 	CG_seqMap.mcfb_insert(pcL_Msg->pmcC_EsmeMsg->da(),pcL_Msg);
 	mcfn_sendUssdContinue(pcL_Msg->pmcC_EsmeMsg->da().c_str(),srvWithOutHash,0x00,CL_msg,USSD_OPTYPE::USSD_REQUEST);
 	CTimerManeger::mcfnS_GetInstance()->mcfn_registerTimer((ITimer*)pcL_Msg,CG_Cfg.mcfn_getUssdTimeout(),NULL);
