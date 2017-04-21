@@ -52,10 +52,12 @@ class CTask{
 		std::string meC_srvCode;
 		std::string meC_OA;
 		std::string meC_createdBy;
+		std::string meC_StartTime;
+		std::string meC_EndTime;
 		SUBTASK_STATUS meE_globalStatus;
 		std::vector<CSubTask *> meC_subTasks;	
 	public:
-		CTask(int iL_taskId,int iL_msgType,int iL_expiryTime,int iL_langId,int iL_regDel,int iL_interfaceId,std::string CL_msg,std::string CL_taskName,std::string CL_srvCode,bool bL_isPause,int iL_channelId,int iL_dcs,std::string CL_OA,std::string CL_createdBy,int iL_isOnline=0){
+		CTask(int iL_taskId,int iL_msgType,int iL_expiryTime,int iL_langId,int iL_regDel,int iL_interfaceId,std::string CL_msg,std::string CL_taskName,std::string CL_srvCode,bool bL_isPause,int iL_channelId,int iL_dcs,std::string CL_OA,std::string CL_createdBy,int iL_isOnline=0,std::string CL_startTime="",std::string CL_endTime=""){
 			meb_isPause=bL_isPause;
 			mesi_taskId=iL_taskId;
 			mesi_msgType=iL_msgType;
@@ -72,6 +74,8 @@ class CTask{
 			mesi_channelId=iL_channelId;
 			mesi_dcs=iL_dcs;
 			mesi_isOnline=iL_isOnline;
+			meC_StartTime=CL_startTime;
+			meC_EndTime = CL_endTime;
 		}
 		~CTask();
 		bool isTaskOnline(){ return (mesi_isOnline!=0)?true:false;}
@@ -125,5 +129,6 @@ class CTask{
 		}
 		bool mcfn_updateTaskTableMap(int,char,std::string);
 		bool mcfn_getAllSubTasksCompleted();
+		bool mcfn_IsInBusinessHr();
 };
 #endif

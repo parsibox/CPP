@@ -95,4 +95,30 @@ bool CTask::mcfn_updateTaskTableMap(int iL_taskId,char cL_status,std::string CL_
         return true;
 
 }
+bool CTask::mcfn_IsInBusinessHr(){
+	bool bL_return=true;
+	if(meC_StartTime=="0" && meC_EndTime=="0"){
+		bL_return= true;
+	}
+	else{
+		time_t t;
+		struct tm tmp;
+		t = time(NULL);
+		localtime_r(&t,&tmp);
+		char time_str[100];
+		if (strftime(time_str, sizeof(time_str), "%H%M", &tmp) == 0)
+		{
+			DBG_ERROR((CG_EventLog),("Failed get formatted current time"));
+			bL_return=false;
+		}
+		if(bL_return && atoi(time_str)>=(atoi(meC_StartTime.c_str())/100) && atoi(time_str)<(atoi(meC_EndTime.c_str())/100)){
+			bL_return= true;
+		}else{
+			DBG_VERBOSE((CG_EventLog),("Task :%d not in business hr (%s-%s)", mesi_taskId, meC_StartTime.c_str(), meC_EndTime.c_str()));
+			bL_return=false;
+		}
+	}
+	return bL_return;
+}
+
 

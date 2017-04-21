@@ -144,6 +144,7 @@ bool  CSmpp::mcfn_sendSmppMsgsToSmsc(void *p){
 			if(iL_MsgSubmitCounter==0)
 				gettimeofday(&SL_StartTime,NULL);
 			MsgTypes *pcL_Msg=NULL;
+			 MsgTypes *pcL_MsgTemp=NULL;
 			if(!CG_SmppQue.mcfb_getNextMessage(pcL_Msg,false)){
 				sleep(1);
 				if(mcC_SmppClient.mcfn_getConnectionStatus()==CONNECTED)
@@ -159,7 +160,12 @@ bool  CSmpp::mcfn_sendSmppMsgsToSmsc(void *p){
 					}
 				}
 			}
+			else if(!CG_seqMap.mcfb_findElement(pcL_Msg->pmcC_EsmeMsg->da(),pcL_MsgTemp)){
+					CG_SmppQue.mcfb_insertIntoQue(pcL_Msg);
+				        usleep(10000);	
+			}
 			else{
+				
 				iL_heartBeatcounter=0;
 				u8 u8L_ussdOptype=0x00;
 				u8 u8L_dcs=(u8)pcL_Msg->pmcC_EsmeMsg->dcs();

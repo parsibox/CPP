@@ -79,10 +79,10 @@ bool CDBPicker::mcfn_taskSelectionThread(){
 			CDBOperations CL_dbObj;
 			std::stringstream CL_QueryStream;
 			CL_QueryStream.str("");
-			CL_QueryStream<<"select *,UNIX_TIMESTAMP(END_TIME) as EXPIRY_TIME from schedule_profile where STATUS in (2,5) AND CHANNEL_ID in ("<<CG_Cfg.mcfn_getChannelId()<<") and SCHEDULE_TIME<=CURRENT_TIMESTAMP and IS_ONLINE="<<CG_Cfg.mcfn_getIsOnline()<<" and SCHEDULE_ID in (select SCHEDULE_ID from schedule_table_mapping where STATUS='P')";
+			CL_QueryStream<<"select *,UNIX_TIMESTAMP(END_TIME) as EXPIRY_TIME,time(DAILY_END_TIME)+0 as DAILY_END_TIME1, time(DAILY_START_TIME)+0 as DAILY_START_TIME1 from schedule_profile where STATUS in (2,5) AND CHANNEL_ID in ("<<CG_Cfg.mcfn_getChannelId()<<") and SCHEDULE_TIME<=CURRENT_TIMESTAMP and IS_ONLINE="<<CG_Cfg.mcfn_getIsOnline()<<" and SCHEDULE_ID in (select SCHEDULE_ID from schedule_table_mapping where STATUS='P')";
 			if(CL_dbObj.mcfn_ExecuteQuery(CL_QueryStream.str(),CL_ResultSet)==0){
 				for(int i=0;i<CL_ResultSet.num_rows();i++){
-					CTask *pCL_task=new CTask(atoi(CL_ResultSet[i]["schedule_id"].c_str()),atoi(CL_ResultSet[i]["msg_type"].c_str()),atoi(CL_ResultSet[i]["EXPIRY_TIME"].c_str()),atoi(CL_ResultSet[i]["lang_id"].c_str()),atoi(CL_ResultSet[i]["dlr_reg"].c_str()),atoi(CL_ResultSet[i]["interface_id"].c_str()),CL_ResultSet[i]["msg_text"].c_str(),CL_ResultSet[i]["schedule_name"].c_str(),CL_ResultSet[i]["menu_service_code"].c_str(),atoi(CL_ResultSet[i]["is_pause"].c_str()),atoi(CL_ResultSet[i]["channel_id"].c_str()),atoi(CL_ResultSet[i]["dcs"].c_str()),CL_ResultSet[i]["oa"].c_str(),CL_ResultSet[i]["created_by"].c_str(),atoi(CL_ResultSet[i]["is_online"].c_str()));
+					CTask *pCL_task=new CTask(atoi(CL_ResultSet[i]["schedule_id"].c_str()),atoi(CL_ResultSet[i]["msg_type"].c_str()),atoi(CL_ResultSet[i]["EXPIRY_TIME"].c_str()),atoi(CL_ResultSet[i]["lang_id"].c_str()),atoi(CL_ResultSet[i]["dlr_reg"].c_str()),atoi(CL_ResultSet[i]["interface_id"].c_str()),CL_ResultSet[i]["msg_text"].c_str(),CL_ResultSet[i]["schedule_name"].c_str(),CL_ResultSet[i]["menu_service_code"].c_str(),atoi(CL_ResultSet[i]["is_pause"].c_str()),atoi(CL_ResultSet[i]["channel_id"].c_str()),atoi(CL_ResultSet[i]["dcs"].c_str()),CL_ResultSet[i]["oa"].c_str(),CL_ResultSet[i]["created_by"].c_str(),atoi(CL_ResultSet[i]["is_online"].c_str()),CL_ResultSet[i]["daily_start_time1"].c_str(),CL_ResultSet[i]["daily_end_time1"].c_str());
 					if(!(pCL_task->mcfn_loadSubTask()&&mefn_addTaskToList(pCL_task))){
 						DBG_ERROR((CG_EventLog),("Loading SubTask details faild .TaskId:%d",atoi(CL_ResultSet[i]["SCHEDULE_ID"].c_str())));
 						delete pCL_task;
@@ -120,7 +120,7 @@ bool CDBPicker::mcfn_taskAssignmentThread(){
 					}
 					continue;
 				}
-				if(pCL_Task->mcfn_checkAssignment()){
+				if( pCL_Task->mcfn_IsInBusinessHr() && pCL_Task->mcfn_checkAssignment() ){
 					DBG_INFO((CG_EventLog), ("Task Assigned:%d",pCL_Task->mcfn_TaskId()));
 					meC_workerQue.mcfb_insertIntoQue(pCL_Task);
 				}
