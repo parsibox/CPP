@@ -160,9 +160,11 @@ bool  CSmpp::mcfn_sendSmppMsgsToSmsc(void *p){
 					}
 				}
 			}
-			else if(!CG_seqMap.mcfb_findElement(pcL_Msg->pmcC_EsmeMsg->da(),pcL_MsgTemp)){
-					CG_SmppQue.mcfb_insertIntoQue(pcL_Msg);
+			else if(CG_seqMap.mcfb_findElement(pcL_Msg->pmcC_EsmeMsg->da(),pcL_MsgTemp)){
+					if(CG_SmppQue.mcfb_getCount()<=0)
 				        usleep(10000);	
+					CG_SmppQue.mcfb_insertIntoQue(pcL_Msg);
+         
 			}
 			else{
 				
