@@ -36,6 +36,7 @@ class CEsmeConnection:public CTcpClient,public CEsmeClient,public CThread
                 bool mcfn_onUssdChargingIndRes(CHeader&);
                 bool mcfn_onUssdShake(CHeader&);
                 bool mcfn_onUssdShakeResp(CHeader&);
+		bool mcfn_onSubmitSmResp(CHeader&);
 
 		bool mcfn_sendMsgToServer(u8* buf, int len);
 

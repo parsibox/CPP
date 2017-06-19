@@ -202,7 +202,10 @@ bool  CSmpp::mcfn_sendSmppMsgsToSmsc(void *p){
 				}
 				else{
 					pcL_Msg->mcC_daStr.assign(pcL_Msg->pmcC_EsmeMsg->da());
+					if(pcL_Msg->pmcC_EsmeMsg->msg_type()==2)
 					CG_seqMap.mcfb_insert(pcL_Msg->pmcC_EsmeMsg->da(),pcL_Msg);
+					else
+					CG_submitSmMap.mcfb_insert(iL_sessionId,pcL_Msg);
 					CTimerManeger::mcfnS_GetInstance()->mcfn_registerTimer((ITimer*)pcL_Msg,CG_Cfg.mcfn_getUssdTimeout(),NULL);
 					DBG_VERBOSE((CG_EventLog),("Message Sent to SMSC:%d",iL_sessionId));
 					++iL_MsgSubmitCounter;

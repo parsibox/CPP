@@ -56,6 +56,7 @@ class CEsmeClient{
 		virtual bool mcfn_onUssdChargingIndRes(CHeader&){}
 		virtual bool mcfn_onUssdShake(CHeader&){}
 		virtual bool mcfn_onUssdShakeResp(CHeader&){}
+		virtual bool mcfn_onSubmitSmResp(CHeader&){}
 
 		virtual bool mcfn_sendMsgToServer(u8*,int)=0;//pure virtual function 
 

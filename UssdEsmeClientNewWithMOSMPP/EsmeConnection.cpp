@@ -194,6 +194,23 @@ bool CEsmeConnection::mcfn_onUssdBegin(Smpp::DeliverSm *pCL_pdu){
 	CTimerManeger::mcfnS_GetInstance()->mcfn_registerTimer((ITimer*)pcL_Msg,CG_Cfg.mcfn_getUssdTimeout(),NULL);
 	return true;
 }
+
+bool CEsmeConnection::mcfn_onSubmitSmResp(CHeader& CL_pdu)
+{
+	MsgTypes *pcL_Msg=NULL;
+	if(CG_submitSmMap.mcfb_findElement(CL_pdu.mcsi_sessionId,pcL_Msg)){
+		pcL_Msg->pmcC_EsmeMsg->set_session_endtime(time(NULL));
+		pcL_Msg->pmcC_EsmeMsg->set_status(CL_pdu.mcsi_cmdStatus);
+		if(pcL_Msg->meb_isCdrGenerated == false)
+		{	
+			pCG_CdrClient->mcfn_sendMsgToCdr(pcL_Msg->pmcC_EsmeMsg,pcL_Msg->pmcC_Session->mcC_userInputs);
+			pcL_Msg->meb_isCdrGenerated=true;
+			CG_submitSmMap.mcfb_removeElement(CL_pdu.mcsi_sessionId);
+			delete pcL_Msg;
+		}
+	}
+	return true;
+}
 bool CEsmeConnection::mcfn_onUssdContinue(Smpp::DeliverSm *pCL_pdu){
 	MsgTypes *pcL_Msg=NULL;
 	bool bL_isLeaf=false;

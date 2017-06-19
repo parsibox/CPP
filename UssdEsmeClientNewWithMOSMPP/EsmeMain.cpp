@@ -9,6 +9,7 @@ CEventLog CG_EventLog;
 CConfiguration CG_Cfg;
 CMsgQue<DeliverToEsme*> CG_ReceiverQ;
 CMsgMap<std::string,MsgTypes*> CG_seqMap;
+CMsgMap<int,MsgTypes*> CG_submitSmMap;
 CMsgMap<std::string,CMsgMap<std::string,NodeTree*>*> *pCG_menuMap=NULL;
 CCdrClient *pCG_CdrClient =NULL;
 CSmpp *pCG_Smpp=NULL;

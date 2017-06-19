@@ -238,8 +238,9 @@ bool CEsmeClient::mcfn_processReceivedMessage(CHeader& CL_header,u8* u8_param,in
 					return mcfn_onUssdShake(CL_header);
                         case Smpp::CommandId::EnquireLinkResp:
 					return mcfn_onUssdShakeResp(CL_header);
-                        case Smpp::CommandId::DeliverSmResp:
                         case Smpp::CommandId::SubmitSmResp:
+					return mcfn_onSubmitSmResp(CL_header);
+                        case Smpp::CommandId::DeliverSmResp:
 				printf("SubmitSm or Deliver Sm respocne is recevied \n");
 				return true;
 			default:

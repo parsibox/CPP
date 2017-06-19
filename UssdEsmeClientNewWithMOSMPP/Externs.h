@@ -19,6 +19,8 @@ extern CConfiguration CG_Cfg;
 extern CCdrClient *pCG_CdrClient;
 extern CMsgQue<DeliverToEsme*> CG_ReceiverQ;
 extern  CMsgMap<std::string,MsgTypes*> CG_seqMap;
+extern  CMsgMap<int,MsgTypes*> CG_submitSmMap;
+
 extern  CMsgMap<std::string,MenuDetails*> CG_moMenuMap;
 extern CSmpp *pCG_Smpp;
 
